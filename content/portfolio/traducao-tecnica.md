@@ -16,22 +16,18 @@ blocos:
     alt: "Site do Centro de Cooperação Jurídica Internacional do CJF"
     url: "https://www.cjf.jus.br/cjf/menu/centro-de-cooperacao"
     periodo: "desde agosto de 2026"
-    texto: "Tradutor credenciado do Conselho da Justiça Federal para documentos de cunho jurídico. No edital de 2026, fui habilitado nos serviços abaixo, prestados no âmbito do Centro de Cooperação Jurídica Internacional (CECINT), que cuida da cooperação da Justiça Federal com o exterior e do cumprimento de decisões judiciais fora do país."
-    servicos:
-      - {nome: "Tradução", par: "EN, ES>PT"}
-      - {nome: "Versão", par: "PT, EN>ES"}
-      - {nome: "Revisão", par: "PT, ES"}
+    texto: "Tradutor credenciado do Conselho da Justiça Federal para documentos de cunho jurídico. No edital de 2026, fui habilitado nos serviços de tradução (EN, ES>PT), versão (PT, EN>ES) e revisão (PT, ES), prestados no âmbito do Centro de Cooperação Jurídica Internacional (CECINT), que cuida da cooperação da Justiça Federal com o exterior e do cumprimento de decisões judiciais fora do país."
   - id: ligna
     nome: "Ligna"
     logo: "img/logos/ligna.png"
     url: "https://ligna.pro"
     periodo: "desde 2018"
-    texto: "Empresa de tradução e serviços linguísticos que fundei com dois colegas em Brasília. Como sócio e gerente de projetos, traduzo, reviso e coordeno trabalhos para clientes de diversas áreas: textos técnicos, institucionais, jornalísticos, de marketing e acadêmicos, além de localização de sites e software."
+    texto: "Empresa de tradução e serviços linguísticos que fundei com dois colegas em Brasília. Como sócio e gerente de projetos, traduzo, reviso e coordeno trabalhos para clientes de diversas áreas: textos técnicos, institucionais, jornalísticos, de marketing e acadêmicos, além de localização de sites e software. Pares de língua: EN>PT, ES>PT."
   - id: blend
     nome: "Blend"
     logo: "img/logos/blend.png"
     url: "https://www.getblend.com"
     periodo: "desde 2012"
-    texto: "Tradutor e editor certificado da Blend (antiga OneHourTranslation), plataforma internacional de tradução sob demanda. Entre os projetos: pós-edição de tradução automática para comércio eletrônico; localização de aplicativos, web apps e jogos; anúncios; textos de sites de nutrição e bem-estar e de serviços de internet; e um grande volume de relatórios e planos de educação especial de escolas norte-americanas, traduzidos do inglês para o português para as famílias dos alunos."
+    texto: "Tradutor e editor certificado da Blend (antiga OneHourTranslation), plataforma internacional de tradução sob demanda. Entre os projetos: pós-edição de tradução automática para comércio eletrônico; localização de aplicativos, web apps e jogos; anúncios; textos de sites de nutrição e bem-estar e de serviços de internet; e relatórios e planos de educação especial. Pares de língua: EN>PT, ES>PT. Edição: PT, ES."
 ---
 Além dos livros e das legendas, traduzo e reviso textos técnicos, jurídicos e institucionais entre português, inglês e espanhol.

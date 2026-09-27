@@ -26,7 +26,7 @@ Ferramenta interna que desenvolvi para a equipe de tradução da Agência Brasil
 
 ### Legendagem assistida
 
-Um ambiente de trabalho para legendagem que reúne tradução automática neural e modelos de linguagem, memória de tradução e busca semântica, linguística de corpus, análise sintática, verificação gramatical e controle de qualidade de legendas (velocidade de leitura, caracteres por linha, quebras e regras de estilo). Não entrega tradução pronta: prepara um rascunho informado e uma tabela de revisão em que cada legenda é decidida por quem traduz. Os serviços de IA são usados com retenção zero de dados.
+Um ambiente de trabalho para legendagem que reúne tradução automática neural e modelos de linguagem, memória de tradução e busca semântica, linguística de corpus, análise sintática, verificação gramatical e controle de qualidade de legendas (velocidade de leitura, caracteres por linha, quebras e regras de estilo). A ideia não é entregar tradução pronta, mas preparar um rascunho informado e uma tabela de revisão em que cada legenda é decidida por quem traduz. Os serviços de IA são usados com retenção zero de dados.
 
 ### Corpus e alinhamento
 
@@ -38,10 +38,10 @@ Este site (Hugo, com tema próprio), o [coizassim.com.br](https://coizassim.com.
 
 ## Como trabalho
 
-Concebo, planejo, especifico e reviso tudo o que vai para produção; boa parte do código dos projetos é escrita com assistência de IA, sob minha responsabilidade e com testes. Programo o básico em HTML, CSS, JavaScript e Python; meu forte é conceber, integrar e manter.
+Concebo, planejo, especifico e reviso tudo o que vai para produção. Boa parte do código dos projetos é escrita com assistência de IA, sob minha responsabilidade e com testes. Programo o básico em HTML, CSS, JavaScript e Python, mas meu forte é conceber, integrar e manter.
 
 ## Ferramentas
 
-- **Tradução e legendagem:** Wordfast, Phrase, XTM Cloud, Crowdin, Subtitle Edit, memórias de tradução, glossários, GoldenDict, tradução automática e pós-edição.
-- **Desenvolvimento:** HTML, CSS, JavaScript, Python, Hugo, React, extensões de navegador, Cloudflare, Git.
-- **Infraestrutura:** Linux (Debian, Ubuntu), Windows, Unraid, Docker, Ansible, Tailscale, restic.
+- **Tradução e legendagem:** Wordfast, Phrase, XTM Cloud, Crowdin, Subtitle Edit, memórias de tradução, glossários.
+- **Desenvolvimento:** HTML, CSS, JavaScript, Python, Hugo, React, Cloudflare, Git.
+- **Infraestrutura:** Linux (Debian, Ubuntu), Windows, Unraid, Docker, Ansible, Restic, Tailscale.
