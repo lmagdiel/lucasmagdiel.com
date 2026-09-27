@@ -85,7 +85,7 @@ h3 { font-size: 1.15rem; margin: 1.8rem 0 0.4rem; }
 .topo-dir { display: flex; align-items: center; gap: 0.6rem 1.4rem; margin-left: auto; flex-wrap: wrap; justify-content: flex-end; }
 .marca { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; color: var(--text); text-decoration: none; }
 .topo nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.2rem 1.2rem; }
-.topo nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+.topo nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; display: inline-block; padding-block: 0.6rem; margin-block: -0.6rem; }
 .topo nav a:hover, .topo nav a[aria-current="page"] { color: var(--text); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 0.35em; }
 .tema { display: inline-grid; place-items: center; width: 1.75rem; height: 1.75rem; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: none; color: var(--muted); cursor: pointer; }
 .tema[hidden] { display: none; }
@@ -99,6 +99,7 @@ main { padding-block: 2.5rem 4rem; }
 .rodape-in { padding-block: 1.6rem 2.2rem; display: grid; gap: 0.4rem; }
 .rodape p { margin: 0; }
 .rodape-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; }
+.rodape-links a { display: inline-block; padding-block: 0.5rem; margin-block: -0.5rem; }
 .rodape-meta { font-family: var(--mono); font-size: 0.78rem; }
 .rodape-meta a { color: inherit; }
 
@@ -157,7 +158,7 @@ main { padding-block: 2.5rem 4rem; }
 .grade--tv .tile-tit, .grade--tv .tile-sub { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 
 /* Card padronizado (produções sem pôster) */
-.tvcard { width: 100%; height: 100%; display: grid; grid-template-rows: 58% 1fr; background: var(--ink); color: var(--ink-text); text-align: left; }
+.tvcard { width: 100%; height: 100%; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: 58% 1fr; background: var(--ink); color: var(--ink-text); text-align: left; }
 .tvcard--tipo { grid-template-rows: 1fr; }
 .tvcard-img { position: relative; overflow: hidden; }
 .tvcard-img img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.78); }
@@ -167,7 +168,7 @@ main { padding-block: 2.5rem 4rem; }
 .tvcard-prog { color: var(--ink-accent); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.06em; }
 .tvcard-tit { font-family: var(--serif); font-size: 0.98rem; line-height: 1.2; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; margin-bottom: auto; }
 .tvcard-rod { display: flex; justify-content: space-between; gap: 0.4rem; color: var(--ink-muted); font-size: 0.6rem; border-top: 1px solid #3a3935; padding-top: 0.35rem; }
-.tvcard-rod span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tvcard-rod span { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .tile--p .tvcard-tit { font-size: 0.8rem; -webkit-line-clamp: 3; }
 .tile--p .tvcard-txt { padding: 0 0.5rem 0.45rem; margin-top: -0.9rem; }
 .tile--p .tvcard-prog, .tile--p .tvcard-rod { font-size: 0.55rem; }
@@ -271,7 +272,8 @@ main { padding-block: 2.5rem 4rem; }
   .grade { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem 0.9rem; }
   .grade--p, .grade--linha { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .grade.grade--tv:not(.grade--linha) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .tile--p .tvcard-tit { -webkit-line-clamp: 2; }
+  .tile--p .tvcard-tit { -webkit-line-clamp: 2; margin-bottom: 0.15rem; }
+  .tile--p .tvcard { grid-template-rows: minmax(0, 1fr) auto; }
   .obra-grid { grid-template-columns: 1fr; }
   .obra-capas { max-width: 13rem; }
   .obra-capas--multi { max-width: 100%; }
@@ -291,6 +293,7 @@ main { padding-block: 2.5rem 4rem; }
 }
 
 @media (max-width: 24.5rem) {
+  .tile--p .tvcard-emis { display: none; }
   .topo nav ul { gap: 0.2rem 0.6rem; }
   .topo nav a { font-size: 0.84rem; }
   .tema { width: 1.6rem; height: 1.6rem; }
