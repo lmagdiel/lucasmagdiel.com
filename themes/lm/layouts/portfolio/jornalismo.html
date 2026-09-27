@@ -1,16 +1,33 @@
 {{ define "main" }}
 {{- $e := hugo.Data.estatisticas.agencia_brasil_es }}
-<article class="secao prosa">
+<article class="secao">
   <header class="secao-cab">
     <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">Portfólio</a></p>
     <h1>{{ .Title }}</h1>
   </header>
-  <p class="destaque-num">
-    <span class="num">{{ lang.FormatNumber 0 (math.Floor (div $e.materias_min 1000.0)) }} mil+</span>
-    <span class="num-rot">matérias vertidas ao espanhol desde {{ (time $e.desde).Year }}</span>
-    <span class="num">{{ lang.FormatNumber 0 (math.Floor (div $e.palavras_min 1000000.0)) }} milhões+</span>
-    <span class="num-rot">de palavras (estimativa de {{ (time $e.referencia).Format "01/2006" }})</span>
-  </p>
-  {{ .Content }}
+
+  <div class="tecnica">
+    <section class="tec-bloco">
+      {{- with .Params.logo }}
+      <a class="tec-logo" href="{{ .url }}" rel="noopener">
+        {{- $alt := .alt }}
+        {{- with resources.Get .img }}
+        {{- $l := .Resize "480x webp q90" }}
+        <img src="{{ $l.RelPermalink }}" width="{{ div $l.Width 2 }}" height="{{ div $l.Height 2 }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+        {{- end }}
+      </a>
+      {{- end }}
+      <div class="tec-txt prosa">
+        <h2>Agência Brasil <span class="tec-periodo">desde {{ (time $e.desde).Year }}</span></h2>
+        <p class="destaque-num">
+          <span class="num">{{ lang.FormatNumber 0 (math.Floor (div $e.materias_min 1000.0)) }} mil+</span>
+          <span class="num-rot">matérias vertidas ao espanhol desde {{ (time $e.desde).Year }}</span>
+          <span class="num">{{ lang.FormatNumber 0 (math.Floor (div $e.palavras_min 1000000.0)) }} milhões+</span>
+          <span class="num-rot">de palavras (estimativa de {{ (time $e.referencia).Format "01/2006" }})</span>
+        </p>
+        {{ .Content }}
+      </div>
+    </section>
+  </div>
 </article>
 {{ end }}
