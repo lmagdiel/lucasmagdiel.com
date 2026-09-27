@@ -56,7 +56,7 @@
   ano: 2023
   genero: "drama histórico"
   creditos: {roteiro: "Ryota Kosawa", elenco: ["Jun Matsumoto", "Kasumi Arimura"]}
-  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios"}
+  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios em 2026"}
   sinopse: "Taiga drama da NHK que acompanha Matsudaira Motoyasu, depois Tokugawa Ieyasu, em meio às guerras do período Sengoku. Pressionado por aliados e rivais, o jovem senhor inseguro precisa tomar decisões que definirão a sobrevivência de seu clã e, mais tarde, a fundação do xogunato Tokugawa."
   link: "https://www.netflix.com/br/title/82747198"
   capa: "audiovisual/netflix_o-que-voce-vai-fazer-ieyasu_pt.jpg"
@@ -78,7 +78,7 @@
   titulo: "The 13 Lords of the Shogun"
   titulo_original: "鎌倉殿の13人"
   emissora: "NHK (taiga drama)"
-  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios"}
+  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios em 2026"}
 
 # ---------- Gemini Media (EN>PT, TV por assinatura, 2012–2013) ----------
 
@@ -90,7 +90,7 @@
   ano: "2002–"
   genero: "automobilismo / variedades"
   creditos: {apresentacao: "Jeremy Clarkson, Richard Hammond e James May"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
+  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
   sinopse: "Programa britânico sobre automóveis que combina avaliações de carros, desafios de estrada, viagens especiais e voltas cronometradas de convidados famosos em uma pista própria, apresentado por Jeremy Clarkson, Richard Hammond e James May, com o piloto anônimo The Stig."
   link: "https://www.bbc.co.uk/programmes/b006mj59"
   capa: "audiovisual/gemini_top-gear.jpg"
@@ -102,7 +102,7 @@
   ano: "2007–"
   genero: "talk show"
   creditos: {apresentacao: "Graham Norton"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
+  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
   sinopse: "Talk show britânico em que Graham Norton recebe, ao mesmo tempo, vários convidados do cinema, da televisão e da música para entrevistas no sofá, com apresentações musicais e o quadro da cadeira vermelha, em que pessoas da plateia contam histórias."
   link: "https://www.bbc.co.uk/programmes/b006xnzc"
   capa: "audiovisual/gemini_the-graham-norton-show_v2.jpg"
@@ -151,7 +151,7 @@
   ano: "2009–2014"
   genero: "divulgação científica"
   creditos: {producao: "BBC e Open University"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
+  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
   sinopse: "Programa de divulgação científica da BBC, coproduzido com a Open University, em que os apresentadores testam teorias e explicam fenômenos com experimentos práticos e reportagens sobre pesquisa e tecnologia no cotidiano."
   link: "https://www.bbc.co.uk/programmes/b00lwxj1"
   capa: "audiovisual/gemini_bang-goes-the-theory.jpg"
@@ -161,7 +161,7 @@
   titulo: "BBC Proms"
   emissora: "BBC"
   genero: "música clássica"
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
+  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de algumas transmissões entre 2012 e 2013"}
   sinopse: "Transmissões da temporada anual de concertos de música clássica realizada pela BBC no verão, sobretudo no Royal Albert Hall, em Londres, com orquestras, regentes e solistas de vários países."
   link: "https://www.bbc.co.uk/programmes/b007v097"
   capa: "audiovisual/gemini_bbc-proms.jpg"
@@ -207,7 +207,7 @@
   ano: "2011–2020"
   genero: "vida selvagem"
   creditos: {apresentacao: "Matt Wright"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
+  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
   sinopse: "Acompanha Matt Wright, piloto de helicóptero e especialista em captura de animais, em operações no norte da Austrália para retirar crocodilos de áreas habitadas e realocá-los, além de lidar com outros animais em regiões remotas."
   capa: "audiovisual/gemini_outback-wrangler_v2.jpg"
 
@@ -219,7 +219,7 @@
   ano: "2006–2011"
   genero: "reality / culinária"
   creditos: {apresentacao: "Duff Goldman"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
+  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
   sinopse: "Reality show que acompanha a Charm City Cakes, confeitaria de Duff Goldman em Baltimore, onde a equipe cria bolos personalizados de formatos e estruturas complexas, lidando com prazos, clientes e entregas."
   capa: "audiovisual/gemini_ace-of-cakes_pt.jpg"
 
@@ -230,7 +230,7 @@
   ano: "2009–2014"
   genero: "competição de dança"
   creditos: {apresentacao: "Davina McCall", jurados: ["Ashley Banjo", "Adam Garcia", "Kimberly Wyatt"]}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
+  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
   sinopse: "Competição de dança aberta a solistas e grupos de todas as idades e estilos. Após audições com os jurados, os selecionados disputam apresentações ao vivo, e o público vota para definir o vencedor."
   capa: "audiovisual/gemini_got-to-dance_v2.jpg"
 
@@ -245,7 +245,7 @@
   ano: 1998
   genero: "telenovela"
   creditos: {elenco: ["Gabriela Spanic", "Fernando Colunga"]}
-  trabalho: {ano: 2015, papel: "adequação de closed captions em espanhol", descricao: "Adequação de closed captions em espanhol do ep. 16"}
+  trabalho: {ano: 2015, papel: "adequação de closed captions em espanhol", descricao: "Adequação de closed captions em espanhol do ep. 16 em 2015"}
   sinopse: "Paulina, uma jovem pobre, descobre ter uma sósia: Paola, esposa do empresário Carlos Daniel Bracho. Chantageada, aceita ocupar o lugar da outra na família Bracho por um ano, tenta reparar os danos causados por ela e se apaixona pelo marido."
   capa: "audiovisual/eureca_la-usurpadora_pt.jpg"
 
@@ -257,7 +257,7 @@
   ano: "2010–2011"
   genero: "telenovela"
   creditos: {elenco: ["Rebecca Jones", "Alejandro Camacho"]}
-  trabalho: {ano: 2015, papel: "adequação de closed captions em espanhol", descricao: "Adequação de closed captions em espanhol dos eps. 17 e 44"}
+  trabalho: {ano: 2015, papel: "adequação de closed captions em espanhol", descricao: "Adequação de closed captions em espanhol dos eps. 17 e 44 em 2015"}
   sinopse: "Seis mulheres de diferentes idades e classes sociais escondem crises em seus relacionamentos. Ao se conhecerem, passam a se apoiar para enfrentar os problemas e buscar novos rumos. Remake da novela colombiana El último matrimonio feliz."
   capa: "audiovisual/eureca_para-volver-a-amar.jpg"
 

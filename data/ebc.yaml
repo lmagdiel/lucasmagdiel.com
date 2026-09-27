@@ -135,7 +135,7 @@
   programa: "Primera Persona Latinoamérica"
   emissora: "TV Brasil"
   ano_exibicao: 2016
-  trabalho: {ano: 2017, par: "PT>ES", papel: "legendagem (com crédito)"}
+  trabalho: {ano: 2017, par: "PT>ES", papel: "legendagem"}
   sinopse: "Dois episódios brasileiros da série latino-americana de retratos documentais de jovens, contados em primeira pessoa. Em Brasília, Pedro, estudante e skatista de 16 anos, questiona o sistema escolar, e Milaide, dançarina e estudante, concilia trabalho, dança e família."
   frame: "ebc/frames/primera-persona_esplanada.jpg"   # Esplanada dos Ministérios; sem imagem dos jovens
   ancora: "Center"

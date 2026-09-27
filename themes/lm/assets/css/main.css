@@ -69,7 +69,7 @@ a { color: var(--accent); text-decoration: underline; text-decoration-thickness:
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; letter-spacing: -0.005em; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; letter-spacing: -0.005em; text-wrap: balance; }
 h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin: 0 0 0.6rem; }
 h2 { font-size: 1.45rem; margin: 2.4rem 0 0.8rem; }
 h3 { font-size: 1.15rem; margin: 1.8rem 0 0.4rem; }
@@ -100,6 +100,7 @@ main { padding-block: 2.5rem 4rem; }
 .rodape p { margin: 0; }
 .rodape-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; }
 .rodape-meta { font-family: var(--mono); font-size: 0.78rem; }
+.rodape-meta a { color: inherit; }
 
 /* Rótulos e metadados em monoespaçada */
 .rotulo, .tile-sub, .lista-ano, .par, .data, .num-rot, .tvcard-prog, .tvcard-rod, .ficha dt, time {
@@ -145,7 +146,7 @@ main { padding-block: 2.5rem 4rem; }
 .tile-img { aspect-ratio: 2 / 3; display: flex; align-items: flex-end; justify-content: center; background: var(--surface); border-radius: var(--radius); overflow: hidden; }
 .tile-img img { width: 100%; height: 100%; object-fit: contain; object-position: bottom; }
 .tile a:hover .tile-img { outline: 2px solid var(--accent); outline-offset: 2px; }
-.tile-tit { font-family: var(--serif); font-size: 0.98rem; line-height: 1.25; margin-top: 0.3rem; }
+.tile-tit { font-family: var(--serif); font-size: 0.98rem; line-height: 1.25; margin-top: 0.3rem; text-wrap: balance; }
 .tile a:hover .tile-tit { color: var(--accent); }
 .tile-sub { color: var(--muted); line-height: 1.35; }
 .tile--p .tile-tit { font-size: 0.9rem; }

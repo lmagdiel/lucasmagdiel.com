@@ -40,7 +40,7 @@
           {{- else }}<dt>{{ i18n "creditos" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{- end }}
         {{- with $p.trabalho }}
-          <dt>{{ i18n "papel" }}</dt><dd>{{ with .descricao }}{{ . }}{{ else }}{{ .papel | strings.FirstUpper }}{{ with .episodios }}, {{ . }}{{ end }}{{ end }}{{ with .par }} <span class="par">{{ . }}</span>{{ end }}{{ with .ano }} ({{ . }}){{ end }}</dd>
+          <dt>{{ i18n "papel" }}</dt><dd>{{ with .descricao }}{{ . }}{{ else }}{{ .papel | strings.FirstUpper }}{{ with .episodios }}, {{ . }}{{ end }}{{ end }}{{ with .par }} <span class="par">{{ . }}</span>{{ end }}</dd>
         {{- else }}
           {{- with $p.papel }}<dt>{{ i18n "papel" }}</dt><dd>{{ . | strings.FirstUpper }}{{ with $p.par }} <span class="par">{{ . }}</span>{{ end }}</dd>{{ end }}
         {{- end }}
