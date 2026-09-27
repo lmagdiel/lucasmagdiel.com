@@ -2,14 +2,20 @@
 title: "Tradução técnica"
 layout: "tecnica"
 weight: 45
-description: "Tradução e revisão de textos técnicos, jurídicos e institucionais: credenciamento no CJF, Ligna, EBC e Blend."
+description: "Tradução e revisão de textos técnicos, jurídicos e institucionais: EBC, credenciamento no CJF, Ligna e Blend."
 blocos:
+  - id: ebc
+    nome: "EBC"
+    logo: "img/logos/ebc.png"
+    url: "https://www.ebc.com.br"
+    periodo: "desde 2013"
+    texto: "Além do jornalismo e da legendagem, faço a tradução e a versão, entre português e espanhol, de documentos jurídicos e administrativos da empresa: contratos com parceiros externos, requerimentos oficiais, atos normativos e peças de cooperação internacional. Também reviso textos em espanhol e em português."
   - id: cjf
     nome: "CJF · CECINT"
     logo: "img/logos/cjf.png"
     alt: "Site do Centro de Cooperação Jurídica Internacional do CJF"
     url: "https://www.cjf.jus.br/cjf/menu/centro-de-cooperacao"
-    periodo: "desde 2021"
+    periodo: "desde agosto de 2026"
     texto: "Tradutor credenciado do Conselho da Justiça Federal para documentos de cunho jurídico. No edital de 2026, fui habilitado nos serviços abaixo, prestados no âmbito do Centro de Cooperação Jurídica Internacional (CECINT), que cuida da cooperação da Justiça Federal com o exterior e do cumprimento de decisões judiciais fora do país."
     servicos:
       - {nome: "Tradução", par: "EN, ES>PT"}
@@ -21,12 +27,6 @@ blocos:
     url: "https://ligna.pro"
     periodo: "desde 2018"
     texto: "Empresa de tradução e serviços linguísticos que fundei com dois colegas em Brasília. Como sócio e gerente de projetos, traduzo, reviso e coordeno trabalhos para clientes de diversas áreas: textos técnicos, institucionais, jornalísticos, de marketing e acadêmicos, além de localização de sites e software."
-  - id: ebc
-    nome: "EBC"
-    logo: "img/logos/ebc.png"
-    url: "https://www.ebc.com.br"
-    periodo: "desde 2013"
-    texto: "Além do jornalismo e da legendagem, faço a tradução e a versão, entre português e espanhol, de documentos jurídicos e administrativos da empresa: contratos com parceiros externos, requerimentos oficiais, atos normativos e peças de cooperação internacional. Também reviso textos em espanhol e em português."
   - id: blend
     nome: "Blend"
     logo: "img/logos/blend.png"

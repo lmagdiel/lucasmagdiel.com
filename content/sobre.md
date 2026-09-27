@@ -12,8 +12,8 @@ Fora do trabalho, meus maiores interesses são tecnologia (homelab, self-hosting
 ## Trajetória
 
 - **2013–** Tradutor da EBC (Empresa Brasil de Comunicação)
+- **2026–** Tradutor credenciado do Conselho da Justiça Federal, com trabalhos no âmbito do CECINT, o Centro de Cooperação Jurídica Internacional
 - **2025–** Legendagem para a Netflix (TransPerfect Media)
-- **2021–** Tradutor credenciado do Conselho da Justiça Federal, com trabalhos no âmbito do CECINT, o Centro de Cooperação Jurídica Internacional
 - **2018–** Sócio-fundador e gerente de projetos da Ligna Traduções
 - **2013–** Tradução de livros para a DarkSide Books
 - **2012–** Tradutor e editor da Blend (antiga OneHourTranslation)
