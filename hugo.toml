@@ -32,7 +32,7 @@ defaultContentLanguageInSubdir = false
   # Sem e-mail visível no site: contato só pelo formulário (evita spam).
   # Formulário de contato (Cloudflare Pages Function em /api/contato).
   contactEndpoint = "/api/contato"
-  turnstileSiteKey = ""          # preencher com a site key do Turnstile
+  turnstileSiteKey = "0x4AAAAAAFE1POpzGlw4KI4L"   # site key do Turnstile (pública; o segredo fica no Cloudflare)
   [params.links]
     # Ficam ocultos até estarem atualizados / com conteúdo público.
     [params.links.linkedin]
