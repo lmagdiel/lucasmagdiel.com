@@ -1,0 +1,17 @@
+{{- /* Bloco de projeto com ilustração (SVG ou imagem) à esquerda.
+       Uso: {{< projeto img="img/..." alt="..." >}} ### Título + texto em Markdown {{< /projeto >}} */ -}}
+<section class="projeto">
+  <div class="projeto-img">
+    {{- with resources.Get (.Get "img") }}
+    {{- if eq .MediaType.SubType "svg" }}
+    <img src="{{ .RelPermalink }}" width="800" height="600" alt="{{ $.Get "alt" }}" loading="lazy" decoding="async">
+    {{- else }}
+    {{- $i := .Resize "800x webp q82" }}
+    <img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="{{ $.Get "alt" }}" loading="lazy" decoding="async">
+    {{- end }}
+    {{- end }}
+  </div>
+  <div class="projeto-txt">
+    {{ .InnerDeindent | .Page.RenderString (dict "display" "block") }}
+  </div>
+</section>

@@ -10,6 +10,6 @@
   <div class="tvcard-txt">
     <span class="tvcard-prog">{{ .programa | replaceRE ` \(.*\)$` "" }}</span>
     <span class="tvcard-tit">{{ .titulo }}</span>
-    <span class="tvcard-rod"><span>{{ with .ano }}<span class="tvcard-emis">{{ $.emissora | default "TV Brasil" }} · </span>{{ . }}{{ else }}{{ .emissora | default "TV Brasil" }}{{ end }}</span>{{ with .par }}<span>{{ . | replaceRE ">" " › " }}</span>{{ end }}</span>
+    <span class="tvcard-rod"><span>{{ with .ano }}<span class="tvcard-emis">{{ $.emissora | default "TV Brasil" | replaceRE ` \(.*\)$` "" }} · </span>{{ . }}{{ else }}{{ .emissora | default "TV Brasil" | replaceRE ` \(.*\)$` "" }}{{ end }}</span>{{ with .par }}<span>{{ . | replaceRE ">" " › " }}</span>{{ end }}</span>
   </div>
 </div>

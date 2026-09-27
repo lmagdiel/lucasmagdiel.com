@@ -14,7 +14,7 @@
     - {nome: "1ª edição (capa dura)", ano: 2013, isbn: "9788566636123"}
     - {nome: "Bloody Edition (capa dura)", ano: 2018, isbn: "9788566636550"}
   paginas: 480
-  par: "EN>PT"
+  par: "EN>PT-BR"
   papel: "tradução"
   genero: "não ficção / true crime"
   sinopse: "Compêndio do professor e escritor norte-americano Harold Schechter sobre assassinos em série. Organizado por temas, trata de definições, tipologias, motivações, métodos e perfis psicológicos, da investigação policial e forense e da presença desses criminosos na cultura popular, com casos como os de Jack, o Estripador, Ed Gein, Ted Bundy e Jeffrey Dahmer."
@@ -33,7 +33,7 @@
     - {nome: "Limited Edition (capa dura)", ano: 2014, isbn: "9788566636208"}
     - {nome: "Edição Comemorativa de 50 anos (ilustrações de Danilo Beyruth)", ano: 2018, isbn: "9788594541178"}
   paginas: 320
-  par: "EN>PT"
+  par: "EN>PT-BR"
   papel: "tradução"
   genero: "ficção / terror"
   sinopse: "Volume que reúne dois romances de John Russo, corroteirista, com George A. Romero, do filme de 1968. A Noite dos Mortos-Vivos narra o cerco a um grupo de desconhecidos refugiados numa casa de fazenda na Pensilvânia enquanto os mortos se levantam para atacar os vivos; A Volta dos Mortos-Vivos retoma a ameaça anos depois."
@@ -50,7 +50,7 @@
   ano: 2015
   isbn: "9788566636451"
   paginas: 272
-  par: "EN>PT"
+  par: "EN>PT-BR"
   papel: "tradução"
   genero: "não ficção / true crime"
   sinopse: "RJ Parker e JJ Slate reúnem dezenas de casos reais, em vários países, de crimes violentos em que redes sociais, sites de classificados e salas de bate-papo serviram para atrair, vigiar ou enganar vítimas. Os capítulos finais tratam de segurança on-line e do uso das redes pela polícia nas investigações."
@@ -66,7 +66,7 @@
   ano: 2016
   isbn: "9788566636840"
   paginas: 496
-  par: "EN>PT"
+  par: "EN>PT-BR"
   papel: "tradução"
   genero: "não ficção / true crime, jornalismo jurídico"
   sinopse: "O jornalista Jeffrey Toobin, que cobriu o caso para a revista The New Yorker, reconstitui a investigação e o julgamento de O. J. Simpson, acusado de matar a ex-mulher, Nicole Brown Simpson, e Ronald Goldman em Los Angeles, em 1994, e analisa a absolvição de 1995. O livro deu origem à série de TV homônima (2016)."
@@ -81,7 +81,7 @@
   ano: 2017
   isbn: "9788594540300"
   paginas: 288
-  par: "EN>PT"
+  par: "EN>PT-BR"
   papel: "tradução"
   genero: "não ficção / memórias, medicina legal"
   sinopse: "Memórias do patologista forense norte-americano Vincent Di Maio, escritas com o jornalista Ron Franscell. A partir de casos em que atuou, como a exumação de Lee Harvey Oswald, a morte de Trayvon Martin e o processo contra Phil Spector, o livro mostra como autópsias e evidências físicas ajudam a esclarecer mortes violentas ou suspeitas."
@@ -97,7 +97,7 @@
   ano: 2019
   isbn: "9788594541826"
   paginas: 432
-  par: "EN>PT"
+  par: "EN>PT-BR"
   papel: "coordenação e cotradução com Mariana Branco (via Ligna)"
   genero: "não ficção / true crime"
   sinopse: "Terry Sullivan, promotor que atuou na acusação de John Wayne Gacy, e o jornalista Peter T. Maiken, do Chicago Tribune, reconstituem a investigação e o julgamento do empreiteiro dos subúrbios de Chicago que se apresentava como palhaço em festas e eventos beneficentes e foi condenado, em 1980, pelo assassinato de 33 rapazes e adolescentes."
@@ -113,7 +113,7 @@
   ano: 2022
   isbn: "9786555982039"
   paginas: 544
-  par: "EN>PT"
+  par: "EN>PT-BR"
   papel: "coordenação e cotradução com Mayra Borges (via Ligna)"
   genero: "não ficção / true crime, biografia"
   sinopse: "Biografia de Jim Jones escrita pelo jornalista Jeff Guinn com base em arquivos do FBI e entrevistas. Acompanha o líder religioso desde a infância em Indiana, passando pela fundação do Templo do Povo e pela mudança para a Califórnia, até a comunidade de Jonestown, na Guiana, onde mais de 900 pessoas morreram em novembro de 1978."
@@ -128,7 +128,7 @@
   ano: 2024
   isbn: "9786555984507"
   paginas: 224
-  par: "EN>PT"
+  par: "EN>PT-BR"
   papel: "coordenação e cotradução com Mayra Vieira Borges (via Ligna)"
   genero: "não ficção / true crime, jornalismo"
   sinopse: "A jornalista norte-americana Barbie Latza Nadeau, radicada em Roma, investiga o papel das mulheres nas máfias italianas, de esposas e filhas a chefes de clã. O fio condutor é a trajetória de Assunta “Pupetta” Maresca, que em 1955, em Nápoles, matou o assassino do marido e se tornou uma figura conhecida da Camorra."
@@ -149,7 +149,7 @@
     - {nome: "Livro 10: Outubro (Novidade Chocante)", ano: 2015, isbn: "9788539506118"}
     - {nome: "Livro 11: Novembro (Surpresa)", ano: 2015, isbn: "9788539506309"}
     - {nome: "Livro 12: Dezembro (Fuga Final)", ano: 2016, isbn: "9788539506750"}
-  par: "EN>PT"
+  par: "EN>PT-BR"
   papel: "tradução"
   genero: "ficção juvenil / suspense"
   sinopse: "Série juvenil de suspense da australiana Gabrielle Lord, com um livro para cada mês do ano. Na véspera do Ano-Novo, Callum Ormond, de 15 anos, é avisado por um desconhecido de que precisa se esconder por 365 dias. Suspeito de um crime, ele passa a viver como fugitivo enquanto investiga a morte do pai e um segredo de família."
@@ -164,7 +164,7 @@
   autores: ["Gabriel García Márquez"]
   publicacao: "Revista Confraria, nº 11, nov./dez. 2006 (Confraria do Vento; ISSN 1808-6276)"
   ano: 2006
-  par: "ES>PT"
+  par: "ES>PT-BR"
   papel: "tradução"
   creditos: "Tradução de Lucas Magdiel"
   genero: "ensaio (prólogo)"
@@ -179,7 +179,7 @@
   autores: ["Gerardo Dirié"]
   publicacao: "Revista Confraria, nº 12, jan./fev. 2007 (Confraria do Vento; ISSN 1808-6276)"
   ano: 2007
-  par: "ES>PT"
+  par: "ES>PT-BR"
   papel: "tradução"
   creditos: "Tradução: Lucas Magdiel"
   genero: "poesia"
@@ -195,7 +195,7 @@
   publicacao: "Livro de entrevistas da Editora Calibán (Rio de Janeiro)"
   nota_site: "/notas/2010-gunter-grass-entrevista/"
   ano: 2010   # encomenda em 14/05/2010, tradução entregue em 24/05/2010, pagamento em 02/06/2010
-  par: "ES>PT"
+  par: "ES>PT-BR"
   papel: "tradução"
   genero: "entrevista"
   sinopse: "Entrevista concedida pelo escritor alemão Günter Grass, Nobel de Literatura de 1999, ao jornalista Faustino F. Álvarez em sua casa em Behlendorf, publicada originalmente no primeiro número da revista El Cielo de Salamanca (2000). Grass fala dos prêmios recentes, de Meu século e da relação entre compromisso político e literatura."

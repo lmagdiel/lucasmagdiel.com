@@ -80,7 +80,7 @@
   emissora: "NHK (taiga drama)"
   trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios em 2026"}
 
-# ---------- Gemini Media (EN>PT, TV por assinatura, 2012–2013) ----------
+# ---------- Gemini Media (EN>PT-BR, TV por assinatura, 2012–2013) ----------
 
 - id: top-gear
   grupo: gemini
@@ -90,7 +90,7 @@
   ano: "2002–"
   genero: "automobilismo / variedades"
   creditos: {apresentacao: "Jeremy Clarkson, Richard Hammond e James May"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
   sinopse: "Programa britânico sobre automóveis que combina avaliações de carros, desafios de estrada, viagens especiais e voltas cronometradas de convidados famosos em uma pista própria, apresentado por Jeremy Clarkson, Richard Hammond e James May, com o piloto anônimo The Stig."
   link: "https://www.bbc.co.uk/programmes/b006mj59"
   capa: "audiovisual/gemini_top-gear.jpg"
@@ -102,7 +102,7 @@
   ano: "2007–"
   genero: "talk show"
   creditos: {apresentacao: "Graham Norton"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
   sinopse: "Talk show britânico em que Graham Norton recebe, ao mesmo tempo, vários convidados do cinema, da televisão e da música para entrevistas no sofá, com apresentações musicais e o quadro da cadeira vermelha, em que pessoas da plateia contam histórias."
   link: "https://www.bbc.co.uk/programmes/b006xnzc"
   capa: "audiovisual/gemini_the-graham-norton-show_v2.jpg"
@@ -116,7 +116,7 @@
   ano: "2012–2013"
   genero: "reality / factual"
   creditos: {apresentacao: "Richard Hammond"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem"}
   sinopse: "Richard Hammond, apresentador do Top Gear, percorre os Estados Unidos com três dias para aprender a operar diferentes máquinas pesadas, orientado por profissionais de cada área. Na segunda temporada, o desafio passa a ser dominar ofícios pouco comuns."
   capa: "audiovisual/gemini_richard-hammonds-crash-course.jpg"
 
@@ -128,7 +128,7 @@
   genero: "drama sobrenatural"
   creditos: {criacao: "Jack Thorne", elenco: ["Iain De Caestecker", "Daniel Kaluuya", "Natalie Dormer"]}
   premios: ["BAFTA TV 2012, Melhor Série Dramática"]
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem"}
   sinopse: "Paul, um estudante atormentado por sonhos apocalípticos, descobre que consegue ver os Fades, espíritos de mortos que não conseguiram partir e começam a atacar os vivos. Ao lado do amigo Mac, ele se envolve com um grupo que combate essas criaturas."
   link: "https://www.bbc.co.uk/programmes/b0129tkw"
   capa: "audiovisual/gemini_the-fades.jpg"
@@ -140,7 +140,7 @@
   ano: 2012
   genero: "série documental histórica"
   creditos: {narracao: "Jeremy Irons", producao: "Nutopia"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem"}
   sinopse: "Série documental em sete episódios que percorre a história das Ilhas Britânicas da invasão romana à coroação de Elizabeth II, em 1953, combinando reconstituições dramatizadas, computação gráfica e comentários de historiadores e personalidades."
   capa: "audiovisual/gemini_the-british.jpg"
 
@@ -151,7 +151,7 @@
   ano: "2009–2014"
   genero: "divulgação científica"
   creditos: {producao: "BBC e Open University"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
   sinopse: "Programa de divulgação científica da BBC, coproduzido com a Open University, em que os apresentadores testam teorias e explicam fenômenos com experimentos práticos e reportagens sobre pesquisa e tecnologia no cotidiano."
   link: "https://www.bbc.co.uk/programmes/b00lwxj1"
   capa: "audiovisual/gemini_bang-goes-the-theory.jpg"
@@ -161,7 +161,7 @@
   titulo: "BBC Proms"
   emissora: "BBC"
   genero: "música clássica"
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de algumas transmissões entre 2012 e 2013"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem de algumas transmissões entre 2012 e 2013"}
   sinopse: "Transmissões da temporada anual de concertos de música clássica realizada pela BBC no verão, sobretudo no Royal Albert Hall, em Londres, com orquestras, regentes e solistas de vários países."
   link: "https://www.bbc.co.uk/programmes/b007v097"
   capa: "audiovisual/gemini_bbc-proms.jpg"
@@ -173,7 +173,7 @@
   ano: 2012
   genero: "documentário esportivo"
   creditos: {apresentacao: "Dan Magness"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem"}
   sinopse: "O freestyler britânico Dan Magness viaja por vários países para executar e ensinar manobras de futebol freestyle, encontrar jogadores profissionais e comunidades locais e enfrentar desafios de habilidade com a bola."
   capa: "audiovisual/gemini_football-freestyler.jpg"
 
@@ -184,7 +184,7 @@
   ano: 2012
   genero: "viagem / aventura"
   creditos: {apresentacao: "Ben Fogle", producao: "Lonely Planet"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem do ep. 105"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem do ep. 105"}
   sinopse: "Série de viagem da Lonely Planet apresentada pelo aventureiro britânico Ben Fogle, que percorre diferentes partes do mundo para experimentar atividades radicais, com cada episódio organizado em torno de um tema."
   capa: "audiovisual/gemini_lonely-planet-year-of-adventures.jpg"
 
@@ -195,7 +195,7 @@
   ano: 2012
   genero: "viagem"
   creditos: {producao: "Lonely Planet"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem do ep. 104"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem do ep. 104"}
   sinopse: "Série de viagem da Lonely Planet em que apresentadores percorrem a China em busca de experiências recomendadas ao viajante, de paisagens naturais e reservas de pandas a cidades, sítios históricos e tradições locais."
   frame: "audiovisual/frames/lonely-planet-best-in-china.jpg"   # sem pôster oficial: card padronizado
   ancora: "Center"
@@ -207,7 +207,7 @@
   ano: "2011–2020"
   genero: "vida selvagem"
   creditos: {apresentacao: "Matt Wright"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
   sinopse: "Acompanha Matt Wright, piloto de helicóptero e especialista em captura de animais, em operações no norte da Austrália para retirar crocodilos de áreas habitadas e realocá-los, além de lidar com outros animais em regiões remotas."
   capa: "audiovisual/gemini_outback-wrangler_v2.jpg"
 
@@ -219,7 +219,7 @@
   ano: "2006–2011"
   genero: "reality / culinária"
   creditos: {apresentacao: "Duff Goldman"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
   sinopse: "Reality show que acompanha a Charm City Cakes, confeitaria de Duff Goldman em Baltimore, onde a equipe cria bolos personalizados de formatos e estruturas complexas, lidando com prazos, clientes e entregas."
   capa: "audiovisual/gemini_ace-of-cakes_pt.jpg"
 
@@ -230,7 +230,7 @@
   ano: "2009–2014"
   genero: "competição de dança"
   creditos: {apresentacao: "Davina McCall", jurados: ["Ashley Banjo", "Adam Garcia", "Kimberly Wyatt"]}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
+  trabalho: {ano: "2012–2013", par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem de alguns episódios entre 2012 e 2013"}
   sinopse: "Competição de dança aberta a solistas e grupos de todas as idades e estilos. Após audições com os jurados, os selecionados disputam apresentações ao vivo, e o público vota para definir o vencedor."
   capa: "audiovisual/gemini_got-to-dance_v2.jpg"
 
@@ -270,7 +270,7 @@
   ano: "2014–2015"
   genero: "sitcom infantojuvenil / ciência"
   creditos: {elenco: ["Iberê Thenório"], producao: "Cartoon Network e Boutique Filmes"}
-  trabalho: {ano: 2014, papel: "supervisão técnica, QC e apoio à tradução", descricao: "Supervisão técnica, QC e apoio à tradução do ep. 1"}
+  trabalho: {ano: 2014, par: "PT-BR>EN", papel: "supervisão técnica, QC e apoio à tradução", descricao: "Supervisão técnica, QC e apoio à tradução do ep. 1"}
   sinopse: "Sitcom em que Iberê Thenório, do canal Manual do Mundo, assume um programa de TV sobre experimentos científicos e precisa trabalhar com quatro estagiários adolescentes inexperientes. Cada episódio mostra experimentos reais que o público pode reproduzir em casa."
   link: "https://boutiquefilmes.com.br/projeto/experimentos-extraordinarios/"
   capa: "audiovisual/boutique_experimentos-extraordinarios_pt.jpg"
@@ -281,7 +281,7 @@
   emissora: "Discovery Channel"
   ano: "2014–2015"
   genero: "série documental / automóveis"
-  trabalho: {ano: "2014–2015", papel: "supervisão técnica, QC e apoio à tradução", descricao: "Supervisão técnica, QC e apoio à tradução de 2 episódios"}
+  trabalho: {ano: "2014–2015", par: "PT-BR>EN", papel: "supervisão técnica, QC e apoio à tradução", descricao: "Supervisão técnica, QC e apoio à tradução de 2 episódios"}
   sinopse: "Série documental sobre a cultura lowrider no Brasil: a customização de carros e bicicletas, com pintura, rodas e sistemas hidráulicos, e a participação de um clube em encontros e viagens, inclusive aos Estados Unidos."
   capa: "audiovisual/boutique_lowrider-brasil.jpg"
 
@@ -292,7 +292,7 @@
   ano: "2014–2016"
   genero: "reality / efeitos especiais"
   creditos: {apresentacao: "Armando Fonseca, Kapel Furman e Raphael Borghi"}
-  trabalho: {ano: "2014–2015", papel: "supervisão técnica, QC e apoio à tradução", descricao: "Supervisão técnica, QC e apoio à tradução de 2 episódios"}
+  trabalho: {ano: "2014–2015", par: "PT-BR>EN", papel: "supervisão técnica, QC e apoio à tradução", descricao: "Supervisão técnica, QC e apoio à tradução de 2 episódios"}
   sinopse: "Três especialistas em efeitos especiais produzem, a cada episódio, um curta-metragem com orçamento e prazo reduzidos, recriando cenas típicas do cinema de ação e terror e explicando as técnicas usadas."
   link: "https://boutiquefilmes.com.br/projeto/cinelab/"
   capa: "audiovisual/boutique_cinelab.jpg"
@@ -304,7 +304,7 @@
   ano: 2016
   genero: "docudrama histórico"
   creditos: {direcao: "Fernando Honesko", producao: "Boutique Filmes e History"}
-  trabalho: {ano: 2017, papel: "supervisão técnica, QC e apoio à tradução", descricao: "Supervisão técnica, QC e apoio à tradução do ep. 1 sobre Francesco Matarazzo"}
+  trabalho: {ano: 2017, par: "PT-BR>EN", papel: "supervisão técnica, QC e apoio à tradução", descricao: "Supervisão técnica, QC e apoio à tradução do ep. 1 sobre Francesco Matarazzo"}
   sinopse: "Minissérie em quatro episódios sobre empresários da industrialização brasileira entre o fim do século XIX e meados do XX (Francesco Matarazzo, Percival Farquhar, Giuseppe Martinelli e Guilherme Guinle), com dramatizações, animação 3D e depoimentos."
   link: "https://boutiquefilmes.com.br/projeto/gigantes-do-brasil/"
   capa: "audiovisual/boutique_gigantes-do-brasil_v2.webp"

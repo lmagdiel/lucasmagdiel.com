@@ -1,0 +1,12 @@
+{{- /* Painel escuro com imagem recortada (PNG com transparência) e legenda.
+       Uso: {{< painel img="img/..." alt="..." rotulo="..." titulo="..." >}} */ -}}
+<figure class="painel">
+  <figcaption class="painel-txt">
+    {{- with .Get "rotulo" }}<span class="painel-rot">{{ . }}</span>{{ end }}
+    {{- with .Get "titulo" }}<span class="painel-tit">{{ . }}</span>{{ end }}
+  </figcaption>
+  {{- with resources.Get (.Get "img") }}
+  {{- $i := .Resize "520x webp q88" }}
+  <img src="{{ $i.RelPermalink }}" width="{{ div $i.Width 2 }}" height="{{ div $i.Height 2 }}" alt="{{ $.Get "alt" }}" decoding="async">
+  {{- end }}
+</figure>

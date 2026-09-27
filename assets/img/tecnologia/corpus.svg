@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img">
+  <defs>
+    <style>
+      .mono{font-family:ui-monospace,"SF Mono","Cascadia Code","Segoe UI Mono",Menlo,Consolas,monospace;letter-spacing:.06em}
+      text{font-family:Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif;font-size:18px;fill:#f3f0ea}
+      text.mono{font-size:15px}
+    </style>
+  </defs>
+  <text class="mono" x="48" y="118.0" fill="#d6aa48" style="fill:#d6aa48">EN</text>
+  <text class="mono" x="448" y="118.0" style="fill:#d6aa48">PT-BR</text>
+  <line x1="352" y1="195.0" x2="448" y2="195.0" stroke="#7fbcc2" stroke-width="2"/>
+  <rect x="48" y="146.0" width="304" height="98" rx="5" fill="#232320" stroke="#3a3935" stroke-width="1.5"/>
+  <text x="66" y="176.0">Alice was beginning to get</text>
+  <text x="66" y="203.0">very tired of sitting by her</text>
+  <text x="66" y="230.0">sister on the bank,</text>
+  <rect x="448" y="146.0" width="304" height="98" rx="5" fill="#232320" stroke="#3a3935" stroke-width="1.5"/>
+  <text x="466" y="176.0">Alice começava a ficar muito</text>
+  <text x="466" y="203.0">cansada de estar sentada ao</text>
+  <text x="466" y="230.0">lado da irmã, na margem,</text>
+  <rect x="372" y="183.0" width="56" height="24" rx="12" fill="#181816" stroke="#7fbcc2" stroke-width="1.5"/>
+  <text class="mono" x="400" y="200.0" text-anchor="middle" style="fill:#7fbcc2;font-size:13px">0,94</text>
+  <line x1="352" y1="288.0" x2="448" y2="288.0" stroke="#7fbcc2" stroke-width="2"/>
+  <rect x="48" y="266.0" width="304" height="44" rx="5" fill="#232320" stroke="#3a3935" stroke-width="1.5"/>
+  <text x="66" y="296.0">and of having nothing to do:</text>
+  <rect x="448" y="266.0" width="304" height="44" rx="5" fill="#232320" stroke="#3a3935" stroke-width="1.5"/>
+  <text x="466" y="296.0">e de não ter nada para fazer:</text>
+  <rect x="372" y="276.0" width="56" height="24" rx="12" fill="#181816" stroke="#7fbcc2" stroke-width="1.5"/>
+  <text class="mono" x="400" y="293.0" text-anchor="middle" style="fill:#7fbcc2;font-size:13px">0,97</text>
+  <line x1="352" y1="381.0" x2="448" y2="367.5" stroke="#7fbcc2" stroke-width="2"/>
+  <rect x="48" y="332.0" width="304" height="98" rx="5" fill="#232320" stroke="#3a3935" stroke-width="1.5"/>
+  <text x="66" y="362.0">once or twice she had peeped</text>
+  <text x="66" y="389.0">into the book her sister</text>
+  <text x="66" y="416.0">was reading,</text>
+  <rect x="448" y="332.0" width="304" height="71" rx="5" fill="#232320" stroke="#3a3935" stroke-width="1.5"/>
+  <text x="466" y="362.0">uma ou duas vezes, espiou</text>
+  <text x="466" y="389.0">o livro que a irmã lia,</text>
+  <rect x="372" y="362.2" width="56" height="24" rx="12" fill="#181816" stroke="#7fbcc2" stroke-width="1.5"/>
+  <text class="mono" x="400" y="379.2" text-anchor="middle" style="fill:#7fbcc2;font-size:13px">0,91</text>
+  <line x1="48" y1="458.0" x2="752" y2="458.0" stroke="#3a3935" stroke-width="1.5"/>
+  <text class="mono" x="48" y="488.0" style="fill:#b4afa6">alinhamento por segmento · Alice, cap. 1</text>
+</svg>

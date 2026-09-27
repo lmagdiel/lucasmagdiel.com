@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="secao prosa">
+<article class="secao prosa{{ if .Params.larga }} prosa--larga{{ end }}">
   <header class="secao-cab">
     {{- if and .Parent (not .Parent.IsHome) }}<p class="rotulo"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>{{ end }}
     <h1>{{ .Title }}</h1>
