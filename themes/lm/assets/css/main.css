@@ -122,6 +122,9 @@ main { padding-block: 2.5rem 4rem; }
 .prosa p, .prosa li { hyphens: auto; }
 .prosa ul { padding-left: 1.1rem; }
 .prosa li { margin-bottom: 0.35rem; }
+.prosa blockquote { margin: 1.4rem 0; padding: 0.1rem 0 0.1rem 1.1rem; border-left: 2px solid var(--line); color: var(--muted); }
+.prosa blockquote p { margin: 0.4rem 0; }
+.prosa hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
 
 /* Início */
 .inicio { max-width: 46rem; padding-block: 1.5rem 1rem; }

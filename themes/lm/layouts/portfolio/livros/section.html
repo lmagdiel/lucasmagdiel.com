@@ -25,6 +25,7 @@
         <p class="lista-pub">{{ .publicacao }} · <span class="par">{{ .par }}</span></p>
         {{- with .sinopse }}<p>{{ . }}</p>{{ end }}
         {{- with .link }}<p><a class="externo" href="{{ . }}" rel="noopener">Ler na revista ↗</a></p>{{ end }}
+        {{- with .nota_site }}<p><a href="{{ . | relURL }}">Ler a tradução nas Notas →</a></p>{{ end }}
       </div>
     </li>
     {{- end }}
