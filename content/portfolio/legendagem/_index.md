@@ -4,7 +4,7 @@ description: "Legendas para streaming e TV desde 2012, do inglês e do espanhol.
 grupos:
   - id: netflix
     titulo: "Doramas japoneses na Netflix"
-    texto: "Legendas em português feitas para a TransPerfect Media. O original é japonês; o cliente fornece as legendas em inglês como língua-pivô, e a versão brasileira parte delas."
+    texto: "Legendas em português feitas para a TransPerfect Media. O original é japonês; o cliente fornece as legendas em inglês como língua-pivô."
   - id: gemini
     titulo: "TV por assinatura, 2012–2013"
     texto: "Tradução e marcação de legendas do inglês para a Gemini Media, em programas da BBC e de outros canais exibidos na TV paga brasileira."
