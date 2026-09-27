@@ -234,6 +234,9 @@ main { padding-block: 2.5rem 4rem; }
 .tec-txt h2 { margin: 0 0 0.5rem; font-size: 1.3rem; }
 .tec-periodo { font-family: var(--mono); font-size: 0.78rem; font-weight: 400; color: var(--muted); margin-left: 0.4rem; letter-spacing: 0.02em; }
 .tec-txt p { margin: 0 0 0.8rem; max-width: var(--w-texto); }
+.servicos { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.servicos li { border: 1px solid var(--line); border-radius: var(--radius); padding: 0.35rem 0.75rem; font-size: 0.92rem; }
+.servicos strong { font-weight: 600; margin-right: 0.3rem; }
 .numeros--p { margin-top: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); font-size: 0.88rem; }
 .numeros--p .num { font-size: 1.45rem; }
 

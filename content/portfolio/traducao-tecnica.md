@@ -2,8 +2,19 @@
 title: "Tradução técnica"
 layout: "tecnica"
 weight: 45
-description: "Tradução e revisão de textos técnicos, jurídicos e institucionais, com a Ligna, a EBC e a Blend."
+description: "Tradução e revisão de textos técnicos, jurídicos e institucionais: credenciamento no CJF, Ligna, EBC e Blend."
 blocos:
+  - id: cjf
+    nome: "CJF · CECINT"
+    logo: "img/logos/cjf.png"
+    alt: "Site do Centro de Cooperação Jurídica Internacional do CJF"
+    url: "https://www.cjf.jus.br/cjf/menu/centro-de-cooperacao"
+    periodo: "desde 2021"
+    texto: "Tradutor credenciado do Conselho da Justiça Federal para documentos de cunho jurídico. No edital de 2026, fui habilitado nos serviços abaixo, prestados no âmbito do Centro de Cooperação Jurídica Internacional (CECINT), que cuida da cooperação da Justiça Federal com o exterior e do cumprimento de decisões judiciais fora do país."
+    servicos:
+      - {nome: "Tradução", par: "EN, ES>PT"}
+      - {nome: "Versão", par: "PT, EN>ES"}
+      - {nome: "Revisão", par: "PT, ES"}
   - id: ligna
     nome: "Ligna"
     logo: "img/logos/ligna.png"

@@ -13,12 +13,17 @@
       <a class="tec-logo" href="{{ .url }}" rel="noopener">
         {{- with resources.Get .logo }}
         {{- $l := .Resize "480x webp q90" }}
-        <img src="{{ $l.RelPermalink }}" width="{{ div $l.Width 2 }}" height="{{ div $l.Height 2 }}" alt="Site da {{ $bl.nome }}" loading="lazy" decoding="async">
+        <img src="{{ $l.RelPermalink }}" width="{{ div $l.Width 2 }}" height="{{ div $l.Height 2 }}" alt="{{ $bl.alt | default (printf "Site da %s" $bl.nome) }}" loading="lazy" decoding="async">
         {{- end }}
       </a>
       <div class="tec-txt">
         <h2>{{ .nome }} <span class="tec-periodo">{{ .periodo }}</span></h2>
         <p>{{ .texto }}</p>
+        {{- with .servicos }}
+        <ul class="servicos" aria-label="Serviços habilitados">
+          {{- range . }}<li><strong>{{ .nome }}</strong> <span class="par">{{ .par }}</span></li>{{ end }}
+        </ul>
+        {{- end }}
         {{- if eq .id "blend" }}
         {{- $b := hugo.Data.estatisticas.blend }}
         <ul class="numeros numeros--p" aria-label="Painel da Blend em {{ (time $b.referencia).Format "01/2006" }}">
