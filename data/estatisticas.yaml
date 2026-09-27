@@ -1,9 +1,9 @@
-# Números para o site. Atualizado em 2026-09-26.
+# Números para o site. Atualizado em 2026-09-27.
 
 agencia_brasil_es:
   referencia: 2026-09-26
   desde: 2013-06-03
-  frase_aprovada: "mais de 9 mil matérias vertidas ao espanhol desde 2013 — cerca de 5 milhões de palavras"
+  frase_aprovada: "mais de 9 mil matérias vertidas ao espanhol desde 2013, cerca de 5 milhões de palavras"
   materias_min: 9147
   palavras_min: 4893645
   laudas_min: 26051   # 1.000 caracteres sem espaços (padrão CJF)
@@ -20,7 +20,7 @@ blend:
   entregas_no_prazo: "100%"
   projetos_abandonados: 0
   advertencias: 0
-  frase_sugerida: "tradutor e editor certificado desde 2012 — 475 projetos e mais de 150 mil palavras, com 100% de entregas no prazo"
+  frase_sugerida: "tradutor e editor certificado desde 2012: 475 projetos e mais de 150 mil palavras, com 100% de entregas no prazo"
 
 darkside:
   titulos_traduzidos: 8

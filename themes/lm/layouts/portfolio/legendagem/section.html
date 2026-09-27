@@ -19,7 +19,7 @@
         {{- if .capa }}
           {{- partial "tile.html" (dict "page" $pg "titulo" .titulo "sub" $sub "capa" .capa "alt" (printf "Pôster de %s" .titulo)) }}
         {{- else }}
-          {{- partial "tile.html" (dict "page" $pg "titulo" .titulo "sub" $sub "tv" (dict "titulo" .titulo "programa" (.creditos.producao | default "Série") "emissora" .emissora "ano" .ano "par" .trabalho.par)) }}
+          {{- partial "tile.html" (dict "page" $pg "titulo" .titulo "sub" $sub "tv" (dict "titulo" .titulo "programa" (.creditos.producao | default "Série") "emissora" .emissora "ano" .ano "par" .trabalho.par "frame" .frame "ancora" .ancora)) }}
         {{- end }}
       {{- end }}
     </ul>

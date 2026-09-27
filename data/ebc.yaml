@@ -1,5 +1,5 @@
-# Portfólio — legendas para a EBC/TV Brasil. Atualizado em 2026-09-26.
-# Imagem: sem pôster oficial → card padronizado em CSS (partial tv-card) com `frame` de assets/capas; `ancora` = recorte (Center, Top, Right…).
+# Portfólio: legendas para a EBC/TV Brasil. Atualizado em 2026-09-27.
+# Imagem: sem pôster oficial, card padronizado em CSS (partial tv-card) com `frame` de assets/capas; `ancora` = recorte (Center, Top, Right…).
 # Obs.: várias páginas da EBC estão fora do ar pelo defeso eleitoral (out/2026); reconferir links em novembro.
 
 - id: caminhos-cabo-verde-copa-2026
@@ -8,7 +8,7 @@
   emissora: "TV Brasil"
   ano_exibicao: 2026
   creditos: {reportagem: "André Vieira (teleSUR)", producao: "André Vieira e Cintia Vargas"}
-  trabalho: {ano: 2026, par: "PT>ES", papel: "legendagem (versão em espanhol, parceria TV Brasil–teleSUR)"}
+  trabalho: {ano: 2026, par: "PT>ES", papel: "legendagem da versão em espanhol (parceria da TV Brasil com a teleSUR)"}
   sinopse: "Reportagem gravada em Praia, capital de Cabo Verde, durante a primeira participação do arquipélago em uma Copa do Mundo. Acompanha a torcida, ouve o goleiro Vozinha, o presidente José Maria Neves e a cantora Mayra Andrade, e aponta laços culturais entre cabo-verdianos e brasileiros."
   link: "https://tvbrasil.ebc.com.br/caminhos-da-reportagem/2026/07/nos-ora-dja-txiga-cabo-verde-na-copa-do-mundo"
   video: "https://www.youtube.com/watch?v=CdStviNvyN4"
@@ -97,7 +97,7 @@
   creditos: {direcao: "Henrique Lima, Marina Barreto e Poliana Guimarães"}
   premios: ["Seleção oficial, The Lift-Off Sessions 2019"]
   trabalho: {ano: 2019, par: "PT>ES", papel: "legendagem"}
-  sinopse: "Série em três episódios sobre luthiers que fabricam e restauram instrumentos — cordas friccionadas, cordas dedilhadas e percussão —, acompanhando o trabalho na oficina e o diálogo entre artesãos e músicos que tocam suas peças."
+  sinopse: "Série em três episódios sobre luthiers que fabricam e restauram instrumentos de cordas friccionadas, cordas dedilhadas e percussão, acompanhando o trabalho na oficina e o diálogo entre artesãos e músicos que tocam suas peças."
   link: "https://tvbrasil.ebc.com.br/luthiers"
   video: "https://www.youtube.com/watch?v=rYPt8q7pPaY"
   frame: "ebc/luthiers_2019_max.jpg"
@@ -127,16 +127,18 @@
   sinopse: "Série documental sobre parques nacionais e outras áreas protegidas do Brasil. Cada episódio visita uma unidade de conservação e mostra espécies, paisagens, pesquisas e ameaças; a estreia foi no Parque Nacional das Emas, em Goiás."
   link: "https://tvbrasil.ebc.com.br/parquesdobrasil"
   video: "https://www.youtube.com/watch?v=2WdrdUu2K3Q"
-  frame: "ebc/parques-do-brasil_max.jpg"
+  frame: "ebc/frames/parques-do-brasil_veado-campeiro.jpg"
   ancora: "Center"
 
 - id: primera-persona
-  titulo: "Primera Persona — Pedro e Milaide (Brasília)"
-  programa: "Primera Persona"
-  ano_exibicao: 2017   # ano do trabalho; exibição não confirmada
+  titulo: "Pedro e Milaide, de Brasília"
+  programa: "Primera Persona Latinoamérica"
+  emissora: "TV Brasil"
+  ano_exibicao: 2016
   trabalho: {ano: 2017, par: "PT>ES", papel: "legendagem (com crédito)"}
-  sinopse: "Retratos documentais em primeira pessoa de dois jovens de Brasília: Pedro, estudante e skatista de 16 anos que questiona o sistema escolar, e Milaide, dançarina e estudante que concilia trabalho, dança e família."
-  nota: "Provável episódio brasileiro da versão latino-americana (Primera Persona Latinoamérica, 2016) do formato uruguaio de Federico Veiroj (TNU, 2013, só com jovens uruguaios). Emissora e ano de exibição a confirmar. Documento e vídeo em @Trabalho\\EBC - Primera Persona."
+  sinopse: "Dois episódios brasileiros da série latino-americana de retratos documentais de jovens, contados em primeira pessoa. Em Brasília, Pedro, estudante e skatista de 16 anos, questiona o sistema escolar, e Milaide, dançarina e estudante, concilia trabalho, dança e família."
+  frame: "ebc/frames/primera-persona_esplanada.jpg"   # Esplanada dos Ministérios; sem imagem dos jovens
+  ancora: "Center"
 
 - id: observatorio-padura-2015
   titulo: "Entrevista com Leonardo Padura"
@@ -161,8 +163,8 @@
   sinopse: "O economista Joseph Stiglitz, Nobel de Economia de 2001, fala sobre desigualdade, políticas de austeridade, juros altos no Brasil, programas sociais e a reforma do sistema financeiro internacional."
   link: "https://tvbrasil.ebc.com.br/espacopublico/episodio/espaco-publico-entrevista-nobel-joseph-stiglitz"
   video: "https://www.youtube.com/watch?v=w8OYlOCb0IM"
-  frame: "ebc/espaco-publico_joseph-stiglitz_max.jpg"
-  ancora: "Top"
+  frame: "ebc/frames/espaco-publico_stiglitz.jpg"
+  ancora: "Center"
 
 - id: demori-roger-waters-2023
   titulo: "Entrevista com Roger Waters"

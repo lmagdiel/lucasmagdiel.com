@@ -11,7 +11,7 @@
         {{- partial "img.html" (dict "src" . "alt" (printf "Pôster de %s" $.Title) "w" 300 "loading" "eager") }}
       {{- else }}
         {{- $ano := or $p.ano_exibicao $p.ano (index ($p.trabalho | default dict) "ano") }}
-        {{- partial "tvcard.html" (dict "titulo" .Title "programa" (or $p.programa $p.emissora) "emissora" $p.emissora "ano" $ano "par" (index ($p.trabalho | default dict) "par") "frame" $p.frame "ancora" $p.ancora) }}
+        {{- partial "tvcard.html" (dict "titulo" .Title "programa" (or $p.programa (index ($p.creditos | default dict) "producao") $p.emissora) "emissora" $p.emissora "ano" $ano "par" (index ($p.trabalho | default dict) "par") "frame" $p.frame "ancora" $p.ancora) }}
       {{- end }}{{ end }}
     </div>
     <div class="obra-txt">
@@ -40,9 +40,9 @@
           {{- else }}<dt>{{ i18n "creditos" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{- end }}
         {{- with $p.trabalho }}
-          <dt>{{ i18n "papel" }}</dt><dd>{{ .papel | humanize }}{{ with .par }} <span class="par">{{ . }}</span>{{ end }}{{ with .episodios }} — {{ . }}{{ end }}{{ with .ano }} ({{ . }}){{ end }}</dd>
+          <dt>{{ i18n "papel" }}</dt><dd>{{ with .descricao }}{{ . }}{{ else }}{{ .papel | strings.FirstUpper }}{{ with .episodios }}, {{ . }}{{ end }}{{ end }}{{ with .par }} <span class="par">{{ . }}</span>{{ end }}{{ with .ano }} ({{ . }}){{ end }}</dd>
         {{- else }}
-          {{- with $p.papel }}<dt>{{ i18n "papel" }}</dt><dd>{{ . | humanize }}{{ with $p.par }} <span class="par">{{ . }}</span>{{ end }}</dd>{{ end }}
+          {{- with $p.papel }}<dt>{{ i18n "papel" }}</dt><dd>{{ . | strings.FirstUpper }}{{ with $p.par }} <span class="par">{{ . }}</span>{{ end }}</dd>{{ end }}
         {{- end }}
         {{- with $p.premios }}<dt>{{ i18n "premios" }}</dt><dd><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></dd>{{ end }}
       </dl>
@@ -51,6 +51,7 @@
         {{- with $p.link }}<a class="externo" href="{{ . }}" rel="noopener">{{ i18n "pagina_oficial" }} ↗</a>{{ end }}
         {{- with $p.video }}<a class="externo" href="{{ . }}" rel="noopener">{{ i18n "assistir" }} ↗</a>{{ end }}
         {{- with $p.video_es }}<a class="externo" href="{{ . }}" rel="noopener">Versão em espanhol ↗</a>{{ end }}
+        {{- with $p.imprensa }}<a href="{{ . | relURL }}">Entrevista sobre a tradução →</a>{{ end }}
       </p>
     </div>
   </div>

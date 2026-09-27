@@ -34,11 +34,11 @@ defaultContentLanguageInSubdir = false
   contactEndpoint = "/api/contato"
   turnstileSiteKey = "0x4AAAAAAFE1POpzGlw4KI4L"   # site key do Turnstile (pública; o segredo fica no Cloudflare)
   [params.links]
-    # Ficam ocultos até estarem atualizados / com conteúdo público.
+    # Só aparecem com ativo = true (perfil atualizado / conteúdo público).
     [params.links.linkedin]
       url = "https://www.linkedin.com/in/lucasmagdiel/"
       nome = "LinkedIn"
-      ativo = false
+      ativo = true
     [params.links.proz]
       url = "https://www.proz.com/"
       nome = "ProZ"

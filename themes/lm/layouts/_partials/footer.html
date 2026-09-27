@@ -1,12 +1,29 @@
 <footer class="rodape">
   <div class="rodape-in">
-    <p class="rodape-nome">Lucas Magdiel · Brasília</p>
     <ul class="rodape-links">
       {{- range $k, $v := site.Params.links }}{{ if $v.ativo }}
-      <li><a href="{{ $v.url }}" rel="me">{{ $v.nome }}</a></li>
+      <li><a href="{{ $v.url }}" rel="me noopener">{{ $v.nome }}</a></li>
       {{- end }}{{ end }}
       <li><a href="{{ "contato/" | relURL }}">Contato</a></li>
     </ul>
-    <p class="rodape-meta">© {{ now.Year }} · {{ i18n "feito_com" }}</p>
+    <p class="rodape-meta">© {{ now.Year }} Lucas Magdiel · {{ i18n "feito_com" }}</p>
   </div>
 </footer>
+<script>
+/* Seletor de modo claro/escuro: sem escolha salva, segue o sistema. */
+(function () {
+  var b = document.querySelector('.tema'); if (!b) return;
+  var raiz = document.documentElement, mq = window.matchMedia('(prefers-color-scheme: dark)');
+  function escuro() { var t = raiz.getAttribute('data-tema'); return t ? t === 'escuro' : mq.matches; }
+  function marcar() { var e = escuro(); b.setAttribute('aria-pressed', e ? 'true' : 'false'); b.title = e ? '{{ i18n "modo_claro" }}' : '{{ i18n "modo_escuro" }}'; }
+  function salvar(v) { try { v ? localStorage.setItem('tema', v) : localStorage.removeItem('tema'); } catch (e) {} }
+  b.hidden = false; marcar();
+  b.addEventListener('click', function () {
+    var novo = escuro() ? 'claro' : 'escuro';
+    if ((novo === 'escuro') === mq.matches) { raiz.removeAttribute('data-tema'); salvar(null); }
+    else { raiz.setAttribute('data-tema', novo); salvar(novo); }
+    marcar();
+  });
+  if (mq.addEventListener) mq.addEventListener('change', marcar);
+})();
+</script>

@@ -7,31 +7,32 @@
   </header>
 
   {{- $livros := sort (where hugo.Data.livros "tipo" "livro-traduzido") "ano" "desc" }}
+  {{- $nLivros := partial "conta-livros.html" . }}
   {{- $curtas := where hugo.Data.livros "tipo" "traducao-curta" }}
   {{- $av := where hugo.Data.audiovisual "status" "!=" "aguardando" }}
   {{- $ebc := sort hugo.Data.ebc "ano_exibicao" "desc" }}
 
   <section class="faixa">
     <div class="faixa-cab">
-      <h2><a href="{{ "portfolio/livros/" | relURL }}">Livros</a></h2>
-      <p>{{ len $livros }} obras traduzidas do inglês e {{ len $curtas }} traduções curtas publicadas.</p>
-    </div>
-    <ul class="grade grade--linha">
-      {{- range first 6 $livros }}
-        {{- partial "tile.html" (dict "page" (site.GetPage (printf "/portfolio/livros/%s" .id)) "titulo" .titulo "sub" (string (.periodo | default .ano)) "capa" (index .capas 0) "pequeno" true) }}
-      {{- end }}
-    </ul>
-  </section>
-
-  <section class="faixa">
-    <div class="faixa-cab">
       <h2><a href="{{ "portfolio/legendagem/" | relURL }}">Legendagem</a></h2>
-      <p>{{ len $av }} séries e programas para streaming e TV por assinatura — Netflix, BBC, Sky, Discovery e outros.</p>
+      <p>{{ len $av }} séries e programas para streaming e TV por assinatura (Netflix, BBC, Sky, Discovery e outros).</p>
     </div>
     <ul class="grade grade--linha">
       {{- range first 6 $av }}{{ if .capa }}
         {{- partial "tile.html" (dict "page" (site.GetPage (printf "/portfolio/legendagem/%s" .id)) "titulo" .titulo "sub" .emissora "capa" .capa "alt" (printf "Pôster de %s" .titulo) "pequeno" true) }}
       {{- end }}{{ end }}
+    </ul>
+  </section>
+
+  <section class="faixa">
+    <div class="faixa-cab">
+      <h2><a href="{{ "portfolio/livros/" | relURL }}">Livros</a></h2>
+      <p>{{ $nLivros }} livros traduzidos do inglês e {{ len $curtas }} traduções curtas publicadas.</p>
+    </div>
+    <ul class="grade grade--linha">
+      {{- range first 6 $livros }}
+        {{- partial "tile.html" (dict "page" (site.GetPage (printf "/portfolio/livros/%s" .id)) "titulo" .titulo "sub" (string (.periodo | default .ano)) "capa" (index .capas 0) "pequeno" true) }}
+      {{- end }}
     </ul>
   </section>
 
@@ -48,10 +49,15 @@
     </ul>
   </section>
 
-  <div class="faixa faixa--duas">
+  {{- $e := hugo.Data.estatisticas.agencia_brasil_es }}
+  <div class="faixa faixa--cartoes">
     <section>
       <h2><a href="{{ "portfolio/jornalismo/" | relURL }}">Jornalismo</a></h2>
-      <p>{{ hugo.Data.estatisticas.agencia_brasil_es.frase_aprovada | strings.FirstUpper }}, na edição em espanhol da Agência Brasil.</p>
+      <p>Mais de {{ lang.FormatNumber 0 (math.Floor (div $e.materias_min 1000.0)) }} mil matérias da Agência Brasil vertidas ao espanhol desde {{ (time $e.desde).Year }}, cerca de {{ lang.FormatNumber 0 (math.Round (div $e.palavras_min 1000000.0)) }} milhões de palavras.</p>
+    </section>
+    <section>
+      <h2><a href="{{ "portfolio/traducao-tecnica/" | relURL }}">Tradução técnica</a></h2>
+      <p>Documentos jurídicos e administrativos, contratos e projetos para clientes de várias áreas, com a Ligna, a EBC e a Blend.</p>
     </section>
     <section>
       <h2><a href="{{ "portfolio/revisao/" | relURL }}">Revisão</a></h2>

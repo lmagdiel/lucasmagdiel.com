@@ -1,8 +1,9 @@
-# Portfólio — legendagem (streaming e TV). Atualizado em 2026-09-26.
+# Portfólio: legendagem (streaming e TV). Atualizado em 2026-09-27.
 # Padrão de imagem: pôster vertical oficial, de preferência com título em português; sempre citar a emissora/plataforma.
 # `status: aguardando` = trabalho feito, fora do site até o lançamento.
+# `trabalho.descricao`: frase completa exibida na ficha (substitui papel + episódios).
 
-# ---------- Netflix via TransPerfect Media (EN>PT-BR, pivô em inglês com referência ao japonês) ----------
+# ---------- Netflix via TransPerfect Media ----------
 
 - id: aprendendo-a-amar
   grupo: netflix
@@ -13,7 +14,7 @@
   ano: 2025
   genero: "drama romântico"
   creditos: {roteiro: "Yumiko Inoue", direcao: "Hiroshi Nishitani", elenco: ["Fumino Kimura", "Raul (Snow Man)"]}
-  trabalho: {ano: 2025, par: "EN>PT-BR", papel: "legendagem", episodios: "série completa (11)"}
+  trabalho: {ano: 2025, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 11 episódios"}
   sinopse: "Uma professora de ensino médio, criada em família rígida, conhece um jovem que trabalha como host em um clube noturno e mal sabe ler e escrever. Ela passa a lhe dar aulas particulares às escondidas, e a aproximação entre os dois provoca ciúmes e reprovação ao redor."
   link: "https://www.netflix.com/br/title/82083635"
   capa: "audiovisual/netflix_aprendendo-a-amar_pt.jpg"
@@ -27,7 +28,7 @@
   ano: 2025
   genero: "drama (turfe, família)"
   creditos: {obra_original: "romance de Kazumasa Hayami", roteiro: "Kohei Kiyasu", elenco: ["Satoshi Tsumabuki", "Ren Meguro", "Koichi Sato"]}
-  trabalho: {ano: 2025, par: "EN>PT-BR", papel: "legendagem", episodios: "série completa (10)"}
+  trabalho: {ano: 2025, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 10 episódios"}
   sinopse: "Em 2011, um contador desanimado é chamado para auditar a divisão de turfe de uma empresa e acaba virando secretário do fundador, um proprietário de cavalos. A série acompanha duas décadas de conflitos familiares e da tentativa de vencer o Arima Kinen, uma das principais corridas do Japão."
   link: "https://www.netflix.com/br/title/82140435"
   capa: "audiovisual/netflix_assumindo-as-redeas_pt.jpg"
@@ -41,7 +42,7 @@
   ano: 2026
   genero: "drama"
   creditos: {roteiro: "Miku Ubukata", elenco: ["Yu Aoi", "Kenichi Matsuyama"]}
-  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", episodios: "série completa (10)"}
+  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 10 episódios"}
   sinopse: "A vida conjugal de Sakiko desmorona após um acidente de verão que envolve também outro casal. Em meio ao abalo, vem à tona um segredo guardado pelo marido, e a série acompanha como os envolvidos lidam com a perda e a revelação."
   link: "https://www.netflix.com/br/title/82904943"
   capa: "audiovisual/netflix_ate-a-camiseta-secar_pt.jpg"
@@ -55,7 +56,7 @@
   ano: 2023
   genero: "drama histórico"
   creditos: {roteiro: "Ryota Kosawa", elenco: ["Jun Matsumoto", "Kasumi Arimura"]}
-  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", episodios: "série completa (48)"}
+  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios"}
   sinopse: "Taiga drama da NHK que acompanha Matsudaira Motoyasu, depois Tokugawa Ieyasu, em meio às guerras do período Sengoku. Pressionado por aliados e rivais, o jovem senhor inseguro precisa tomar decisões que definirão a sobrevivência de seu clã e, mais tarde, a fundação do xogunato Tokugawa."
   link: "https://www.netflix.com/br/title/82747198"
   capa: "audiovisual/netflix_o-que-voce-vai-fazer-ieyasu_pt.jpg"
@@ -63,11 +64,11 @@
 - id: meu-casamento-feliz-especial
   grupo: netflix
   status: aguardando   # estreia em 25/10/2026
-  titulo: "Meu Casamento Feliz — Edição Especial (anime)"
+  titulo: "Meu Casamento Feliz: Edição Especial (anime)"
   titulo_original: "わたしの幸せな結婚 特別篇"
   emissora: "Tokyo MX"
   plataforma: "Netflix"
-  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", episodios: "T2, eps. 14–16 (especiais)"}
+  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem dos episódios especiais 14 a 16 da 2ª temporada"}
   link: "https://www.netflix.com/br/title/81564905"
   capa: "audiovisual/netflix_meu-casamento-feliz_aguardando.jpg"
 
@@ -77,7 +78,7 @@
   titulo: "The 13 Lords of the Shogun"
   titulo_original: "鎌倉殿の13人"
   emissora: "NHK (taiga drama)"
-  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", episodios: "série completa (48)"}
+  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios"}
 
 # ---------- Gemini Media (EN>PT, TV por assinatura, 2012–2013) ----------
 
@@ -126,7 +127,7 @@
   ano: 2011
   genero: "drama sobrenatural"
   creditos: {criacao: "Jack Thorne", elenco: ["Iain De Caestecker", "Daniel Kaluuya", "Natalie Dormer"]}
-  premios: ["BAFTA TV 2012 — Melhor Série Dramática"]
+  premios: ["BAFTA TV 2012, Melhor Série Dramática"]
   trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
   sinopse: "Paul, um estudante atormentado por sonhos apocalípticos, descobre que consegue ver os Fades, espíritos de mortos que não conseguiram partir e começam a atacar os vivos. Ao lado do amigo Mac, ele se envolve com um grupo que combate essas criaturas."
   link: "https://www.bbc.co.uk/programmes/b0129tkw"
@@ -174,7 +175,7 @@
   creditos: {apresentacao: "Dan Magness"}
   trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem"}
   sinopse: "O freestyler britânico Dan Magness viaja por vários países para executar e ensinar manobras de futebol freestyle, encontrar jogadores profissionais e comunidades locais e enfrentar desafios de habilidade com a bola."
-  capa: "audiovisual/gemini_football-freestyler.jpg"   # sem pôster oficial com título; candidato a card padronizado
+  capa: "audiovisual/gemini_football-freestyler.jpg"
 
 - id: lonely-planet-year-of-adventures
   grupo: gemini
@@ -183,9 +184,9 @@
   ano: 2012
   genero: "viagem / aventura"
   creditos: {apresentacao: "Ben Fogle", producao: "Lonely Planet"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", episodios: "ep. 105"}
+  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem do ep. 105"}
   sinopse: "Série de viagem da Lonely Planet apresentada pelo aventureiro britânico Ben Fogle, que percorre diferentes partes do mundo para experimentar atividades radicais, com cada episódio organizado em torno de um tema."
-  capa: null   # sem pôster oficial: usar card padronizado
+  capa: "audiovisual/gemini_lonely-planet-year-of-adventures.jpg"
 
 - id: lonely-planet-best-in-china
   grupo: gemini
@@ -194,9 +195,10 @@
   ano: 2012
   genero: "viagem"
   creditos: {producao: "Lonely Planet"}
-  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", episodios: "ep. 104"}
+  trabalho: {ano: "2012–2013", par: "EN>PT", papel: "legendagem", descricao: "Legendagem do ep. 104"}
   sinopse: "Série de viagem da Lonely Planet em que apresentadores percorrem a China em busca de experiências recomendadas ao viajante, de paisagens naturais e reservas de pandas a cidades, sítios históricos e tradições locais."
-  capa: null   # sem pôster oficial: usar card padronizado
+  frame: "audiovisual/frames/lonely-planet-best-in-china.jpg"   # sem pôster oficial: card padronizado
+  ancora: "Center"
 
 - id: outback-wrangler
   grupo: gemini
@@ -232,7 +234,7 @@
   sinopse: "Competição de dança aberta a solistas e grupos de todas as idades e estilos. Após audições com os jurados, os selecionados disputam apresentações ao vivo, e o público vota para definir o vencedor."
   capa: "audiovisual/gemini_got-to-dance_v2.jpg"
 
-# ---------- Eureca → Netflix (2015) ----------
+# ---------- Eureca para a Netflix (2015) ----------
 
 - id: la-usurpadora
   grupo: eureca
@@ -243,7 +245,7 @@
   ano: 1998
   genero: "telenovela"
   creditos: {elenco: ["Gabriela Spanic", "Fernando Colunga"]}
-  trabalho: {ano: 2015, par: "ES", papel: "adequação de closed captions em espanhol", episodios: "ep. 16"}
+  trabalho: {ano: 2015, papel: "adequação de closed captions em espanhol", descricao: "Adequação de closed captions em espanhol do ep. 16"}
   sinopse: "Paulina, uma jovem pobre, descobre ter uma sósia: Paola, esposa do empresário Carlos Daniel Bracho. Chantageada, aceita ocupar o lugar da outra na família Bracho por um ano, tenta reparar os danos causados por ela e se apaixona pelo marido."
   capa: "audiovisual/eureca_la-usurpadora_pt.jpg"
 
@@ -255,11 +257,11 @@
   ano: "2010–2011"
   genero: "telenovela"
   creditos: {elenco: ["Rebecca Jones", "Alejandro Camacho"]}
-  trabalho: {ano: 2015, par: "ES", papel: "adequação de closed captions em espanhol", episodios: "eps. 17 e 44"}
+  trabalho: {ano: 2015, papel: "adequação de closed captions em espanhol", descricao: "Adequação de closed captions em espanhol dos eps. 17 e 44"}
   sinopse: "Seis mulheres de diferentes idades e classes sociais escondem crises em seus relacionamentos. Ao se conhecerem, passam a se apoiar para enfrentar os problemas e buscar novos rumos. Remake da novela colombiana El último matrimonio feliz."
   capa: "audiovisual/eureca_para-volver-a-amar.jpg"
 
-# ---------- Boutique Filmes (PT>EN; tradução de Fabrício Ferreira; Lucas: parte técnica e apoio à tradução) ----------
+# ---------- Boutique Filmes (legendas em inglês) ----------
 
 - id: experimentos-extraordinarios
   grupo: boutique
@@ -268,7 +270,7 @@
   ano: "2014–2015"
   genero: "sitcom infantojuvenil / ciência"
   creditos: {elenco: ["Iberê Thenório"], producao: "Cartoon Network e Boutique Filmes"}
-  trabalho: {ano: 2014, par: "PT>EN", papel: "spotting, padronização e apoio à tradução", episodios: "ep. 1"}
+  trabalho: {ano: 2014, papel: "supervisão técnica, QC e apoio à tradução", descricao: "Supervisão técnica, QC e apoio à tradução do ep. 1"}
   sinopse: "Sitcom em que Iberê Thenório, do canal Manual do Mundo, assume um programa de TV sobre experimentos científicos e precisa trabalhar com quatro estagiários adolescentes inexperientes. Cada episódio mostra experimentos reais que o público pode reproduzir em casa."
   link: "https://boutiquefilmes.com.br/projeto/experimentos-extraordinarios/"
   capa: "audiovisual/boutique_experimentos-extraordinarios_pt.jpg"
@@ -279,7 +281,7 @@
   emissora: "Discovery Channel"
   ano: "2014–2015"
   genero: "série documental / automóveis"
-  trabalho: {ano: "2014–2015", par: "PT>EN", papel: "spotting, padronização e apoio à tradução", episodios: "2 eps."}
+  trabalho: {ano: "2014–2015", papel: "supervisão técnica, QC e apoio à tradução", descricao: "Supervisão técnica, QC e apoio à tradução de 2 episódios"}
   sinopse: "Série documental sobre a cultura lowrider no Brasil: a customização de carros e bicicletas, com pintura, rodas e sistemas hidráulicos, e a participação de um clube em encontros e viagens, inclusive aos Estados Unidos."
   capa: "audiovisual/boutique_lowrider-brasil.jpg"
 
@@ -290,7 +292,7 @@
   ano: "2014–2016"
   genero: "reality / efeitos especiais"
   creditos: {apresentacao: "Armando Fonseca, Kapel Furman e Raphael Borghi"}
-  trabalho: {ano: "2014–2015", par: "PT>EN", papel: "spotting, padronização e apoio à tradução", episodios: "2 eps."}
+  trabalho: {ano: "2014–2015", papel: "supervisão técnica, QC e apoio à tradução", descricao: "Supervisão técnica, QC e apoio à tradução de 2 episódios"}
   sinopse: "Três especialistas em efeitos especiais produzem, a cada episódio, um curta-metragem com orçamento e prazo reduzidos, recriando cenas típicas do cinema de ação e terror e explicando as técnicas usadas."
   link: "https://boutiquefilmes.com.br/projeto/cinelab/"
   capa: "audiovisual/boutique_cinelab.jpg"
@@ -302,7 +304,7 @@
   ano: 2016
   genero: "docudrama histórico"
   creditos: {direcao: "Fernando Honesko", producao: "Boutique Filmes e History"}
-  trabalho: {ano: 2017, par: "PT>EN", papel: "spotting, padronização e apoio à tradução", episodios: "ep. 1 (Francesco Matarazzo)"}
-  sinopse: "Minissérie em quatro episódios sobre empresários da industrialização brasileira entre o fim do século XIX e meados do XX — Francesco Matarazzo, Percival Farquhar, Giuseppe Martinelli e Guilherme Guinle —, com dramatizações, animação 3D e depoimentos."
+  trabalho: {ano: 2017, papel: "supervisão técnica, QC e apoio à tradução", descricao: "Supervisão técnica, QC e apoio à tradução do ep. 1 sobre Francesco Matarazzo"}
+  sinopse: "Minissérie em quatro episódios sobre empresários da industrialização brasileira entre o fim do século XIX e meados do XX (Francesco Matarazzo, Percival Farquhar, Giuseppe Martinelli e Guilherme Guinle), com dramatizações, animação 3D e depoimentos."
   link: "https://boutiquefilmes.com.br/projeto/gigantes-do-brasil/"
   capa: "audiovisual/boutique_gigantes-do-brasil_v2.webp"

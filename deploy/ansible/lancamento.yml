@@ -1,4 +1,4 @@
-# Tarefas de lançamento (Fase 3) — NÃO rodar antes de retirar o PREVIEW_AUTH.
+# Tarefas de lançamento (Fase 3). NÃO rodar antes de retirar o PREVIEW_AUTH.
 # Integrar ao ansible-infra (ex.: roles/cloudflare_sites) e usar o token do vault.
 #
 #   ansible-playbook deploy/ansible/lancamento.yml -e cloudflare_api_token=... -e cloudflare_account_id=...
@@ -6,7 +6,7 @@
 # 1. Associa lucasmagdiel.com e www ao projeto Pages "lucasmagdiel"
 #    (a zona está na mesma conta: o Cloudflare cria/atualiza o CNAME sozinho).
 # 2. Garante o redirecionamento www → apex.
-# O redirecionamento atual de lucas.st (e o caminho /dicts) continua como está — não é tocado aqui.
+# O redirecionamento atual de lucas.st (e o caminho /dicts) continua como está; não é tocado aqui.
 - name: Lançamento de lucasmagdiel.com no Cloudflare Pages
   hosts: localhost
   gather_facts: false

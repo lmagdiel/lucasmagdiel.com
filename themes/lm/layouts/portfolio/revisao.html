@@ -24,13 +24,13 @@
         {{- partial "img.html" (dict "src" (index .capas 0) "alt" (printf "Capa de %s" .titulo) "w" 150) }}
         <div>
           <p class="tile-sub">{{ delimit (.autores | default slice) ", " }} · {{ .editora }} · {{ .ano }}{{ with .genero }} · {{ . }}{{ end }}</p>
-          <p class="tile-sub">{{ .papel | humanize }}</p>
+          <p class="tile-sub">{{ .papel | strings.FirstUpper }}</p>
           {{- with .link }}<p><a class="externo" href="{{ . }}" rel="noopener">{{ i18n "pagina_oficial" }} ↗</a></p>{{ end }}
         </div>
       </div>
     {{- else }}
       {{- with .itens }}<ul class="lista-simples">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
-      {{- with $papel }}<p class="tile-sub">{{ . | humanize }}</p>{{ end }}
+      {{- with $papel }}<p class="tile-sub">{{ . | strings.FirstUpper }}</p>{{ end }}
     {{- end }}
   </section>
   {{- end }}

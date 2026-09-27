@@ -3,11 +3,11 @@
   <h1 class="inicio-nome">{{ site.Title }}</h1>
   <div class="inicio-texto">{{ .Content }}</div>
 
-  {{- $livros := where hugo.Data.livros "tipo" "livro-traduzido" }}
+  {{- $nLivros := partial "conta-livros.html" . }}
   {{- $av := where hugo.Data.audiovisual "status" "!=" "aguardando" }}
   {{- $e := hugo.Data.estatisticas.agencia_brasil_es }}
   <ul class="numeros" aria-label="Em números">
-    <li><span class="num">{{ len $livros }}</span> livros traduzidos</li>
+    <li><span class="num">{{ $nLivros }}</span> livros traduzidos</li>
     <li><span class="num">{{ add (len $av) (len hugo.Data.ebc) }}</span> séries, programas e documentários legendados</li>
     <li><span class="num">{{ lang.FormatNumber 0 (math.Floor (div $e.materias_min 1000.0)) }} mil+</span> matérias da Agência Brasil em espanhol</li>
   </ul>

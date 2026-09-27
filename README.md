@@ -1,6 +1,6 @@
 # lucasmagdiel.com
 
-Site pessoal de Lucas Magdiel — estático, feito com [Hugo](https://gohugo.io) (≥ 0.146; testado na 0.166) e tema próprio (`themes/lm`), publicado no Cloudflare Pages.
+Site pessoal de Lucas Magdiel: estático, feito com [Hugo](https://gohugo.io) (≥ 0.146; testado na 0.166) e tema próprio (`themes/lm`), publicado no Cloudflare Pages.
 
 ## Estrutura
 

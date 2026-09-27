@@ -21,7 +21,7 @@
     <li>
       <span class="lista-ano">{{ .ano }}</span>
       <div>
-        <p class="lista-tit">{{ .titulo }}{{ with .autores }} <span class="lista-aut">— {{ delimit . ", " }}</span>{{ end }}</p>
+        <p class="lista-tit">{{ .titulo }}{{ with .autores }} <span class="lista-aut">· {{ delimit . ", " }}</span>{{ end }}</p>
         <p class="lista-pub">{{ .publicacao }} · <span class="par">{{ .par }}</span></p>
         {{- with .sinopse }}<p>{{ . }}</p>{{ end }}
         {{- with .link }}<p><a class="externo" href="{{ . }}" rel="noopener">Ler na revista ↗</a></p>{{ end }}

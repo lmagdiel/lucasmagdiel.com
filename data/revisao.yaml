@@ -1,4 +1,5 @@
-# Portfólio — revisão (destaque menor). Atualizado em 2026-09-26.
+# Portfólio: revisão (destaque menor). Atualizado em 2026-09-27.
+# `link`: só página oficial da editora; sem ela, sem link (nada de lojas).
 # Confraria do Vento agrupada; Vânia Vidal em itens separados (obras recentes).
 
 - id: vania-vidal-narciso
@@ -53,23 +54,23 @@
 
 - id: confraria-do-vento-revisoes
   tipo: revisao
-  titulo: "Confraria do Vento — revisões (2007–2016)"
+  titulo: "Confraria do Vento (2007–2016)"
   editora: "Confraria do Vento"
   papel: "revisão"
-  sinopse: "Editora do Rio de Janeiro ligada à Revista Confraria, com catálogo centrado na literatura brasileira contemporânea — poesia, prosa, ensaio e teatro."
+  sinopse: "Editora do Rio de Janeiro ligada à Revista Confraria, com catálogo centrado na literatura brasileira contemporânea: poesia, prosa, ensaio e teatro."
   link: "https://www.confrariadovento.com/editora/catalogo/"
   titulos:
     - {titulo: "Intradoxos", autores: ["Márcio-André"], ano: 2007, isbn: "9788560676002", capa: "revisao/confraria_intradoxos.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/20-intradoxos.html"}
     - {titulo: "Ensaios Radioativos", autores: ["Márcio-André"], ano: 2008, isbn: "9788560676095", capa: "revisao/confraria_ensaios-radioativos.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/28-ensaios-radioativos.html"}
     - {titulo: "O Auto de Zé Limeira", autores: ["Aderaldo Luciano"], ano: 2008, isbn: "9788560676101", capa: "revisao/confraria_o-auto-de-ze-limeira.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/31-o-auto-de-ze-limeira.html"}
     - {titulo: "Quem Conta um Conto de Fadas… Uma introdução ao mundo da fantasia", organizadores: ["Geysa Silva", "Luiz Fernando Matos Rocha"], ano: 2008, isbn: "9788560676088", capa: "revisao/confraria_quem-conta-um-conto-de-fadas.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/261-quem-conta-um-conto-de-fadas.html"}
-    - {titulo: "A Importância de Ser Franco", autores: ["Oscar Wilde"], ano: 2009, isbn: "9788560676187", nota: "coleção Outros Clássicos, com a Calibán", capa: "revisao/confraria_a-importancia-de-ser-franco.jpg", link: "https://www.travessa.com.br/a-importancia-de-ser-franco/artigo/10cd22a3-4a1e-48b3-b822-4535ed4df1c2"}
+    - {titulo: "A Importância de Ser Franco", autores: ["Oscar Wilde"], ano: 2009, isbn: "9788560676187", nota: "coleção Outros Clássicos, com a Calibán", capa: "revisao/confraria_a-importancia-de-ser-franco.jpg"}
     - {titulo: "Graduado em Marginalidade (2ª ed.)", autores: ["Sacolinha"], ano: 2009, isbn: "9788560676200", capa: "revisao/confraria_graduado-em-marginalidade.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/37-graduado-em-marginalidade.html"}
     - {titulo: "Pacífico Sul ou Teoria Geral da Referência", autores: ["Hilan Bensusan"], ano: 2012, isbn: "9788560676569", capa: "revisao/confraria_pacifico-sul.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/67-pacifico-sul-ou-teoria-geral-da-referencia.html"}
     - {titulo: "Frente & Verso: sobre poesia e poética", autores: ["Carlos Felipe Moisés"], ano: 2014, isbn: "9788560676859", capa: "revisao/confraria_frente-verso.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/109-frente-verso.html"}
     - {titulo: "Aridez Lavrada pela Carne Disto", autores: ["Dércio Braúna"], ano: 2014, isbn: "9788560676996", capa: "revisao/confraria_aridez-lavrada-pela-carne-disto.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/122-aridez-lavrada-pela-carne-disto.html"}
     - {titulo: "Cenas de Arte e Ficção: teatralidades contemporâneas", organizadores: ["Angela Maria Dias", "Paula Glenadel"], ano: 2015, isbn: "9788555320040", capa: "revisao/confraria_cenas-de-arte-e-ficcao.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/150-cenas-de-arte-e-ficcao-teatralidades-contemporaneas.html"}
-    - {titulo: "Miravilha — Liriai o Campo dos Olhos", autores: ["Alves de Aquino"], ano: 2016, isbn: "9788560676989", capa: "revisao/confraria_miravilha.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/128-miravilha-liriai-o-campo-dos-olhos.html"}
+    - {titulo: "Miravilha: Liriai o Campo dos Olhos", autores: ["Alves de Aquino"], ano: 2016, isbn: "9788560676989", capa: "revisao/confraria_miravilha.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/128-miravilha-liriai-o-campo-dos-olhos.html"}
     - {titulo: "Corpo Sepulcro", autores: ["Mike Sullivan"], ano: 2016, isbn: "9788555320088", capa: "revisao/confraria_corpo-sepulcro.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/135-corpo-sepulcro.html"}
     - {titulo: "O Contrário de B.", autores: ["Bruno Liberal"], ano: 2016, isbn: "9788555320033", capa: "revisao/confraria_o-contrario-de-b.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/129-o-contrario-de-b.html"}
     - {titulo: "Razões do Agir de um Bicho Humano", autores: ["Vinicius F. Barth"], ano: 2016, isbn: "9788555320064", capa: "revisao/confraria_razoes-do-agir-de-um-bicho-humano.jpg", link: "https://www.confrariadovento.com/editora/catalogo/item/134-razoes-do-agir-de-um-bicho-humano.html"}
@@ -77,21 +78,21 @@
 
 - id: lingua-geral-revisoes
   tipo: revisao
-  titulo: "Língua Geral — antologias (2007)"
+  titulo: "Língua Geral: antologias (2007)"
   editora: "Língua Geral"
   papel: "revisão"
   titulos:
-    - {titulo: "Entre Nós: contos sobre homossexualidade", organizadores: ["Luiz Ruffato"], ano: 2007, isbn: "9788560160099", sinopse: "Antologia com 19 contos brasileiros sobre a homossexualidade, de Machado de Assis a Caio Fernando Abreu e Hilda Hilst.", capa: "revisao/linguageral_entre-nos.jpg", link: "http://www.linguageral.com.br/livro/entre-nos/"}
-    - {titulo: "Brasil, Mostra a Sua Máscara", organizadores: ["Fred Góes"], ano: 2007, isbn: "9788560160082", sinopse: "Antologia sobre o carnaval com contos, crônicas, letras e poemas de Machado de Assis, Noel Rosa, Vinicius de Moraes, Chico Buarque e outros.", capa: "revisao/linguageral_brasil-mostra-a-sua-mascara.jpg", link: "http://www.linguageral.com.br/livro/brasil-mostra-a-sua-mascara/"}
+    - {titulo: "Entre Nós: contos sobre homossexualidade", organizadores: ["Luiz Ruffato"], ano: 2007, isbn: "9788560160099", sinopse: "Antologia com 19 contos brasileiros sobre a homossexualidade, de Machado de Assis a Caio Fernando Abreu e Hilda Hilst.", capa: "revisao/linguageral_entre-nos.jpg"}
+    - {titulo: "Brasil, Mostra a Sua Máscara", organizadores: ["Fred Góes"], ano: 2007, isbn: "9788560160082", sinopse: "Antologia sobre o carnaval com contos, crônicas, letras e poemas de Machado de Assis, Noel Rosa, Vinicius de Moraes, Chico Buarque e outros.", capa: "revisao/linguageral_brasil-mostra-a-sua-mascara.jpg"}
 
 - id: alta-books-guias
   tipo: revisao
-  titulo: "Alta Books — guias de idiomas e informática (trabalhos de 2012)"
+  titulo: "Alta Books: guias de idiomas e informática (2012)"
   editora: "Alta Books"
   titulos:
-    - {titulo: "O Guia Completo para Quem Não É C.D.F. – Aprendendo Espanhol", autores: ["Gail Stein"], ano: 2012, isbn: "9788576087397", papel: "revisão técnica", capa: "revisao/altabooks_aprendendo-espanhol.jpg", link: "https://www.martinsfontespaulista.com.br/o-guia-completo-para-quem-nao-e-c-d-f---aprendendo-espanhol-736951/p"}
-    - {titulo: "O Guia Completo para Quem Não É C.D.F. – Aprendendo Italiano", autores: ["Gabrielle Ann Euvino"], ano: 2013, isbn: "9788576087168", papel: "copidesque", capa: "revisao/altabooks_aprendendo-italiano.png", link: "https://www.cienciamoderna.com.br/o-guia-completo-para-quem-nao-e-c-d-f-aprendendo-italiano-3-edicao/p"}
-    - {titulo: "Facebook para Leigos", autores: ["Carolyn Abram"], ano: 2013, isbn: "9788576088059", papel: "copidesque", capa: "revisao/altabooks_facebook-para-leigos.jpg", link: "https://www.travessa.com.br/facebook-para-leigos/artigo/89f65a1b-cdf7-47c2-a0e5-679337ec4309"}
+    - {titulo: "O Guia Completo para Quem Não É C.D.F.: Aprendendo Espanhol", autores: ["Gail Stein"], ano: 2012, isbn: "9788576087397", papel: "revisão técnica", capa: "revisao/altabooks_aprendendo-espanhol.jpg"}
+    - {titulo: "O Guia Completo para Quem Não É C.D.F.: Aprendendo Italiano", autores: ["Gabrielle Ann Euvino"], ano: 2013, isbn: "9788576087168", papel: "copidesque", capa: "revisao/altabooks_aprendendo-italiano.png"}
+    - {titulo: "Facebook para Leigos", autores: ["Carolyn Abram"], ano: 2013, isbn: "9788576088059", papel: "copidesque", capa: "revisao/altabooks_facebook-para-leigos.jpg"}
 
 - id: barba-negra-revisoes
   tipo: revisao
@@ -99,8 +100,8 @@
   editora: "Barba Negra/LeYa"
   papel: "revisão"
   titulos:
-    - {titulo: "Verão da Lata: um verão que ninguém esqueceu", autores: ["Wilson Aquino"], ano: 2012, isbn: "9788580444834", sinopse: "Reportagem sobre o verão de 1987–1988, quando latas de maconha lançadas ao mar pelo navio Solana Star chegaram ao litoral do Sudeste e do Sul.", capa: "revisao/barbanegra_verao-da-lata.jpg", link: "https://www.travessa.com.br/verao-da-lata-um-verao-que-ninguem-esqueceu/artigo/96a72cd1-b908-4632-864f-c7c884e90c02"}
-    - {titulo: "O Gosto do Cloro", autores: ["Bastien Vivès"], ano: 2012, isbn: "9788580442960", nota: "HQ; tradução de Maria Clara Carneiro", sinopse: "Quadrinho quase sem diálogos sobre um jovem que começa a nadar por orientação médica e se aproxima de uma nadadora; revelação em Angoulême 2009.", capa: "revisao/barbanegra_o-gosto-do-cloro.jpg", link: "https://www.travessa.com.br/o-gosto-do-cloro/artigo/6f99a1fb-fe8b-424f-ac11-bfb985b25dc6"}
+    - {titulo: "Verão da Lata: um verão que ninguém esqueceu", autores: ["Wilson Aquino"], ano: 2012, isbn: "9788580444834", sinopse: "Reportagem sobre o verão de 1987 para 1988, quando latas de maconha lançadas ao mar pelo navio Solana Star chegaram ao litoral do Sudeste e do Sul.", capa: "revisao/barbanegra_verao-da-lata.jpg"}
+    - {titulo: "O Gosto do Cloro", autores: ["Bastien Vivès"], ano: 2012, isbn: "9788580442960", papel: "revisão da introdução, de Paulo Scott", nota: "HQ; tradução de Maria Clara Carneiro", sinopse: "Quadrinho quase sem diálogos sobre um jovem que começa a nadar por orientação médica e se aproxima de uma nadadora; revelação em Angoulême 2009.", capa: "revisao/barbanegra_o-gosto-do-cloro.jpg"}
 
 - id: noturna-e-outros-poemas
   tipo: revisao
@@ -127,13 +128,13 @@
 
 - id: coad
   tipo: revisao
-  titulo: "COAD — publicações de consultoria (2011–2012)"
+  titulo: "COAD: publicações de consultoria (2011–2012)"
   editora: "COAD"
   papel: "revisão (revisor celetista)"
-  sinopse: "Revisão de livros, apostilas e informativos sobre temas fiscais, contábeis, trabalhistas e jurídicos, como Rescisão de Contrato de Trabalho (2011, ISBN 9788563302212)."
+  sinopse: "Revisão de livros, apostilas e informativos sobre temas fiscais, contábeis, trabalhistas e jurídicos."
 
 - id: trabalhos-academicos
   tipo: revisao
   titulo: "Trabalhos acadêmicos"
   papel: "revisão, formatação e normalização (ABNT)"
-  sinopse: "Revisão e normalização de dissertações, teses, monografias e artigos de pesquisadores de várias instituições. Clientes não são nomeados."
+  sinopse: "Revisão e normalização de dissertações, teses, monografias e artigos de pesquisadores de várias instituições."
