@@ -21,6 +21,6 @@ blocos:
     logo: "img/logos/blend.png"
     url: "https://www.getblend.com"
     periodo: "desde 2012"
-    texto: "Tradutor e editor certificado da Blend (antiga OneHourTranslation), plataforma internacional de tradução sob demanda, em projetos de clientes de vários setores."
+    texto: "Tradutor e editor certificado da Blend (antiga OneHourTranslation), plataforma internacional de tradução sob demanda. Entre os projetos: pós-edição de tradução automática para comércio eletrônico; localização de aplicativos, web apps e jogos; anúncios; textos de sites de nutrição e bem-estar e de serviços de internet; e um grande volume de relatórios e planos de educação especial de escolas norte-americanas, traduzidos do inglês para o espanhol para as famílias dos alunos."
 ---
-Além dos livros e das legendas, traduzo e reviso textos técnicos, jurídicos e institucionais, do inglês e do espanhol para o português e do português para o espanhol.
+Além dos livros e das legendas, traduzo e reviso textos técnicos, jurídicos e institucionais entre português, inglês e espanhol.

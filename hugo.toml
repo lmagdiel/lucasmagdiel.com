@@ -40,9 +40,9 @@ defaultContentLanguageInSubdir = false
       nome = "LinkedIn"
       ativo = true
     [params.links.proz]
-      url = "https://www.proz.com/"
+      url = "https://www.proz.com/profile/889544"
       nome = "ProZ"
-      ativo = false
+      ativo = true
     [params.links.github]
       url = "https://github.com/lmagdiel"
       nome = "GitHub"
