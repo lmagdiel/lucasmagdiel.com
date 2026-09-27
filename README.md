@@ -42,12 +42,14 @@ Para testar as Functions localmente: `npx wrangler pages dev public` (lê segred
   - `FASTMAIL_API_TOKEN` → entrega das mensagens do formulário na caixa de entrada (JMAP).
   - `CONTATO_DESTINO`, `CONTATO_REMETENTE` → opcionais (endereços ficam só nas variáveis do Cloudflare, nunca no código).
 
-Publicação manual (com `.env` contendo `CLOUDFLARE_API_TOKEN` e `CLOUDFLARE_ACCOUNT_ID`):
+Publicação manual (com `.env` contendo `CLOUDFLARE_API_TOKEN` e `CLOUDFLARE_ACCOUNT_ID`), no PowerShell:
 
-```bash
-hugo --gc --minify
-npx wrangler pages deploy public --project-name=lucasmagdiel --branch=main
+```powershell
+.\publicar.ps1              # build + deploy no ramo main
+.\publicar.ps1 -Ramo teste  # deploy de teste, em endereço separado
 ```
+
+O script lê o `.env`, roda `hugo --gc --minify --cleanDestinationDir` e publica com `npx wrangler@4 pages deploy`.
 
 ## Idiomas
 
