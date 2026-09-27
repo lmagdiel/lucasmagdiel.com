@@ -1,0 +1,15 @@
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="{{ "/" | relURL }}">Lucas Magdiel</a>
+    <nav aria-label="{{ i18n "menu_principal" }}">
+      <ul>
+        {{- $atual := . }}
+        {{- range site.Menus.main }}
+        {{- $ativo := or ($atual.IsMenuCurrent "main" .) ($atual.HasMenuCurrent "main" .) }}
+        {{- with .Page }}{{ if or (eq $atual .) ($atual.IsDescendant .) }}{{ $ativo = true }}{{ end }}{{ end }}
+        <li><a href="{{ .URL }}"{{ if $ativo }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+</header>

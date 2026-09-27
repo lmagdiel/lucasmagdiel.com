@@ -1,0 +1,5 @@
+{{/* Gera uma página por produção da TV Brasil/EBC a partir de data/ebc.yaml */}}
+{{ range hugo.Data.ebc }}
+  {{ $c := dict "mediaType" "text/markdown" "value" (.sinopse | default "") }}
+  {{ $.AddPage (dict "path" .id "title" .titulo "kind" "page" "content" $c "params" .) }}
+{{ end }}

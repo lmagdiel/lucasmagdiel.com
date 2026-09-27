@@ -1,0 +1,57 @@
+{{- /* Página de uma obra (livro, série/programa, produção da TV Brasil), gerada pelos content adapters. */ -}}
+{{- $p := .Params -}}
+{{- $rotulos := dict "roteiro" "Roteiro" "direcao" "Direção" "elenco" "Elenco" "apresentacao" "Apresentação" "producao" "Produção" "criacao" "Criação" "obra_original" "Obra original" "narracao" "Narração" "jurados" "Jurados" "reportagem" "Reportagem" "entrevistado" "Entrevistado" -}}
+<article class="obra">
+  <p class="migalha"><a href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title }}</a></p>
+  <div class="obra-grid">
+    <div class="obra-capas{{ if gt (len ($p.capas | default slice)) 1 }} obra-capas--multi{{ end }}">
+      {{- with $p.capas }}
+        {{- range . }}{{ partial "img.html" (dict "src" . "alt" (printf "Capa de %s" $.Title) "w" 300 "loading" "eager") }}{{ end }}
+      {{- else }}{{ with $p.capa }}
+        {{- partial "img.html" (dict "src" . "alt" (printf "Pôster de %s" $.Title) "w" 300 "loading" "eager") }}
+      {{- else }}
+        {{- $ano := or $p.ano_exibicao $p.ano (index ($p.trabalho | default dict) "ano") }}
+        {{- partial "tvcard.html" (dict "titulo" .Title "programa" (or $p.programa $p.emissora) "emissora" $p.emissora "ano" $ano "par" (index ($p.trabalho | default dict) "par") "frame" $p.frame "ancora" $p.ancora) }}
+      {{- end }}{{ end }}
+    </div>
+    <div class="obra-txt">
+      {{- with $p.genero }}<p class="rotulo">{{ . }}</p>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{- with $p.titulo_original }}<p class="original">{{ . }}</p>{{ end }}
+      {{- with $p.titulo_br }}<p class="original">No Brasil: {{ . }}</p>{{ end }}
+      {{- with .Content }}<div class="sinopse">{{ . }}</div>{{ end }}
+
+      <dl class="ficha">
+        {{- with $p.autores }}<dt>{{ i18n "autor" }}</dt><dd>{{ delimit . ", " " e " }}</dd>{{ end }}
+        {{- with $p.organizadores }}<dt>{{ i18n "organizacao" }}</dt><dd>{{ delimit . ", " " e " }}</dd>{{ end }}
+        {{- with $p.programa }}<dt>Programa</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with $p.editora }}<dt>{{ i18n "editora" }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with $p.emissora }}<dt>{{ i18n "emissora" }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with $p.plataforma }}<dt>{{ i18n "plataforma" }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with $p.canal_brasil }}<dt>{{ i18n "exibicao_brasil" }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with (or $p.ano_exibicao $p.ano) }}<dt>{{ i18n "ano" }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with $p.edicoes }}<dt>{{ i18n "edicoes" }}</dt><dd><ul>{{ range . }}<li>{{ .nome }} ({{ .ano }}{{ with .isbn }}, ISBN {{ . }}{{ end }})</li>{{ end }}</ul></dd>{{ end }}
+        {{- with $p.volumes }}<dt>{{ i18n "volumes" }}</dt><dd><ul>{{ range . }}<li>{{ .nome }} ({{ .ano }})</li>{{ end }}</ul></dd>{{ end }}
+        {{- if and $p.isbn (not $p.edicoes) }}<dt>{{ i18n "isbn" }}</dt><dd>{{ $p.isbn }}</dd>{{ end }}
+        {{- with $p.paginas }}<dt>{{ i18n "paginas" }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with $p.creditos }}
+          {{- if reflect.IsMap . }}
+            {{- range $k, $v := . }}{{ with $v }}<dt>{{ index $rotulos $k | default $k }}</dt><dd>{{ if reflect.IsSlice . }}{{ delimit . ", " " e " }}{{ else }}{{ . }}{{ end }}</dd>{{ end }}{{ end }}
+          {{- else }}<dt>{{ i18n "creditos" }}</dt><dd>{{ . }}</dd>{{ end }}
+        {{- end }}
+        {{- with $p.trabalho }}
+          <dt>{{ i18n "papel" }}</dt><dd>{{ .papel | humanize }}{{ with .par }} <span class="par">{{ . }}</span>{{ end }}{{ with .episodios }} — {{ . }}{{ end }}{{ with .ano }} ({{ . }}){{ end }}</dd>
+        {{- else }}
+          {{- with $p.papel }}<dt>{{ i18n "papel" }}</dt><dd>{{ . | humanize }}{{ with $p.par }} <span class="par">{{ . }}</span>{{ end }}</dd>{{ end }}
+        {{- end }}
+        {{- with $p.premios }}<dt>{{ i18n "premios" }}</dt><dd><ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul></dd>{{ end }}
+      </dl>
+
+      <p class="acoes">
+        {{- with $p.link }}<a class="externo" href="{{ . }}" rel="noopener">{{ i18n "pagina_oficial" }} ↗</a>{{ end }}
+        {{- with $p.video }}<a class="externo" href="{{ . }}" rel="noopener">{{ i18n "assistir" }} ↗</a>{{ end }}
+        {{- with $p.video_es }}<a class="externo" href="{{ . }}" rel="noopener">Versão em espanhol ↗</a>{{ end }}
+      </p>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,14 @@
+{{- /* Imagem processada (WebP 1x/2x) a partir de assets/capas/<src>.
+       Parâmetros: src, alt, w (largura de exibição, padrão 240), loading, class */ -}}
+{{- $w := .w | default 240 -}}
+{{- $alvo := .src -}}
+{{- if not (strings.HasPrefix $alvo "img/") }}{{ $alvo = printf "capas/%s" $alvo }}{{ end -}}
+{{- with resources.Get $alvo -}}
+  {{- $w1 := cond (gt $w .Width) .Width $w -}}
+  {{- $w2 := cond (gt (mul $w 2) .Width) .Width (mul $w 2) -}}
+  {{- $a := .Resize (printf "%dx webp q82" $w1) -}}
+  {{- $b := .Resize (printf "%dx webp q78" $w2) -}}
+  <img src="{{ $a.RelPermalink }}" srcset="{{ $a.RelPermalink }} 1x, {{ $b.RelPermalink }} 2x" width="{{ $a.Width }}" height="{{ $a.Height }}" alt="{{ $.alt }}" loading="{{ $.loading | default "lazy" }}" decoding="async"{{ with $.class }} class="{{ . }}"{{ end }}>
+{{- else -}}
+  {{- warnf "Imagem não encontrada: %s" $alvo -}}
+{{- end -}}

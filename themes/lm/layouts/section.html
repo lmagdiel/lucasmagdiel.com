@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="secao">
+  <header class="secao-cab">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+  {{- with .Pages }}
+  <ul class="notas">
+    {{- range .ByDate.Reverse }}
+    <li>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_medium" }}</time>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- with .Description }}<p>{{ . }}</p>{{ end }}
+    </li>
+    {{- end }}
+  </ul>
+  {{- else }}
+  <p class="vazio">{{ i18n "sem_notas" }}</p>
+  {{- end }}
+</section>
+{{ end }}

@@ -1,0 +1,213 @@
+# Portfólio — livros traduzidos e traduções curtas publicadas
+# Atualizado em 2026-09-26. Sinopses originais (não copiar textos de editoras).
+# `capas`: arquivos em referencias/capas/ (a primeira é a principal; edições especiais aparecem lado a lado).
+
+- id: serial-killers-anatomia-do-mal
+  tipo: livro-traduzido
+  titulo: "Serial Killers: Anatomia do Mal"
+  titulo_original: "The Serial Killer Files: The Who, What, Where, How, and Why of the World's Most Terrifying Murderers"
+  autores: ["Harold Schechter"]
+  editora: "DarkSide Books"
+  ano: 2013
+  edicoes:
+    - {nome: "1ª edição (capa dura)", ano: 2013, isbn: "9788566636123"}
+    - {nome: "Bloody Edition (capa dura)", ano: 2018, isbn: "9788566636550"}
+  paginas: 480
+  par: "EN>PT"
+  papel: "tradução"
+  creditos: "Tradução: Lucas Magdiel"
+  genero: "não ficção / true crime"
+  sinopse: "Compêndio do professor e escritor norte-americano Harold Schechter sobre assassinos em série. Organizado por temas, trata de definições, tipologias, motivações, métodos e perfis psicológicos, da investigação policial e forense e da presença desses criminosos na cultura popular, com casos como os de Jack, o Estripador, Ed Gein, Ted Bundy e Jeffrey Dahmer."
+  link: "https://www.darksidebooks.com.br/serial-killers---anatomia-do-mal---bloody-edition---drk-x/p"
+  capas: ["livros-traduzidos/2013_serial-killers-anatomia-do-mal_original.jpg", "livros-traduzidos/2018_serial-killers-bloody-edition.png"]
+
+- id: a-noite-dos-mortos-vivos
+  tipo: livro-traduzido
+  titulo: "A Noite dos Mortos-Vivos"
+  titulo_original: "Night of the Living Dead / Return of the Living Dead"
+  autores: ["John Russo"]
+  editora: "DarkSide Books"
+  ano: 2014
+  edicoes:
+    - {nome: "Classic Edition (brochura)", ano: 2014, isbn: "9788566636215"}
+    - {nome: "Limited Edition (capa dura)", ano: 2014, isbn: "9788566636208"}
+    - {nome: "Edição Comemorativa de 50 anos (ilustrações de Danilo Beyruth)", ano: 2018, isbn: "9788594541178"}
+  paginas: 320
+  par: "EN>PT"
+  papel: "tradução"
+  creditos: "Tradução: Lucas Magdiel"
+  genero: "ficção / terror"
+  sinopse: "Volume que reúne dois romances de John Russo, corroteirista, com George A. Romero, do filme de 1968. A Noite dos Mortos-Vivos narra o cerco a um grupo de desconhecidos refugiados numa casa de fazenda na Pensilvânia enquanto os mortos se levantam para atacar os vivos; A Volta dos Mortos-Vivos retoma a ameaça anos depois."
+  link: "https://www.darksidebooks.com.br/a-noite-dos-mortos-vivos---classic-edition-11b/p"
+  imprensa: "Entrevista ao O Globo a Mais (2014) — ver referencias/publicacoes/2014-03_o-globo-a-mais_entrevista-a-noite-dos-mortos-vivos.md"
+  capas: ["livros-traduzidos/2014_a-noite-dos-mortos-vivos.jpg", "livros-traduzidos/2018_a-noite-dos-mortos-vivos-50-anos.jpg"]
+
+- id: social-killers
+  tipo: livro-traduzido
+  titulo: "Social Killers: Amigos virtuais, assassinos reais"
+  titulo_original: "Social Media Monsters: Internet Killers"
+  autores: ["RJ Parker", "JJ Slate"]
+  editora: "DarkSide Books"
+  ano: 2015
+  isbn: "9788566636451"
+  paginas: 272
+  par: "EN>PT"
+  papel: "tradução"
+  creditos: "Tradução: Lucas Magdiel"
+  genero: "não ficção / true crime"
+  sinopse: "RJ Parker e JJ Slate reúnem dezenas de casos reais, em vários países, de crimes violentos em que redes sociais, sites de classificados e salas de bate-papo serviram para atrair, vigiar ou enganar vítimas. Os capítulos finais tratam de segurança on-line e do uso das redes pela polícia nas investigações."
+  link: "https://www.darksidebooks.com.br/social-killers-amigos-virtuais-assassinos-reais-32/p"
+  capas: ["livros-traduzidos/2015_social-killers.jpg"]
+
+- id: american-crime-story-oj-simpson
+  tipo: livro-traduzido
+  titulo: "American Crime Story: O Povo contra O. J. Simpson"
+  titulo_original: "The Run of His Life: The People v. O. J. Simpson"
+  autores: ["Jeffrey Toobin"]
+  editora: "DarkSide Books"
+  ano: 2016
+  isbn: "9788566636840"
+  paginas: 496
+  par: "EN>PT"
+  papel: "tradução"
+  creditos: "Tradução: Lucas Magdiel"
+  genero: "não ficção / true crime, jornalismo jurídico"
+  sinopse: "O jornalista Jeffrey Toobin, que cobriu o caso para a revista The New Yorker, reconstitui a investigação e o julgamento de O. J. Simpson, acusado de matar a ex-mulher, Nicole Brown Simpson, e Ronald Goldman em Los Angeles, em 1994, e analisa a absolvição de 1995. O livro deu origem à série de TV homônima (2016)."
+  link: "https://www.travessa.com.br/american-crime-story-o-povo-contra-o-j-simpson/artigo/c76fba21-5f63-4caf-9af3-370650d489e4"
+  capas: ["livros-traduzidos/2016_american-crime-story.jpg"]
+
+- id: o-segredo-dos-corpos
+  tipo: livro-traduzido
+  titulo: "O Segredo dos Corpos"
+  titulo_original: "Morgue: A Life in Death"
+  autores: ["Vincent Di Maio", "Ron Franscell"]
+  editora: "DarkSide Books"
+  ano: 2017
+  isbn: "9788594540300"
+  paginas: 288
+  par: "EN>PT"
+  papel: "tradução"
+  creditos: "Tradução: Lucas Magdiel"
+  genero: "não ficção / memórias, medicina legal"
+  sinopse: "Memórias do patologista forense norte-americano Vincent Di Maio, escritas com o jornalista Ron Franscell. A partir de casos em que atuou, como a exumação de Lee Harvey Oswald, a morte de Trayvon Martin e o processo contra Phil Spector, o livro mostra como autópsias e evidências físicas ajudam a esclarecer mortes violentas ou suspeitas."
+  link: "https://www.darksidebooks.com.br/o-segredo-dos-corpos-105/p"
+  capas: ["livros-traduzidos/2017_o-segredo-dos-corpos.jpg"]
+
+- id: killer-clown-profile
+  tipo: livro-traduzido
+  titulo: "Killer Clown Profile: Retrato de um Assassino"
+  titulo_original: "Killer Clown: The John Wayne Gacy Murders"
+  autores: ["Terry Sullivan", "Peter T. Maiken"]
+  editora: "DarkSide Books"
+  ano: 2019
+  isbn: "9788594541826"
+  paginas: 432
+  par: "EN>PT"
+  papel: "cotradução e coordenação (via Ligna)"
+  creditos: "Tradução: Lucas Magdiel e Mariana Branco"
+  genero: "não ficção / true crime"
+  sinopse: "Terry Sullivan, promotor que atuou na acusação de John Wayne Gacy, e o jornalista Peter T. Maiken, do Chicago Tribune, reconstituem a investigação e o julgamento do empreiteiro dos subúrbios de Chicago que se apresentava como palhaço em festas e eventos beneficentes e foi condenado, em 1980, pelo assassinato de 33 rapazes e adolescentes."
+  link: "https://www.darksidebooks.com.br/killer-clown-profile--a-mascara-do-monstro-drk-x/p"
+  capas: ["livros-traduzidos/2019_killer-clown-profile.png"]
+
+- id: jim-jones-profile
+  tipo: livro-traduzido
+  titulo: "Jim Jones Profile: Massacre em Jonestown"
+  titulo_original: "The Road to Jonestown: Jim Jones and Peoples Temple"
+  autores: ["Jeff Guinn"]
+  editora: "DarkSide Books"
+  ano: 2022
+  isbn: "9786555982039"
+  paginas: 544
+  par: "EN>PT"
+  papel: "cotradução (via Ligna)"
+  creditos: "Tradução: Lucas Magdiel e Mayra Borges"
+  genero: "não ficção / true crime, biografia"
+  sinopse: "Biografia de Jim Jones escrita pelo jornalista Jeff Guinn com base em arquivos do FBI e entrevistas. Acompanha o líder religioso desde a infância em Indiana, passando pela fundação do Templo do Povo e pela mudança para a Califórnia, até a comunidade de Jonestown, na Guiana, onde mais de 900 pessoas morreram em novembro de 1978."
+  link: "https://www.travessa.com.br/jim-jones-profile-massacre-em-jonestown/artigo/e2bea1b2-ff42-4ab1-b9c7-af958b687490"
+  capas: ["livros-traduzidos/2022_jim-jones-profile.jpg"]
+
+- id: a-poderosa-chefona
+  tipo: livro-traduzido
+  titulo: "A Poderosa Chefona e Outras Mafiosas"
+  titulo_original: "The Godmother: Murder, Vengeance, and the Bloody Struggle of Mafia Women"
+  autores: ["Barbie Latza Nadeau"]
+  editora: "DarkSide Books"
+  ano: 2024
+  isbn: "9786555984507"
+  paginas: 224
+  par: "EN>PT"
+  papel: "cotradução (via Ligna)"
+  creditos: "Tradução: Lucas Magdiel e Mayra Vieira Borges"
+  genero: "não ficção / true crime, jornalismo"
+  sinopse: "A jornalista norte-americana Barbie Latza Nadeau, radicada em Roma, investiga o papel das mulheres nas máfias italianas, de esposas e filhas a chefes de clã. O fio condutor é a trajetória de Assunta “Pupetta” Maresca, que em 1955, em Nápoles, matou o assassino do marido e se tornou uma figura conhecida da Camorra."
+  link: "https://www.darksidebooks.com.br/a-poderosa-chefona-e-outras-mafiosas--brinde-exclusivo/p"
+  capas: ["livros-traduzidos/2024_a-poderosa-chefona.png"]
+
+- id: conspiracy-365
+  tipo: livro-traduzido
+  titulo: "Conspiracy 365"
+  autores: ["Gabrielle Lord"]
+  editora: "Fundamento"
+  ano: 2012
+  periodo: "2012–2016"
+  volumes:   # só os confirmados pelos exemplares com crédito enviados pela editora
+    - {nome: "Livro 6 – Junho", ano: 2012, isbn: "9788539505135"}
+    - {nome: "Livro 7 – Julho", ano: 2012, isbn: "9788539505142"}
+    - {nome: "Livro 9 – Setembro", ano: 2012, isbn: "9788539506101"}
+    - {nome: "Livro 10 – Outubro: Novidade Chocante", ano: 2015, isbn: "9788539506118"}
+    - {nome: "Livro 11 – Novembro: Surpresa", ano: 2015, isbn: "9788539506309"}
+    - {nome: "Livro 12 – Dezembro: Fuga Final", ano: 2016, isbn: "9788539506750"}
+  par: "EN>PT"
+  papel: "tradução"
+  creditos: "Tradução: Lucas Magdiel"
+  genero: "ficção juvenil / suspense"
+  sinopse: "Série juvenil de suspense da australiana Gabrielle Lord, com um livro para cada mês do ano. Na véspera do Ano-Novo, Callum Ormond, de 15 anos, é avisado por um desconhecido de que precisa se esconder por 365 dias. Suspeito de um crime, ele passa a viver como fugitivo enquanto investiga a morte do pai e um segredo de família."
+  link: "https://www.travessa.com.br/conspiracy-365-junho/artigo/5031055e-21b8-43f7-a440-a9878268b5fe"
+  capas: ["livros-traduzidos/conspiracy-365_06-junho.jpg", "livros-traduzidos/conspiracy-365_07-julho.jpg", "livros-traduzidos/conspiracy-365_09-setembro.jpg", "livros-traduzidos/conspiracy-365_10-outubro.jpg", "livros-traduzidos/conspiracy-365_11-novembro.jpg", "livros-traduzidos/conspiracy-365_12-dezembro.jpg"]
+
+# ---------- Traduções curtas publicadas ----------
+
+- id: garcia-marquez-prologo-clave
+  tipo: traducao-curta
+  titulo: "Prólogo ao dicionário Clave"
+  titulo_original: "Prólogo a Clave: Diccionario de uso del español actual (Ediciones SM, 1997)"
+  autores: ["Gabriel García Márquez"]
+  publicacao: "Revista Confraria, nº 11, nov./dez. 2006 (Confraria do Vento; ISSN 1808-6276)"
+  ano: 2006
+  par: "ES>PT"
+  papel: "tradução"
+  creditos: "Tradução de Lucas Magdiel"
+  genero: "ensaio (prólogo)"
+  sinopse: "Prólogo escrito em 1997 para o dicionário Clave, da editora espanhola SM, inédito em português até esta tradução. García Márquez recorda o avô que, corrigido num circo sobre um dromedário, foi tirar a dúvida no dicionário; compara definições de “amarelo” de 1611 a 1976, elogia o trabalho solitário de María Moliner e defende dicionários pensados também para crianças."
+  link: "https://www.confrariadovento.com/revista/numero11/ensaio01.htm"
+  arquivo: "publicacoes/2006-11_revista-confraria-11_garcia-marquez_prologo-clave.pdf"
+  capas: ["traducoes-curtas/revista-confraria-11_miniatura.jpg"]
+
+- id: gerardo-dirie-poemas
+  tipo: traducao-curta
+  titulo: "“idéias de uma cidade” e outros poemas"
+  autores: ["Gerardo Dirié"]
+  publicacao: "Revista Confraria, nº 12, jan./fev. 2007 (Confraria do Vento; ISSN 1808-6276)"
+  ano: 2007
+  par: "ES>PT"
+  papel: "tradução"
+  creditos: "Tradução: Lucas Magdiel"
+  genero: "poesia"
+  sinopse: "Primeira seleção de poemas do argentino Gerardo Dirié publicada em português: trechos da sequência “idéias de uma cidade”, “natureza morta holandesa”, “dois poemas eventuais” e um poema sem título. Nascido em Córdoba, Dirié é também compositor, regente e professor; à época, lecionava no Conservatório de Queensland, na Austrália."
+  link: "https://www.confrariadovento.com/revista/numero12/poesia01.htm"
+  arquivo: "publicacoes/2007-01_revista-confraria-12_gerardo-dirie_poemas.pdf"
+  capas: ["traducoes-curtas/revista-confraria-12_miniatura.jpg"]
+
+- id: gunter-grass-entrevista
+  tipo: traducao-curta
+  titulo: "Entrevista com Günter Grass"
+  autores: ["Faustino F. Álvarez (entrevistador)"]
+  publicacao: "livro de entrevistas da Editora Calibán (Rio de Janeiro), em preparação em 2010 — publicação a confirmar"
+  ano: 2010   # encomenda em 14/05/2010, tradução entregue em 24/05/2010, pagamento em 02/06/2010
+  par: "ES>PT"
+  papel: "tradução"
+  genero: "entrevista"
+  sinopse: "Entrevista concedida pelo escritor alemão Günter Grass, Nobel de Literatura de 1999, ao jornalista Faustino F. Álvarez em sua casa em Behlendorf, publicada originalmente no primeiro número da revista El Cielo de Salamanca (2000). Grass fala dos prêmios recentes, de Meu século e da relação entre compromisso político e literatura. Tradução feita em 2010 para um livro de entrevistas que a editora carioca Calibán, parceira da revista espanhola, preparava."
+  arquivo: "Site pessoal/Entrevista Gunter Grass.pdf"
+  capas: []

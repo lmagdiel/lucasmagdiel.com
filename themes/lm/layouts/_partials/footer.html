@@ -1,0 +1,12 @@
+<footer class="rodape">
+  <div class="rodape-in">
+    <p class="rodape-nome">Lucas Magdiel · Brasília</p>
+    <ul class="rodape-links">
+      {{- range $k, $v := site.Params.links }}{{ if $v.ativo }}
+      <li><a href="{{ $v.url }}" rel="me">{{ $v.nome }}</a></li>
+      {{- end }}{{ end }}
+      <li><a href="{{ "contato/" | relURL }}">Contato</a></li>
+    </ul>
+    <p class="rodape-meta">© {{ now.Year }} · {{ i18n "feito_com" }}</p>
+  </div>
+</footer>

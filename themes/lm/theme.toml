@@ -1,0 +1,4 @@
+name = "lm"
+license = "Proprietário"
+description = "Tema próprio de lucasmagdiel.com"
+min_version = "0.146.0"

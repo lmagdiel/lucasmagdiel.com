@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section class="secao">
+  <header class="secao-cab">
+    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">Portfólio</a></p>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+
+  {{- range hugo.Data.revisao }}
+  <section class="grupo grupo--rev">
+    <h2 class="subtitulo">{{ .titulo }}</h2>
+    {{- $papel := .papel }}
+    {{- with .sinopse }}<p class="nota">{{ . }}</p>{{ end }}
+    {{- if .titulos }}
+      <ul class="grade grade--p">
+        {{- range .titulos }}
+          {{- $aut := delimit (.autores | default .organizadores) ", " " e " }}
+          {{- $sub := printf "%s · %v%s" $aut .ano (cond (isset . "papel") (printf " · %s" .papel) "") }}
+          {{- partial "tile.html" (dict "href" .link "titulo" .titulo "sub" $sub "capa" .capa "pequeno" true) }}
+        {{- end }}
+      </ul>
+    {{- else if .capas }}
+      <div class="rev-item">
+        {{- partial "img.html" (dict "src" (index .capas 0) "alt" (printf "Capa de %s" .titulo) "w" 150) }}
+        <div>
+          <p class="tile-sub">{{ delimit (.autores | default slice) ", " }} · {{ .editora }} · {{ .ano }}{{ with .genero }} · {{ . }}{{ end }}</p>
+          <p class="tile-sub">{{ .papel | humanize }}</p>
+          {{- with .link }}<p><a class="externo" href="{{ . }}" rel="noopener">{{ i18n "pagina_oficial" }} ↗</a></p>{{ end }}
+        </div>
+      </div>
+    {{- else }}
+      {{- with .itens }}<ul class="lista-simples">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+      {{- with $papel }}<p class="tile-sub">{{ . | humanize }}</p>{{ end }}
+    {{- end }}
+  </section>
+  {{- end }}
+</section>
+{{ end }}

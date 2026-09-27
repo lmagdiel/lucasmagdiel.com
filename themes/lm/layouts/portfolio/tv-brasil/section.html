@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="secao">
+  <header class="secao-cab">
+    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">Portfólio</a></p>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+  <ul class="grade grade--tv">
+    {{- range sort hugo.Data.ebc "ano_exibicao" "desc" }}
+      {{- $tv := dict "titulo" .titulo "programa" .programa "emissora" (.emissora | default "TV Brasil") "ano" .ano_exibicao "par" .trabalho.par "frame" .frame "ancora" .ancora }}
+      {{- partial "tile.html" (dict "page" (site.GetPage (printf "/portfolio/tv-brasil/%s" .id)) "titulo" .titulo "tv" $tv) }}
+    {{- end }}
+  </ul>
+</section>
+{{ end }}

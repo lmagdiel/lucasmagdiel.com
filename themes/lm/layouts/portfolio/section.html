@@ -1,0 +1,62 @@
+{{ define "main" }}
+{{- /* Visão geral do portfólio: uma faixa por área, com amostra de capas */ -}}
+<section class="secao">
+  <header class="secao-cab">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+
+  {{- $livros := sort (where hugo.Data.livros "tipo" "livro-traduzido") "ano" "desc" }}
+  {{- $curtas := where hugo.Data.livros "tipo" "traducao-curta" }}
+  {{- $av := where hugo.Data.audiovisual "status" "!=" "aguardando" }}
+  {{- $ebc := sort hugo.Data.ebc "ano_exibicao" "desc" }}
+
+  <section class="faixa">
+    <div class="faixa-cab">
+      <h2><a href="{{ "portfolio/livros/" | relURL }}">Livros</a></h2>
+      <p>{{ len $livros }} obras traduzidas do inglês e {{ len $curtas }} traduções curtas publicadas.</p>
+    </div>
+    <ul class="grade grade--linha">
+      {{- range first 6 $livros }}
+        {{- partial "tile.html" (dict "page" (site.GetPage (printf "/portfolio/livros/%s" .id)) "titulo" .titulo "sub" (string (.periodo | default .ano)) "capa" (index .capas 0) "pequeno" true) }}
+      {{- end }}
+    </ul>
+  </section>
+
+  <section class="faixa">
+    <div class="faixa-cab">
+      <h2><a href="{{ "portfolio/legendagem/" | relURL }}">Legendagem</a></h2>
+      <p>{{ len $av }} séries e programas para streaming e TV por assinatura — Netflix, BBC, Sky, Discovery e outros.</p>
+    </div>
+    <ul class="grade grade--linha">
+      {{- range first 6 $av }}{{ if .capa }}
+        {{- partial "tile.html" (dict "page" (site.GetPage (printf "/portfolio/legendagem/%s" .id)) "titulo" .titulo "sub" .emissora "capa" .capa "alt" (printf "Pôster de %s" .titulo) "pequeno" true) }}
+      {{- end }}{{ end }}
+    </ul>
+  </section>
+
+  <section class="faixa">
+    <div class="faixa-cab">
+      <h2><a href="{{ "portfolio/tv-brasil/" | relURL }}">TV Brasil</a></h2>
+      <p>{{ len $ebc }} documentários, reportagens e entrevistas legendados para a TV pública, quase todos entre português e espanhol.</p>
+    </div>
+    <ul class="grade grade--linha grade--tv">
+      {{- range first 6 $ebc }}
+        {{- $tv := dict "titulo" .titulo "programa" .programa "emissora" (.emissora | default "TV Brasil") "ano" .ano_exibicao "par" .trabalho.par "frame" .frame "ancora" .ancora }}
+        {{- partial "tile.html" (dict "page" (site.GetPage (printf "/portfolio/tv-brasil/%s" .id)) "titulo" .titulo "tv" $tv "pequeno" true) }}
+      {{- end }}
+    </ul>
+  </section>
+
+  <div class="faixa faixa--duas">
+    <section>
+      <h2><a href="{{ "portfolio/jornalismo/" | relURL }}">Jornalismo</a></h2>
+      <p>{{ hugo.Data.estatisticas.agencia_brasil_es.frase_aprovada | strings.FirstUpper }}, na edição em espanhol da Agência Brasil.</p>
+    </section>
+    <section>
+      <h2><a href="{{ "portfolio/revisao/" | relURL }}">Revisão</a></h2>
+      <p>Livros de poesia, ficção, ensaio e não ficção para editoras como Confraria do Vento, Língua Geral e Alta Books, além de trabalhos acadêmicos.</p>
+    </section>
+  </div>
+</section>
+{{ end }}

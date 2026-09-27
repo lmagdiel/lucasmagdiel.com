@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{- $e := hugo.Data.estatisticas.agencia_brasil_es }}
+<article class="secao prosa">
+  <header class="secao-cab">
+    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">Portfólio</a></p>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <p class="destaque-num">
+    <span class="num">{{ lang.FormatNumber 0 (math.Floor (div $e.materias_min 1000.0)) }} mil+</span>
+    <span class="num-rot">matérias vertidas ao espanhol desde {{ (time $e.desde).Year }}</span>
+    <span class="num">{{ lang.FormatNumber 0 (math.Floor (div $e.palavras_min 1000000.0)) }} milhões+</span>
+    <span class="num-rot">de palavras (estimativa de {{ (time $e.referencia).Format "01/2006" }})</span>
+  </p>
+  {{ .Content }}
+</article>
+{{ end }}

@@ -1,0 +1,14 @@
+{{- /* Item da grade do portfólio.
+       Parâmetros: page (página da obra) ou href; titulo; sub; capa (assets/capas/...); alt; tv (dict para o card); pequeno (bool) */ -}}
+{{- $href := "" }}{{ with .page }}{{ $href = .RelPermalink }}{{ else }}{{ $href = .href }}{{ end -}}
+<li class="tile{{ if .pequeno }} tile--p{{ end }}">
+  {{- if $href }}<a href="{{ $href }}">{{ else }}<div>{{ end }}
+    <div class="tile-img">
+      {{- if .capa }}{{ partial "img.html" (dict "src" .capa "alt" (.alt | default (printf "Capa de %s" .titulo)) "w" (cond .pequeno 150 220)) }}
+      {{- else if .tv }}{{ partial "tvcard.html" .tv }}
+      {{- end }}
+    </div>
+    <span class="tile-tit">{{ .titulo }}</span>
+    {{- with .sub }}<span class="tile-sub">{{ . }}</span>{{ end }}
+  {{ if $href }}</a>{{ else }}</div>{{ end }}
+</li>

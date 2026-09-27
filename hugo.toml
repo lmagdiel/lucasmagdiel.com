@@ -1,0 +1,95 @@
+baseURL = "https://lucasmagdiel.com/"
+title = "Lucas Magdiel"
+theme = "lm"
+enableRobotsTXT = true
+enableGitInfo = false
+disableKinds = ["taxonomy", "term"]
+timeZone = "America/Sao_Paulo"
+
+defaultContentLanguage = "pt"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.pt]
+    locale = "pt-BR"
+    label = "Português"
+    weight = 1
+  # EN e ES ficam prontos na estrutura e entram depois do lançamento.
+  [languages.en]
+    locale = "en"
+    label = "English"
+    weight = 2
+    disabled = true
+  [languages.es]
+    locale = "es"
+    label = "Español"
+    weight = 3
+    disabled = true
+
+[params]
+  description = "Tradutor e legendador (inglês e espanhol). Livros, séries, documentários e jornalismo; tecnologia aplicada à tradução."
+  author = "Lucas Magdiel"
+  # Sem e-mail visível no site: contato só pelo formulário (evita spam).
+  # Formulário de contato (Cloudflare Pages Function em /api/contato).
+  contactEndpoint = "/api/contato"
+  turnstileSiteKey = ""          # preencher com a site key do Turnstile
+  [params.links]
+    # Ficam ocultos até estarem atualizados / com conteúdo público.
+    [params.links.linkedin]
+      url = "https://www.linkedin.com/in/lucasmagdiel/"
+      nome = "LinkedIn"
+      ativo = false
+    [params.links.proz]
+      url = "https://www.proz.com/"
+      nome = "ProZ"
+      ativo = false
+    [params.links.github]
+      url = "https://github.com/lmagdiel"
+      nome = "GitHub"
+      ativo = false
+
+[menus]
+  [[menus.main]]
+    name = "Portfólio"
+    pageRef = "/portfolio"
+    weight = 10
+  [[menus.main]]
+    name = "Tecnologia"
+    pageRef = "/tecnologia"
+    weight = 20
+  [[menus.main]]
+    name = "Sobre"
+    pageRef = "/sobre"
+    weight = 30
+  [[menus.main]]
+    name = "Notas"
+    pageRef = "/notas"
+    weight = 40
+  [[menus.main]]
+    name = "Contato"
+    pageRef = "/contato"
+    weight = 50
+
+[markup.goldmark.renderer]
+  unsafe = false
+[markup.goldmark.extensions.typographer]
+  disable = false
+
+[imaging]
+  resampleFilter = "Lanczos"
+  anchor = "Smart"
+  [imaging.jpeg]
+    quality = 85
+  [imaging.webp]
+    quality = 82
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+  page = ["HTML"]
+
+[sitemap]
+  changeFreq = "monthly"
+
+[build]
+  writeStats = false

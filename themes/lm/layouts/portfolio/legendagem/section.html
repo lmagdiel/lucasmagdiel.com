@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="secao">
+  <header class="secao-cab">
+    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">Portfólio</a></p>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+
+  {{- range .Params.grupos }}
+  {{- $itens := where (where hugo.Data.audiovisual "grupo" .id) "status" "!=" "aguardando" }}
+  {{- if $itens }}
+  <section class="grupo">
+    <h2 class="subtitulo">{{ .titulo }}</h2>
+    {{- with .texto }}<p class="nota">{{ . | markdownify }}</p>{{ end }}
+    <ul class="grade">
+      {{- range $itens }}
+        {{- $sub := .emissora }}{{ with .ano }}{{ $sub = printf "%s · %v" $sub . }}{{ end }}
+        {{- $pg := site.GetPage (printf "/portfolio/legendagem/%s" .id) }}
+        {{- if .capa }}
+          {{- partial "tile.html" (dict "page" $pg "titulo" .titulo "sub" $sub "capa" .capa "alt" (printf "Pôster de %s" .titulo)) }}
+        {{- else }}
+          {{- partial "tile.html" (dict "page" $pg "titulo" .titulo "sub" $sub "tv" (dict "titulo" .titulo "programa" (.creditos.producao | default "Série") "emissora" .emissora "ano" .ano "par" .trabalho.par)) }}
+        {{- end }}
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+  {{- end }}
+</section>
+{{ end }}

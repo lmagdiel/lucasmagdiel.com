@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article class="secao prosa">
+  <header class="secao-cab">
+    {{- if and .Parent (not .Parent.IsHome) }}<p class="rotulo"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{- if and (eq .Section "notas") .Date }}<p class="data">{{ .Date | time.Format ":date_long" }}</p>{{ end }}
+  </header>
+  {{- with .Params.foto }}
+  <figure class="foto">{{ partial "img.html" (dict "src" . "alt" "Foto de Lucas Magdiel" "w" 200) }}</figure>
+  {{- end }}
+  {{ .Content }}
+</article>
+{{ end }}

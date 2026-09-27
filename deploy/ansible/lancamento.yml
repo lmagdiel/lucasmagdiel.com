@@ -1,0 +1,55 @@
+# Tarefas de lançamento (Fase 3) — NÃO rodar antes de retirar o PREVIEW_AUTH.
+# Integrar ao ansible-infra (ex.: roles/cloudflare_sites) e usar o token do vault.
+#
+#   ansible-playbook deploy/ansible/lancamento.yml -e cloudflare_api_token=... -e cloudflare_account_id=...
+#
+# 1. Associa lucasmagdiel.com e www ao projeto Pages "lucasmagdiel"
+#    (a zona está na mesma conta: o Cloudflare cria/atualiza o CNAME sozinho).
+# 2. Garante o redirecionamento www → apex.
+# O redirecionamento atual de lucas.st (e o caminho /dicts) continua como está — não é tocado aqui.
+- name: Lançamento de lucasmagdiel.com no Cloudflare Pages
+  hosts: localhost
+  gather_facts: false
+  vars:
+    projeto: lucasmagdiel
+    dominios: ["lucasmagdiel.com", "www.lucasmagdiel.com"]
+    api: "https://api.cloudflare.com/client/v4"
+    headers:
+      Authorization: "Bearer {{ cloudflare_api_token }}"
+      Content-Type: "application/json"
+  tasks:
+    - name: Domínios personalizados do projeto
+      ansible.builtin.uri:
+        url: "{{ api }}/accounts/{{ cloudflare_account_id }}/pages/projects/{{ projeto }}/domains"
+        method: POST
+        headers: "{{ headers }}"
+        body_format: json
+        body: { name: "{{ item }}" }
+        status_code: [200, 409]   # 409 = já associado
+      loop: "{{ dominios }}"
+
+    - name: Consultar a zona lucasmagdiel.com
+      ansible.builtin.uri:
+        url: "{{ api }}/zones?name=lucasmagdiel.com"
+        headers: "{{ headers }}"
+      register: zona
+
+    # ATENÇÃO: o PUT substitui todas as regras de redirecionamento da zona lucasmagdiel.com.
+    # Conferir antes se já existe alguma regra nessa fase.
+    - name: Regra de redirecionamento www → apex (Single Redirect)
+      ansible.builtin.uri:
+        url: "{{ api }}/zones/{{ zona.json.result[0].id }}/rulesets/phases/http_request_dynamic_redirect/entrypoint"
+        method: PUT
+        headers: "{{ headers }}"
+        body_format: json
+        body:
+          rules:
+            - description: "www → apex"
+              expression: '(http.host eq "www.lucasmagdiel.com")'
+              action: redirect
+              action_parameters:
+                from_value:
+                  status_code: 301
+                  preserve_query_string: true
+                  target_url:
+                    expression: 'concat("https://lucasmagdiel.com", http.request.uri.path)'

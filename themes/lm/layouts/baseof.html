@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="{{ with .Section }}s-{{ . }}{{ end }} k-{{ .Kind }}">
+  <a class="skip" href="#conteudo">{{ i18n "pular_para_conteudo" }}</a>
+  {{ partial "header.html" . }}
+  <main id="conteudo">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+</body>
+</html>

@@ -1,0 +1,15 @@
+{{- /* Card padronizado para produções sem pôster oficial (2:3).
+       Parâmetros: titulo, programa, emissora, ano, par, frame (assets/capas/...), ancora */ -}}
+<div class="tvcard{{ if not .frame }} tvcard--tipo{{ end }}" role="img" aria-label="{{ .programa }}: {{ .titulo }}">
+  {{- with .frame }}
+  {{- with resources.Get (printf "capas/%s" .) }}
+  {{- $f := .Fill (printf "480x416 webp q78 %s" ($.ancora | default "Smart")) }}
+  <div class="tvcard-img"><img src="{{ $f.RelPermalink }}" width="{{ $f.Width }}" height="{{ $f.Height }}" alt="" loading="lazy" decoding="async"></div>
+  {{- end }}
+  {{- end }}
+  <div class="tvcard-txt">
+    <span class="tvcard-prog">{{ .programa | replaceRE ` \(.*\)$` "" }}</span>
+    <span class="tvcard-tit">{{ .titulo }}</span>
+    <span class="tvcard-rod"><span>{{ .emissora | default "TV Brasil" }}{{ with .ano }} · {{ . }}{{ end }}</span>{{ with .par }}<span>{{ . | replaceRE ">" " › " }}</span>{{ end }}</span>
+  </div>
+</div>

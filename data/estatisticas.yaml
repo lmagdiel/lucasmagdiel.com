@@ -1,0 +1,27 @@
+# Números para o site. Atualizado em 2026-09-26.
+
+agencia_brasil_es:
+  referencia: 2026-09-26
+  desde: 2013-06-03
+  frase_aprovada: "mais de 9 mil matérias vertidas ao espanhol desde 2013 — cerca de 5 milhões de palavras"
+  materias_min: 9147
+  palavras_min: 4893645
+  laudas_min: 26051   # 1.000 caracteres sem espaços (padrão CJF)
+  base: "3 matérias por dia útil (piso da estimativa do tradutor); média de 535 palavras por matéria (56 matérias assinadas, mar.–set./2026)"
+  script: "referencias/dados/estimativa_agencia_brasil.py"
+
+blend:
+  referencia: 2026-09-26   # painel do tradutor (Translation Services - BLEND.pdf)
+  desde: 2012-01-12
+  nome_antigo: "OneHourTranslation"
+  nivel: "Silver"
+  projetos_concluidos: 475
+  palavras_traduzidas: 151827
+  entregas_no_prazo: "100%"
+  projetos_abandonados: 0
+  advertencias: 0
+  frase_sugerida: "tradutor e editor certificado desde 2012 — 475 projetos e mais de 150 mil palavras, com 100% de entregas no prazo"
+
+darkside:
+  titulos_traduzidos: 8
+  laudas_atestadas: 5000   # soma do atestado individual da DarkSide (8 títulos)

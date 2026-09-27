@@ -1,0 +1,33 @@
+{{ define "main" }}
+<section class="secao">
+  <header class="secao-cab">
+    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">Portfólio</a></p>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </header>
+
+  {{- $livros := sort (where hugo.Data.livros "tipo" "livro-traduzido") "ano" "desc" }}
+  <ul class="grade">
+    {{- range $livros }}
+      {{- $autores := delimit (.autores | default .organizadores) ", " " e " }}
+      {{- $ano := .periodo | default .ano }}
+      {{- partial "tile.html" (dict "page" (site.GetPage (printf "/portfolio/livros/%s" .id)) "titulo" .titulo "sub" (printf "%s · %v" $autores $ano) "capa" (index .capas 0)) }}
+    {{- end }}
+  </ul>
+
+  <h2 class="subtitulo">Traduções curtas publicadas</h2>
+  <ul class="lista">
+    {{- range sort (where hugo.Data.livros "tipo" "traducao-curta") "ano" "desc" }}
+    <li>
+      <span class="lista-ano">{{ .ano }}</span>
+      <div>
+        <p class="lista-tit">{{ .titulo }}{{ with .autores }} <span class="lista-aut">— {{ delimit . ", " }}</span>{{ end }}</p>
+        <p class="lista-pub">{{ .publicacao }} · <span class="par">{{ .par }}</span></p>
+        {{- with .sinopse }}<p>{{ . }}</p>{{ end }}
+        {{- with .link }}<p><a class="externo" href="{{ . }}" rel="noopener">Ler na revista ↗</a></p>{{ end }}
+      </div>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{ end }}

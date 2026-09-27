@@ -1,0 +1,7 @@
+{{/* Gera uma página por série/programa publicado a partir de data/audiovisual.yaml */}}
+{{ range hugo.Data.audiovisual }}
+  {{ if ne .status "aguardando" }}
+    {{ $c := dict "mediaType" "text/markdown" "value" (.sinopse | default "") }}
+    {{ $.AddPage (dict "path" .id "title" .titulo "kind" "page" "content" $c "params" .) }}
+  {{ end }}
+{{ end }}
