@@ -23,7 +23,7 @@
       <div class="rev-item">
         {{- partial "img.html" (dict "src" (index .capas 0) "alt" (printf "Capa de %s" .titulo) "w" 150) }}
         <div>
-          <p class="tile-sub">{{ delimit (.autores | default slice) ", " }} · {{ .editora }} · {{ .ano }}{{ with .genero }} · {{ . }}{{ end }}</p>
+          <p class="tile-sub">{{ with .autores }}{{ delimit . ", " }}{{ else }}{{ with .organizadores }}{{ delimit . ", " }} (org.){{ end }}{{ end }} · {{ .editora }} · {{ .ano }}{{ with .genero }} · {{ . }}{{ end }}</p>
           <p class="tile-sub">{{ .papel | strings.FirstUpper }}</p>
           {{- with .link }}<p><a class="externo" href="{{ . }}" rel="noopener">{{ i18n "pagina_oficial" }} ↗</a></p>{{ end }}
         </div>

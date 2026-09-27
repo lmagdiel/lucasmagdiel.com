@@ -10,7 +10,7 @@
   ano: 2025
   isbn: "9786552235855"
   paginas: 132
-  papel: "revisão e preparação de originais"
+  papel: "preparação de originais"
   genero: "poesia (edição bilíngue)"
   sinopse: "Livro de poemas de Vânia Vidal, em edição bilíngue. Os textos recorrem a personagens conhecidos da cultura ocidental para discutir identidade e narcisismo, e tratam também de despedidas e do encerramento de ciclos."
   link: "https://caravanagrupoeditorial.com/livros/narciso-3/"
@@ -24,7 +24,7 @@
   ano: 2024
   isbn: "9786550619978"
   paginas: 48
-  papel: "revisão e preparação de originais"
+  papel: "preparação de originais"
   genero: "poesia"
   sinopse: "Livro de poemas de Vânia Vidal, historiadora, paleógrafa e professora radicada no Rio de Janeiro. Os poemas exploram estados intermediários, como o de quem transita entre lugares e pertencimentos, e dão espaço à experiência feminina."
   link: "https://caravanagrupoeditorial.com/livros/paragate/"
@@ -38,7 +38,7 @@
   ano: 2024
   isbn: "9786550619909"
   paginas: 50
-  papel: "revisão e preparação de originais"
+  papel: "preparação de originais"
   genero: "poesia"
   sinopse: "Coletânea de poemas de Vânia Vidal escritos em diferentes fases da vida da autora. O corpo, os sentidos e a passagem do tempo são eixos do livro."
   link: "https://caravanagrupoeditorial.com/livros/a-mulher-de-mocassins/"
@@ -122,9 +122,9 @@
   editora: "Faculdade de Letras/UFRJ"
   ano: 2007
   isbn: "9788587043672"
-  papel: "entrevistas, transcrição, preparação de originais e revisão (curso de extensão, 2006)"
-  sinopse: "Doze entrevistas com escritores brasileiros contemporâneos, como Ferreira Gullar, Antonio Carlos Secchin e Sérgio Sant'Anna, feitas, transcritas e editadas por alunos da Faculdade de Letras da UFRJ em curso coordenado por Dau Bastos."
-  capas: []
+  papel: "entrevista com a poeta Claudia Roquette-Pinto e preparação de originais (curso de extensão, 2006)"
+  sinopse: "Doze entrevistas com escritores brasileiros contemporâneos, como Ferreira Gullar, Claudia Roquette-Pinto, Antonio Carlos Secchin e Sérgio Sant'Anna, feitas, transcritas e editadas por alunos da Faculdade de Letras da UFRJ em curso coordenado por Dau Bastos."
+  capas: ["revisao/ufrj_papos-contemporaneos.jpg"]   # capa recortada do convite de lançamento, com o vermelho suavizado
 
 - id: coad
   tipo: revisao
