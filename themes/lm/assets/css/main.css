@@ -247,6 +247,8 @@ main { padding-block: 2.5rem 4rem; }
 .painel-rot { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-accent); }
 .painel-tit { font-family: var(--serif); font-size: 1.3rem; line-height: 1.2; }
 .painel img { display: block; width: 13.5rem; height: auto; margin-bottom: 0.9rem; filter: drop-shadow(0 14px 18px rgba(0, 0, 0, 0.55)); }
+.ilustr { margin: 0.4rem 0 1.6rem; background: var(--ink); border-radius: var(--radius); overflow: hidden; }
+.ilustr img { display: block; width: 100%; height: auto; }
 .leia-mais { margin-top: -0.2rem; }
 .leia-mais a { font-weight: 600; text-decoration: none; }
 .leia-mais a:hover { text-decoration: underline; }

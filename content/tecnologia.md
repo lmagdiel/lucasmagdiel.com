@@ -7,7 +7,7 @@ Tecnologia é o meu principal interesse fora das línguas e, cada vez mais, part
 
 ## Homelab e self-hosting
 
-{{< painel img="img/tecnologia/jonsbo-n2.png" alt="Gabinete Jonsbo N2 preto" rotulo="Servidor principal" titulo="Jonsbo N2 · Unraid" >}}
+{{< ilustracao img="img/tecnologia/homelab.svg" alt="Ilustração: rede doméstica com servidores, Raspberry Pi, desktop e switch, ligada por VPN a servidores na nuvem" >}}
 
 No que hoje parece um passado distante, tive meu primeiro PC por volta do ano 2000, aos 15 anos, um modesto K6-2. Aos 17, fiz um curso de montagem na FAETEC e, aos 19, já na faculdade (de Letras, veja bem), juntei uns trocados e consegui montar do zero o meu primeiro PC, um Sempron, que me acompanhou por longos anos. Com peças sobressalentes, montei meu primeiro servidor doméstico por volta de 2008, rodando o finado Windows Home Server, o que me permitiu ir me familiarizando com a configuração e a manutenção de redes.
 
@@ -21,7 +21,7 @@ No que hoje parece um passado distante, tive meu primeiro PC por volta do ano 20
 Ferramenta interna que desenvolvi para a equipe de tradução da Agência Brasil. Acompanha cada matéria da publicação em português até as versões em inglês e espanhol, com extensão de navegador, editor web, tradução automática, revisão assistida por IA com o guia de estilo da agência e painel de produção. [abrflow.app ↗](https://abrflow.app)
 {{< /projeto >}}
 
-{{< projeto img="img/tecnologia/legendagem.svg" alt="Ilustração: quadro de vídeo com legenda, forma de onda, trilha de legendas e indicadores de qualidade" >}}
+{{< projeto img="img/tecnologia/legendagem.svg" alt="Ilustração: tabela de revisão com original, rascunho, versão final e métricas de cada legenda" >}}
 ### Legendagem assistida
 
 Um ambiente de trabalho para legendagem que reúne tradução automática neural e modelos de linguagem, memória de tradução e busca semântica, linguística de corpus, análise sintática, verificação gramatical e controle de qualidade de legendas (velocidade de leitura, caracteres por linha, quebras e regras de estilo). A ideia não é entregar tradução pronta, mas preparar um rascunho informado e uma tabela de revisão em que cada legenda é decidida por quem traduz. Os serviços de IA são usados com retenção zero de dados.
@@ -33,7 +33,7 @@ Um ambiente de trabalho para legendagem que reúne tradução automática neural
 Alinhamento bilíngue de obras literárias e corpus de legendas para estudar soluções de tradução, e guias de estilo em inglês e espanhol da Agência Brasil construídos a partir de um corpus de matérias.
 {{< /projeto >}}
 
-{{< projeto img="img/tecnologia/sites.png" alt="Páginas iniciais de abrflow.app, coizassim.com.br e lucasmagdiel.com" >}}
+{{< projeto img="img/tecnologia/sites.svg" alt="Ilustração: página web genérica com título, texto, imagem e cartões" >}}
 ### Sites
 
 Este site (Hugo, com tema próprio), o [coizassim.com.br](https://coizassim.com.br) e o site do AbrFlow. Na [Ligna](https://ligna.pro), cuido do domínio, da hospedagem e dos e-mails.

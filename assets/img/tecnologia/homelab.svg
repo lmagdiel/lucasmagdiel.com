@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" role="img">
+  <defs>
+    <style>
+      .m{font-family:ui-monospace,"SF Mono","Cascadia Code","Segoe UI Mono",Menlo,Consolas,monospace;letter-spacing:.06em}
+      .s{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+      .r{font-family:Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif}
+    </style>
+  </defs>
+  <rect x="40" y="30" width="470" height="220" rx="14" fill="none" stroke="#3a3935" stroke-width="2" stroke-dasharray="8 7"/>
+  <line x1="275" y1="140" x2="110" y2="80" stroke="#7fbcc2" stroke-width="1.8" opacity=".7"/>
+  <line x1="275" y1="140" x2="110" y2="200" stroke="#7fbcc2" stroke-width="1.8" opacity=".7"/>
+  <line x1="275" y1="140" x2="440" y2="80" stroke="#7fbcc2" stroke-width="1.8" opacity=".7"/>
+  <line x1="275" y1="140" x2="440" y2="200" stroke="#7fbcc2" stroke-width="1.8" opacity=".7"/>
+  <rect x="80" y="50" width="60" height="60" rx="8" stroke="#b4afa6" stroke-width="2" fill="#232320"/>
+  <rect x="90" y="62" width="40" height="9" rx="2" fill="#1b1a18"/>
+  <circle cx="124" cy="66.5" r="2" fill="#7fbcc2"/>
+  <rect x="90" y="76" width="40" height="9" rx="2" fill="#1b1a18"/>
+  <circle cx="124" cy="80.5" r="2" fill="#7fbcc2"/>
+  <rect x="90" y="90" width="40" height="9" rx="2" fill="#1b1a18"/>
+  <circle cx="124" cy="94.5" r="2" fill="#7fbcc2"/>
+  <rect x="80" y="170" width="60" height="60" rx="8" stroke="#b4afa6" stroke-width="2" fill="#232320"/>
+  <rect x="90" y="182" width="40" height="9" rx="2" fill="#1b1a18"/>
+  <circle cx="124" cy="186.5" r="2" fill="#7fbcc2"/>
+  <rect x="90" y="196" width="40" height="9" rx="2" fill="#1b1a18"/>
+  <circle cx="124" cy="200.5" r="2" fill="#7fbcc2"/>
+  <rect x="90" y="210" width="40" height="9" rx="2" fill="#1b1a18"/>
+  <circle cx="124" cy="214.5" r="2" fill="#7fbcc2"/>
+  <rect x="410" y="64" width="60" height="34" rx="5" fill="#223230" stroke="#7fbcc2" stroke-width="1.6"/>
+  <rect x="420" y="74" width="16" height="12" rx="2" fill="#1b1a18"/>
+  <circle cx="458" cy="78" r="2.5" fill="#d6aa48"/>
+  <rect x="408" y="176" width="64" height="40" rx="4" stroke="#b4afa6" stroke-width="2" fill="#232320"/>
+  <line x1="440" y1="216" x2="440" y2="228" stroke="#b4afa6" stroke-width="2"/><line x1="426" y1="228" x2="454" y2="228" stroke="#b4afa6" stroke-width="2"/>
+  <rect x="231" y="124" width="88" height="32" rx="6" stroke="#b4afa6" stroke-width="2" fill="#232320"/>
+  <circle cx="245" cy="140" r="2.6" fill="#7fbcc2"/>
+  <circle cx="260" cy="140" r="2.6" fill="#7fbcc2"/>
+  <circle cx="275" cy="140" r="2.6" fill="#7fbcc2"/>
+  <circle cx="290" cy="140" r="2.6" fill="#4a4740"/>
+  <circle cx="305" cy="140" r="2.6" fill="#7fbcc2"/>
+  <path d="M596 118 a34 34 0 0 1 62 -18 a40 40 0 0 1 74 16 a26 26 0 0 1 -6 52 h-126 a26 26 0 0 1 -4 -50 z" fill="none" stroke="#b4afa6" stroke-width="2"/>
+  <rect x="626" y="128" width="40" height="26" rx="4" fill="#1b1a18" stroke="#b4afa6" stroke-width="1.6"/>
+  <circle cx="656" cy="141" r="2.4" fill="#7fbcc2"/>
+  <rect x="680" y="128" width="40" height="26" rx="4" fill="#1b1a18" stroke="#b4afa6" stroke-width="1.6"/>
+  <circle cx="710" cy="141" r="2.4" fill="#7fbcc2"/>
+  <path d="M319 140 C 420 140, 520 150, 600 146" fill="none" stroke="#d6aa48" stroke-width="1.8" stroke-dasharray="5 6"/>
+  <path d="M140 80 C 300 10, 560 40, 640 110" fill="none" stroke="#d6aa48" stroke-width="1.4" stroke-dasharray="4 7" opacity=".6"/>
+</svg>
