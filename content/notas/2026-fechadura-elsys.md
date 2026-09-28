@@ -1,5 +1,5 @@
 ---
-title: "Uma fechadura discreta que não parava de falar"
+title: "Uma fechadura discreta que não para de falar"
 date: 2026-09-01
 description: "A compra e a instalação da fechadura digital Elsys ESF-DE2000B: o que eu não sabia sobre o padrão das portas, o modo silencioso e o firmware compartilhado entre marcas."
 ---
@@ -19,7 +19,7 @@ O modelo escolhido foi a ESF-DE2000B, que abre por biometria, senha ou chave mec
 
 A fechadura segue o padrão brasileiro de embutir, e eu imaginava uma troca quase direta: tira a máquina velha, encaixa a nova no mesmo vão, fura um ou dois buracos para os parafusos e o cabo, pronto. Compra feita, topei com relatos de que a instalação não era tão simples assim, e que podia levar até várias horas para alguém sem perícia. Para evitar a fadiga, chamei um chaveiro, e ainda bem, porque fadigante seria. Apesar do padrão, o mecanismo não coube no nicho que já existia, e foi preciso rasgar a porta para acomodá-lo, além de furar de lado a lado para passar o cabo entre o painel externo e o interno. Foi mais de uma hora de trabalho, entre desbastar a madeira, ajustar, cortar a haste no comprimento certo e alinhar tudo, e a instalação custou R$ 300 (preço no Plano de Brasília).
 
-## Falastrona
+## Tagarela
 
 A maior irritação veio depois. A ESF-DE2000B fala. Fala muito. Cada passo da configuração é narrado numa voz estridente e pouco inteligível, com o som saindo pelo painel externo, ou seja, virado para o corredor do prédio. Cadastrar administrador, digitais, senhas: tudo anunciado aos vizinhos, justo quando eu tentava fazer a coisa mais discreta possível.
 

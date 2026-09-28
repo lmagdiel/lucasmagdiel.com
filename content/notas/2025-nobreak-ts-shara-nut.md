@@ -1,5 +1,5 @@
 ---
-title: "O nobreak, a interface que não veio e o NUT"
+title: "O nobreak, a interface fantasma e o NUT"
 date: 2025-09-10
 description: "A novela para conseguir a interface de comunicação de um nobreak TS Shara comprado pela internet e como configurá-lo com o NUT."
 ---
@@ -7,7 +7,7 @@ Quando reorganizei o homelab este ano, decidi que era hora de ter um nobreak de 
 
 *Se quiser pular a história, [vá direto para a parte técnica](#a-arquitetura).*
 
-## A interface que não veio
+## A interface fantasma
 
 O que a página não diz é que, em compras feitas por revenda, essa interface não vem instalada. Descobri isso só depois de receber o equipamento, num comentário de um vídeo de divulgação da própria fabricante. Para ter acesso a ela, é preciso solicitar. Foi o que fiz. No dia seguinte à entrega, após contato telefônico, o atendimento me orientou a levar o nobreak a uma assistência autorizada em Brasília e garantiu o envio gratuito do módulo USB. A partir daí, começou a espera. A assistência não conseguia retorno da fábrica, e a peça não chegava.
 
@@ -157,5 +157,7 @@ O suporte nativo do Unraid a nobreaks (em Settings › UPS Settings) é baseado 
 - não dependa dos gatilhos do plugin por porcentagem de bateria ou autonomia, que leem os mesmos números pouco confiáveis. Quem decide é o servidor, e o FSD chega ao Unraid pela rede. Se quiser uma rede de segurança local, use o gatilho por tempo em bateria, com um valor um pouco maior que o do servidor;
 - confira em Settings › Disk Settings o tempo limite de desligamento: parar o array, as VMs e os contêineres leva tempo, e tudo precisa caber na autonomia do nobreak (e no `offdelay`, se você usa o corte de energia);
 - teste pelo terminal do Unraid com `upsc tsshara@IP_DO_PI` e, num dia calmo, tire o nobreak da tomada para ver a cadeia inteira funcionar.
+
+## Conclusão
 
 Com a interface instalada, a parte técnica fluiu bem, mas precisei dedicar um bom tempo para testar e configurar tudo. Fica o registro aqui para quem precisar.
