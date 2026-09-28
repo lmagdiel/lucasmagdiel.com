@@ -44,5 +44,5 @@
   <circle cx="460" cy="400" r="5" fill="#7fbcc2"/>
   <!-- etapas -->
   <line x1="48" y1="540" x2="752" y2="540" stroke="#3a3935" stroke-width="1.5"/>
-  <text class="mono" x="48" y="570" font-size="15" fill="#b4afa6">publicação › tradução › revisão IA › edição › painel</text>
+  <text class="mono" x="48" y="570" font-size="14" fill="#b4afa6">extração › contextualização › pedido › tradução assistida › publicação</text>
 </svg>
