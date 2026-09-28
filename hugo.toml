@@ -70,6 +70,9 @@ defaultContentLanguageInSubdir = false
     pageRef = "/contato"
     weight = 50
 
+[markup.highlight]
+  noClasses = false
+
 [markup.goldmark.renderer]
   unsafe = false
 [markup.goldmark.extensions.typographer]
