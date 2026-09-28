@@ -9,7 +9,7 @@ Tecnologia é o meu principal interesse fora das línguas e, cada vez mais, part
 
 {{< ilustracao img="img/tecnologia/homelab.svg" alt="Ilustração: rede doméstica com servidores, Raspberry Pi, desktop e switch, ligada por VPN a servidores na nuvem" >}}
 
-No que hoje parece um passado distante, tive meu primeiro PC por volta do ano 2000, aos 15 anos, um modesto K6-2. Aos 17, fiz um curso de montagem na FAETEC e, aos 19, já na faculdade (de Letras, veja bem), juntei uns trocados e consegui montar do zero o meu primeiro PC, um Sempron, que me acompanhou por longos anos. Com peças sobressalentes, montei meu primeiro servidor doméstico por volta de 2008, rodando o finado Windows Home Server, o que me permitiu ir me familiarizando com a configuração e a manutenção de redes.
+No que hoje parece um passado distante, tive meu primeiro PC por volta do ano 2000, aos 15 anos, um modesto K6-2. Aos 17, fiz um curso de montagem na FAETEC que me fez sonhar com carneiros elétricos. Aos 19, já na faculdade de Letras (o mundo é texto e bytes, vai discutir?), juntei uns trocados e consegui montar do zero o meu primeiro PC, um Sempron, que me acompanhou por longos anos. Com peças sobressalentes, montei meu primeiro servidor doméstico por volta de 2008, rodando o finado Windows Home Server, o que me permitiu ir me familiarizando com a configuração e a manutenção de redes enquanto não estava lendo o Gabo ou o Machado.
 
 {{< leiamais "/notas/2026-do-k6-2-ao-homelab" >}}
 

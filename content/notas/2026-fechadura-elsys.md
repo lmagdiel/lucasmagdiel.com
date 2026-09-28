@@ -17,7 +17,7 @@ O modelo escolhido foi a ESF-DE2000B, que abre por biometria, senha ou chave mec
 
 ## Despadrão
 
-A fechadura segue o padrão brasileiro de embutir, e eu imaginava uma troca quase direta: tira a máquina velha, encaixa a nova no mesmo vão, fura um ou dois buracos para os parafusos e o cabo, pronto. Compra feita, topei com relatos de que a instalação não era tão simples assim, e que podia levar até várias horas para alguém sem perícia. Para evitar a fadiga, chamei um chaveiro, e ainda bem, porque fadigante seria. Apesar do padrão, o mecanismo não coube no nicho que já existia, e foi preciso rasgar a porta para acomodá-lo, além de furar de lado a lado para passar o cabo entre o painel externo e o interno. Foi mais de uma hora de trabalho, entre desbastar a madeira, ajustar, cortar a haste no comprimento certo e alinhar tudo, e a instalação custou R$ 300 (preço no Plano Piloto, em Brasília).
+A fechadura segue o padrão brasileiro de embutir, e eu imaginava uma troca quase direta: tira a máquina velha, encaixa a nova no mesmo vão, fura um ou dois buracos para os parafusos e o cabo, pronto. Compra feita, topei com relatos de que a instalação não era tão simples assim, e que podia levar até várias horas para alguém sem perícia. Para evitar a fadiga, chamei um chaveiro, e ainda bem, porque fadigante seria. Apesar do padrão, o mecanismo não coube no nicho que já existia, e foi preciso rasgar a porta para acomodá-lo, além de furar de lado a lado para passar o cabo entre o painel externo e o interno. Foi mais de uma hora de trabalho, entre desbastar a madeira, ajustar, cortar a haste no comprimento certo e alinhar tudo, e a instalação custou R$ 300 (preço no Plano de Brasília).
 
 ## Falastrona
 
