@@ -17,8 +17,6 @@ grupos:
           - "Matriz de 20 TB: 2× WD Red 4 TB e 2× HGST Ultrastar 6 TB, com 1× WD Red Plus 6 TB de paridade"
           - "Cache em 2× NVMe Toshiba XG6 512 GB"
           - "Appdata em SSD Kingston DC600M 480 GB"
-          - "SSD AirDisk 512 GB"
-          - "SSD XPG Gammix S11 Pro 256 GB"
           - "Pendrive de boot"
         nota: "/notas/2024-placa-nas-n100"
       - nome: "Servidor de backup"
@@ -51,7 +49,7 @@ grupos:
         specs:
           - "Processador AMD Ryzen 5 7430U"
           - "Memória de 16 GB DDR4-2666 (JUHOR, 1 de 2 slots)"
-          - "SSD NVMe 256 GB (sistema) e SSD 512 GB (dados)"
+          - "SSD NVMe XPG Gammix S11 Pro 256 GB (sistema) e SSD AirDisk 512 GB (dados)"
           - "Wi-Fi 6"
           - "Microsoft Windows 11 Professional (x64)"
   - titulo: "Rede e energia"
