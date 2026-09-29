@@ -1,0 +1,5 @@
+{{- /* Texto do setup: espaço rígido entre número e unidade e depois de "2×" e hífen sem quebra de linha. */ -}}
+{{- $t := replaceRE `(\d) (GB|TB|Ah|W|GbE|Gb|vCPU|VA|MT/s)\b` "${1}\u00a0${2}" . -}}
+{{- $t = replaceRE `(\w)-(\w)` "${1}\u2060-\u2060${2}" $t -}}
+{{- $t = replace $t "× " "×\u00a0" -}}
+{{- $t -}}

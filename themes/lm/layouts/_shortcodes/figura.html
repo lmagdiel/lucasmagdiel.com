@@ -1,0 +1,9 @@
+{{- /* Imagem (foto ou imagem de anúncio) com legenda opcional.
+       Uso: {{< figura img="img/notas/....jpg" alt="..." legenda="..." >}} */ -}}
+{{- with resources.Get (.Get "img") }}
+{{- $i := .Resize "1200x webp q82" }}
+<figure class="figura">
+  <img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="{{ $.Get "alt" }}" loading="lazy" decoding="async">
+  {{- with $.Get "legenda" }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
+{{- end }}

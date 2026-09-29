@@ -17,10 +17,10 @@
           {{- with resources.Get (printf "img/setup/%s.svg" .icone) }}<img src="{{ .RelPermalink }}" width="120" height="120" alt="" loading="lazy" decoding="async">{{ end }}
         </div>
         <div class="eq-txt">
-          <h3 class="eq-nome">{{ .nome }}</h3>
-          <p class="eq-papel">{{ .papel }}</p>
+          <h3 class="eq-nome">{{ partial "setup-txt.html" .nome }}</h3>
+          <p class="eq-papel">{{ partial "setup-txt.html" .papel }}</p>
           <ul class="eq-specs">
-            {{- range .specs }}<li>{{ . }}</li>{{ end }}
+            {{- range .specs }}<li>{{ partial "setup-txt.html" . }}</li>{{ end }}
           </ul>
           {{- with .nota }}{{ with site.GetPage . }}<p class="eq-nota"><a href="{{ .RelPermalink }}">{{ .Title }} →</a></p>{{ end }}{{ end }}
         </div>

@@ -3,7 +3,7 @@ title: "O nobreak, a interface fantasma e o NUT"
 date: 2025-09-10
 description: "A novela para conseguir a interface de comunicação de um nobreak TS Shara comprado pela internet e como configurá-lo com o NUT."
 ---
-Quando reorganizei o homelab este ano, decidi que era hora de ter um nobreak de verdade: senoidal, de rack e capaz de conversar com os servidores, para que eles se desligassem sozinhos numa queda de energia prolongada. A escolha foi um [nobreak senoidal de rack da TS Shara](https://tsshara.com.br/produto/nobreak-ups-rack-senoidal-1500va-universal-2bs-7ah-2u-rs232-snmp/) (2U, 1500 VA), comprado pelo Mercado Livre no fim de março. Na página do produto, o argumento decisivo estava lá: "Comunicação inteligente USB, RS-232 e SNMP".
+Quando reorganizei o homelab este ano, decidi que era hora de ter um nobreak de verdade: senoidal, de rack e capaz de conversar com os servidores, para que eles se desligassem sozinhos numa queda de energia prolongada. A escolha foi um [nobreak senoidal de rack da TS Shara](https://tsshara.com.br/produto/nobreak-ups-rack-senoidal-universal-1200va-2bs-7ah/) (2U, 1200 VA), comprado pelo Mercado Livre no fim de março. Na página do produto, o argumento decisivo estava lá: "Comunicação inteligente USB, RS-232 e SNMP".
 
 *Se quiser pular a história, [vá direto para a parte técnica](#a-arquitetura).*
 
