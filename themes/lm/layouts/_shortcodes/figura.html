@@ -1,9 +1,14 @@
-{{- /* Imagem (foto ou imagem de anúncio) com legenda opcional.
-       Uso: {{< figura img="img/notas/....jpg" alt="..." legenda="..." >}} */ -}}
+{{- /* Imagem (foto, print ou imagem de anúncio) com legenda opcional.
+       Uso: {{< figura img="img/notas/....jpg" alt="..." legenda="..." ampliar="true" >}}
+       ampliar: a imagem vira link para o arquivo em tamanho original. */ -}}
 {{- with resources.Get (.Get "img") }}
+{{- $o := . }}
 {{- $i := .Resize "1200x webp q82" }}
+{{- $ampliar := $.Get "ampliar" }}
 <figure class="figura">
+  {{- if $ampliar }}<a href="{{ $o.RelPermalink }}" title="Ver em tamanho original">{{ end }}
   <img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="{{ $.Get "alt" }}" loading="lazy" decoding="async">
+  {{- if $ampliar }}</a>{{ end }}
   {{- with $.Get "legenda" }}<figcaption>{{ . }}</figcaption>{{ end }}
 </figure>
 {{- end }}
