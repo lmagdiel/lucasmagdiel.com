@@ -3,13 +3,15 @@ title: "O nobreak, a interface fantasma e o NUT"
 date: 2025-09-10
 description: "A novela para conseguir a interface de comunicação de um nobreak TS Shara comprado pela internet e como configurá-lo com o NUT."
 ---
-Quando reorganizei o homelab este ano, decidi que era hora de ter um nobreak de verdade: senoidal, de rack e capaz de conversar com os servidores, para que eles se desligassem sozinhos numa queda de energia prolongada. A escolha foi um [nobreak senoidal de rack da TS Shara](https://tsshara.com.br/produto/nobreak-ups-rack-senoidal-universal-1200va-2bs-7ah/) (2U, 1200 VA), comprado pelo Mercado Livre no fim de março. Na página do produto, o argumento decisivo estava lá: "Comunicação inteligente USB, RS-232 e SNMP".
+Quando reorganizei o homelab este ano, decidi que era hora de ter um nobreak de verdade: senoidal, de rack e capaz de conversar com os servidores, para que eles se desligassem sozinhos numa queda de energia prolongada. A escolha foi um [nobreak senoidal de rack da TS Shara](https://tsshara.com.br/produto/nobreak-ups-rack-senoidal-universal-1200va-2bs-7ah/) (2U, 1200 VA), comprado pelo Mercado Livre no fim de março. Na página do produto, o argumento decisivo estava lá: "Comunicação inteligente sob demanda USB, RS-232 e SNMP".
 
 *Se quiser pular a história, [vá direto para a parte técnica](#a-arquitetura).*
 
 ## A interface fantasma
 
-O que a página não diz é que, em compras feitas por revenda, essa interface não vem instalada. Descobri isso só depois de receber o equipamento, num comentário de um vídeo de divulgação da própria fabricante. Para ter acesso a ela, é preciso solicitar. Foi o que fiz. No dia seguinte à entrega, após contato telefônico, o atendimento me orientou a levar o nobreak a uma assistência autorizada em Brasília e garantiu o envio gratuito do módulo USB. A partir daí, começou a espera. A assistência não conseguia retorno da fábrica, e a peça não chegava.
+{{< figura img="img/notas/ts-shara-1200va-pagina.png" alt="Captura da página do nobreak UPS Rack Senoidal Universal 1200VA no site da TS Shara, com a característica Comunicação inteligente sob demanda USB, RS-232 e SNMP destacada" legenda="Trechos da página do modelo no site da TS Shara, em 29 de setembro de 2026 (destaque meu)." >}}
+
+O que a página não explica é o que significa esse "sob demanda": em compras feitas por revenda, a interface não vem instalada. Descobri isso só depois de receber o equipamento, num comentário de um vídeo de divulgação da própria fabricante. Para ter acesso a ela, é preciso solicitá-la diretamente ao fabricante. Foi o que fiz. No dia seguinte à entrega, após contato telefônico, o atendimento me orientou a levar o nobreak a uma assistência autorizada em Brasília e garantiu o envio gratuito do módulo USB. A partir daí, começou a espera. A assistência não conseguia retorno da fábrica, e a peça não chegava.
 
 Em maio, a explicação foi um problema com os Correios, com a promessa de reenvio por Sedex no dia seguinte. Em julho, com quase 100 dias de espera sem poder usar o equipamento como planejado, abri uma reclamação no Reclame AQUI e reforcei o pedido pelo formulário do site. Só então as coisas andaram: o fabricante me contatou pedindo desculpas, respondeu à reclamação no site, e por fim, enviou o módulo para a assistência. A instalação e liberação foram rápidas.
 
