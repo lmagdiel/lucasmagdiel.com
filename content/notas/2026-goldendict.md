@@ -1,9 +1,9 @@
 ---
-title: "Dicionário paca, só o ouro"
+title: "GoldenDict: dicionário paca, só o ouro"
 date: 2026-09-28
 description: "Configuração básica do GoldenDict, fontes gratuitas, formatos compatíveis e conversões."
 ---
-Uso o GoldenDict há anos como painel central de consulta: uma busca só, vários dicionários empilhados e um pop-up que traduz a palavra sob o cursor. O projeto original ficou anos quase parado. Só recentemente descobri que ele voltou a ter versões estáveis: a [1.5.0](https://github.com/goldendict/goldendict/releases) saiu em maio de 2023, a primeira em mais de uma década, e a [1.5.1](https://github.com/goldendict/goldendict/releases/tag/1.5.1) em maio de 2025.
+Como tradutor, uso o [GoldenDict](https://github.com/goldendict/goldendict) há pelo menos uma década e meia como painel central de consulta: uma busca só, vários dicionários empilhados e um atalho conveniente de teclado para traduzir uma palavra selecionada em qualquer lugar. O projeto original ficou anos quase parado. Só recentemente descobri que ele voltou a ter versões estáveis: a [1.5.0](https://github.com/goldendict/goldendict/releases) saiu em maio de 2023, a primeira em mais de uma década, e a [1.5.1](https://github.com/goldendict/goldendict/releases/tag/1.5.1) em maio de 2025.
 
 Enquanto isso, surgiu o [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng), um fork ativo em Qt6 com versões para Windows, macOS e Linux (via Flathub, `io.github.xiaoyifang.goldendict_ng`). Para quem está começando hoje, é a opção que recomendo. A configuração abaixo vale para os dois.
 
@@ -66,4 +66,4 @@ O verbete fica na coluna zero e o corpo vai indentado. O caminho prático é um 
 
 O mesmo processo serve para converter, para uso pessoal, um dicionário digital que você já tenha. Arquivos mobi e epub são contêineres (HTML/XHTML + recursos), e o `ebook-convert` do [Calibre](https://github.com/kovidgoyal/calibre) os leva para um formato intermediário mais fácil de tratar. Se o arquivo já estiver estruturado como dicionário, com palavra-chave e definição em cada entrada (como os que seguem o formato de dicionário do Kindle ou do StarDict), o trabalho principal é escrever o script de parsing para aquele formato: identificar a tag do verbete e o bloco da definição e, com BeautifulSoup ou lxml, percorrer as entradas e gerar o DSL, convertendo as tags HTML nas equivalentes (`[b]`, `[i]`, `[ref]` etc.) ou simplificando para texto puro. Depois, é compilar e testar.
 
-Nos dois casos, assistentes de IA ajudam muito: escrevem o parser, mapeiam os campos para as tags, validam a marcação e tratam os casos estranhos.
+Nos dois casos, as IAs quebram uma árvore: escrevem o parser, mapeiam os campos para as tags, validam a marcação e tratam os casos estranhos.
