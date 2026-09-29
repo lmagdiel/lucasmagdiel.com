@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{- $d := hugo.Data.setup }}
+<article class="secao setup">
+  <header class="secao-cab">
+    {{- with site.GetPage "/tecnologia" }}<p class="rotulo"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+    <h1>{{ .Title }}</h1>
+  </header>
+  <div class="prosa">{{ .Content }}</div>
+
+  {{- range $d.grupos }}
+  <section class="setup-grupo">
+    <h2>{{ .titulo }}</h2>
+    <ul class="setup-grade">
+      {{- range .itens }}
+      <li class="eq">
+        <div class="eq-img" aria-hidden="true">
+          {{- with resources.Get (printf "img/setup/%s.svg" .icone) }}<img src="{{ .RelPermalink }}" width="120" height="120" alt="" loading="lazy" decoding="async">{{ end }}
+        </div>
+        <div class="eq-txt">
+          <h3 class="eq-nome">{{ .nome }}</h3>
+          <p class="eq-papel">{{ .papel }}</p>
+          <ul class="eq-specs">
+            {{- range .specs }}<li>{{ . }}</li>{{ end }}
+          </ul>
+          {{- with .nota }}{{ with site.GetPage . }}<p class="eq-nota"><a href="{{ .RelPermalink }}">{{ .Title }} →</a></p>{{ end }}{{ end }}
+        </div>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+  <p class="setup-data">Atualizado em {{ time $d.atualizado | time.Format ":date_long" }}.</p>
+</article>
+{{ end }}

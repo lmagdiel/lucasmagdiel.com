@@ -13,6 +13,8 @@ No que hoje parece um passado distante, tive meu primeiro PC por volta do ano 20
 
 {{< leiamais "/notas/2026-do-k6-2-ao-homelab" >}}
 
+{{< leiamais "/setup" "Ver o setup atual" >}}
+
 ## Projetos
 
 {{< projeto img="img/tecnologia/abrflow.svg" alt="Ilustração: uma matéria da Agência Brasil em português ligada às versões em inglês e em espanhol" >}}

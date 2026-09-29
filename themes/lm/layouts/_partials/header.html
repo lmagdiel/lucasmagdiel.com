@@ -9,6 +9,7 @@
           {{- range site.Menus.main }}
           {{- $ativo := or ($atual.IsMenuCurrent "main" .) ($atual.HasMenuCurrent "main" .) }}
           {{- with .Page }}{{ if or (eq $atual .) ($atual.IsDescendant .) }}{{ $ativo = true }}{{ end }}{{ end }}
+          {{- if and (ne .URL "/") (hasPrefix $atual.RelPermalink .URL) }}{{ $ativo = true }}{{ end }}
           <li><a href="{{ .URL }}"{{ if $ativo }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
           {{- end }}
         </ul>
