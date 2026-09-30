@@ -1,7 +1,7 @@
 <footer class="rodape">
   <div class="rodape-in">
     <ul class="rodape-links">
-      {{- range $k, $v := site.Params.links }}{{ if $v.ativo }}
+      {{- range $v := sort site.Params.links "peso" }}{{ if $v.ativo }}
       <li><a href="{{ $v.url }}" rel="me noopener">{{ $v.nome }}</a></li>
       {{- end }}{{ end }}
       <li><a href="{{ "contato/" | relURL }}">Contato</a></li>
