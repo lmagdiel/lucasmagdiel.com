@@ -1,5 +1,6 @@
 # Sites da seção Tecnologia > Projetos > Sites. Ordem de exibição = ordem da lista.
-# url: endereço do link ("/" para este próprio site); alias: outro domínio que leva ao mesmo site (opcional).
+# url: endereço do link ("/" para este próprio site); alias: outro domínio que leva ao mesmo site (opcional);
+# credito: autoria de terceiros em destaque (opcional), ex.: {rotulo: "Designer", nome: "...", url: "..."}.
 - dominio: "lucasmagdiel.com"
   url: "/"
   alias: "lucas.st"
@@ -17,6 +18,7 @@
   url: "https://ligna.pro"
   descricao: "Site da Ligna"
   tec: "Hugo, migrado do WordPress"
+  credito: {rotulo: "Designer", nome: "Polvo", url: "https://polvo.design/"}
 - dominio: "abrflow.app"
   url: "https://abrflow.app"
   descricao: "Site do AbrFlow"

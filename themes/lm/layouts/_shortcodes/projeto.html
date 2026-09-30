@@ -1,6 +1,6 @@
 {{- /* Bloco de projeto com ilustração (SVG ou imagem) à esquerda.
        Uso: {{< projeto img="img/..." alt="..." >}} ### Título + texto em Markdown {{< /projeto >}}
-       lista="sites": acrescenta depois do texto a lista de _partials/lista-sites.html. */ -}}
+       lista="sites": acrescenta abaixo do bloco, na largura toda, a lista de _partials/lista-sites.html. */ -}}
 <section class="projeto">
   <div class="projeto-img">
     {{- with resources.Get (.Get "img") }}
@@ -14,6 +14,8 @@
   </div>
   <div class="projeto-txt">
     {{ .InnerDeindent | .Page.RenderString (dict "display" "block") }}
-    {{- with .Get "lista" }}{{ partial (printf "lista-%s.html" .) $.Page }}{{ end }}
   </div>
+  {{- with .Get "lista" }}
+  <div class="projeto-lista">{{ partial (printf "lista-%s.html" .) $.Page }}</div>
+  {{- end }}
 </section>

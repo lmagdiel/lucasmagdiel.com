@@ -13,9 +13,7 @@ No que hoje parece um passado distante, tive meu primeiro PC por volta do ano 20
 
 {{< leiamais "/notas/2026-do-k6-2-ao-homelab" >}}
 
-## Setup atual
-
-{{< setup-icones >}}
+## Meu setup
 
 Dois servidores com Unraid, um nobreak senoidal de rack, Raspberry Pis para DNS, nobreak e VPN, KVMs para acessar as máquinas, VPS na Oracle e na Netcup e, para trabalhar, um desktop e um mini PC. Cada equipamento, com a função e as especificações principais, está na página do setup.
 

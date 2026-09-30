@@ -6,6 +6,9 @@
     <a class="site-dom" href="{{ .url }}"{{ if $externo }} rel="noopener"{{ end }}>{{ .dominio }}{{ if $externo }} <span aria-hidden="true">↗</span>{{ end }}</a>
     <span class="site-desc">{{ .descricao }}{{ with .alias }}, também em {{ . }}{{ end }}</span>
     <span class="site-tec">{{ .tec }}</span>
+    {{- with .credito }}{{ $c := . }}
+    <span class="site-credito">{{ $c.rotulo }}: {{ with $c.url }}<a href="{{ . }}" rel="noopener">{{ $c.nome }} <span aria-hidden="true">↗</span></a>{{ else }}<strong>{{ $c.nome }}</strong>{{ end }}</span>
+    {{- end }}
   </li>
   {{- end }}
 </ul>
