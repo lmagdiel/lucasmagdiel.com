@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="inicio">
-  <h1 class="inicio-nome">{{ site.Title }}</h1>
+  <h1 class="inicio-nome">{{ site.Title }}<span class="ponto" aria-hidden="true"></span></h1>
   <div class="inicio-texto">{{ .Content }}</div>
 
   {{- $nLivros := partial "conta-livros.html" . }}
