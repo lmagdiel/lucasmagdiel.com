@@ -8,6 +8,8 @@ Em maio de 2010, a editora carioca Calibán me encomendou a tradução, do espan
 
 A conversa aconteceu em outubro de 1999, na casa do escritor em Behlendorf, no norte da Alemanha, poucas semanas depois do anúncio do Nobel de Literatura e na véspera do seu aniversário de 72 anos.
 
+*Se você detém os direitos da entrevista original e não deseja que ela apareça aqui, fale comigo pelo [formulário de contato](/contato/).*
+
 ***
 
 ## Günter Grass, entrevistado por Faustino F. Álvarez
