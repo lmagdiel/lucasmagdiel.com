@@ -1,0 +1,6 @@
+{{- /* Botões dos assuntos de uma nota. Contexto: a página (nota). */ -}}
+{{- with .GetTerms "assuntos" }}
+<ul class="assuntos" aria-label="{{ i18n "assuntos" }}">
+  {{- range . }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}
+</ul>
+{{- end }}

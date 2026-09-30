@@ -3,7 +3,8 @@ title = "Lucas Magdiel"
 theme = "lm"
 enableRobotsTXT = true
 enableGitInfo = false
-disableKinds = ["taxonomy", "term"]
+removePathAccents = true   # /assuntos/traducao/ em vez de /assuntos/tradução/
+
 timeZone = "America/Sao_Paulo"
 
 defaultContentLanguage = "pt"
@@ -90,9 +91,22 @@ defaultContentLanguageInSubdir = false
   home = ["HTML", "RSS"]
   section = ["HTML"]
   page = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
 
 [sitemap]
   changeFreq = "monthly"
 
 [build]
   writeStats = false
+
+# Assuntos das Notas (botões nas notas e na lista). Só esta taxonomia: sem tags/categorias padrão.
+[taxonomies]
+  assunto = "assuntos"
+
+# Os assuntos ficam dentro de /notas/ (o menu marca Notas também nessas páginas).
+[permalinks]
+  [permalinks.taxonomy]
+    assuntos = "/notas/assuntos/"
+  [permalinks.term]
+    assuntos = "/notas/assuntos/:slug/"

@@ -2,6 +2,7 @@
 title: "GoldenDict: dicionário paca, só o ouro"
 date: 2026-09-28
 description: "Configuração básica do GoldenDict, fontes gratuitas, formatos compatíveis e conversões."
+assuntos: ["Tradução", "Ferramentas", "Guias"]
 ---
 Como tradutor, uso o [GoldenDict](https://github.com/goldendict/goldendict) há pelo menos uma década e meia como painel central de consulta: uma busca só, vários dicionários empilhados e um atalho conveniente de teclado para traduzir uma palavra selecionada em qualquer lugar. O projeto original ficou anos quase parado. Só recentemente descobri que ele voltou a ter versões estáveis: a [1.5.0](https://github.com/goldendict/goldendict/releases) saiu em maio de 2023, a primeira em mais de uma década, e a [1.5.1](https://github.com/goldendict/goldendict/releases/tag/1.5.1) em maio de 2025.
 

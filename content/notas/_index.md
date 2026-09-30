@@ -1,5 +1,5 @@
 ---
 title: "Notas"
-description: "Textos curtos sobre tradução e tecnologia."
+description: "Textos diversos sobre tradução e tecnologia."
 ---
-Textos curtos sobre tradução e tecnologia.
+Textos diversos sobre tradução e tecnologia.

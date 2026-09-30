@@ -2,6 +2,7 @@
 title: "Zumbis, 1968 e a tradução de A Noite dos Mortos-Vivos"
 date: 2014-03-07
 description: "Respostas completas a uma entrevista por e-mail para o O Globo a Mais, no lançamento da tradução de A Noite dos Mortos-Vivos (DarkSide Books)."
+assuntos: ["Tradução", "Literatura", "Entrevistas"]
 ---
 Em março de 2014, quando a DarkSide lançou a minha tradução de *A Noite dos Mortos-Vivos*, de John Russo, respondi por e-mail a algumas perguntas do jornalista Thiago Jansen para a revista digital *O Globo a Mais*. A matéria, “Um cult do horror de volta à vida”, usou trechos das respostas; abaixo estão elas na íntegra.
 

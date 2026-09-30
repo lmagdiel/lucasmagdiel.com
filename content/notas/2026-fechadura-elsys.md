@@ -2,6 +2,7 @@
 title: "Uma fechadura discreta que não para de falar"
 date: 2026-09-01
 description: "A compra e a instalação da fechadura digital Elsys ESF-DE2000B: o que eu não sabia sobre o padrão das portas, o modo silencioso e o firmware compartilhado entre marcas."
+assuntos: ["Casa", "Equipamentos"]
 ---
 A maçaneta da porta de casa já estava meio escangalhada, e resolvi aproveitar a troca para aposentar a chave. O plano era simples: uma fechadura digital de embutir, que substituísse o conjunto inteiro (maçaneta, miolo e máquina) por uma peça só, discreta, com senha e biometria, desconectada.
 

@@ -2,6 +2,7 @@
 title: "Placa NAS mini-ITX com N100, (well) made in China"
 date: 2024-03-20
 description: "A ficha completa da placa-mãe mini-ITX com Intel N100, seis portas SATA e quatro de 2,5 GbE, comprada para o servidor principal."
+assuntos: ["Homelab", "Equipamentos"]
 ---
 Comprei hoje, no AliExpress, a placa-mãe para o servidor principal: uma placa NAS mini-ITX com Intel N100, da CWWK (também vendida como Topton), por R$ 1.198,50 (US$ 224,99). Placas assim juntam em 17 × 17 cm o que antes pedia placas de expansão: 6 portas SATA, 2 slots M.2 NVMe e 4 portas de rede de 2,5 Gb, com um processador que gasta pouca energia. O problema é que a informação sobre elas fica espalhada entre o anúncio, fóruns e a serigrafia da própria placa, então juntei aqui a ficha completa.
 

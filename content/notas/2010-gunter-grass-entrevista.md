@@ -2,6 +2,7 @@
 title: "Günter Grass em Behlendorf: uma entrevista inédita em português"
 date: 2010-05-24
 description: "Tradução feita em 2010 para a editora Calibán de uma entrevista de Günter Grass ao jornalista Faustino F. Álvarez, publicada originalmente na revista El Cielo de Salamanca."
+assuntos: ["Tradução", "Literatura", "Entrevistas"]
 ---
 Em maio de 2010, a editora carioca Calibán me encomendou a tradução, do espanhol, desta entrevista de Günter Grass ao jornalista Faustino F. Álvarez. O texto saiu originalmente no primeiro número da revista *El Cielo de Salamanca* (primavera de 2000) e entraria num livro de entrevistas que a Calibán preparava, graças ao intercâmbio que mantinha com a revista. Não encontrei registro de que esse livro tenha sido publicado, nem de outra versão da entrevista em português, e por isso a deixo aqui.
 

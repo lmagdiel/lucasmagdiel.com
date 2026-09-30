@@ -6,6 +6,7 @@
     {{- if and .Parent (not .Parent.IsHome) }}<p class="rotulo"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>{{ end }}
     <h1>{{ .Title }}</h1>
     {{- if and (eq .Section "notas") .Date }}<p class="data">{{ .Date | time.Format ":date_long" }}</p>{{ end }}
+    {{- if eq .Section "notas" }}{{ partial "assuntos.html" . }}{{ end }}
   </header>
   {{- if $temFoto }}
   <figure class="foto">

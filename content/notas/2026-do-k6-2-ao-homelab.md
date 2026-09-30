@@ -2,6 +2,7 @@
 title: "Do K6-2 ao homelab"
 date: 2026-09-27
 description: "E uma penca de livros no meio."
+assuntos: ["Homelab"]
 ---
 {{< ilustracao img="img/tecnologia/homelab.svg" alt="Ilustração: rede doméstica com servidores, Raspberry Pi, desktop e switch, ligada por VPN a servidores na nuvem" >}}
 

@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="secao">
+  <header class="secao-cab">
+    {{- with site.GetPage "/notas" }}<p class="rotulo"><a href="{{ .RelPermalink }}">{{ .Title }}</a> · {{ with site.GetPage "/assuntos" }}<a href="{{ .RelPermalink }}">{{ i18n "assuntos" }}</a>{{ else }}{{ i18n "assuntos" }}{{ end }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+  </header>
+  {{ partial "assuntos-todos.html" (dict "atual" .) }}
+  {{ partial "lista-notas.html" .Pages }}
+</section>
+{{ end }}
