@@ -1,0 +1,11 @@
+{{- /* Lista de sites (data/sites.yaml), usada no bloco "Sites" de Tecnologia. */ -}}
+<ul class="sites">
+  {{- range hugo.Data.sites }}
+  {{- $externo := hasPrefix .url "http" }}
+  <li>
+    <a class="site-dom" href="{{ .url }}"{{ if $externo }} rel="noopener"{{ end }}>{{ .dominio }}{{ if $externo }} <span aria-hidden="true">↗</span>{{ end }}</a>
+    <span class="site-desc">{{ .descricao }}{{ with .alias }}, também em {{ . }}{{ end }}</span>
+    <span class="site-tec">{{ .tec }}</span>
+  </li>
+  {{- end }}
+</ul>

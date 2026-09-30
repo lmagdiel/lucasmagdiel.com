@@ -1,0 +1,10 @@
+{{- /* Faixa escura com os ícones do setup (data/setup.yaml), sem repetir. Decorativa.
+       Uso: {{< setup-icones >}} */ -}}
+{{- $vistos := slice }}
+<div class="setup-faixa" aria-hidden="true">
+  {{- range hugo.Data.setup.grupos }}{{ range .itens }}
+  {{- if not (in $vistos .icone) }}{{ $vistos = $vistos | append .icone }}
+  {{- with resources.Get (printf "img/setup/%s.svg" .icone) }}<img src="{{ .RelPermalink }}" width="120" height="120" alt="" loading="lazy" decoding="async">{{ end }}
+  {{- end }}
+  {{- end }}{{ end }}
+</div>

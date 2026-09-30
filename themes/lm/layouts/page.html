@@ -1,13 +1,31 @@
 {{ define "main" }}
-<article class="secao prosa{{ if .Params.larga }} prosa--larga{{ end }}">
+{{- /* foto: caminho em assets/ mostra a foto numa coluna ao lado do texto; foto: "" mostra o espaço reservado. */ -}}
+{{- $temFoto := isset .Params "foto" }}
+<article class="secao prosa{{ if .Params.larga }} prosa--larga{{ end }}{{ if $temFoto }} sobre-grid{{ end }}">
   <header class="secao-cab">
     {{- if and .Parent (not .Parent.IsHome) }}<p class="rotulo"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>{{ end }}
     <h1>{{ .Title }}</h1>
     {{- if and (eq .Section "notas") .Date }}<p class="data">{{ .Date | time.Format ":date_long" }}</p>{{ end }}
   </header>
-  {{- with .Params.foto }}
-  <figure class="foto">{{ partial "img.html" (dict "src" . "alt" "Foto de Lucas Magdiel" "w" 200) }}</figure>
-  {{- end }}
+  {{- if $temFoto }}
+  <figure class="foto">
+    {{- with .Params.foto }}
+    {{ partial "img.html" (dict "src" . "alt" "Foto de Lucas Magdiel" "w" 420) }}
+    {{- else }}
+    <svg class="foto-vazia" viewBox="0 0 300 400" role="img" aria-label="Espaço reservado para a foto">
+      <rect class="fv-fundo" width="300" height="400"/>
+      <rect class="fv-detalhe" x="38" y="34" width="30" height="30" transform="rotate(-18 53 49)"/>
+      <circle class="fv-forma" cx="150" cy="160" r="50"/>
+      <path class="fv-forma" d="M40 330 A110 110 0 0 1 260 330 Z"/>
+    </svg>
+    {{- end }}
+    {{- with .Params.foto_legenda }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+  <div class="prosa-corpo">
   {{ .Content }}
+  </div>
+  {{- else }}
+  {{ .Content }}
+  {{- end }}
 </article>
 {{ end }}

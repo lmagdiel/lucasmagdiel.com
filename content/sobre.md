@@ -1,7 +1,7 @@
 ---
 title: "Sobre"
 description: "Trajetória, formação e credenciamentos de Lucas Magdiel, tradutor e legendador."
-foto: "img/profile.jpg"
+foto: ""  # espaço reservado; trocar pelo caminho da foto profissional em assets/ (vertical, 3:4, 900 px de largura ou mais)
 ---
 Sou tradutor e legendador, formado em Letras (Português/Espanhol) pela UFRJ e pós-graduado em Tradução de Espanhol pela Universidade Gama Filho. Trabalho com texto desde 2006, quando comecei a revisar livros para editoras do Rio de Janeiro.
 

@@ -13,7 +13,13 @@ No que hoje parece um passado distante, tive meu primeiro PC por volta do ano 20
 
 {{< leiamais "/notas/2026-do-k6-2-ao-homelab" >}}
 
-{{< leiamais "/setup" "Ver o setup atual" >}}
+## Setup atual
+
+{{< setup-icones >}}
+
+Dois servidores com Unraid, um nobreak senoidal de rack, Raspberry Pis para DNS, nobreak e VPN, KVMs para acessar as máquinas, VPS na Oracle e na Netcup e, para trabalhar, um desktop e um mini PC. Cada equipamento, com a função e as especificações principais, está na página do setup.
+
+{{< leiamais "/setup" >}}
 
 ## Projetos
 
@@ -35,10 +41,10 @@ Um ambiente de trabalho para legendagem que reúne tradução automática neural
 Alinhamento bilíngue de obras literárias e corpus de legendas para estudar soluções de tradução, e guias de estilo em inglês e espanhol da Agência Brasil construídos a partir de um corpus de matérias.
 {{< /projeto >}}
 
-{{< projeto img="img/tecnologia/sites.svg" alt="Ilustração: página web genérica com título, texto, imagem e cartões" >}}
+{{< projeto img="img/tecnologia/sites.svg" alt="Ilustração: página web genérica com título, texto, imagem e cartões" lista="sites" >}}
 ### Sites
 
-Este site (Hugo, com tema próprio), o [coizassim.com.br](https://coizassim.com.br) e o site do AbrFlow. Na [Ligna](https://ligna.pro), cuido do domínio, da hospedagem e dos e-mails.
+Sites que desenvolvo e mantenho. Em todos, cuido também do domínio e da hospedagem, inclusive a do e-mail.
 {{< /projeto >}}
 
 ## Como trabalho
