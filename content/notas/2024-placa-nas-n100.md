@@ -1,5 +1,5 @@
 ---
-title: "Placa NAS com N100, tintim por tintim"
+title: "Placa NAS mini-ITX com N100, (well) made in China"
 date: 2024-03-20
 description: "A ficha completa da placa-mãe mini-ITX com Intel N100, seis portas SATA e quatro de 2,5 GbE, comprada para o servidor principal."
 ---
