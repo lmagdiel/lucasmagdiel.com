@@ -1,25 +1,31 @@
 # Sites da seção Tecnologia > Projetos > Sites. Ordem de exibição = ordem da lista.
+# icone: favicon do site com fundo transparente, em assets/img/sites/ (PNG de 128 px ou SVG).
 # url: endereço do link ("/" para este próprio site); alias: outro domínio que leva ao mesmo site (opcional);
 # credito: autoria de terceiros em destaque (opcional), ex.: {rotulo: "Designer", nome: "...", url: "..."}.
 - dominio: "lucasmagdiel.com"
+  icone: "img/sites/lucasmagdiel.png"
   url: "/"
   alias: "lucas.st"
   descricao: "Este site"
   tec: "Hugo, tema próprio"
 - dominio: "vanessa.st"
+  icone: "img/sites/vanessa.svg"
   url: "https://vanessa.st"
   descricao: "Site pessoal da minha esposa"
   tec: "Hugo, tema próprio"
 - dominio: "coizassim.com.br"
+  icone: "img/sites/coizassim.png"
   url: "https://coizassim.com.br"
   descricao: "Blog e loja"
   tec: "Hugo, tema próprio"
 - dominio: "ligna.pro"
+  icone: "img/sites/ligna.png"
   url: "https://ligna.pro"
   descricao: "Site da Ligna"
   tec: "Hugo, migrado do WordPress"
   credito: {rotulo: "Designer", nome: "Polvo", url: "https://polvo.design/"}
 - dominio: "abrflow.app"
+  icone: "img/sites/abrflow.svg"
   url: "https://abrflow.app"
   descricao: "Site do AbrFlow"
-  tec: "HTML e CSS"
+  tec: "HTML e CSS próprios"

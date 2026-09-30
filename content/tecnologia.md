@@ -42,7 +42,7 @@ Alinhamento bilíngue de obras literárias e corpus de legendas para estudar sol
 {{< projeto img="img/tecnologia/sites.svg" alt="Ilustração: página web genérica com título, texto, imagem e cartões" lista="sites" >}}
 ### Sites
 
-Sites que desenvolvo e mantenho. Em todos, cuido também do domínio e da hospedagem, inclusive a do e-mail.
+Sites que desenvolvo e mantenho. Quando o design é meu, faço com assistência de IA; quando é de terceiros, o crédito vem no cartão. Em todos, cuido também do domínio e da hospedagem, inclusive a do e‑mail.
 {{< /projeto >}}
 
 ## Como trabalho
