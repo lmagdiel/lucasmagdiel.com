@@ -20,7 +20,7 @@
         <h2>{{ .nome }} <span class="tec-periodo">{{ .periodo }}</span></h2>
         <p>{{ .texto }}</p>
         {{- with .servicos }}
-        <ul class="servicos" aria-label="Serviços habilitados">
+        <ul class="servicos" aria-label="Serviços e pares de língua">
           {{- range . }}<li><strong>{{ .nome }}</strong> <span class="par">{{ .par }}</span></li>{{ end }}
         </ul>
         {{- end }}

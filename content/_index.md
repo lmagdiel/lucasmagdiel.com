@@ -12,7 +12,7 @@ entradas:
     texto: "Homelab, self-hosting e ferramentas aplicadas à tradução."
     url: "tecnologia/"
   - titulo: "Notas"
-    texto: "Textos curtos sobre tradução, legendagem e tecnologia."
+    texto: "Textos curtos sobre tradução e tecnologia."
     url: "notas/"
 recentes:
   - /portfolio/legendagem/ate-a-camiseta-secar
