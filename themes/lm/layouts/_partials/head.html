@@ -3,6 +3,8 @@
 {{- $titulo := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) }}
 <title>{{ $titulo }}</title>
 {{- $desc := or .Description .Params.sinopse site.Params.description | plainify | truncate 180 }}
+{{- if and (eq .Kind "term") (not .Description) }}{{ $desc = printf "Notas de %s sobre %s." site.Params.author .Title }}{{ end }}
+{{- if and (eq .Kind "taxonomy") (not .Description) }}{{ $desc = printf "Assuntos das notas de %s." site.Params.author }}{{ end }}
 <meta name="description" content="{{ $desc }}">
 <meta name="author" content="{{ site.Params.author }}">
 <link rel="canonical" href="{{ .Permalink }}">
@@ -11,12 +13,30 @@
 <meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="{{ site.Title }}">
+{{- /* Imagem de compartilhamento: capa da obra (portfólio) ou a imagem padrão do site (static/og.jpg). */ -}}
+{{- $capa := or (index (.Params.capas | default slice) 0) .Params.capa }}
+{{- $og := "" }}{{ $card := "summary_large_image" }}
+{{- with $capa }}{{ $alvo := cond (strings.HasPrefix . "img/") . (printf "capas/%s" .) }}{{ with resources.Get $alvo }}{{ $og = (.Resize "600x jpg q85").Permalink }}{{ $card = "summary" }}{{ end }}{{ end }}
+{{- if not $og }}{{ $og = "og.jpg" | absURL }}{{ end }}
+<meta property="og:image" content="{{ $og }}">
+{{- if eq $card "summary_large_image" }}
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{{- end }}
+<meta property="og:image:alt" content="{{ $titulo }}">
+<meta name="twitter:card" content="{{ $card }}">
 <meta name="color-scheme" content="light dark">
 <script>try{var t=localStorage.getItem('tema');if(t==='claro'||t==='escuro')document.documentElement.setAttribute('data-tema',t)}catch(e){}</script>
 <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
 <link rel="icon" type="image/png" href="{{ "favicon-32x32.png" | relURL }}">
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
-{{- with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
+{{- with site.GetPage "/notas" }}{{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="Notas · {{ site.Title }}">{{ end }}{{ end }}
 {{- $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{- if .Params.noindex }}<meta name="robots" content="noindex">{{ end }}
+{{- if .IsHome }}
+{{- $sameAs := slice }}{{ range site.Params.links }}{{ if .ativo }}{{ $sameAs = $sameAs | append .url }}{{ end }}{{ end }}
+{{- $pessoa := dict "@context" "https://schema.org" "@type" "Person" "name" site.Params.author "url" site.Home.Permalink "jobTitle" "Tradutor e legendador" "knowsLanguage" (slice "pt-BR" "en" "es") "sameAs" $sameAs }}
+<script type="application/ld+json">{{ $pessoa | jsonify | safeJS }}</script>
+{{- end }}

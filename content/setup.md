@@ -1,5 +1,5 @@
 ---
-title: "Setup"
+title: "Meu setup"
 url: "/tecnologia/setup/"
 layout: "setup"
 description: "O equipamento atual do homelab, da rede e das estações de trabalho."
