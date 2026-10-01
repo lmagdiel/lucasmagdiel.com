@@ -48,9 +48,9 @@
       </dl>
 
       <p class="acoes">
-        {{- with $p.link }}<a class="externo" href="{{ . }}" rel="noopener">{{ i18n "pagina_oficial" }} ↗</a>{{ end }}
-        {{- with $p.video }}<a class="externo" href="{{ . }}" rel="noopener">{{ i18n "assistir" }} ↗</a>{{ end }}
-        {{- with $p.video_es }}<a class="externo" href="{{ . }}" rel="noopener">Versão em espanhol ↗</a>{{ end }}
+        {{- with $p.link }}<a class="externo" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "pagina_oficial" }} ↗</a>{{ end }}
+        {{- with $p.video }}<a class="externo" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "assistir" }} ↗</a>{{ end }}
+        {{- with $p.video_es }}<a class="externo" href="{{ . }}" target="_blank" rel="noopener">Versão em espanhol ↗</a>{{ end }}
         {{- with $p.imprensa }}<a href="{{ . | relURL }}">Entrevista sobre a tradução →</a>{{ end }}
       </p>
     </div>

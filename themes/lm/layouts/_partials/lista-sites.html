@@ -3,11 +3,11 @@
   {{- range hugo.Data.sites }}
   {{- $externo := hasPrefix .url "http" }}
   <li>
-    <a class="site-dom" href="{{ .url }}"{{ if $externo }} rel="noopener"{{ end }}>{{- with .icone }}{{ with resources.Get . }}{{ if eq .MediaType.SubType "svg" }}<img class="site-ico" src="{{ .RelPermalink }}" width="20" height="20" alt="" loading="lazy" decoding="async">{{ else }}{{ $i := .Resize "64x webp q90" }}<img class="site-ico" src="{{ $i.RelPermalink }}" width="20" height="20" alt="" loading="lazy" decoding="async">{{ end }}{{ end }}{{ end }}<span>{{ .dominio }}{{ if $externo }} <span aria-hidden="true">↗</span>{{ end }}</span></a>
+    <a class="site-dom" href="{{ .url }}"{{ if $externo }} target="_blank" rel="noopener"{{ end }}>{{- with .icone }}{{ with resources.Get . }}{{ if eq .MediaType.SubType "svg" }}<img class="site-ico" src="{{ .RelPermalink }}" width="20" height="20" alt="" loading="lazy" decoding="async">{{ else }}{{ $i := .Resize "64x webp q90" }}<img class="site-ico" src="{{ $i.RelPermalink }}" width="20" height="20" alt="" loading="lazy" decoding="async">{{ end }}{{ end }}{{ end }}<span>{{ .dominio }}{{ if $externo }} <span aria-hidden="true">↗</span>{{ end }}</span></a>
     <span class="site-desc">{{ .descricao }}{{ with .alias }}, também em {{ . }}{{ end }}</span>
     <span class="site-tec">{{ .tec }}</span>
     {{- with .credito }}{{ $c := . }}
-    <span class="site-credito">{{ $c.rotulo }}: {{ with $c.url }}<a href="{{ . }}" rel="noopener">{{ $c.nome }} <span aria-hidden="true">↗</span></a>{{ else }}<strong>{{ $c.nome }}</strong>{{ end }}</span>
+    <span class="site-credito">{{ $c.rotulo }}: {{ with $c.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $c.nome }} <span aria-hidden="true">↗</span></a>{{ else }}<strong>{{ $c.nome }}</strong>{{ end }}</span>
     {{- end }}
   </li>
   {{- end }}

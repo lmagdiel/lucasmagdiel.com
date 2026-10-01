@@ -10,7 +10,7 @@
   {{- range .Params.blocos }}
     {{- $bl := . }}
     <section class="tec-bloco">
-      <a class="tec-logo" href="{{ .url }}" rel="noopener">
+      <a class="tec-logo" href="{{ .url }}" target="_blank" rel="noopener">
         {{- with resources.Get .logo }}
         {{- $l := .Resize "480x webp q90" }}
         <img src="{{ $l.RelPermalink }}" width="{{ div $l.Width 2 }}" height="{{ div $l.Height 2 }}" alt="{{ $bl.alt | default (printf "Site da %s" $bl.nome) }}" loading="lazy" decoding="async">

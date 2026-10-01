@@ -25,7 +25,7 @@
         <div>
           <p class="tile-sub">{{ with .autores }}{{ delimit . ", " }}{{ else }}{{ with .organizadores }}{{ delimit . ", " }} (org.){{ end }}{{ end }} · {{ .editora }} · {{ .ano }}{{ with .genero }} · {{ . }}{{ end }}</p>
           <p class="tile-sub">{{ .papel | strings.FirstUpper }}</p>
-          {{- with .link }}<p><a class="externo" href="{{ . }}" rel="noopener">{{ i18n "pagina_oficial" }} ↗</a></p>{{ end }}
+          {{- with .link }}<p><a class="externo" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "pagina_oficial" }} ↗</a></p>{{ end }}
         </div>
       </div>
     {{- else }}

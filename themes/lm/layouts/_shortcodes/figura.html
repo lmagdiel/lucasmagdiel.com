@@ -6,7 +6,7 @@
 {{- $i := .Resize "1200x webp q82" }}
 {{- $ampliar := $.Get "ampliar" }}
 <figure class="figura">
-  {{- if $ampliar }}<a href="{{ $o.RelPermalink }}" title="Ver em tamanho original">{{ end }}
+  {{- if $ampliar }}<a href="{{ $o.RelPermalink }}" title="Ver em tamanho original" target="_blank" rel="noopener">{{ end }}
   <img src="{{ $i.RelPermalink }}" width="{{ $i.Width }}" height="{{ $i.Height }}" alt="{{ $.Get "alt" }}" loading="lazy" decoding="async">
   {{- if $ampliar }}</a>{{ end }}
   {{- with $.Get "legenda" }}<figcaption>{{ . }}</figcaption>{{ end }}

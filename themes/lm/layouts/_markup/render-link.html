@@ -1,0 +1,6 @@
+{{- /* Links do Markdown: externos e arquivos (PDF, imagens) abrem em nova aba; páginas do site, na mesma. */ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $externo := and $u.IsAbs (ne $u.Host (urls.Parse site.BaseURL).Host) -}}
+{{- $arquivo := or (hasPrefix $u.Path "/arquivos/") (findRE `\.(pdf|jpe?g|png|webp|svg)$` $u.Path) -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if or $externo $arquivo }} target="_blank" rel="noopener"{{ end }}>{{ .Text }}</a>
+{{- /* sem quebra de linha no fim */ -}}
