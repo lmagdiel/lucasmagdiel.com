@@ -1,0 +1,85 @@
+# Borrador de traducción al español (neutro latinoamericano) de data/livros.yaml.
+# Claves: el id de cada elemento del original, en el mismo orden. Solo los campos de texto traducidos.
+# edicoes y volumes: mismo orden y tamaño que en el original, cada elemento solo con {nome}.
+
+serial-killers-anatomia-do-mal:
+  edicoes:
+    - {nome: "Primera edición (tapa dura)"}
+    - {nome: "Bloody Edition (tapa dura)"}
+  papel: "traducción"
+  genero: "no ficción / true crime"
+  sinopse: "Compendio del profesor y escritor estadounidense Harold Schechter sobre asesinos en serie. Organizado por temas, aborda definiciones, tipologías, motivaciones, métodos y perfiles psicológicos, la investigación policial y forense y la presencia de estos criminales en la cultura popular, con casos como los de Jack el Destripador, Ed Gein, Ted Bundy y Jeffrey Dahmer."
+
+a-noite-dos-mortos-vivos:
+  edicoes:
+    - {nome: "Classic Edition (tapa blanda)"}
+    - {nome: "Limited Edition (tapa dura)"}
+    - {nome: "Edición conmemorativa de los 50 años (ilustraciones de Danilo Beyruth)"}
+  papel: "traducción"
+  genero: "ficción / terror"
+  sinopse: "Volumen que reúne dos novelas de John Russo, que escribió con George A. Romero el guion de la película de 1968. Night of the Living Dead narra el asedio a un grupo de desconocidos refugiados en una casa de granja en Pensilvania mientras los muertos se levantan para atacar a los vivos; Return of the Living Dead retoma la amenaza años después."
+
+social-killers:
+  papel: "traducción"
+  genero: "no ficción / true crime"
+  sinopse: "RJ Parker y JJ Slate reúnen decenas de casos reales, en varios países, de crímenes violentos en los que las redes sociales, los sitios de anuncios clasificados y las salas de chat sirvieron para atraer, vigilar o engañar a las víctimas. Los capítulos finales abordan la seguridad en línea y el uso de las redes por parte de la policía en las investigaciones."
+
+american-crime-story-oj-simpson:
+  papel: "traducción"
+  genero: "no ficción / true crime, periodismo judicial"
+  sinopse: "El periodista Jeffrey Toobin, que cubrió el caso para la revista The New Yorker, reconstruye la investigación y el juicio de O. J. Simpson, acusado de matar a su exesposa, Nicole Brown Simpson, y a Ronald Goldman en Los Ángeles, en 1994, y analiza la absolución de 1995. El libro dio origen a la serie de televisión homónima (2016)."
+
+o-segredo-dos-corpos:
+  papel: "traducción"
+  genero: "no ficción / memorias, medicina legal"
+  sinopse: "Memorias del patólogo forense estadounidense Vincent Di Maio, escritas con el periodista Ron Franscell. A partir de casos en los que participó, como la exhumación de Lee Harvey Oswald, la muerte de Trayvon Martin y el juicio contra Phil Spector, el libro muestra cómo las autopsias y las pruebas físicas ayudan a esclarecer muertes violentas o sospechosas."
+
+killer-clown-profile:
+  papel: "coordinación y cotraducción con Mariana Branco (a través de Ligna)"
+  genero: "no ficción / true crime"
+  sinopse: "Terry Sullivan, fiscal que participó en la acusación contra John Wayne Gacy, y el periodista Peter T. Maiken, del Chicago Tribune, reconstruyen la investigación y el juicio del contratista de los suburbios de Chicago que se presentaba como payaso en fiestas y eventos benéficos y que fue condenado en 1980 por el asesinato de 33 jóvenes y adolescentes."
+
+jim-jones-profile:
+  papel: "coordinación y cotraducción con Mayra Borges (a través de Ligna)"
+  genero: "no ficción / true crime, biografía"
+  sinopse: "Biografía de Jim Jones escrita por el periodista Jeff Guinn a partir de archivos del FBI y entrevistas. Sigue al líder religioso desde su infancia en Indiana, pasando por la fundación del Templo del Pueblo y la mudanza a California, hasta la comunidad de Jonestown, en Guyana, donde más de 900 personas murieron en noviembre de 1978."
+
+a-poderosa-chefona:
+  papel: "coordinación y cotraducción con Mayra Vieira Borges (a través de Ligna)"
+  genero: "no ficción / true crime, periodismo"
+  sinopse: "La periodista estadounidense Barbie Latza Nadeau, radicada en Roma, investiga el papel de las mujeres en las mafias italianas, desde esposas e hijas hasta jefas de clan. El hilo conductor es la trayectoria de Assunta “Pupetta” Maresca, que en 1955, en Nápoles, mató al asesino de su marido y se convirtió en una figura conocida de la Camorra."
+
+conspiracy-365:
+  periodo: "2012–2016"
+  volumes:
+    - {nome: "Libro 6: Junio"}
+    - {nome: "Libro 7: Julio"}
+    - {nome: "Libro 9: Septiembre"}
+    - {nome: "Libro 10: Octubre (Novidade Chocante)"}
+    - {nome: "Libro 11: Noviembre (Surpresa)"}
+    - {nome: "Libro 12: Diciembre (Fuga Final)"}
+  papel: "traducción"
+  genero: "ficción juvenil / suspenso"
+  sinopse: "Serie juvenil de suspenso de la australiana Gabrielle Lord, con un libro para cada mes del año. En la víspera de Año Nuevo, un desconocido le advierte a Callum Ormond, de 15 años, que debe esconderse durante 365 días. Sospechoso de un crimen, el joven pasa a vivir como fugitivo mientras investiga la muerte de su padre y un secreto familiar."
+
+# ---------- Traducciones breves publicadas ----------
+
+garcia-marquez-prologo-clave:
+  publicacao: "Revista Confraria, n.º 11, nov./dic. de 2006 (Confraria do Vento; ISSN 1808-6276)"
+  papel: "traducción"
+  creditos: "Traducción de Lucas Magdiel"
+  genero: "ensayo (prólogo)"
+  sinopse: "Prólogo escrito en 1997 para el diccionario Clave, de la editorial española SM, inédito en portugués hasta esta traducción. García Márquez recuerda a su abuelo que, corregido en un circo a propósito de un dromedario, fue a resolver la duda en el diccionario; compara definiciones de “amarillo” de 1611 a 1976, elogia el trabajo solitario de María Moliner y defiende diccionarios pensados también para los niños."
+
+gerardo-dirie-poemas:
+  publicacao: "Revista Confraria, n.º 12, ene./feb. de 2007 (Confraria do Vento; ISSN 1808-6276)"
+  papel: "traducción"
+  creditos: "Traducción: Lucas Magdiel"
+  genero: "poesía"
+  sinopse: "Primera selección de poemas del argentino Gerardo Dirié publicada en portugués: fragmentos de la secuencia “idéias de uma cidade”, “natureza morta holandesa”, “dois poemas eventuais” y un poema sin título. Nacido en Córdoba, Dirié es también compositor, director de orquesta y profesor; en ese entonces enseñaba en el Conservatorio de Queensland, en Australia."
+
+gunter-grass-entrevista:
+  publicacao: "Libro de entrevistas de la Editora Calibán (Río de Janeiro)"
+  papel: "traducción"
+  genero: "entrevista"
+  sinopse: "Entrevista que el escritor alemán Günter Grass, Premio Nobel de Literatura 1999, concedió al periodista Faustino F. Álvarez en su casa de Behlendorf, publicada originalmente en el primer número de la revista El Cielo de Salamanca (2000). Grass habla de sus premios recientes, de Mi siglo y de la relación entre compromiso político y literatura."

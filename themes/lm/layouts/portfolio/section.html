@@ -14,20 +14,20 @@
 
   <section class="faixa">
     <div class="faixa-cab">
-      <h2><a href="{{ "portfolio/legendagem/" | relURL }}">Legendagem</a></h2>
-      <p>{{ len $av }} séries e programas para streaming e TV por assinatura (Netflix, BBC, Sky, Discovery e outros).</p>
+      <h2>{{ with site.GetPage "/portfolio/legendagem" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</h2>
+      <p>{{ i18n "port_legendagem_resumo" (dict "n" (len $av)) }}</p>
     </div>
     <ul class="grade grade--linha">
       {{- range first 6 $av }}{{ if .capa }}
-        {{- partial "tile.html" (dict "page" (site.GetPage (printf "/portfolio/legendagem/%s" .id)) "titulo" .titulo "sub" .emissora "capa" .capa "alt" (printf "Pôster de %s" .titulo) "pequeno" true) }}
+        {{- partial "tile.html" (dict "page" (site.GetPage (printf "/portfolio/legendagem/%s" .id)) "titulo" .titulo "sub" .emissora "capa" .capa "alt" (i18n "poster_de" (dict "titulo" .titulo)) "pequeno" true) }}
       {{- end }}{{ end }}
     </ul>
   </section>
 
   <section class="faixa">
     <div class="faixa-cab">
-      <h2><a href="{{ "portfolio/livros/" | relURL }}">Livros</a></h2>
-      <p>{{ $nLivros }} livros traduzidos do inglês e {{ len $curtas }} traduções curtas publicadas.</p>
+      <h2>{{ with site.GetPage "/portfolio/livros" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</h2>
+      <p>{{ i18n "port_livros_resumo" (dict "n" $nLivros "curtas" (len $curtas)) }}</p>
     </div>
     <ul class="grade grade--linha">
       {{- range first 6 $livros }}
@@ -38,8 +38,8 @@
 
   <section class="faixa">
     <div class="faixa-cab">
-      <h2><a href="{{ "portfolio/tv-brasil/" | relURL }}">TV Brasil</a></h2>
-      <p>{{ len $ebc }} documentários, reportagens e entrevistas legendados para a TV pública, quase todos entre português e espanhol.</p>
+      <h2>{{ with site.GetPage "/portfolio/tv-brasil" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</h2>
+      <p>{{ i18n "port_tv_resumo" (dict "n" (len $ebc)) }}</p>
     </div>
     <ul class="grade grade--linha grade--tv">
       {{- range first 6 $ebc }}
@@ -52,16 +52,16 @@
   {{- $e := hugo.Data.estatisticas.agencia_brasil_es }}
   <div class="faixa faixa--cartoes">
     <section>
-      <h2><a href="{{ "portfolio/jornalismo/" | relURL }}">Jornalismo</a></h2>
-      <p>Mais de {{ lang.FormatNumber 0 (math.Floor (div $e.materias_min 1000.0)) }} mil matérias da Agência Brasil vertidas ao espanhol desde {{ (time $e.desde).Year }}, cerca de {{ lang.FormatNumber 0 (math.Round (div $e.palavras_min 1000000.0)) }} milhões de palavras.</p>
+      <h2>{{ with site.GetPage "/portfolio/jornalismo" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</h2>
+      <p>{{ i18n "port_jornalismo_resumo" (dict "mil" (lang.FormatNumber 0 (math.Floor (div $e.materias_min 1000.0))) "ano" (time $e.desde).Year "milhoes" (lang.FormatNumber 0 (math.Round (div $e.palavras_min 1000000.0)))) }}</p>
     </section>
     <section>
-      <h2><a href="{{ "portfolio/traducao-tecnica/" | relURL }}">Tradução técnica</a></h2>
-      <p>Contratos e documentos da EBC, documentos jurídicos como tradutor credenciado do CJF e projetos para clientes de várias áreas, com a Ligna e a Blend.</p>
+      <h2>{{ with site.GetPage "/portfolio/traducao-tecnica" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</h2>
+      <p>{{ i18n "port_tecnica_resumo" }}</p>
     </section>
     <section>
-      <h2><a href="{{ "portfolio/revisao/" | relURL }}">Revisão</a></h2>
-      <p>Livros de poesia, ficção, ensaio e não ficção para editoras como Confraria do Vento, Língua Geral e Alta Books, além de trabalhos acadêmicos.</p>
+      <h2>{{ with site.GetPage "/portfolio/revisao" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</h2>
+      <p>{{ i18n "port_revisao_resumo" }}</p>
     </section>
   </div>
 </section>

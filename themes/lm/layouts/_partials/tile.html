@@ -4,7 +4,7 @@
 <li class="tile{{ if .pequeno }} tile--p{{ end }}">
   {{- if $href }}<a href="{{ $href }}"{{ if hasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }}>{{ else }}<div>{{ end }}
     <div class="tile-img">
-      {{- if .capa }}{{ partial "img.html" (dict "src" .capa "alt" (.alt | default (printf "Capa de %s" .titulo)) "w" (cond .pequeno 150 220)) }}
+      {{- if .capa }}{{ partial "img.html" (dict "src" .capa "alt" (.alt | default (i18n "capa_de" (dict "titulo" .titulo))) "w" (cond .pequeno 150 220)) }}
       {{- else if .tv }}{{ partial "tvcard.html" .tv }}
       {{- end }}
     </div>

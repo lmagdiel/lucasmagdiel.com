@@ -1,0 +1,31 @@
+# Sites in the Technology > Projects > Sites section. Display order = list order.
+# icone: the site's favicon with a transparent background, in assets/img/sites/ (128 px PNG or SVG).
+# url: link address ("/en/" for this site itself); alias: another domain that leads to the same site (optional);
+# credito: highlighted third-party credit (optional), e.g. {rotulo: "Designer", nome: "...", url: "..."}.
+- dominio: "lucasmagdiel.com"
+  icone: "img/sites/lucasmagdiel.png"
+  url: "/en/"
+  alias: "lucas.st"
+  descricao: "This site"
+  tec: "Hugo, custom theme"
+- dominio: "vanessa.st"
+  icone: "img/sites/vanessa.svg"
+  url: "https://vanessa.st"
+  descricao: "My wife's personal website"
+  tec: "Hugo, custom theme"
+- dominio: "coizassim.com.br"
+  icone: "img/sites/coizassim.png"
+  url: "https://coizassim.com.br"
+  descricao: "Blog and online store"
+  tec: "Hugo, custom theme"
+- dominio: "ligna.pro"
+  icone: "img/sites/ligna.png"
+  url: "https://ligna.pro"
+  descricao: "Ligna's website"
+  tec: "Hugo, migrated from WordPress"
+  credito: {rotulo: "Designer", nome: "Polvo", url: "https://polvo.design/"}
+- dominio: "abrflow.app"
+  icone: "img/sites/abrflow.svg"
+  url: "https://abrflow.app"
+  descricao: "AbrFlow's website"
+  tec: "Custom HTML and CSS"

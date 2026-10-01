@@ -1,0 +1,9 @@
+# English draft of the text fields in data/estatisticas.yaml (numbers stay in the original file).
+# Draft: English is disabled in hugo.toml.
+
+agencia_brasil_es:
+  frase_aprovada: "more than 9,000 news stories translated into Spanish since 2013, about 5 million words"
+  base: "3 stories per business day (the translator's lower-bound estimate); average of 535 words per story (56 credited stories, Mar.–Sep. 2026)"
+
+blend:
+  frase_sugerida: "certified translator and editor since 2012: 475 projects and more than 150,000 words, with 100% on-time delivery"

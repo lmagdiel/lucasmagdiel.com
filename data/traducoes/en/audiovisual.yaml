@@ -1,0 +1,132 @@
+# English draft of data/audiovisual.yaml: text fields only, keyed by item id (same order as the original).
+# Titles, networks, platforms, names and links stay in the original file. Draft: English is disabled in hugo.toml.
+
+# ---------- Netflix via TransPerfect Media ----------
+
+aprendendo-a-amar:
+  genero: "romantic drama"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of the complete series (11 episodes)"}
+  sinopse: "A high school teacher raised in a strict family meets a young man who works as a host at a nightclub and can barely read or write. She starts giving him private lessons in secret, and their growing closeness stirs jealousy and disapproval around them."
+
+assumindo-as-redeas:
+  genero: "drama (horse racing, family)"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of the complete series (10 episodes)"}
+  sinopse: "In 2011, a disheartened accountant is called in to audit a company's horse racing division and ends up as secretary to its founder, a racehorse owner. The series follows two decades of family conflict and the quest to win the Arima Kinen, one of Japan's biggest races."
+
+ate-a-camiseta-secar:
+  genero: "drama"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of the complete series (10 episodes)"}
+  sinopse: "Sakiko's married life falls apart after a summer accident that also involves another couple. Amid the upheaval, a secret kept by her husband comes to light, and the series follows how everyone involved copes with the loss and the revelation."
+
+o-que-voce-vai-fazer-ieyasu:
+  genero: "historical drama"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of the complete series (48 episodes) in 2026"}
+  sinopse: "An NHK taiga drama following Matsudaira Motoyasu, later Tokugawa Ieyasu, through the wars of the Sengoku period. Pressed by allies and rivals, the insecure young lord must make decisions that will determine his clan's survival and, later, the founding of the Tokugawa shogunate."
+
+meu-casamento-feliz-especial:
+  trabalho: {papel: "subtitling", descricao: "Subtitling of special episodes 14 to 16 of season 2"}
+
+the-13-lords-of-the-shogun:
+  trabalho: {papel: "subtitling", descricao: "Subtitling of the complete series (48 episodes) in 2026"}
+
+# ---------- Gemini Media (EN>PT-BR, pay TV, 2012–2013) ----------
+
+top-gear:
+  genero: "motoring / entertainment"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of several episodes between 2012 and 2013"}
+  sinopse: "British motoring show that combines car reviews, road challenges, travel specials, and celebrity guests setting lap times on the show's own track. Presented by Jeremy Clarkson, Richard Hammond, and James May, with the anonymous racing driver The Stig."
+
+the-graham-norton-show:
+  genero: "talk show"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of several episodes between 2012 and 2013"}
+  sinopse: "British talk show in which Graham Norton welcomes several guests from film, television, and music at the same time for interviews on the sofa, with musical performances and the red chair segment, where audience members tell their stories."
+
+richard-hammonds-crash-course:
+  genero: "reality / factual"
+  trabalho: {papel: "subtitling"}
+  sinopse: "Top Gear presenter Richard Hammond travels across the United States with three days to learn how to operate different kinds of heavy machinery, coached by professionals in each field. In the second season, the challenge becomes mastering unusual trades."
+
+the-fades:
+  genero: "supernatural drama"
+  premios: ["BAFTA TV 2012, Best Drama Series"]
+  trabalho: {papel: "subtitling"}
+  sinopse: "Paul, a student haunted by apocalyptic dreams, discovers he can see the Fades, spirits of the dead who were unable to move on and are beginning to attack the living. Together with his friend Mac, he gets involved with a group that fights these creatures."
+
+the-british:
+  genero: "historical documentary series"
+  trabalho: {papel: "subtitling"}
+  sinopse: "Seven-part documentary series that traces the history of the British Isles from the Roman invasion to the coronation of Elizabeth II in 1953, combining dramatized reenactments, computer graphics, and commentary from historians and public figures."
+
+bang-goes-the-theory:
+  genero: "popular science"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of several episodes between 2012 and 2013"}
+  sinopse: "BBC popular science show, co-produced with the Open University, in which the presenters test theories and explain phenomena through hands-on experiments and reports on research and technology in everyday life."
+
+bbc-proms:
+  genero: "classical music"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of several broadcasts between 2012 and 2013"}
+  sinopse: "Broadcasts from the BBC's annual summer season of classical music concerts, held mainly at the Royal Albert Hall in London, with orchestras, conductors, and soloists from many countries."
+
+football-freestyler:
+  genero: "sports documentary"
+  trabalho: {papel: "subtitling"}
+  sinopse: "British freestyler Dan Magness travels to several countries to perform and teach freestyle football tricks, meet professional players and local communities, and take on ball skill challenges."
+
+lonely-planet-year-of-adventures:
+  genero: "travel / adventure"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of episode 105"}
+  sinopse: "Lonely Planet travel series presented by British adventurer Ben Fogle, who visits different parts of the world to try extreme activities, with each episode built around a theme."
+
+lonely-planet-best-in-china:
+  genero: "travel"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of episode 104"}
+  sinopse: "Lonely Planet travel series in which the hosts journey across China in search of experiences recommended to visitors, from natural landscapes and panda reserves to cities, historic sites, and local traditions."
+
+outback-wrangler:
+  genero: "wildlife"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of several episodes between 2012 and 2013"}
+  sinopse: "Follows Matt Wright, a helicopter pilot and animal capture expert, on operations in northern Australia to remove crocodiles from populated areas and relocate them, as well as dealing with other animals in remote regions."
+
+ace-of-cakes:
+  genero: "reality / cooking"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of several episodes between 2012 and 2013"}
+  sinopse: "Reality show following Charm City Cakes, Duff Goldman's bakery in Baltimore, where the team creates custom cakes with complex shapes and structures while juggling deadlines, clients, and deliveries."
+
+got-to-dance:
+  genero: "dance competition"
+  trabalho: {papel: "subtitling", descricao: "Subtitling of several episodes between 2012 and 2013"}
+  sinopse: "Dance competition open to soloists and groups of all ages and styles. After auditioning for the judges, the acts that go through compete in live shows, and the public votes to choose the winner."
+
+# ---------- Eureca for Netflix (2015) ----------
+
+la-usurpadora:
+  genero: "telenovela"
+  trabalho: {papel: "adaptation of Spanish closed captions", descricao: "Adaptation of Spanish closed captions for episode 16, in 2015"}
+  sinopse: "Paulina, a poor young woman, discovers she has a double: Paola, the wife of businessman Carlos Daniel Bracho. Blackmailed, she agrees to take Paola's place in the Bracho family for a year, tries to undo the harm her double has caused, and falls in love with the husband."
+
+para-volver-a-amar:
+  genero: "telenovela"
+  trabalho: {papel: "adaptation of Spanish closed captions", descricao: "Adaptation of Spanish closed captions for episodes 17 and 44, in 2015"}
+  sinopse: "Six women of different ages and social backgrounds hide crises in their relationships. Once they meet, they begin supporting one another as they face their problems and look for new directions. A remake of the Colombian telenovela El último matrimonio feliz."
+
+# ---------- Boutique Filmes (English subtitles) ----------
+
+experimentos-extraordinarios:
+  genero: "kids' sitcom / science"
+  trabalho: {papel: "technical supervision, QC, and translation support", descricao: "Technical supervision, QC, and translation support for episode 1"}
+  sinopse: "Sitcom in which Iberê Thenório, from the Brazilian YouTube channel Manual do Mundo, takes over a TV show about science experiments and has to work with four inexperienced teenage interns. Each episode features real experiments that viewers can try at home."
+
+lowrider-brasil:
+  genero: "documentary series / cars"
+  trabalho: {papel: "technical supervision, QC, and translation support", descricao: "Technical supervision, QC, and translation support for two episodes"}
+  sinopse: "Documentary series about lowrider culture in Brazil: customizing cars and bicycles with paint jobs, wheels, and hydraulic systems, and following a club at meets and on trips, including to the United States."
+
+cinelab:
+  genero: "reality / special effects"
+  trabalho: {papel: "technical supervision, QC, and translation support", descricao: "Technical supervision, QC, and translation support for two episodes"}
+  sinopse: "In each episode, three special effects experts make a short film on a tight budget and deadline, recreating classic action and horror movie scenes and explaining the techniques they use."
+
+gigantes-do-brasil:
+  genero: "historical docudrama"
+  trabalho: {papel: "technical supervision, QC, and translation support", descricao: "Technical supervision, QC, and translation support for episode 1, about Francesco Matarazzo"}
+  sinopse: "Four-part miniseries about entrepreneurs behind Brazil's industrialization between the late 19th and mid-20th centuries (Francesco Matarazzo, Percival Farquhar, Giuseppe Martinelli, and Guilherme Guinle), with dramatizations, 3D animation, and interviews."

@@ -1,7 +1,7 @@
 <header class="topo">
   <div class="topo-in">
     {{- /* Na página inicial o nome já aparece como título; no topo, só nas demais páginas. */}}
-    {{- if not .IsHome }}<a class="marca" href="{{ "/" | relURL }}">Lucas Magdiel</a>{{ end }}
+    {{- if not .IsHome }}<a class="marca" href="{{ "/" | relLangURL }}">{{ site.Title }}</a>{{ end }}
     <div class="topo-dir">
       <nav aria-label="{{ i18n "menu_principal" }}">
         <ul>

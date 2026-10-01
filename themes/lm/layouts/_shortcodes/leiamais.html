@@ -1,4 +1,4 @@
-{{- $rot := .Get 1 | default "Leia mais" }}
+{{- $rot := .Get 1 | default (i18n "leia_mais") }}
 {{- with site.GetPage (.Get 0) }}
 <p class="leia-mais"><a href="{{ .RelPermalink }}">{{ $rot }} <span aria-hidden="true">→</span></a></p>
 {{- end }}

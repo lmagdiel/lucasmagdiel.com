@@ -1,0 +1,85 @@
+# Borrador de traducción al español (neutro latinoamericano) de data/revisao.yaml.
+# Claves: el id de cada elemento del original, en el mismo orden. Solo los campos de texto traducidos.
+# titulo: solo los títulos descriptivos de grupo (los títulos de libros no se traducen).
+# titulos: mismo orden y tamaño que en el original; {} para los elementos sin papel, sinopse ni nota.
+
+vania-vidal-narciso:
+  papel: "corrección de estilo"
+  genero: "poesía (edición bilingüe)"
+  sinopse: "Libro de poemas de Vânia Vidal, en edición bilingüe. Los textos recurren a personajes conocidos de la cultura occidental para reflexionar sobre la identidad y el narcisismo, y abordan también las despedidas y el cierre de ciclos."
+
+vania-vidal-paragate:
+  papel: "corrección de estilo"
+  genero: "poesía"
+  sinopse: "Libro de poemas de Vânia Vidal, historiadora, paleógrafa y profesora radicada en Río de Janeiro. Los poemas exploran estados intermedios, como el de quien transita entre lugares y pertenencias, y dan espacio a la experiencia femenina."
+
+vania-vidal-a-mulher-de-mocassins:
+  papel: "corrección de estilo"
+  genero: "poesía"
+  sinopse: "Recopilación de poemas de Vânia Vidal escritos en distintas etapas de la vida de la autora. El cuerpo, los sentidos y el paso del tiempo son los ejes del libro."
+
+vania-vidal-academicos:
+  titulo: "Textos académicos de Vânia Vidal (2025)"
+  itens:
+    - "Capítulo “O discurso sobre a temperança, a moderação e a prudência no De Officiis, de Cícero”, en Estudos da Antiguidade e do Medievo em Transição (Mundo Acadêmico/Casaletras, 2025), pp. 343–352"
+    - "Artículo “A singularidade da tradução de D. Pedro de Avis do De Officiis de Cícero”, en las actas del Simpósio Internacional da Contemporaneidade à Antiguidade (UFG/Universidade de Coimbra, 2025)"
+  papel: "corrección"
+
+confraria-do-vento-revisoes:
+  papel: "corrección"
+  sinopse: "Editorial de Río de Janeiro vinculada a la Revista Confraria, con un catálogo centrado en la literatura brasileña contemporánea: poesía, prosa, ensayo y teatro."
+  titulos:
+    - {}
+    - {}
+    - {}
+    - {}
+    - {nota: "colección Outros Clássicos, con Calibán"}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+
+lingua-geral-revisoes:
+  titulo: "Língua Geral: antologías (2007)"
+  papel: "corrección"
+  titulos:
+    - {sinopse: "Antología de 19 cuentos brasileños sobre la homosexualidad, de Machado de Assis a Caio Fernando Abreu e Hilda Hilst."}
+    - {sinopse: "Antología sobre el carnaval con cuentos, crónicas, letras de canciones y poemas de Machado de Assis, Noel Rosa, Vinicius de Moraes, Chico Buarque y otros."}
+
+alta-books-guias:
+  titulo: "Alta Books: guías de idiomas e informática (2012)"
+  titulos:
+    - {papel: "revisión técnica"}
+    - {papel: "corrección de estilo"}
+    - {papel: "corrección de estilo"}
+
+barba-negra-revisoes:
+  papel: "corrección"
+  titulos:
+    - {sinopse: "Libro-reportaje sobre el verano de 1987 a 1988, cuando latas de marihuana arrojadas al mar desde el barco Solana Star llegaron a las costas del Sudeste y del Sur de Brasil."}
+    - {papel: "corrección de la introducción, de Paulo Scott", nota: "cómic; traducción de Maria Clara Carneiro", sinopse: "Cómic casi sin diálogos sobre un joven que empieza a nadar por recomendación médica y se acerca a una nadadora; premio revelación en Angoulême 2009."}
+
+noturna-e-outros-poemas:
+  papel: "corrección"
+  genero: "poesía"
+  sinopse: "Primer libro del poeta Cláudio Duffrayer, de Río de Janeiro: 22 poemas en verso y prosa poética, con ilustraciones de Thaís Melo, en diálogo con el simbolismo y la literatura fantástica del siglo XIX."
+
+papos-contemporaneos:
+  papel: "entrevista a la poeta Claudia Roquette-Pinto y corrección de estilo (curso de extensión universitaria, 2006)"
+  sinopse: "Doce entrevistas con escritores brasileños contemporáneos, como Ferreira Gullar, Claudia Roquette-Pinto, Antonio Carlos Secchin y Sérgio Sant'Anna, realizadas, transcritas y editadas por estudiantes de la Facultad de Letras de la UFRJ en un curso coordinado por Dau Bastos."
+
+coad:
+  titulo: "COAD: publicaciones de consultoría (2011–2012)"
+  papel: "corrección (corrector de planta)"
+  sinopse: "Corrección de libros, manuales y boletines sobre temas fiscales, contables, laborales y jurídicos."
+
+trabalhos-academicos:
+  titulo: "Trabajos académicos"
+  papel: "corrección, formato y normalización (normas ABNT)"
+  sinopse: "Corrección y normalización de tesis de maestría y de doctorado, monografías y artículos de investigadores de diversas instituciones."

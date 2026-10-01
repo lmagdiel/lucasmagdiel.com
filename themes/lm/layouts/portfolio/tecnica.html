@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="secao">
   <header class="secao-cab">
-    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">Portfólio</a></p>
+    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
   </header>
@@ -13,23 +13,23 @@
       <a class="tec-logo" href="{{ .url }}" target="_blank" rel="noopener">
         {{- with resources.Get .logo }}
         {{- $l := .Resize "480x webp q90" }}
-        <img src="{{ $l.RelPermalink }}" width="{{ div $l.Width 2 }}" height="{{ div $l.Height 2 }}" alt="{{ $bl.alt | default (printf "Site da %s" $bl.nome) }}" loading="lazy" decoding="async">
+        <img src="{{ $l.RelPermalink }}" width="{{ div $l.Width 2 }}" height="{{ div $l.Height 2 }}" alt="{{ $bl.alt | default (i18n "site_de" (dict "nome" $bl.nome)) }}" loading="lazy" decoding="async">
         {{- end }}
       </a>
       <div class="tec-txt">
         <h2>{{ .nome }} <span class="tec-periodo">{{ .periodo }}</span></h2>
         <p>{{ .texto }}</p>
         {{- with .servicos }}
-        <ul class="servicos" aria-label="Serviços e pares de língua">
+        <ul class="servicos" aria-label="{{ i18n "servicos_aria" }}">
           {{- range . }}<li><strong>{{ .nome }}</strong> <span class="par">{{ .par }}</span></li>{{ end }}
         </ul>
         {{- end }}
         {{- if eq .id "blend" }}
         {{- $b := hugo.Data.estatisticas.blend }}
-        <ul class="numeros numeros--p" aria-label="Painel da Blend em {{ (time $b.referencia).Format "01/2006" }}">
-          <li><span class="num">{{ $b.projetos_concluidos }}</span> projetos concluídos</li>
-          <li><span class="num">{{ lang.FormatNumber 0 $b.palavras_traduzidas }}</span> palavras</li>
-          <li><span class="num">{{ $b.entregas_no_prazo }}</span> das entregas no prazo</li>
+        <ul class="numeros numeros--p" aria-label="{{ i18n "painel_blend" (dict "data" ((time $b.referencia).Format "01/2006")) }}">
+          <li><span class="num">{{ $b.projetos_concluidos }}</span> {{ i18n "projetos_concluidos" }}</li>
+          <li><span class="num">{{ lang.FormatNumber 0 $b.palavras_traduzidas }}</span> {{ i18n "palavras" }}</li>
+          <li><span class="num">{{ $b.entregas_no_prazo }}</span> {{ i18n "entregas_prazo" }}</li>
         </ul>
         {{- end }}
       </div>

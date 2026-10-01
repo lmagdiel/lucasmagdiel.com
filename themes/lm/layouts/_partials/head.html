@@ -3,8 +3,8 @@
 {{- $titulo := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) }}
 <title>{{ $titulo }}</title>
 {{- $desc := or .Description .Params.sinopse site.Params.description | plainify | truncate 180 }}
-{{- if and (eq .Kind "term") (not .Description) }}{{ $desc = printf "Notas de %s sobre %s." site.Params.author .Title }}{{ end }}
-{{- if and (eq .Kind "taxonomy") (not .Description) }}{{ $desc = printf "Assuntos das notas de %s." site.Params.author }}{{ end }}
+{{- if and (eq .Kind "term") (not .Description) }}{{ $desc = i18n "desc_assunto" (dict "autor" site.Params.author "assunto" .Title) }}{{ end }}
+{{- if and (eq .Kind "taxonomy") (not .Description) }}{{ $desc = i18n "desc_assuntos" (dict "autor" site.Params.author) }}{{ end }}
 <meta name="description" content="{{ $desc }}">
 <meta name="author" content="{{ site.Params.author }}">
 <link rel="canonical" href="{{ .Permalink }}">
@@ -12,7 +12,7 @@
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:locale" content="pt_BR">
+<meta property="og:locale" content="{{ replace site.Language.Locale "-" "_" }}">
 <meta property="og:site_name" content="{{ site.Title }}">
 {{- /* Imagem de compartilhamento: capa da obra (portfólio) ou a imagem padrão do site (static/og.jpg). */ -}}
 {{- $capa := or (index (.Params.capas | default slice) 0) .Params.capa }}
@@ -31,12 +31,12 @@
 <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
 <link rel="icon" type="image/png" href="{{ "favicon-32x32.png" | relURL }}">
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
-{{- with site.GetPage "/notas" }}{{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="Notas · {{ site.Title }}">{{ end }}{{ end }}
+{{- with site.GetPage "/notas" }}{{ $notas := .Title }}{{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $notas }} · {{ site.Title }}">{{ end }}{{ end }}
 {{- $css := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{- if .Params.noindex }}<meta name="robots" content="noindex">{{ end }}
 {{- if .IsHome }}
 {{- $sameAs := slice }}{{ range site.Params.links }}{{ if .ativo }}{{ $sameAs = $sameAs | append .url }}{{ end }}{{ end }}
-{{- $pessoa := dict "@context" "https://schema.org" "@type" "Person" "name" site.Params.author "url" site.Home.Permalink "jobTitle" "Tradutor e legendador" "knowsLanguage" (slice "pt-BR" "en" "es") "sameAs" $sameAs }}
+{{- $pessoa := dict "@context" "https://schema.org" "@type" "Person" "name" site.Params.author "url" site.Home.Permalink "jobTitle" (i18n "job_title") "knowsLanguage" (slice "pt-BR" "en" "es") "sameAs" $sameAs }}
 <script type="application/ld+json">{{ $pessoa | jsonify | safeJS }}</script>
 {{- end }}

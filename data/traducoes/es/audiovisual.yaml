@@ -1,0 +1,132 @@
+# Borrador de traducción al español (neutro latinoamericano) de data/audiovisual.yaml.
+# Claves: el id de cada elemento del original, en el mismo orden. Solo los campos de texto traducidos.
+
+# ---------- Netflix vía TransPerfect Media ----------
+
+aprendendo-a-amar:
+  genero: "drama romántico"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de la serie completa (11 episodios)"}
+  sinopse: "Una profesora de secundaria, criada en una familia estricta, conoce a un joven que trabaja como host en un club nocturno y apenas sabe leer y escribir. Ella empieza a darle clases particulares a escondidas, y el acercamiento entre ambos despierta celos y desaprobación a su alrededor."
+
+assumindo-as-redeas:
+  genero: "drama (carreras de caballos, familia)"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de la serie completa (10 episodios)"}
+  sinopse: "En 2011, un contador desanimado recibe el encargo de auditar la división de carreras de caballos de una empresa y termina como secretario del fundador, un propietario de caballos. La serie sigue dos décadas de conflictos familiares y del intento de ganar el Arima Kinen, una de las carreras más importantes de Japón."
+
+ate-a-camiseta-secar:
+  genero: "drama"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de la serie completa (10 episodios)"}
+  sinopse: "La vida conyugal de Sakiko se derrumba tras un accidente de verano que involucra también a otra pareja. En medio de la conmoción sale a la luz un secreto que guardaba su marido, y la serie muestra cómo cada uno enfrenta la pérdida y la revelación."
+
+o-que-voce-vai-fazer-ieyasu:
+  genero: "drama histórico"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de la serie completa (48 episodios) en 2026"}
+  sinopse: "Taiga drama de la NHK que sigue a Matsudaira Motoyasu, luego Tokugawa Ieyasu, en medio de las guerras del período Sengoku. Presionado por aliados y rivales, el joven e inseguro señor debe tomar decisiones que definirán la supervivencia de su clan y, más adelante, la fundación del shogunato Tokugawa."
+
+meu-casamento-feliz-especial:
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de los episodios especiales 14 a 16 de la segunda temporada"}
+
+the-13-lords-of-the-shogun:
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de la serie completa (48 episodios) en 2026"}
+
+# ---------- Gemini Media (EN>PT-BR, TV por suscripción, 2012–2013) ----------
+
+top-gear:
+  genero: "automovilismo / variedades"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de algunos episodios entre 2012 y 2013"}
+  sinopse: "Programa británico sobre automóviles que combina pruebas de autos, desafíos en carretera, viajes especiales y vueltas cronometradas de invitados famosos en una pista propia. Lo presentan Jeremy Clarkson, Richard Hammond y James May, con el piloto anónimo The Stig."
+
+the-graham-norton-show:
+  genero: "talk show"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de algunos episodios entre 2012 y 2013"}
+  sinopse: "Talk show británico en el que Graham Norton recibe a la vez a varios invitados del cine, la televisión y la música para entrevistarlos en el sofá, con números musicales y la sección de la silla roja, en la que personas del público cuentan historias."
+
+richard-hammonds-crash-course:
+  genero: "reality / no ficción"
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Richard Hammond, presentador de Top Gear, recorre Estados Unidos y tiene tres días para aprender a operar distintas máquinas pesadas, guiado por profesionales de cada área. En la segunda temporada, el reto pasa a ser dominar oficios poco comunes."
+
+the-fades:
+  genero: "drama sobrenatural"
+  premios: ["BAFTA TV 2012, Mejor serie dramática"]
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Paul, un estudiante atormentado por sueños apocalípticos, descubre que puede ver a los Fades, espíritus de muertos que no lograron partir y que empiezan a atacar a los vivos. Junto a su amigo Mac, se involucra con un grupo que combate a estas criaturas."
+
+the-british:
+  genero: "serie documental histórica"
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Serie documental de siete episodios que recorre la historia de las Islas Británicas desde la invasión romana hasta la coronación de Isabel II, en 1953, con recreaciones dramatizadas, imágenes generadas por computadora y comentarios de historiadores y personalidades."
+
+bang-goes-the-theory:
+  genero: "divulgación científica"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de algunos episodios entre 2012 y 2013"}
+  sinopse: "Programa de divulgación científica de la BBC, coproducido con la Open University, en el que los presentadores ponen a prueba teorías y explican fenómenos con experimentos prácticos y reportajes sobre investigación y tecnología en la vida cotidiana."
+
+bbc-proms:
+  genero: "música clásica"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de algunas transmisiones entre 2012 y 2013"}
+  sinopse: "Transmisiones de la temporada anual de conciertos de música clásica que la BBC organiza cada verano, sobre todo en el Royal Albert Hall de Londres, con orquestas, directores y solistas de varios países."
+
+football-freestyler:
+  genero: "documental deportivo"
+  trabalho: {papel: "subtitulación"}
+  sinopse: "El freestyler británico Dan Magness viaja por varios países para ejecutar y enseñar trucos de fútbol freestyle, conocer a futbolistas profesionales y comunidades locales y enfrentar desafíos de habilidad con el balón."
+
+lonely-planet-year-of-adventures:
+  genero: "viajes / aventura"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación del episodio 105"}
+  sinopse: "Serie de viajes de Lonely Planet presentada por el aventurero británico Ben Fogle, que recorre distintas partes del mundo para probar actividades extremas. Cada episodio gira en torno a un tema."
+
+lonely-planet-best-in-china:
+  genero: "viajes"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación del episodio 104"}
+  sinopse: "Serie de viajes de Lonely Planet en la que los presentadores recorren China en busca de experiencias recomendadas para el viajero, desde paisajes naturales y reservas de pandas hasta ciudades, sitios históricos y tradiciones locales."
+
+outback-wrangler:
+  genero: "vida salvaje"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de algunos episodios entre 2012 y 2013"}
+  sinopse: "Sigue a Matt Wright, piloto de helicóptero y especialista en captura de animales, en operaciones en el norte de Australia para sacar cocodrilos de zonas habitadas y reubicarlos, además de lidiar con otros animales en regiones remotas."
+
+ace-of-cakes:
+  genero: "reality / cocina"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de algunos episodios entre 2012 y 2013"}
+  sinopse: "Reality show que sigue el día a día de Charm City Cakes, la pastelería de Duff Goldman en Baltimore, donde el equipo crea pasteles personalizados de formas y estructuras complejas mientras lidia con plazos, clientes y entregas."
+
+got-to-dance:
+  genero: "concurso de baile"
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de algunos episodios entre 2012 y 2013"}
+  sinopse: "Concurso de baile abierto a solistas y grupos de todas las edades y estilos. Tras las audiciones ante el jurado, los seleccionados compiten en presentaciones en vivo, y el público vota para elegir al ganador."
+
+# ---------- Eureca para Netflix (2015) ----------
+
+la-usurpadora:
+  genero: "telenovela"
+  trabalho: {papel: "adecuación de closed captions en español", descricao: "Adecuación de closed captions en español del episodio 16 en 2015"}
+  sinopse: "Paulina, una joven pobre, descubre que tiene una doble: Paola, esposa del empresario Carlos Daniel Bracho. Chantajeada, acepta ocupar el lugar de la otra en la familia Bracho durante un año, intenta reparar el daño que esta causó y se enamora del marido."
+
+para-volver-a-amar:
+  genero: "telenovela"
+  trabalho: {papel: "adecuación de closed captions en español", descricao: "Adecuación de closed captions en español de los episodios 17 y 44 en 2015"}
+  sinopse: "Seis mujeres de distintas edades y clases sociales ocultan crisis en sus relaciones de pareja. Al conocerse, empiezan a apoyarse para enfrentar los problemas y buscar nuevos rumbos. Remake de la telenovela colombiana El último matrimonio feliz."
+
+# ---------- Boutique Filmes (subtítulos en inglés) ----------
+
+experimentos-extraordinarios:
+  genero: "sitcom infantojuvenil / ciencia"
+  trabalho: {papel: "supervisión técnica, QC y apoyo a la traducción", descricao: "Supervisión técnica, QC y apoyo a la traducción del episodio 1"}
+  sinopse: "Sitcom en la que Iberê Thenório, del canal de YouTube Manual do Mundo, asume un programa de televisión sobre experimentos científicos y tiene que trabajar con cuatro pasantes adolescentes sin experiencia. Cada episodio muestra experimentos reales que el público puede repetir en casa."
+
+lowrider-brasil:
+  genero: "serie documental / automóviles"
+  trabalho: {papel: "supervisión técnica, QC y apoyo a la traducción", descricao: "Supervisión técnica, QC y apoyo a la traducción de dos episodios"}
+  sinopse: "Serie documental sobre la cultura lowrider en Brasil: la personalización de autos y bicicletas, con pintura, ruedas y sistemas hidráulicos, y la participación de un club en encuentros y viajes, incluso a Estados Unidos."
+
+cinelab:
+  genero: "reality / efectos especiales"
+  trabalho: {papel: "supervisión técnica, QC y apoyo a la traducción", descricao: "Supervisión técnica, QC y apoyo a la traducción de dos episodios"}
+  sinopse: "En cada episodio, tres especialistas en efectos especiales producen un cortometraje con presupuesto y plazo reducidos, recrean escenas típicas del cine de acción y de terror y explican las técnicas que usaron."
+
+gigantes-do-brasil:
+  genero: "docudrama histórico"
+  trabalho: {papel: "supervisión técnica, QC y apoyo a la traducción", descricao: "Supervisión técnica, QC y apoyo a la traducción del episodio 1, sobre Francesco Matarazzo"}
+  sinopse: "Miniserie de cuatro episodios sobre empresarios de la industrialización brasileña entre finales del siglo XIX y mediados del XX (Francesco Matarazzo, Percival Farquhar, Giuseppe Martinelli y Guilherme Guinle), con dramatizaciones, animación 3D y testimonios."

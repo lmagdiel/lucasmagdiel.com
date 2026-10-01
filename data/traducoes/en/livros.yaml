@@ -1,0 +1,84 @@
+# English draft of data/livros.yaml: text fields only, keyed by item id (same order as the original).
+# Book titles, authors, publishers, ISBNs and links stay in the original file. Draft: English is disabled in hugo.toml.
+
+serial-killers-anatomia-do-mal:
+  edicoes:
+    - {nome: "1st edition (hardcover)"}
+    - {nome: "Bloody Edition (hardcover)"}
+  papel: "translation"
+  genero: "nonfiction / true crime"
+  sinopse: "A compendium on serial killers by American professor and author Harold Schechter. Organized by theme, it covers definitions, typologies, motives, methods, and psychological profiles, police and forensic investigation, and the place of these criminals in popular culture, with cases such as Jack the Ripper, Ed Gein, Ted Bundy, and Jeffrey Dahmer."
+
+a-noite-dos-mortos-vivos:
+  edicoes:
+    - {nome: "Classic Edition (paperback)"}
+    - {nome: "Limited Edition (hardcover)"}
+    - {nome: "50th Anniversary Edition (illustrated by Danilo Beyruth)"}
+  papel: "translation"
+  genero: "fiction / horror"
+  sinopse: "A volume collecting two novels by John Russo, who cowrote the 1968 film with George A. Romero. Night of the Living Dead follows a group of strangers trapped in a Pennsylvania farmhouse as the dead rise to attack the living; Return of the Living Dead brings the threat back years later."
+
+social-killers:
+  papel: "translation"
+  genero: "nonfiction / true crime"
+  sinopse: "RJ Parker and JJ Slate bring together dozens of real cases, from several countries, of violent crimes in which social networks, classified ad sites, and chat rooms were used to lure, stalk, or deceive victims. The final chapters cover online safety and how police use social media in investigations."
+
+american-crime-story-oj-simpson:
+  papel: "translation"
+  genero: "nonfiction / true crime, legal journalism"
+  sinopse: "Journalist Jeffrey Toobin, who covered the case for The New Yorker, reconstructs the investigation and trial of O. J. Simpson, accused of murdering his ex-wife, Nicole Brown Simpson, and Ronald Goldman in Los Angeles in 1994, and analyzes his acquittal in 1995. The book was the basis for the TV series American Crime Story: The People v. O. J. Simpson (2016)."
+
+o-segredo-dos-corpos:
+  papel: "translation"
+  genero: "nonfiction / memoir, forensic medicine"
+  sinopse: "Memoir of American forensic pathologist Vincent Di Maio, written with journalist Ron Franscell. Drawing on cases he worked on, such as the exhumation of Lee Harvey Oswald, the death of Trayvon Martin, and the Phil Spector trial, the book shows how autopsies and physical evidence help explain violent or suspicious deaths."
+
+killer-clown-profile:
+  papel: "project coordination and co-translation with Mariana Branco (via Ligna)"
+  genero: "nonfiction / true crime"
+  sinopse: "Terry Sullivan, a prosecutor in the case against John Wayne Gacy, and Chicago Tribune journalist Peter T. Maiken reconstruct the investigation and trial of the suburban Chicago contractor who performed as a clown at parties and charity events and was convicted in 1980 of murdering 33 young men and teenage boys."
+
+jim-jones-profile:
+  papel: "project coordination and co-translation with Mayra Borges (via Ligna)"
+  genero: "nonfiction / true crime, biography"
+  sinopse: "Biography of Jim Jones by journalist Jeff Guinn, based on FBI files and interviews. It follows the religious leader from his childhood in Indiana, through the founding of Peoples Temple and the move to California, to the Jonestown settlement in Guyana, where more than 900 people died in November 1978."
+
+a-poderosa-chefona:
+  papel: "project coordination and co-translation with Mayra Vieira Borges (via Ligna)"
+  genero: "nonfiction / true crime, journalism"
+  sinopse: "Rome-based American journalist Barbie Latza Nadeau investigates the role of women in the Italian mafias, from wives and daughters to clan bosses. The common thread is the story of Assunta “Pupetta” Maresca, who in 1955, in Naples, killed her husband's murderer and became a well-known figure in the Camorra."
+
+conspiracy-365:
+  periodo: "2012–2016"
+  volumes:
+    - {nome: "Book 6: June"}
+    - {nome: "Book 7: July"}
+    - {nome: "Book 9: September"}
+    - {nome: "Book 10: October (Novidade Chocante)"}
+    - {nome: "Book 11: November (Surpresa)"}
+    - {nome: "Book 12: December (Fuga Final)"}
+  papel: "translation"
+  genero: "young adult fiction / thriller"
+  sinopse: "Young adult thriller series by Australian author Gabrielle Lord, with one book for each month of the year. On New Year's Eve, 15-year-old Callum Ormond is warned by a stranger that he must go into hiding for 365 days. Suspected of a crime, he lives as a fugitive while investigating his father's death and a family secret."
+
+# ---------- Short published translations ----------
+
+garcia-marquez-prologo-clave:
+  publicacao: "Revista Confraria, no. 11, Nov./Dec. 2006 (Confraria do Vento; ISSN 1808-6276)"
+  papel: "translation"
+  creditos: "Translated by Lucas Magdiel"
+  genero: "essay (prologue)"
+  sinopse: "Prologue written in 1997 for the Clave dictionary, published by the Spanish house SM, and never before published in Portuguese. García Márquez recalls how his grandfather, corrected at a circus about a dromedary, went to settle the matter in the dictionary; compares definitions of “amarillo” (yellow) from 1611 to 1976; praises María Moliner's solitary work; and makes the case for dictionaries designed with children in mind as well."
+
+gerardo-dirie-poemas:
+  publicacao: "Revista Confraria, no. 12, Jan./Feb. 2007 (Confraria do Vento; ISSN 1808-6276)"
+  papel: "translation"
+  creditos: "Translation: Lucas Magdiel"
+  genero: "poetry"
+  sinopse: "The first selection of poems by Argentine poet Gerardo Dirié published in Portuguese: excerpts from the sequence “idéias de uma cidade,” “natureza morta holandesa,” “dois poemas eventuais,” and an untitled poem. Born in Córdoba, Dirié is also a composer, conductor, and teacher; at the time, he taught at the Queensland Conservatorium in Australia."
+
+gunter-grass-entrevista:
+  publicacao: "Book of interviews published by Editora Calibán (Rio de Janeiro)"
+  papel: "translation"
+  genero: "interview"
+  sinopse: "Interview given by German writer Günter Grass, winner of the 1999 Nobel Prize in Literature, to journalist Faustino F. Álvarez at his home in Behlendorf, first published in the debut issue of the magazine El Cielo de Salamanca (2000). Grass talks about his recent awards, his book My Century, and the relationship between political commitment and literature."

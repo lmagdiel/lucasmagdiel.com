@@ -1,0 +1,115 @@
+# Borrador en español de data/setup.yaml (copia completa, con los textos traducidos).
+# Setup actual (página /tecnologia/setup/). Sin números de serie, hostnames ni direcciones.
+# Bastan espacios normales: el diseño une número y unidad (32 GB) y no corta la línea en palabras con guion (mini-ITX).
+# Cada ítem: nome, papel (línea corta), icone (assets/img/setup/<icone>.svg), specs (lista corta), nota (opcional: ruta de una nota).
+# Orden de las specs en las computadoras: gabinete, placa madre, procesador, memoria, almacenamiento, fuente, conectividad, sistema, pendrive de arranque.
+atualizado: 2026-09-29
+grupos:
+  - titulo: "Servidores"
+    itens:
+      - nome: "Servidor principal"
+        papel: "NAS y contenedores · Unraid Unleashed"
+        icone: "servidor-principal"
+        specs:
+          - "Gabinete Jonsbo N2"
+          - "Placa madre NAS CWWK CW-ADLN-NAS (mini-ITX), con 6 SATA y 4 puertos de 2.5 GbE"
+          - "Procesador Intel N100"
+          - "Memoria de 32 GB DDR5-4800 (Crucial, SO-DIMM)"
+          - "Arreglo de 20 TB: 2× WD Red 4 TB y 2× HGST Ultrastar 6 TB, con 1× WD Red Plus 6 TB de paridad"
+          - "Caché en 2× NVMe Toshiba XG6 512 GB"
+          - "Appdata en SSD Kingston DC600M 480 GB"
+          - "Pendrive de arranque"
+        nota: "/notas/2024-placa-nas-n100"
+      - nome: "Servidor de respaldo"
+        papel: "Respaldo de los datos más importantes · Unraid Starter"
+        icone: "servidor-backup"
+        specs:
+          - "Gabinete NAS BeTop para 2 HDD de 3.5\" (mini-ITX)"
+          - "Placa madre ASRock (mini-ITX)"
+          - "Procesador Intel Celeron J4005"
+          - "Memoria de 8 GB DDR4-2400 (2× 4 GB)"
+          - "2× HDD de 2 TB (Seagate IronWolf y WD Red)"
+          - "SSD WD Green 240 GB"
+          - "Pendrive de arranque"
+  - titulo: "Estaciones de trabajo"
+    itens:
+      - nome: "PC de escritorio"
+        papel: "Traducción y desarrollo"
+        icone: "desktop"
+        specs:
+          - "Gabinete Lazer3D L27 negro, con interruptor Wi-Fi Tuya para encender la máquina a distancia"
+          - "Placa madre Gigabyte B550I Aorus Pro AX (mini-ITX)"
+          - "Procesador AMD Ryzen 5 5600G"
+          - "Memoria de 32 GB DDR4-3200 CL16 (Corsair Vengeance LPX, 2× 16 GB)"
+          - "SSD NVMe Kingston KC3000 512 GB (sistema), SSD Kingston A400 960 GB y HDD WD Blue 1 TB"
+          - "Fuente SFX Cooler Master 550 W, 80 Plus Gold, modular"
+          - "Microsoft Windows 11 Professional (x64)"
+      - nome: "Mini PC Kamrui E3B"
+        papel: "Equipo portátil · Traducción y desarrollo"
+        icone: "minipc"
+        specs:
+          - "Procesador AMD Ryzen 5 7430U"
+          - "Memoria de 16 GB DDR4-2666 (JUHOR, 1 de 2 ranuras)"
+          - "SSD NVMe XPG Gammix S11 Pro 256 GB (sistema) y SSD AirDisk 512 GB (datos)"
+          - "Wi-Fi 6"
+          - "Microsoft Windows 11 Professional (x64)"
+  - titulo: "Red y energía"
+    itens:
+      - nome: "Router TP-Link HX220"
+        papel: "Router, detrás del módem del proveedor de internet"
+        icone: "roteador"
+        specs:
+          - "Wi-Fi de la casa y salida a internet"
+      - nome: "Switch LIANGUO"
+        papel: "Red cableada"
+        icone: "switch"
+        specs:
+          - "8 puertos de 2.5 GbE, no administrable"
+          - "1 ranura SFP+ de 10 Gb"
+      - nome: "UPS TS Shara 1200 VA"
+        papel: "Energía"
+        icone: "nobreak"
+        specs:
+          - "Senoidal, interactivo y de doble voltaje, para rack (2U)"
+          - "1200 VA (600 W), 8 tomacorrientes y 2 baterías de 7 Ah"
+          - "Conectado por USB a una Raspberry Pi, que avisa a las demás máquinas mediante NUT"
+        nota: "/notas/2025-nobreak-ts-shara-nut"
+  - titulo: "Raspberry Pi y KVM"
+    itens:
+      - nome: "Raspberry Pi 4 Model B (2 GB)"
+        papel: "DNS, UPS y VPN"
+        icone: "raspberry-pi-4"
+        specs:
+          - "AdGuard Home (principal)"
+          - "Servidor NUT y panel PeaNUT"
+          - "Router de subred de Tailscale"
+      - nome: "Raspberry Pi Zero 2 W"
+        papel: "DNS de reserva"
+        icone: "raspberry-pi-zero"
+        specs:
+          - "AdGuard Home (réplica)"
+          - "Cliente NUT"
+      - nome: "Sipeed NanoKVM Mini"
+        papel: "KVM"
+        icone: "kvm"
+        specs:
+          - "Acceso remoto"
+      - nome: "Sipeed NanoKVM USB"
+        papel: "KVM"
+        icone: "kvm-usb"
+        specs:
+          - "Acceso local directo por USB, sin depender de la red"
+  - titulo: "Nube"
+    itens:
+      - nome: "Oracle Cloud"
+        papel: "1 nodo de control/dev y 1 para servicios de uso personal"
+        icone: "nuvem-duas"
+        specs:
+          - "2 VM ARM (Ampere), con 2 vCPU y 2 GB de RAM"
+          - "200 GB de almacenamiento"
+      - nome: "Netcup"
+        papel: "Servicios en producción"
+        icone: "nuvem-uma"
+        specs:
+          - "1 VPS AMD64, con 4 vCPU y 8 GB de RAM"
+          - "256 GB de almacenamiento"

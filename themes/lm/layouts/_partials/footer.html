@@ -4,9 +4,9 @@
       {{- range $v := sort site.Params.links "peso" }}{{ if $v.ativo }}
       <li><a href="{{ $v.url }}" target="_blank" rel="me noopener">{{ $v.nome }}</a></li>
       {{- end }}{{ end }}
-      <li><a href="{{ "contato/" | relURL }}">Contato</a></li>
+      <li>{{ with site.GetPage "/contato" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</li>
     </ul>
-    <p class="rodape-meta">© {{ now.Year }} Lucas Magdiel · {{ i18n "feito_com" }} <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>{{ with site.GetPage "/setup" }} <a class="rodape-setup" href="{{ .RelPermalink }}">Meu setup</a>{{ end }}</p>
+    <p class="rodape-meta">© {{ now.Year }} Lucas Magdiel · {{ i18n "feito_com" }} <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>{{ with site.GetPage "/setup" }} <a class="rodape-setup" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</p>
   </div>
 </footer>
 <script>

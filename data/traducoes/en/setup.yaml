@@ -1,0 +1,114 @@
+# Current setup (page /en/tecnologia/setup/). No serial numbers, hostnames, or addresses.
+# Plain spaces are enough: the layout keeps number and unit together (32 GB) and doesn't break lines at hyphens (mini-ITX).
+# Each item: nome, papel (short line), icone (assets/img/setup/<icone>.svg), specs (short list), nota (optional: path to a note).
+# Spec order for computers: case, motherboard, processor, memory, storage, power supply, connectivity, operating system, boot drive.
+atualizado: 2026-09-29
+grupos:
+  - titulo: "Servers"
+    itens:
+      - nome: "Main server"
+        papel: "NAS and containers · Unraid Unleashed"
+        icone: "servidor-principal"
+        specs:
+          - "Jonsbo N2 case"
+          - "CWWK CW-ADLN-NAS NAS motherboard (mini-ITX), with 6 SATA ports and 4× 2.5 GbE ports"
+          - "Intel N100 processor"
+          - "32 GB DDR5-4800 memory (Crucial, SO-DIMM)"
+          - "20 TB array: 2× WD Red 4 TB and 2× HGST Ultrastar 6 TB, plus 1× WD Red Plus 6 TB for parity"
+          - "Cache on 2× Toshiba XG6 512 GB NVMe"
+          - "Appdata on a Kingston DC600M 480 GB SSD"
+          - "USB boot drive"
+        nota: "/notas/2024-placa-nas-n100"
+      - nome: "Backup server"
+        papel: "Backup of the most important data · Unraid Starter"
+        icone: "servidor-backup"
+        specs:
+          - "BeTop NAS case for two 3.5\" HDDs (mini-ITX)"
+          - "ASRock motherboard (mini-ITX)"
+          - "Intel Celeron J4005 processor"
+          - "8 GB DDR4-2400 memory (2× 4 GB)"
+          - "2× 2 TB HDD (Seagate IronWolf and WD Red)"
+          - "WD Green 240 GB SSD"
+          - "USB boot drive"
+  - titulo: "Workstations"
+    itens:
+      - nome: "Desktop"
+        papel: "Translation and development"
+        icone: "desktop"
+        specs:
+          - "Black Lazer3D L27 case, with a Tuya Wi-Fi switch to turn the machine on remotely"
+          - "Gigabyte B550I Aorus Pro AX motherboard (mini-ITX)"
+          - "AMD Ryzen 5 5600G processor"
+          - "32 GB DDR4-3200 CL16 memory (Corsair Vengeance LPX, 2× 16 GB)"
+          - "Kingston KC3000 512 GB NVMe SSD (system), Kingston A400 960 GB SSD, and WD Blue 1 TB HDD"
+          - "Cooler Master 550 W SFX power supply, 80 Plus Gold, modular"
+          - "Microsoft Windows 11 Professional (x64)"
+      - nome: "Kamrui E3B Mini PC"
+        papel: "Portable machine · Translation and development"
+        icone: "minipc"
+        specs:
+          - "AMD Ryzen 5 7430U processor"
+          - "16 GB DDR4-2666 memory (JUHOR, 1 of 2 slots)"
+          - "XPG Gammix S11 Pro 256 GB NVMe SSD (system) and AirDisk 512 GB SSD (data)"
+          - "Wi-Fi 6"
+          - "Microsoft Windows 11 Professional (x64)"
+  - titulo: "Network and power"
+    itens:
+      - nome: "TP-Link HX220 router"
+        papel: "Router, behind the ISP's modem"
+        icone: "roteador"
+        specs:
+          - "Home Wi-Fi and internet access"
+      - nome: "LIANGUO switch"
+        papel: "Wired network"
+        icone: "switch"
+        specs:
+          - "8× 2.5 GbE ports, unmanaged"
+          - "1× 10 Gb SFP+ slot"
+      - nome: "TS Shara UPS 1200 VA"
+        papel: "Power"
+        icone: "nobreak"
+        specs:
+          - "Pure sine wave, line-interactive, dual voltage, rackmount (2U)"
+          - "1200 VA (600 W), 8 outlets, and two 7 Ah batteries"
+          - "Connected via USB to a Raspberry Pi, which alerts the other machines through NUT"
+        nota: "/notas/2025-nobreak-ts-shara-nut"
+  - titulo: "Pis and KVMs"
+    itens:
+      - nome: "Raspberry Pi 4 Model B (2 GB)"
+        papel: "DNS, UPS, and VPN"
+        icone: "raspberry-pi-4"
+        specs:
+          - "AdGuard Home (primary)"
+          - "NUT server and PeaNUT dashboard"
+          - "Tailscale subnet router"
+      - nome: "Raspberry Pi Zero 2 W"
+        papel: "Backup DNS"
+        icone: "raspberry-pi-zero"
+        specs:
+          - "AdGuard Home (replica)"
+          - "NUT client"
+      - nome: "Sipeed NanoKVM Mini"
+        papel: "KVM"
+        icone: "kvm"
+        specs:
+          - "Remote access"
+      - nome: "Sipeed NanoKVM USB"
+        papel: "KVM"
+        icone: "kvm-usb"
+        specs:
+          - "Direct local access over USB, no network needed"
+  - titulo: "Cloud"
+    itens:
+      - nome: "Oracle Cloud"
+        papel: "1 control/dev node and 1 for personal services"
+        icone: "nuvem-duas"
+        specs:
+          - "2 ARM VMs (Ampere), with 2 vCPU and 2 GB of RAM"
+          - "200 GB of storage"
+      - nome: "Netcup"
+        papel: "Production services"
+        icone: "nuvem-uma"
+        specs:
+          - "1 AMD64 VPS, with 4 vCPU and 8 GB of RAM"
+          - "256 GB of storage"

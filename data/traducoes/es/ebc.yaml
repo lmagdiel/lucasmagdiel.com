@@ -1,0 +1,60 @@
+# Borrador de traducción al español (neutro latinoamericano) de data/ebc.yaml.
+# Claves: el id de cada elemento del original, en el mismo orden. Solo los campos de texto traducidos.
+
+caminhos-cabo-verde-copa-2026:
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Reportaje grabado en Praia, capital de Cabo Verde, durante la primera participación del archipiélago en una Copa del Mundo. Sigue a los aficionados, entrevista al portero Vozinha, al presidente José Maria Neves y a la cantante Mayra Andrade, y destaca los lazos culturales entre caboverdianos y brasileños."
+
+caminhos-algodao-2024:
+  trabalho: {papel: "subtitulación"}
+  sinopse: "En Colombia, el reportaje visita cultivos de pequeños agricultores, incluidas comunidades indígenas pijao, y un taller de confección textil para mostrar el Proyecto +Algodón, una cooperación técnica brasileña con la FAO en la que participan siete países de América Latina y el Caribe."
+
+caminhos-solucoes-em-transito-2023:
+  trabalho: {papel: "subtitulación"}
+  sinopse: "El reportaje analiza cómo reducir las muertes en el tránsito a partir de dos experiencias: el respeto al paso peatonal en el Distrito Federal (Brasilia) y las políticas de Fortaleza, que combinan límites de velocidad más bajos, rediseño de vías y ciclovías."
+
+caminhos-venezuelanos-2022:
+  trabalho: {papel: "subtitulación"}
+  sinopse: "El episodio sigue a inmigrantes venezolanos en Brasil, desde la frontera en Roraima hasta ciudades de Goiás, Santa Catarina y São Paulo, y muestra la Operación Acogida, la interiorización de migrantes hacia otras regiones del país e historias de trabajo y adaptación."
+
+cena-instrumental-letieres-leite:
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Episodio de estreno del programa, grabado en el Estudio 3 de TV Brasil, en Río de Janeiro. El maestro bahiano Letieres Leite y la Orkestra Rumpilezz, agrupación de vientos y percusión, interpretan composiciones propias y nuevas versiones de obras de Moacir Santos y Dorival Caymmi."
+
+farois-do-brasil:
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Serie documental, realizada en alianza con la Marina de Brasil, que visita faros del litoral brasileño y cuenta la historia de cada construcción, su función en la navegación y los paisajes de su entorno, con paradas en faros de Río de Janeiro y Bahía."
+
+bravos:
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Serie documental de 13 episodios, cada uno dedicado a una persona de una comunidad de la periferia que construyó su trayectoria a través del arte, el deporte o proyectos sociales, como la rapera Thabata Lorena y la velocista Verônica Hipólito."
+
+luthiers-maos-que-soam-a-vida:
+  premios: ["Selección oficial, The Lift-Off Sessions 2019"]
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Serie de tres episodios sobre luthiers que fabrican y restauran instrumentos de cuerda frotada, de cuerda pulsada y de percusión. Sigue el trabajo en el taller y el diálogo entre los artesanos y los músicos que tocan sus piezas."
+
+fortes-do-brasil:
+  premios: ["Trofeo Apollo al mejor guion, Festival Militum 2022 (episodio “Fortaleza de Santa Cruz da Barra”)"]
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Serie documental sobre fortificaciones históricas de Brasil. La primera temporada recorre fuertes de Río de Janeiro y Niterói y relaciona la arquitectura militar con episodios como las invasiones francesas y las revueltas de los primeros años de la República."
+
+parques-do-brasil:
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Serie documental sobre parques nacionales y otras áreas protegidas de Brasil. Cada episodio visita una unidad de conservación y muestra especies, paisajes, investigaciones y amenazas; el episodio de estreno se dedicó al Parque Nacional das Emas, en Goiás."
+
+primera-persona:
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Dos episodios brasileños de la serie latinoamericana de retratos documentales de jóvenes, narrados en primera persona. En Brasilia, Pedro, estudiante y skater de 16 años, cuestiona el sistema escolar, y Milaide, bailarina y estudiante, concilia trabajo, danza y familia."
+
+observatorio-padura-2015:
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Alberto Dines entrevista al escritor cubano Leonardo Padura, invitado de la Flip 2015 (Fiesta Literaria Internacional de Paraty). La conversación recorre su obra, de El hombre que amaba a los perros al detective Mario Conde, y aborda el acercamiento entre Cuba y Estados Unidos."
+
+espaco-publico-stiglitz-2015:
+  trabalho: {papel: "subtitulación (parte técnica)"}
+  sinopse: "El economista Joseph Stiglitz, Premio Nobel de Economía 2001, habla de desigualdad, políticas de austeridad, las altas tasas de interés en Brasil, programas sociales y la reforma del sistema financiero internacional."
+
+demori-roger-waters-2023:
+  trabalho: {papel: "subtitulación"}
+  sinopse: "Leandro Demori entrevista en Brasilia al músico inglés Roger Waters, cofundador de Pink Floyd, durante su gira por el país. Los temas incluyen el papel político de los artistas, el encarcelamiento de Julian Assange y los 50 años de The Dark Side of the Moon."

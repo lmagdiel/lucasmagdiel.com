@@ -29,6 +29,6 @@
     </ul>
   </section>
   {{- end }}
-  <p class="setup-data">Atualizado em {{ time $d.atualizado | time.Format ":date_long" }}.</p>
+  <p class="setup-data">{{ i18n "atualizado_em" (dict "data" (time $d.atualizado | time.Format ":date_long")) }}</p>
 </article>
 {{ end }}

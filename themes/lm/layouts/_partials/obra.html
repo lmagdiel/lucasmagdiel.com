@@ -1,14 +1,15 @@
 {{- /* Página de uma obra (livro, série/programa, produção da TV Brasil), gerada pelos content adapters. */ -}}
 {{- $p := .Params -}}
-{{- $rotulos := dict "roteiro" "Roteiro" "direcao" "Direção" "elenco" "Elenco" "apresentacao" "Apresentação" "producao" "Produção" "criacao" "Criação" "obra_original" "Obra original" "narracao" "Narração" "jurados" "Jurados" "reportagem" "Reportagem" "entrevistado" "Entrevistado" -}}
+{{- $rotulos := dict "roteiro" (i18n "rot_roteiro") "direcao" (i18n "rot_direcao") "elenco" (i18n "rot_elenco") "apresentacao" (i18n "rot_apresentacao") "producao" (i18n "rot_producao") "criacao" (i18n "rot_criacao") "obra_original" (i18n "rot_obra_original") "narracao" (i18n "rot_narracao") "jurados" (i18n "rot_jurados") "reportagem" (i18n "rot_reportagem") "entrevistado" (i18n "rot_entrevistado") -}}
+{{- $e := printf " %s " (i18n "e") -}}
 <article class="obra">
   <p class="migalha"><a href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title }}</a></p>
   <div class="obra-grid">
     <div class="obra-capas{{ if gt (len ($p.capas | default slice)) 1 }} obra-capas--multi{{ end }}">
       {{- with $p.capas }}
-        {{- range . }}{{ partial "img.html" (dict "src" . "alt" (printf "Capa de %s" $.Title) "w" 300 "loading" "eager") }}{{ end }}
+        {{- range . }}{{ partial "img.html" (dict "src" . "alt" (i18n "capa_de" (dict "titulo" $.Title)) "w" 300 "loading" "eager") }}{{ end }}
       {{- else }}{{ with $p.capa }}
-        {{- partial "img.html" (dict "src" . "alt" (printf "Pôster de %s" $.Title) "w" 300 "loading" "eager") }}
+        {{- partial "img.html" (dict "src" . "alt" (i18n "poster_de" (dict "titulo" $.Title)) "w" 300 "loading" "eager") }}
       {{- else }}
         {{- $ano := or $p.ano_exibicao $p.ano (index ($p.trabalho | default dict) "ano") }}
         {{- partial "tvcard.html" (dict "titulo" .Title "programa" (or $p.programa (index ($p.creditos | default dict) "producao") $p.emissora) "emissora" $p.emissora "ano" $ano "par" (index ($p.trabalho | default dict) "par") "frame" $p.frame "ancora" $p.ancora) }}
@@ -18,13 +19,13 @@
       {{- with $p.genero }}<p class="rotulo">{{ . }}</p>{{ end }}
       <h1>{{ .Title }}</h1>
       {{- with $p.titulo_original }}<p class="original">{{ . }}</p>{{ end }}
-      {{- with $p.titulo_br }}<p class="original">No Brasil: {{ . }}</p>{{ end }}
+      {{- with $p.titulo_br }}<p class="original">{{ i18n "titulo_no_brasil" (dict "titulo" .) }}</p>{{ end }}
       {{- with .Content }}<div class="sinopse">{{ . }}</div>{{ end }}
 
       <dl class="ficha">
-        {{- with $p.autores }}<dt>{{ i18n "autor" }}</dt><dd>{{ delimit . ", " " e " }}</dd>{{ end }}
-        {{- with $p.organizadores }}<dt>{{ i18n "organizacao" }}</dt><dd>{{ delimit . ", " " e " }}</dd>{{ end }}
-        {{- with $p.programa }}<dt>Programa</dt><dd>{{ . }}</dd>{{ end }}
+        {{- with $p.autores }}<dt>{{ i18n "autor" }}</dt><dd>{{ delimit . ", " $e }}</dd>{{ end }}
+        {{- with $p.organizadores }}<dt>{{ i18n "organizacao" }}</dt><dd>{{ delimit . ", " $e }}</dd>{{ end }}
+        {{- with $p.programa }}<dt>{{ i18n "programa" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{- with $p.editora }}<dt>{{ i18n "editora" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{- with $p.emissora }}<dt>{{ i18n "emissora" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{- with $p.plataforma }}<dt>{{ i18n "plataforma" }}</dt><dd>{{ . }}</dd>{{ end }}
@@ -36,7 +37,7 @@
         {{- with $p.paginas }}<dt>{{ i18n "paginas" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{- with $p.creditos }}
           {{- if reflect.IsMap . }}
-            {{- range $k, $v := . }}{{ with $v }}<dt>{{ index $rotulos $k | default $k }}</dt><dd>{{ if reflect.IsSlice . }}{{ delimit . ", " " e " }}{{ else }}{{ . }}{{ end }}</dd>{{ end }}{{ end }}
+            {{- range $k, $v := . }}{{ with $v }}<dt>{{ index $rotulos $k | default $k }}</dt><dd>{{ if reflect.IsSlice . }}{{ delimit . ", " $e }}{{ else }}{{ . }}{{ end }}</dd>{{ end }}{{ end }}
           {{- else }}<dt>{{ i18n "creditos" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{- end }}
         {{- with $p.trabalho }}
@@ -50,8 +51,8 @@
       <p class="acoes">
         {{- with $p.link }}<a class="externo" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "pagina_oficial" }} ↗</a>{{ end }}
         {{- with $p.video }}<a class="externo" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "assistir" }} ↗</a>{{ end }}
-        {{- with $p.video_es }}<a class="externo" href="{{ . }}" target="_blank" rel="noopener">Versão em espanhol ↗</a>{{ end }}
-        {{- with $p.imprensa }}<a href="{{ . | relURL }}">Entrevista sobre a tradução →</a>{{ end }}
+        {{- with $p.video_es }}<a class="externo" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "versao_es" }} ↗</a>{{ end }}
+        {{- with $p.imprensa }}<a href="{{ . | relURL }}">{{ i18n "entrevista_traducao" }} →</a>{{ end }}
       </p>
     </div>
   </div>

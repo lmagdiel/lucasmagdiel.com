@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="secao">
   <header class="secao-cab">
-    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">Portfólio</a></p>
+    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
   </header>
@@ -14,16 +14,16 @@
     {{- if .titulos }}
       <ul class="grade grade--p">
         {{- range .titulos }}
-          {{- $aut := delimit (.autores | default .organizadores) ", " " e " }}
+          {{- $aut := delimit (.autores | default .organizadores) ", " (printf " %s " (i18n "e")) }}
           {{- $sub := printf "%s · %v%s" $aut .ano (cond (isset . "papel") (printf " · %s" .papel) "") }}
           {{- partial "tile.html" (dict "href" .link "titulo" .titulo "sub" $sub "capa" .capa "pequeno" true) }}
         {{- end }}
       </ul>
     {{- else if .capas }}
       <div class="rev-item">
-        {{- partial "img.html" (dict "src" (index .capas 0) "alt" (printf "Capa de %s" .titulo) "w" 150) }}
+        {{- partial "img.html" (dict "src" (index .capas 0) "alt" (i18n "capa_de" (dict "titulo" .titulo)) "w" 150) }}
         <div>
-          <p class="tile-sub">{{ with .autores }}{{ delimit . ", " }}{{ else }}{{ with .organizadores }}{{ delimit . ", " }} (org.){{ end }}{{ end }} · {{ .editora }} · {{ .ano }}{{ with .genero }} · {{ . }}{{ end }}</p>
+          <p class="tile-sub">{{ with .autores }}{{ delimit . ", " }}{{ else }}{{ with .organizadores }}{{ delimit . ", " }} ({{ i18n "org_abrev" }}){{ end }}{{ end }} · {{ .editora }} · {{ .ano }}{{ with .genero }} · {{ . }}{{ end }}</p>
           <p class="tile-sub">{{ .papel | strings.FirstUpper }}</p>
           {{- with .link }}<p><a class="externo" href="{{ . }}" target="_blank" rel="noopener">{{ i18n "pagina_oficial" }} ↗</a></p>{{ end }}
         </div>

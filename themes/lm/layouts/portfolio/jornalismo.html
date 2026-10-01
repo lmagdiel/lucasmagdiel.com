@@ -2,7 +2,7 @@
 {{- $e := hugo.Data.estatisticas.agencia_brasil_es }}
 <article class="secao">
   <header class="secao-cab">
-    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">Portfólio</a></p>
+    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
     <h1>{{ .Title }}</h1>
   </header>
 
@@ -18,12 +18,12 @@
       </a>
       {{- end }}
       <div class="tec-txt prosa">
-        <h2>Agência Brasil <span class="tec-periodo">desde {{ (time $e.desde).Year }}</span></h2>
+        <h2>Agência Brasil <span class="tec-periodo">{{ i18n "desde" (dict "ano" (time $e.desde).Year) }}</span></h2>
         <p class="destaque-num">
-          <span class="num">{{ lang.FormatNumber 0 (math.Floor (div $e.materias_min 1000.0)) }} mil+</span>
-          <span class="num-rot">matérias vertidas ao espanhol desde {{ (time $e.desde).Year }}</span>
-          <span class="num">{{ lang.FormatNumber 0 (math.Floor (div $e.palavras_min 1000000.0)) }} milhões+</span>
-          <span class="num-rot">de palavras (estimativa de {{ (time $e.referencia).Format "01/2006" }})</span>
+          <span class="num">{{ i18n "mil_mais" (dict "n" (lang.FormatNumber 0 (math.Floor (div $e.materias_min 1000.0)))) }}</span>
+          <span class="num-rot">{{ i18n "abr_rot_materias" (dict "ano" (time $e.desde).Year) }}</span>
+          <span class="num">{{ i18n "milhoes_mais" (dict "n" (lang.FormatNumber 0 (math.Floor (div $e.palavras_min 1000000.0)))) }}</span>
+          <span class="num-rot">{{ i18n "abr_rot_palavras" (dict "data" ((time $e.referencia).Format "01/2006")) }}</span>
         </p>
         {{ .Content }}
       </div>

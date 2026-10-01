@@ -1,0 +1,32 @@
+# Borrador en español de data/sites.yaml (copia completa, con los textos traducidos).
+# Sitios de la sección Tecnología > Proyectos > Sitios. Orden de visualización = orden de la lista.
+# icone: favicon del sitio con fondo transparente, en assets/img/sites/ (PNG de 128 px o SVG).
+# url: dirección del enlace ("/" para este mismo sitio); alias: otro dominio que lleva al mismo sitio (opcional);
+# credito: autoría de terceros destacada (opcional), p. ej.: {rotulo: "Diseño", nome: "...", url: "..."}.
+- dominio: "lucasmagdiel.com"
+  icone: "img/sites/lucasmagdiel.png"
+  url: "/es/"
+  alias: "lucas.st"
+  descricao: "Este sitio"
+  tec: "Hugo, tema propio"
+- dominio: "vanessa.st"
+  icone: "img/sites/vanessa.svg"
+  url: "https://vanessa.st"
+  descricao: "Sitio personal de mi esposa"
+  tec: "Hugo, tema propio"
+- dominio: "coizassim.com.br"
+  icone: "img/sites/coizassim.png"
+  url: "https://coizassim.com.br"
+  descricao: "Blog y tienda"
+  tec: "Hugo, tema propio"
+- dominio: "ligna.pro"
+  icone: "img/sites/ligna.png"
+  url: "https://ligna.pro"
+  descricao: "Sitio de Ligna"
+  tec: "Hugo, migrado desde WordPress"
+  credito: {rotulo: "Diseño", nome: "Polvo", url: "https://polvo.design/"}
+- dominio: "abrflow.app"
+  icone: "img/sites/abrflow.svg"
+  url: "https://abrflow.app"
+  descricao: "Sitio de AbrFlow"
+  tec: "HTML y CSS propios"

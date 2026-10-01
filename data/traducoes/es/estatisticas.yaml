@@ -1,0 +1,9 @@
+# Borrador de traducción al español (neutro latinoamericano) de los textos de data/estatisticas.yaml.
+# Solo las frases; los números y las fechas siguen en el original.
+
+agencia_brasil_es:
+  frase_aprovada: "más de 9 mil noticias traducidas al español desde 2013, cerca de 5 millones de palabras"
+  base: "3 noticias por día hábil (límite inferior de la estimación del traductor); promedio de 535 palabras por noticia (56 noticias firmadas, mar.–sep. de 2026)"
+
+blend:
+  frase_sugerida: "traductor y editor certificado desde 2012: 475 proyectos y más de 150 mil palabras, con el 100% de las entregas a tiempo"

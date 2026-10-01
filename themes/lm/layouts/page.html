@@ -11,9 +11,9 @@
   {{- if $temFoto }}
   <figure class="foto">
     {{- with .Params.foto }}
-    {{ partial "img.html" (dict "src" . "alt" "Foto de Lucas Magdiel" "w" 420) }}
+    {{ partial "img.html" (dict "src" . "alt" (i18n "foto_de" (dict "nome" site.Params.author)) "w" 420) }}
     {{- else }}
-    <svg class="foto-vazia" viewBox="0 0 300 400" role="img" aria-label="Espaço reservado para a foto">
+    <svg class="foto-vazia" viewBox="0 0 300 400" role="img" aria-label="{{ i18n "foto_reservada" }}">
       <rect class="fv-fundo" width="300" height="400"/>
       <rect class="fv-detalhe" x="38" y="34" width="30" height="30" transform="rotate(-18 53 49)"/>
       <circle class="fv-forma" cx="150" cy="160" r="50"/>

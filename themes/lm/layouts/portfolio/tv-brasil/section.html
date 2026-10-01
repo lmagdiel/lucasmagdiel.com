@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="secao">
   <header class="secao-cab">
-    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">Portfólio</a></p>
+    <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
   </header>

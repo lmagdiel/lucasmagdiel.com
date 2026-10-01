@@ -15,17 +15,62 @@ defaultContentLanguageInSubdir = false
     locale = "pt-BR"
     label = "Português"
     weight = 1
-  # EN e ES ficam prontos na estrutura e entram depois do lançamento.
+  # EN e ES: rascunhos prontos (conteúdo em *.en.md / *.es.md, dados em data/traducoes/, textos do tema em i18n/).
+  # Ficam desativados até a revisão; para ativar, trocar disabled = true por false (ver docs/traducoes.md).
   [languages.en]
     locale = "en"
     label = "English"
     weight = 2
     disabled = true
+    [languages.en.params]
+      description = "Translator and subtitler (English and Spanish). Books, series, documentaries and journalism; technology applied to translation."
+    [[languages.en.menus.main]]
+      name = "Portfolio"
+      pageRef = "/portfolio"
+      weight = 10
+    [[languages.en.menus.main]]
+      name = "Technology"
+      pageRef = "/tecnologia"
+      weight = 20
+    [[languages.en.menus.main]]
+      name = "About"
+      pageRef = "/sobre"
+      weight = 30
+    [[languages.en.menus.main]]
+      name = "Notes"
+      pageRef = "/notas"
+      weight = 40
+    [[languages.en.menus.main]]
+      name = "Contact"
+      pageRef = "/contato"
+      weight = 50
   [languages.es]
     locale = "es"
     label = "Español"
     weight = 3
     disabled = true
+    [languages.es.params]
+      description = "Traductor y subtitulador (inglés y español). Libros, series, documentales y periodismo; tecnología aplicada a la traducción."
+    [[languages.es.menus.main]]
+      name = "Portafolio"
+      pageRef = "/portfolio"
+      weight = 10
+    [[languages.es.menus.main]]
+      name = "Tecnología"
+      pageRef = "/tecnologia"
+      weight = 20
+    [[languages.es.menus.main]]
+      name = "Sobre mí"
+      pageRef = "/sobre"
+      weight = 30
+    [[languages.es.menus.main]]
+      name = "Notas"
+      pageRef = "/notas"
+      weight = 40
+    [[languages.es.menus.main]]
+      name = "Contacto"
+      pageRef = "/contato"
+      weight = 50
 
 [params]
   description = "Tradutor e legendador (inglês e espanhol). Livros, séries, documentários e jornalismo; tecnologia aplicada à tradução."

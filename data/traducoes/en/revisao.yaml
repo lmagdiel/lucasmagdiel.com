@@ -1,0 +1,85 @@
+# English draft of data/revisao.yaml: text fields only, keyed by item id (same order as the original).
+# `titulo` only where it is descriptive (book titles and plain publisher names stay as in the original).
+# `titulos`: same order and length as the original list; {} = item with no text to translate.
+# Draft: English is disabled in hugo.toml.
+
+vania-vidal-narciso:
+  papel: "copyediting"
+  genero: "poetry (bilingual edition)"
+  sinopse: "A poetry collection by Vânia Vidal in a bilingual edition. The poems draw on well-known figures from Western culture to explore identity and narcissism, and also deal with farewells and the closing of chapters in life."
+
+vania-vidal-paragate:
+  papel: "copyediting"
+  genero: "poetry"
+  sinopse: "A poetry collection by Vânia Vidal, a historian, paleographer, and teacher based in Rio de Janeiro. The poems explore in-between states, such as that of someone moving between places and senses of belonging, and make room for women's experience."
+
+vania-vidal-a-mulher-de-mocassins:
+  papel: "copyediting"
+  genero: "poetry"
+  sinopse: "A collection of poems Vânia Vidal wrote at different stages of her life. The body, the senses, and the passage of time are the book's main threads."
+
+vania-vidal-academicos:
+  titulo: "Academic texts by Vânia Vidal (2025)"
+  itens:
+    - "Chapter “O discurso sobre a temperança, a moderação e a prudência no De Officiis, de Cícero” in Estudos da Antiguidade e do Medievo em Transição (Mundo Acadêmico/Casaletras, 2025), pp. 343–352"
+    - "Article “A singularidade da tradução de D. Pedro de Avis do De Officiis de Cícero” in the proceedings of the Simpósio Internacional da Contemporaneidade à Antiguidade (UFG/University of Coimbra, 2025)"
+  papel: "proofreading"
+
+confraria-do-vento-revisoes:
+  papel: "proofreading"
+  sinopse: "Rio de Janeiro publisher connected to Revista Confraria, with a list focused on contemporary Brazilian literature: poetry, prose, essays, and drama."
+  titulos:
+    - {}
+    - {}
+    - {}
+    - {}
+    - {nota: "Outros Clássicos series, published with Calibán"}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+
+lingua-geral-revisoes:
+  titulo: "Língua Geral: anthologies (2007)"
+  papel: "proofreading"
+  titulos:
+    - {sinopse: "Anthology of 19 Brazilian short stories about homosexuality, from Machado de Assis to Caio Fernando Abreu and Hilda Hilst."}
+    - {sinopse: "Carnival anthology with short stories, crônicas (short newspaper prose pieces), song lyrics, and poems by Machado de Assis, Noel Rosa, Vinicius de Moraes, Chico Buarque, and others."}
+
+alta-books-guias:
+  titulo: "Alta Books: language and computer guides (2012)"
+  titulos:
+    - {papel: "technical review"}
+    - {papel: "copyediting"}
+    - {papel: "copyediting"}
+
+barba-negra-revisoes:
+  papel: "proofreading"
+  titulos:
+    - {sinopse: "Book-length reportage on the summer of 1987–88, when cans of marijuana dumped at sea from the ship Solana Star washed ashore along Brazil's Southeast and South coasts."}
+    - {papel: "proofreading of Paulo Scott's introduction", nota: "graphic novel; translated by Maria Clara Carneiro", sinopse: "Nearly wordless graphic novel about a young man who takes up swimming on his doctor's advice and grows close to a female swimmer; winner of the Révélation award at Angoulême 2009."}
+
+noturna-e-outros-poemas:
+  papel: "proofreading"
+  genero: "poetry"
+  sinopse: "Debut collection by Rio de Janeiro poet Cláudio Duffrayer: 22 poems in verse and poetic prose, illustrated by Thaís Melo, in dialogue with Symbolism and 19th-century fantastic literature."
+
+papos-contemporaneos:
+  papel: "interview with poet Claudia Roquette-Pinto and copyediting (university extension course, 2006)"
+  sinopse: "Twelve interviews with contemporary Brazilian writers, such as Ferreira Gullar, Claudia Roquette-Pinto, Antonio Carlos Secchin, and Sérgio Sant'Anna, conducted, transcribed, and edited by students at UFRJ's Faculty of Letters in a course led by Dau Bastos."
+
+coad:
+  titulo: "COAD: advisory publications (2011–2012)"
+  papel: "proofreading (in-house staff proofreader)"
+  sinopse: "Proofreading of books, workbooks, and newsletters on tax, accounting, labor, and legal topics."
+
+trabalhos-academicos:
+  titulo: "Academic work"
+  papel: "proofreading, formatting, and standardization (ABNT)"
+  sinopse: "Proofreading and formatting to Brazilian ABNT standards of master's theses, doctoral dissertations, undergraduate theses, and articles by researchers from various institutions."

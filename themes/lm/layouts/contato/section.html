@@ -4,30 +4,30 @@
   {{ .Content }}
   <form class="form" method="post" action="{{ site.Params.contactEndpoint }}">
     <p class="form-campo">
-      <label for="f-nome">Nome</label>
+      <label for="f-nome">{{ i18n "f_nome" }}</label>
       <input id="f-nome" name="nome" type="text" autocomplete="name" required maxlength="120">
     </p>
     <p class="form-campo">
-      <label for="f-email">E-mail</label>
+      <label for="f-email">{{ i18n "f_email" }}</label>
       <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="200">
     </p>
     <fieldset class="form-campo">
-      <legend>Assunto</legend>
+      <legend>{{ i18n "f_assunto" }}</legend>
       {{- range $i, $c := .Params.categorias }}
       <label class="opcao"><input type="radio" name="categoria" value="{{ $c.valor }}"{{ if eq $i 0 }} checked{{ end }}> {{ $c.nome }}</label>
       {{- end }}
     </fieldset>
     <p class="form-campo">
-      <label for="f-msg">Mensagem</label>
+      <label for="f-msg">{{ i18n "f_mensagem" }}</label>
       <textarea id="f-msg" name="mensagem" rows="6" required maxlength="5000"></textarea>
     </p>
     {{- /* armadilha para robôs: campo invisível que pessoas não preenchem */}}
-    <p class="form-armadilha" aria-hidden="true"><label>Site <input name="website" tabindex="-1" autocomplete="off"></label></p>
+    <p class="form-armadilha" aria-hidden="true"><label>{{ i18n "f_site" }} <input name="website" tabindex="-1" autocomplete="off"></label></p>
     {{- with site.Params.turnstileSiteKey }}
-    <div class="cf-turnstile" data-sitekey="{{ . }}" data-language="pt-BR"></div>
+    <div class="cf-turnstile" data-sitekey="{{ . }}" data-language="{{ site.Language.Locale }}"></div>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     {{- end }}
-    <p><button type="submit">Enviar</button></p>
+    <p><button type="submit">{{ i18n "f_enviar" }}</button></p>
   </form>
 </section>
 {{ end }}
