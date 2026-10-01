@@ -1,5 +1,5 @@
 ---
-title: "Uma fechadura discreta que não para de falar"
+title: "Uma fechadura (in)discreta"
 date: 2026-09-01
 description: "A compra e a instalação da fechadura digital Elsys ESF-DE2000B: o que eu não sabia sobre o padrão das portas, o modo silencioso e o firmware compartilhado entre marcas."
 assuntos: ["Casa", "Equipamentos"]
