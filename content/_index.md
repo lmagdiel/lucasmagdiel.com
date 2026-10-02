@@ -22,6 +22,6 @@ recentes:
   - /portfolio/legendagem/assumindo-as-redeas
   - /portfolio/livros/jim-jones-profile
 ---
-Desde 2013 verto para o espanhol as matérias da [Agência Brasil](https://agenciabrasil.ebc.com.br/es) e legendo reportagens e documentários da TV Brasil. Desde antes, também traduzo livros do inglês e legendo séries para streaming.
+Desde 2013 verto para o espanhol as matérias da Agência Brasil e legendo reportagens e documentários da TV Brasil. Bem antes disso, já traduzia livros do inglês e legendava produções para streaming.
 
 Fora do trabalho com as línguas, mantenho um pequeno homelab, desenvolvo ferramentas para o meu próprio fluxo de tradução e assisto a mais séries do que deveria.

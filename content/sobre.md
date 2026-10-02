@@ -1,13 +1,13 @@
 ---
 title: "Sobre"
-description: "Trajetória, formação e credenciamentos de Lucas Magdiel, tradutor e legendador."
-foto: ""  # espaço reservado; trocar pelo caminho da foto profissional em assets/ (vertical, 3:4, 900 px de largura ou mais)
+description: "Trajetória, formação e atuação profissional de Lucas Magdiel."
+foto: ""
 ---
-Sou tradutor e legendador, formado em Letras (Português/Espanhol) pela UFRJ e pós-graduado em Tradução de Espanhol pela Universidade Gama Filho. Trabalho com texto desde 2006, quando comecei a revisar livros para editoras do Rio de Janeiro.
+Sou tradutor e legendador com quase duas décadas de experiência com o texto. Sou graduado em Letras (Português/Espanhol) pela UFRJ e especialista em Tradução de Espanhol pela Universidade Gama Filho.
 
-Desde 2013 sou tradutor da EBC, em Brasília: verto para o espanhol as matérias da Agência Brasil, legendo produções da TV Brasil e traduzo documentos da empresa. Em 2018 fundei com dois colegas a [Ligna Traduções](https://ligna.pro), onde cuido da gestão e coordeno projetos editoriais. Sou tradutor credenciado do Conselho da Justiça Federal e, desde 2012, tradutor e editor da Blend (antiga OneHourTranslation).
+Desde 2013 atuo como tradutor na [EBC](https://www.ebc.com.br/), onde verto o noticiário da Agência Brasil para o espanhol, realizo a legendagem de conteúdos audiovisuais da TV Brasil e traduzo documentos institucionais. Na esfera privada, sou cofundador da [Ligna Traduções](https://ligna.pro), tradutor credenciado do Conselho da Justiça Federal (CJF) e colaborador da plataforma internacional [Blend](https://www.getblend.com/) (antiga OneHourTranslation).
 
-Fora do trabalho, meus maiores interesses são tecnologia (homelab, self-hosting, automação) e séries de TV, o que não deixa de ajudar na legendagem.
+Paralelamente às Letras, cultivo uma paixão de longa data por infraestrutura e tecnologia (*homelab*, Linux, *self-hosting* e automação), interseção que hoje aprofundo na graduação em Tecnologia em Sistemas para Internet e que aplico diretamente em soluções para o mercado editorial, tradução técnica e localização audiovisual.
 
 ## Trajetória
 
