@@ -29,3 +29,9 @@
   url: "https://abrflow.app"
   descricao: "Site do AbrFlow"
   tec: "HTML e CSS próprios"
+- dominio: "trev.app.lucas.st"
+  icone: "img/sites/trev.svg"
+  url: "https://trev.app.lucas.st/"
+  descricao: "Assistente de revisão, tradução e cotejamento de textos em até 3 idiomas"
+  tec: "React, TypeScript e TipTap"
+  credito: {rotulo: "Idealização", nome: "Vânia Vidal"}
