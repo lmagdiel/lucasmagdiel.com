@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{{- $titulo := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) }}
+{{- $tituloPagina := cond (eq .Kind "404") (i18n "nao_encontrada") .Title }}
+{{- $titulo := cond .IsHome site.Title (printf "%s · %s" $tituloPagina site.Title) }}
 <title>{{ $titulo }}</title>
 {{- $desc := or .Description .Params.sinopse site.Params.description | plainify | truncate 180 }}
 {{- if and (eq .Kind "term") (not .Description) }}{{ $desc = i18n "desc_assunto" (dict "autor" site.Params.author "assunto" .Title) }}{{ end }}
