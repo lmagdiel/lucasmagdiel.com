@@ -2,6 +2,7 @@
 // - Preview de acesso restrito: se a variável PREVIEW_AUTH ("usuario:senha") existir,
 //   exige autenticação HTTP Basic. No lançamento, basta remover a variável.
 // - Previews e o domínio *.pages.dev nunca são indexados (X-Robots-Tag).
+// - www.lucasmagdiel.com redireciona para lucasmagdiel.com (301).
 
 const REALM = 'Preview lucasmagdiel.com';
 
@@ -23,6 +24,13 @@ function codificar(credenciais) {
 export async function onRequest(context) {
   const { request, env, next } = context;
   const url = new URL(request.url);
+
+  // www → domínio principal (301), mantendo caminho e parâmetros
+  if (url.hostname === 'www.lucasmagdiel.com') {
+    url.hostname = 'lucasmagdiel.com';
+    return Response.redirect(url.toString(), 301);
+  }
+
   const restrito = Boolean(env.PREVIEW_AUTH);
 
   if (restrito) {

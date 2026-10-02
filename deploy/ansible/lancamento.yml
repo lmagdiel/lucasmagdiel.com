@@ -1,55 +1,117 @@
-# Tarefas de lançamento (Fase 3). NÃO rodar antes de retirar o PREVIEW_AUTH.
-# Integrar ao ansible-infra (ex.: roles/cloudflare_sites) e usar o token do vault.
+# Lançamento de lucasmagdiel.com no Cloudflare Pages (Fase 3).
 #
 #   ansible-playbook deploy/ansible/lancamento.yml -e cloudflare_api_token=... -e cloudflare_account_id=...
 #
-# 1. Associa lucasmagdiel.com e www ao projeto Pages "lucasmagdiel"
-#    (a zona está na mesma conta: o Cloudflare cria/atualiza o CNAME sozinho).
-# 2. Garante o redirecionamento www → apex.
-# O redirecionamento atual de lucas.st (e o caminho /dicts) continua como está; não é tocado aqui.
+# Permissões do token: Account › Cloudflare Pages › Edit e Zone › DNS › Edit (zona lucasmagdiel.com).
+# No ansible-infra, dá para virar um role (ex.: roles/cloudflare_sites) com o token do vault.
+#
+# O que faz, nesta ordem:
+# 1. Tira o PREVIEW_AUTH do ambiente de produção do Pages. Os previews dos outros ramos continuam com senha.
+#    A mudança só vale para deploys novos: publicar de novo logo depois (publicar.ps1 ou push na main).
+# 2. Troca no DNS os registros A da raiz (site antigo, no Fastmail) por um CNAME para lucasmagdiel.pages.dev,
+#    com proxy, e cria o CNAME do www (hoje o www cai no curinga *.lucasmagdiel.com, que aponta para o Fastmail).
+# 3. Associa lucasmagdiel.com e www.lucasmagdiel.com ao projeto Pages "lucasmagdiel".
+#
+# Não mexe em MX, SPF, DKIM, DMARC, mail.lucasmagdiel.com nem no curinga: o e-mail continua igual.
+# O redirecionamento www → lucasmagdiel.com (301) fica no functions/_middleware.js, sem regra na zona.
+# O redirecionamento de lucas.st (e o caminho /dicts) continua como está; não é tocado aqui.
+# Pode rodar de novo sem problema: o que já estiver feito é pulado.
 - name: Lançamento de lucasmagdiel.com no Cloudflare Pages
   hosts: localhost
+  connection: local
   gather_facts: false
   vars:
     projeto: lucasmagdiel
+    zona: lucasmagdiel.com
+    destino: lucasmagdiel.pages.dev
     dominios: ["lucasmagdiel.com", "www.lucasmagdiel.com"]
     api: "https://api.cloudflare.com/client/v4"
+    pages: "{{ api }}/accounts/{{ cloudflare_account_id }}/pages/projects/{{ projeto }}"
     headers:
       Authorization: "Bearer {{ cloudflare_api_token }}"
       Content-Type: "application/json"
   tasks:
-    - name: Domínios personalizados do projeto
+    - name: Tirar o PREVIEW_AUTH da produção
       ansible.builtin.uri:
-        url: "{{ api }}/accounts/{{ cloudflare_account_id }}/pages/projects/{{ projeto }}/domains"
-        method: POST
-        headers: "{{ headers }}"
-        body_format: json
-        body: { name: "{{ item }}" }
-        status_code: [200, 409]   # 409 = já associado
-      loop: "{{ dominios }}"
-
-    - name: Consultar a zona lucasmagdiel.com
-      ansible.builtin.uri:
-        url: "{{ api }}/zones?name=lucasmagdiel.com"
-        headers: "{{ headers }}"
-      register: zona
-
-    # ATENÇÃO: o PUT substitui todas as regras de redirecionamento da zona lucasmagdiel.com.
-    # Conferir antes se já existe alguma regra nessa fase.
-    - name: Regra de redirecionamento www → apex (Single Redirect)
-      ansible.builtin.uri:
-        url: "{{ api }}/zones/{{ zona.json.result[0].id }}/rulesets/phases/http_request_dynamic_redirect/entrypoint"
-        method: PUT
+        url: "{{ pages }}"
+        method: PATCH
         headers: "{{ headers }}"
         body_format: json
         body:
-          rules:
-            - description: "www → apex"
-              expression: '(http.host eq "www.lucasmagdiel.com")'
-              action: redirect
-              action_parameters:
-                from_value:
-                  status_code: 301
-                  preserve_query_string: true
-                  target_url:
-                    expression: 'concat("https://lucasmagdiel.com", http.request.uri.path)'
+          deployment_configs:
+            production:
+              env_vars:
+                PREVIEW_AUTH: null
+
+    - name: Consultar a zona
+      ansible.builtin.uri:
+        url: "{{ api }}/zones?name={{ zona }}"
+        headers: "{{ headers }}"
+      register: z
+
+    - name: Guardar o id da zona
+      ansible.builtin.set_fact:
+        zona_id: "{{ z.json.result[0].id }}"
+
+    - name: Registros A da raiz (site antigo no Fastmail)
+      ansible.builtin.uri:
+        url: "{{ api }}/zones/{{ zona_id }}/dns_records?type=A&name={{ zona }}"
+        headers: "{{ headers }}"
+      register: a_raiz
+
+    - name: Apagar os registros A da raiz
+      ansible.builtin.uri:
+        url: "{{ api }}/zones/{{ zona_id }}/dns_records/{{ item.id }}"
+        method: DELETE
+        headers: "{{ headers }}"
+      loop: "{{ a_raiz.json.result }}"
+      loop_control:
+        label: "{{ item.name }} A {{ item.content }}"
+
+    - name: CNAMEs existentes
+      ansible.builtin.uri:
+        url: "{{ api }}/zones/{{ zona_id }}/dns_records?type=CNAME&per_page=100"
+        headers: "{{ headers }}"
+      register: cnames
+
+    - name: CNAME da raiz e do www para o Pages, com proxy
+      ansible.builtin.uri:
+        url: "{{ api }}/zones/{{ zona_id }}/dns_records"
+        method: POST
+        headers: "{{ headers }}"
+        body_format: json
+        body:
+          type: CNAME
+          name: "{{ item }}"
+          content: "{{ destino }}"
+          proxied: true
+          ttl: 1
+      loop: "{{ dominios }}"
+      when: item not in (cnames.json.result | map(attribute='name') | list)
+
+    - name: Domínios já associados ao projeto
+      ansible.builtin.uri:
+        url: "{{ pages }}/domains"
+        headers: "{{ headers }}"
+      register: dom
+
+    - name: Associar os domínios ao projeto
+      ansible.builtin.uri:
+        url: "{{ pages }}/domains"
+        method: POST
+        headers: "{{ headers }}"
+        body_format: json
+        body:
+          name: "{{ item }}"
+      loop: "{{ dominios }}"
+      when: item not in (dom.json.result | map(attribute='name') | list)
+
+    - name: Situação dos domínios
+      ansible.builtin.uri:
+        url: "{{ pages }}/domains"
+        headers: "{{ headers }}"
+      register: final
+
+    - name: Mostrar a situação
+      ansible.builtin.debug:
+        msg: "{{ final.json.result | map(attribute='name') | zip(final.json.result | map(attribute='status')) | list }}"
