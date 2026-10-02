@@ -2,7 +2,6 @@
 # Episode titles, programs, networks, names and links stay in the original file.
 
 caminhos-cabo-verde-copa-2026:
-  emissora: "TV Brasil (in partnership with teleSUR)"
   trabalho: {papel: "subtitling"}
   sinopse: "Report filmed in Praia, the capital of Cabo Verde, during the archipelago's first-ever World Cup appearance. It follows the fans, hears from goalkeeper Vozinha, President José Maria Neves, and singer Mayra Andrade, and highlights cultural ties between Cape Verdeans and Brazilians."
 
@@ -23,25 +22,29 @@ cena-instrumental-letieres-leite:
   sinopse: "The show's premiere episode, recorded in TV Brasil's Studio 3 in Rio de Janeiro. Bahian conductor Letieres Leite and the Orkestra Rumpilezz, a wind and percussion ensemble, play original compositions and new arrangements of works by Moacir Santos and Dorival Caymmi."
 
 farois-do-brasil:
+  genero: "documentary series"
   trabalho: {papel: "subtitling"}
   sinopse: "Documentary series, made in partnership with the Brazilian Navy, that visits lighthouses along Brazil's coast and tells the story of each structure, its role in navigation, and the surrounding landscapes, including lighthouses in Rio de Janeiro and Bahia."
 
 bravos:
+  genero: "documentary series (13 × 26 min)"
   trabalho: {papel: "subtitling"}
   sinopse: "Thirteen-episode documentary series, each episode devoted to someone from a low-income urban community who built a path through art, sports, or social projects, such as rapper Thabata Lorena and sprinter Verônica Hipólito."
 
 luthiers-maos-que-soam-a-vida:
+  genero: "documentary series (3 × 26 min)"
   premios: ["Official Selection, The Lift-Off Sessions 2019"]
   trabalho: {papel: "subtitling"}
   sinopse: "Three-part series about luthiers who build and restore bowed string, plucked string, and percussion instruments, following their work in the workshop and the exchange between craftspeople and the musicians who play their instruments."
 
 fortes-do-brasil:
+  genero: "documentary series"
   premios: ["Apollo Trophy for Best Screenplay, Festival Militum 2022 (episode “Fortaleza de Santa Cruz da Barra”)"]
   trabalho: {papel: "subtitling"}
   sinopse: "Documentary series about Brazil's historic fortifications. The first season visits forts in Rio de Janeiro and Niterói, linking military architecture to events such as the French invasions and the revolts of the early Republic."
 
 parques-do-brasil:
-  programa: "documentary series (TV Brasil, Fiocruz and ICMBio)"
+  genero: "documentary series"
   trabalho: {papel: "subtitling"}
   sinopse: "Documentary series about national parks and other protected areas in Brazil. Each episode visits one of these areas and shows its species, landscapes, research, and threats; the series opened with Emas National Park, in Goiás."
 

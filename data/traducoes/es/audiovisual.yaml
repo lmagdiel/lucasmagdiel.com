@@ -20,7 +20,7 @@ ate-a-camiseta-secar:
   sinopse: "La vida conyugal de Sakiko se derrumba tras un accidente de verano que involucra también a otra pareja. En medio de la conmoción sale a la luz un secreto que guardaba su marido, y la serie muestra cómo cada uno enfrenta la pérdida y la revelación."
 
 o-que-voce-vai-fazer-ieyasu:
-  genero: "drama histórico"
+  genero: "drama histórico (taiga drama)"
   trabalho: {papel: "subtitulación", descricao: "Subtitulación de la serie completa (48 episodios) en 2026"}
   sinopse: "Taiga drama de la NHK que sigue a Matsudaira Motoyasu, luego Tokugawa Ieyasu, en medio de las guerras del período Sengoku. Presionado por aliados y rivales, el joven e inseguro señor debe tomar decisiones que definirán la supervivencia de su clan y, más adelante, la fundación del shogunato Tokugawa."
 
@@ -28,6 +28,7 @@ meu-casamento-feliz-especial:
   trabalho: {papel: "subtitulación", descricao: "Subtitulación de los episodios especiales 14 a 16 de la segunda temporada"}
 
 the-13-lords-of-the-shogun:
+  genero: "drama histórico (taiga drama)"
   trabalho: {papel: "subtitulación", descricao: "Subtitulación de la serie completa (48 episodios) en 2026"}
 
 # ---------- Gemini Media (EN>PT-BR, TV por suscripción, 2012–2013) ----------

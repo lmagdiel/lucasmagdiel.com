@@ -20,7 +20,7 @@ ate-a-camiseta-secar:
   sinopse: "Sakiko's married life falls apart after a summer accident that also involves another couple. Amid the upheaval, a secret kept by her husband comes to light, and the series follows how everyone involved copes with the loss and the revelation."
 
 o-que-voce-vai-fazer-ieyasu:
-  genero: "historical drama"
+  genero: "historical drama (taiga drama)"
   trabalho: {papel: "subtitling", descricao: "Subtitling of the complete series (48 episodes) in 2026"}
   sinopse: "An NHK taiga drama following Matsudaira Motoyasu, later Tokugawa Ieyasu, through the wars of the Sengoku period. Pressed by allies and rivals, the insecure young lord must make decisions that will determine his clan's survival and, later, the founding of the Tokugawa shogunate."
 
@@ -28,6 +28,7 @@ meu-casamento-feliz-especial:
   trabalho: {papel: "subtitling", descricao: "Subtitling of special episodes 14 to 16 of season 2"}
 
 the-13-lords-of-the-shogun:
+  genero: "historical drama (taiga drama)"
   trabalho: {papel: "subtitling", descricao: "Subtitling of the complete series (48 episodes) in 2026"}
 
 # ---------- Gemini Media (EN>PT-BR, pay TV, 2012–2013) ----------

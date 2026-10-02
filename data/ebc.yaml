@@ -1,13 +1,15 @@
 # Portfólio: legendas para a EBC/TV Brasil. Atualizado em 2026-09-27.
+# Campos: `programa` = nome do programa de que a produção faz parte (Caminhos da Reportagem, Espaço Público…); série própria fica sem `programa`.
+#         `genero` = formato (série documental etc.); `emissora` = só o nome do canal; parcerias e coproduções vão em `creditos`.
 # Imagem: sem pôster oficial, card padronizado em CSS (partial tv-card) com `frame` de assets/capas; `ancora` = recorte (Center, Top, Right…).
 # Obs.: várias páginas da EBC estão fora do ar pelo defeso eleitoral (out/2026); reconferir links em novembro.
 
 - id: caminhos-cabo-verde-copa-2026
   titulo: "“Nos óra dja txiga”: Cabo Verde na Copa do Mundo"
   programa: "Caminhos da Reportagem"
-  emissora: "TV Brasil (parceria com a teleSUR)"
+  emissora: "TV Brasil"
   ano_exibicao: 2026
-  creditos: {reportagem: "André Vieira (teleSUR)", producao: "André Vieira e Cintia Vargas"}
+  creditos: {reportagem: "André Vieira (teleSUR)", producao: "André Vieira e Cintia Vargas", parceria: "teleSUR"}
   trabalho: {ano: 2026, par: "PT-BR>ES", papel: "legendagem"}
   sinopse: "Reportagem gravada em Praia, capital de Cabo Verde, durante a primeira participação do arquipélago em uma Copa do Mundo. Acompanha a torcida, ouve o goleiro Vozinha, o presidente José Maria Neves e a cantora Mayra Andrade, e aponta laços culturais entre cabo-verdianos e brasileiros."
   link: "https://tvbrasil.ebc.com.br/caminhos-da-reportagem/2026/07/nos-ora-dja-txiga-cabo-verde-na-copa-do-mundo"
@@ -67,7 +69,7 @@
 
 - id: farois-do-brasil
   titulo: "Faróis do Brasil"
-  programa: "série documental"
+  genero: "série documental"
   emissora: "TV Brasil"
   ano_exibicao: 2019
   creditos: {direcao: "Ingrid Gassert", apresentacao: "Tâmara Freire"}
@@ -80,7 +82,7 @@
 
 - id: bravos
   titulo: "Bravos!"
-  programa: "série documental (13 × 26 min)"
+  genero: "série documental (13 × 26 min)"
   emissora: "TV Brasil"
   ano_exibicao: 2017
   trabalho: {ano: 2020, par: "PT-BR>ES", papel: "legendagem"}
@@ -91,7 +93,7 @@
 
 - id: luthiers-maos-que-soam-a-vida
   titulo: "Luthiers – mãos que soam a vida"
-  programa: "série documental (3 × 26 min)"
+  genero: "série documental (3 × 26 min)"
   emissora: "TV Brasil"
   ano_exibicao: 2019
   creditos: {direcao: "Henrique Lima, Marina Barreto e Poliana Guimarães"}
@@ -105,7 +107,7 @@
 
 - id: fortes-do-brasil
   titulo: "Fortes do Brasil"
-  programa: "série documental"
+  genero: "série documental"
   emissora: "TV Brasil"
   ano_exibicao: 2019
   creditos: {direcao: "Poliana Guimarães e Leonardo Dias"}
@@ -119,10 +121,10 @@
 
 - id: parques-do-brasil
   titulo: "Parques do Brasil"
-  programa: "série documental (TV Brasil, Fiocruz e ICMBio)"
+  genero: "série documental"
   emissora: "TV Brasil"
   ano_exibicao: 2018
-  creditos: {direcao: "Carlos Sanches"}
+  creditos: {direcao: "Carlos Sanches", producao: "TV Brasil, Fiocruz e ICMBio"}
   trabalho: {ano: 2019, par: "PT-BR>ES", papel: "legendagem"}
   sinopse: "Série documental sobre parques nacionais e outras áreas protegidas do Brasil. Cada episódio visita uma unidade de conservação e mostra espécies, paisagens, pesquisas e ameaças; a estreia foi no Parque Nacional das Emas, em Goiás."
   link: "https://tvbrasil.ebc.com.br/parquesdobrasil"

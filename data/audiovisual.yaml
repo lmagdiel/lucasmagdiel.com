@@ -51,10 +51,10 @@
   grupo: netflix
   titulo: "O Que Você Vai Fazer, Ieyasu?"
   titulo_original: "どうする家康 (Dōsuru Ieyasu)"
-  emissora: "NHK (taiga drama)"
+  emissora: "NHK"
   plataforma: "Netflix"
   ano: 2023
-  genero: "drama histórico"
+  genero: "drama histórico (taiga drama)"
   creditos: {roteiro: "Ryota Kosawa", elenco: ["Jun Matsumoto", "Kasumi Arimura"]}
   trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios em 2026"}
   sinopse: "Taiga drama da NHK que acompanha Matsudaira Motoyasu, depois Tokugawa Ieyasu, em meio às guerras do período Sengoku. Pressionado por aliados e rivais, o jovem senhor inseguro precisa tomar decisões que definirão a sobrevivência de seu clã e, mais tarde, a fundação do xogunato Tokugawa."
@@ -77,7 +77,8 @@
   status: aguardando
   titulo: "The 13 Lords of the Shogun"
   titulo_original: "鎌倉殿の13人"
-  emissora: "NHK (taiga drama)"
+  emissora: "NHK"
+  genero: "drama histórico (taiga drama)"
   trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios em 2026"}
 
 # ---------- Gemini Media (EN>PT-BR, TV por assinatura, 2012–2013) ----------

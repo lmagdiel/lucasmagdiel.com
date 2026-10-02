@@ -2,7 +2,6 @@
 # Claves: el id de cada elemento del original, en el mismo orden. Solo los campos de texto traducidos.
 
 caminhos-cabo-verde-copa-2026:
-  emissora: "TV Brasil (en alianza con teleSUR)"
   trabalho: {papel: "subtitulación"}
   sinopse: "Reportaje grabado en Praia, capital de Cabo Verde, durante la primera participación del archipiélago en una Copa del Mundo. Sigue a los aficionados, entrevista al portero Vozinha, al presidente José Maria Neves y a la cantante Mayra Andrade, y destaca los lazos culturales entre caboverdianos y brasileños."
 
@@ -23,25 +22,30 @@ cena-instrumental-letieres-leite:
   sinopse: "Episodio de estreno del programa, grabado en el Estudio 3 de TV Brasil, en Río de Janeiro. El maestro bahiano Letieres Leite y la Orkestra Rumpilezz, agrupación de vientos y percusión, interpretan composiciones propias y nuevas versiones de obras de Moacir Santos y Dorival Caymmi."
 
 farois-do-brasil:
+  genero: "serie documental"
   trabalho: {papel: "subtitulación"}
   sinopse: "Serie documental, realizada en alianza con la Marina de Brasil, que visita faros del litoral brasileño y cuenta la historia de cada construcción, su función en la navegación y los paisajes de su entorno, con paradas en faros de Río de Janeiro y Bahía."
 
 bravos:
+  genero: "serie documental (13 × 26 min)"
   trabalho: {papel: "subtitulación"}
   sinopse: "Serie documental de 13 episodios, cada uno dedicado a una persona de una comunidad de la periferia que construyó su trayectoria a través del arte, el deporte o proyectos sociales, como la rapera Thabata Lorena y la velocista Verônica Hipólito."
 
 luthiers-maos-que-soam-a-vida:
+  genero: "serie documental (3 × 26 min)"
   premios: ["Selección oficial, The Lift-Off Sessions 2019"]
   trabalho: {papel: "subtitulación"}
   sinopse: "Serie de tres episodios sobre luthiers que fabrican y restauran instrumentos de cuerda frotada, de cuerda pulsada y de percusión. Sigue el trabajo en el taller y el diálogo entre los artesanos y los músicos que tocan sus piezas."
 
 fortes-do-brasil:
+  genero: "serie documental"
   premios: ["Trofeo Apollo al mejor guion, Festival Militum 2022 (episodio “Fortaleza de Santa Cruz da Barra”)"]
   trabalho: {papel: "subtitulación"}
   sinopse: "Serie documental sobre fortificaciones históricas de Brasil. La primera temporada recorre fuertes de Río de Janeiro y Niterói y relaciona la arquitectura militar con episodios como las invasiones francesas y las revueltas de los primeros años de la República."
 
 parques-do-brasil:
-  programa: "serie documental (TV Brasil, Fiocruz e ICMBio)"
+  genero: "serie documental"
+  creditos: {producao: "TV Brasil, Fiocruz e ICMBio"}
   trabalho: {papel: "subtitulación"}
   sinopse: "Serie documental sobre parques nacionales y otras áreas protegidas de Brasil. Cada episodio visita una unidad de conservación y muestra especies, paisajes, investigaciones y amenazas; el episodio de estreno se dedicó al Parque Nacional das Emas, en Goiás."
 

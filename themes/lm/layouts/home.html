@@ -31,7 +31,7 @@
         {{- $p := .Params }}
         {{- if $p.capa }}{{ partial "tile.html" (dict "page" . "titulo" .Title "sub" (printf "%s · %v" (or $p.plataforma $p.emissora) (or $p.ano_exibicao $p.ano)) "capa" $p.capa "alt" (i18n "poster_de" (dict "titulo" .Title)) "pequeno" true) }}
         {{- else if $p.capas }}{{ partial "tile.html" (dict "page" . "titulo" .Title "sub" (printf "%s · %v" $p.editora $p.ano) "capa" (index $p.capas 0) "pequeno" true) }}
-        {{- else }}{{ partial "tile.html" (dict "page" . "titulo" .Title "tv" (dict "titulo" .Title "programa" $p.programa "emissora" ($p.emissora | default "TV Brasil") "ano" $p.ano_exibicao "par" $p.trabalho.par "frame" $p.frame "ancora" $p.ancora) "pequeno" true) }}
+        {{- else }}{{ partial "tile.html" (dict "page" . "titulo" .Title "tv" (dict "titulo" .Title "programa" (or $p.programa $p.genero) "emissora" ($p.emissora | default "TV Brasil") "ano" $p.ano_exibicao "par" $p.trabalho.par "frame" $p.frame "ancora" $p.ancora) "pequeno" true) }}
         {{- end }}
       {{- end }}
     {{- end }}

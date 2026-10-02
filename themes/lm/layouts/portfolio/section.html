@@ -43,7 +43,7 @@
     </div>
     <ul class="grade grade--linha grade--tv">
       {{- range first 6 $ebc }}
-        {{- $tv := dict "titulo" .titulo "programa" .programa "emissora" (.emissora | default "TV Brasil") "ano" .ano_exibicao "par" .trabalho.par "frame" .frame "ancora" .ancora }}
+        {{- $tv := dict "titulo" .titulo "programa" (or .programa .genero) "emissora" (.emissora | default "TV Brasil") "ano" .ano_exibicao "par" .trabalho.par "frame" .frame "ancora" .ancora }}
         {{- partial "tile.html" (dict "page" (site.GetPage (printf "/portfolio/tv-brasil/%s" .id)) "titulo" .titulo "tv" $tv "pequeno" true) }}
       {{- end }}
     </ul>

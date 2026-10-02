@@ -1,0 +1,8 @@
+{{- /* Junta uma lista de nomes com vírgulas e a conjunção do idioma ("e", "and", "y"); num texto,
+       troca o " e " entre nomes pela conjunção do idioma.
+       Em espanhol, "y" vira "e" antes de palavra começada por som de i (Fiocruz e ICMBio). */ -}}
+{{- $e := printf " %s " (i18n "e") }}
+{{- $txt := "" }}
+{{- if reflect.IsSlice . }}{{ $txt = delimit . ", " $e }}{{ else }}{{ $txt = replace (string .) " e " $e }}{{ end }}
+{{- if eq site.Language.Lang "es" }}{{ $txt = replaceRE ` y ([IiÍí])` " e $1" $txt }}{{ end }}
+{{- return $txt }}

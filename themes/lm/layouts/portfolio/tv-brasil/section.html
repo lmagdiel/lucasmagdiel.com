@@ -7,7 +7,7 @@
   </header>
   <ul class="grade grade--tv">
     {{- range sort (partialCached "dados.html" (dict "nome" "ebc" "lang" site.Language.Lang) "ebc" site.Language.Lang) "ano_exibicao" "desc" }}
-      {{- $tv := dict "titulo" .titulo "programa" .programa "emissora" (.emissora | default "TV Brasil") "ano" .ano_exibicao "par" .trabalho.par "frame" .frame "ancora" .ancora }}
+      {{- $tv := dict "titulo" .titulo "programa" (or .programa .genero) "emissora" (.emissora | default "TV Brasil") "ano" .ano_exibicao "par" .trabalho.par "frame" .frame "ancora" .ancora }}
       {{- partial "tile.html" (dict "page" (site.GetPage (printf "/portfolio/tv-brasil/%s" .id)) "titulo" .titulo "tv" $tv) }}
     {{- end }}
   </ul>
