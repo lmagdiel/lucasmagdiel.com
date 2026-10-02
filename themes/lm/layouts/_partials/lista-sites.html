@@ -1,6 +1,6 @@
 {{- /* Lista de sites (data/sites.yaml), usada no bloco "Sites" de Tecnologia. */ -}}
 <ul class="sites">
-  {{- range hugo.Data.sites }}
+  {{- range (partialCached "dados.html" (dict "nome" "sites" "lang" site.Language.Lang) "sites" site.Language.Lang) }}
   {{- $externo := hasPrefix .url "http" }}
   <li>
     <a class="site-dom" href="{{ .url }}"{{ if $externo }} target="_blank" rel="noopener"{{ end }}>{{- with .icone }}{{ with resources.Get . }}{{ if eq .MediaType.SubType "svg" }}<img class="site-ico" src="{{ .RelPermalink }}" width="20" height="20" alt="" loading="lazy" decoding="async">{{ else }}{{ $i := .Resize "64x webp q90" }}<img class="site-ico" src="{{ $i.RelPermalink }}" width="20" height="20" alt="" loading="lazy" decoding="async">{{ end }}{{ end }}{{ end }}<span>{{ .dominio }}{{ if $externo }} <span aria-hidden="true">↗</span>{{ end }}</span></a>

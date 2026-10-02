@@ -1,4 +1,4 @@
-# Borrador en español de los textos fijos del tema (revisar antes de activar el idioma).
+# Textos fixos do tema em espanhol (mesmas chaves do pt.yaml).
 pular_para_conteudo: "Saltar al contenido"
 menu_principal: "Menú principal"
 voltar: "Volver"
@@ -99,3 +99,5 @@ job_title: "Traductor y subtitulador"
 ver_original: "Ver en tamaño original"
 foto_de: "Foto de {{ .nome }}"
 foto_reservada: "Espacio reservado para la foto"
+em_portugues: "(en portugués)"
+idiomas: "Idiomas"

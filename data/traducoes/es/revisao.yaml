@@ -1,4 +1,4 @@
-# Borrador de traducción al español (neutro latinoamericano) de data/revisao.yaml.
+# Traducción al español (neutro latinoamericano) de data/revisao.yaml.
 # Claves: el id de cada elemento del original, en el mismo orden. Solo los campos de texto traducidos.
 # titulo: solo los títulos descriptivos de grupo (los títulos de libros no se traducen).
 # titulos: mismo orden y tamaño que en el original; {} para los elementos sin papel, sinopse ni nota.

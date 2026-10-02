@@ -1,5 +1,6 @@
 {{- /* Feed RSS (só as Notas geram feed; ver content/notas/_index.md). */ -}}
 {{- $paginas := .RegularPages.ByDate.Reverse -}}
+{{- if and (eq .Section "notas") (ne site.Language.Lang "pt") }}{{ $paginas = sort (partialCached "notas-idioma.html" site.Language.Lang site.Language.Lang).notas "Date" "desc" }}{{ end -}}
 {{- $titulo := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">

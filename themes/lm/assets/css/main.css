@@ -92,6 +92,13 @@ h3 { font-size: 1.15rem; margin: 1.8rem 0 0.4rem; }
 .tema:hover { color: var(--text); border-color: var(--muted); }
 .tema svg { width: 0.95rem; height: 0.95rem; }
 .tema[aria-pressed="true"] svg { transform: rotate(180deg); }
+/* Seletor de idioma (só aparece quando a página tem tradução) */
+.idiomas { list-style: none; margin: 0 0 0 -0.6rem; padding: 0; display: flex; gap: 0.1rem; font-size: 0.78rem; letter-spacing: 0.06em; }
+.idiomas a, .idiomas span { display: inline-grid; place-items: center; min-width: 1.9rem; min-height: 1.75rem; padding: 0 0.3rem; border-radius: var(--radius); }
+.idiomas a { color: var(--muted); text-decoration: none; }
+.idiomas a:hover { color: var(--text); background: var(--accent-soft); }
+.idiomas [aria-current] { color: var(--text); font-weight: 600; box-shadow: inset 0 -2px 0 var(--accent); border-radius: 0; }
+.nota-idioma { color: var(--muted); font-size: 0.85rem; white-space: nowrap; }
 
 main { padding-block: 2.5rem 4rem; }
 
@@ -414,6 +421,18 @@ pre code { font-size: inherit; background: none; padding: 0; }
 .form-armadilha { position: absolute; left: -9999px; }
 .form-alt { color: var(--muted); font-size: 0.95rem; }
 
+/* Topo em duas linhas em telas médias e pequenas: nome à esquerda, modo escuro e idiomas à direita, menu embaixo */
+@media (max-width: 52rem) {
+  .topo-in { min-height: 0; }
+  .topo-dir { display: contents; }
+  .marca { order: 1; }
+  .tema { order: 2; flex: none; margin-left: auto; }
+  .idiomas { order: 3; margin-left: -1.1rem; }
+  .topo nav { order: 4; width: 100%; }
+  .topo nav ul { flex-wrap: nowrap; }
+  .topo nav a { white-space: nowrap; }
+}
+
 /* Telas pequenas */
 @media (max-width: 40rem) {
   body { font-size: 1rem; }
@@ -431,10 +450,8 @@ pre code { font-size: inherit; background: none; padding: 0; }
   .lista li { grid-template-columns: 1fr; gap: 0.2rem; }
   .entradas { grid-template-columns: 1fr; }
   .topo-in { min-height: 0; }
-  .topo-dir { flex-wrap: nowrap; width: 100%; justify-content: space-between; gap: 0.6rem; }
-  .topo nav ul { gap: 0.2rem 0.85rem; flex-wrap: nowrap; }
+  .topo nav ul { gap: 0.2rem 0.85rem; }
   .topo nav a { font-size: 0.9rem; }
-  .tema { flex: none; }
   .tec-bloco { grid-template-columns: 1fr; gap: 0.8rem; }
   .tec-logo { min-height: 0; }
   .tvcard-tit { font-size: 0.88rem; }
@@ -452,7 +469,7 @@ pre code { font-size: inherit; background: none; padding: 0; }
   .tema { width: 1.6rem; height: 1.6rem; }
 }
 @media (max-width: 21.5rem) {
-  .topo-dir { flex-wrap: wrap; justify-content: flex-start; }
+  .topo nav ul { flex-wrap: wrap; }
 }
 
 @media (prefers-reduced-motion: no-preference) {

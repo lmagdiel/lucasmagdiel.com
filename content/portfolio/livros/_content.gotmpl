@@ -1,5 +1,7 @@
 {{/* Gera uma página por livro traduzido a partir de data/livros.yaml */}}
-{{ range hugo.Data.livros }}
+{{ .EnableAllLanguages }}
+{{ $lang := .Site.Language.Lang }}
+{{ range partialCached "dados.html" (dict "nome" "livros" "lang" $lang) "livros" $lang }}
   {{ if eq .tipo "livro-traduzido" }}
     {{ $c := dict "mediaType" "text/markdown" "value" (.sinopse | default "") }}
     {{ $.AddPage (dict "path" .id "title" .titulo "kind" "page" "content" $c "params" .) }}

@@ -25,7 +25,7 @@
         </ul>
         {{- end }}
         {{- if eq .id "blend" }}
-        {{- $b := hugo.Data.estatisticas.blend }}
+        {{- $b := (partialCached "dados.html" (dict "nome" "estatisticas" "lang" site.Language.Lang) "estatisticas" site.Language.Lang).blend }}
         <ul class="numeros numeros--p" aria-label="{{ i18n "painel_blend" (dict "data" ((time $b.referencia).Format "01/2006")) }}">
           <li><span class="num">{{ $b.projetos_concluidos }}</span> {{ i18n "projetos_concluidos" }}</li>
           <li><span class="num">{{ lang.FormatNumber 0 $b.palavras_traduzidas }}</span> {{ i18n "palavras" }}</li>

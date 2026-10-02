@@ -6,7 +6,7 @@
     {{ .Content }}
   </header>
 
-  {{- range hugo.Data.revisao }}
+  {{- range (partialCached "dados.html" (dict "nome" "revisao" "lang" site.Language.Lang) "revisao" site.Language.Lang) }}
   <section class="grupo grupo--rev">
     <h2 class="subtitulo">{{ .titulo }}</h2>
     {{- $papel := .papel }}

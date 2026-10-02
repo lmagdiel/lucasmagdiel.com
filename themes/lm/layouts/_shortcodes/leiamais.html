@@ -1,4 +1,5 @@
 {{- $rot := .Get 1 | default (i18n "leia_mais") }}
-{{- with site.GetPage (.Get 0) }}
-<p class="leia-mais"><a href="{{ .RelPermalink }}">{{ $rot }} <span aria-hidden="true">→</span></a></p>
+{{- $r := partial "pagina.html" (.Get 0) }}
+{{- with $r.p }}
+<p class="leia-mais"><a href="{{ .RelPermalink }}"{{ if $r.outro }} hreflang="{{ .Language.Locale }}"{{ end }}>{{ $rot }}{{ if $r.outro }} {{ i18n "em_portugues" }}{{ end }} <span aria-hidden="true">→</span></a></p>
 {{- end }}

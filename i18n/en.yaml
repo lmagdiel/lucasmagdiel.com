@@ -1,4 +1,4 @@
-# Rascunho em inglês dos textos fixos do tema (revisar antes de ativar o idioma).
+# Textos fixos do tema em inglês (mesmas chaves do pt.yaml).
 pular_para_conteudo: "Skip to content"
 menu_principal: "Main menu"
 voltar: "Back"
@@ -99,3 +99,5 @@ job_title: "Translator and subtitler"
 ver_original: "View full size"
 foto_de: "Photo of {{ .nome }}"
 foto_reservada: "Photo placeholder"
+em_portugues: "(in Portuguese)"
+idiomas: "Languages"

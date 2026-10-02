@@ -1,0 +1,46 @@
+{{- /* Dados do site no idioma pedido.
+       Contexto: dict "nome" (audiovisual, ebc, livros, revisao, estatisticas, setup, sites) e "lang".
+       Em português, devolve data/<nome>.yaml. Nos outros idiomas, junta a ele os campos de
+       data/traducoes/<lang>/<nome>.yaml:
+       - listas de itens (audiovisual, ebc, livros, revisao): tradução pelo "id" do item; mapas são mesclados,
+         listas entram item por item, na mesma ordem (mapa com mapa, texto substitui texto);
+       - estatisticas: mescla dos mapas;
+       - setup e sites: a cópia traduzida é completa e substitui o original.
+       Usar com partialCached, com nome e idioma como variantes. */ -}}
+{{- $nome := .nome }}
+{{- $lang := .lang | default "pt" }}
+{{- $base := index hugo.Data $nome }}
+{{- $tr := false }}
+{{- if ne $lang "pt" }}{{ with hugo.Data.traducoes }}{{ with index . $lang }}{{ with index . $nome }}{{ $tr = . }}{{ end }}{{ end }}{{ end }}{{ end }}
+{{- if not $tr }}{{ return $base }}{{ end }}
+{{- if or (eq $nome "setup") (eq $nome "sites") }}{{ return $tr }}{{ end }}
+{{- if reflect.IsMap $base }}{{ return merge $base $tr }}{{ end }}
+{{- $out := slice }}
+{{- range $base }}
+  {{- $item := . }}
+  {{- with index $tr (string .id) }}
+    {{- range $k, $v := . }}
+      {{- $orig := index $item $k }}
+      {{- if and (reflect.IsSlice $v) (reflect.IsSlice $orig) }}
+        {{- $lista := slice }}
+        {{- range $i, $o := $orig }}
+          {{- $novo := $o }}
+          {{- if lt $i (len $v) }}
+            {{- $t := index $v $i }}
+            {{- if and (reflect.IsMap $o) (reflect.IsMap $t) }}{{ $novo = merge $o $t }}
+            {{- else if and (not (reflect.IsMap $t)) $t }}{{ $novo = $t }}
+            {{- end }}
+          {{- end }}
+          {{- $lista = $lista | append $novo }}
+        {{- end }}
+        {{- $item = merge $item (dict $k $lista) }}
+      {{- else if and (reflect.IsMap $v) (reflect.IsMap $orig) }}
+        {{- $item = merge $item (dict $k (merge $orig $v)) }}
+      {{- else }}
+        {{- $item = merge $item (dict $k $v) }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+  {{- $out = $out | append $item }}
+{{- end }}
+{{- return $out }}

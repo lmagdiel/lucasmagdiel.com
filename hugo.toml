@@ -15,13 +15,12 @@ defaultContentLanguageInSubdir = false
     locale = "pt-BR"
     label = "Português"
     weight = 1
-  # EN e ES: rascunhos prontos (conteúdo em *.en.md / *.es.md, dados em data/traducoes/, textos do tema em i18n/).
-  # Ficam desativados até a revisão; para ativar, trocar disabled = true por false (ver docs/traducoes.md).
+  # EN e ES: conteúdo em *.en.md / *.es.md, dados em data/traducoes/<idioma>/, textos do tema em i18n/ (ver docs/traducoes.md).
+  # Para tirar um idioma do ar sem apagar nada: disabled = true.
   [languages.en]
     locale = "en"
     label = "English"
     weight = 2
-    disabled = true
     [languages.en.params]
       description = "Translator and subtitler (English and Spanish). Books, series, documentaries and journalism; technology applied to translation."
     [[languages.en.menus.main]]
@@ -48,7 +47,6 @@ defaultContentLanguageInSubdir = false
     locale = "es"
     label = "Español"
     weight = 3
-    disabled = true
     [languages.es.params]
       description = "Traductor y subtitulador (inglés y español). Libros, series, documentales y periodismo; tecnología aplicada a la traducción."
     [[languages.es.menus.main]]

@@ -1,7 +1,8 @@
-# Borrador de traducción al español (neutro latinoamericano) de data/ebc.yaml.
+# Traducción al español (neutro latinoamericano) de data/ebc.yaml.
 # Claves: el id de cada elemento del original, en el mismo orden. Solo los campos de texto traducidos.
 
 caminhos-cabo-verde-copa-2026:
+  emissora: "TV Brasil (en alianza con teleSUR)"
   trabalho: {papel: "subtitulación"}
   sinopse: "Reportaje grabado en Praia, capital de Cabo Verde, durante la primera participación del archipiélago en una Copa del Mundo. Sigue a los aficionados, entrevista al portero Vozinha, al presidente José Maria Neves y a la cantante Mayra Andrade, y destaca los lazos culturales entre caboverdianos y brasileños."
 
@@ -40,6 +41,7 @@ fortes-do-brasil:
   sinopse: "Serie documental sobre fortificaciones históricas de Brasil. La primera temporada recorre fuertes de Río de Janeiro y Niterói y relaciona la arquitectura militar con episodios como las invasiones francesas y las revueltas de los primeros años de la República."
 
 parques-do-brasil:
+  programa: "serie documental (TV Brasil, Fiocruz e ICMBio)"
   trabalho: {papel: "subtitulación"}
   sinopse: "Serie documental sobre parques nacionales y otras áreas protegidas de Brasil. Cada episodio visita una unidad de conservación y muestra especies, paisajes, investigaciones y amenazas; el episodio de estreno se dedicó al Parque Nacional das Emas, en Goiás."
 

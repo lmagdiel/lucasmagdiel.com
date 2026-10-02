@@ -1,5 +1,5 @@
-# English draft of data/audiovisual.yaml: text fields only, keyed by item id (same order as the original).
-# Titles, networks, platforms, names and links stay in the original file. Draft: English is disabled in hugo.toml.
+# English version of data/audiovisual.yaml: text fields only, keyed by item id (same order as the original).
+# Titles, networks, platforms, names and links stay in the original file.
 
 # ---------- Netflix via TransPerfect Media ----------
 
@@ -9,6 +9,7 @@ aprendendo-a-amar:
   sinopse: "A high school teacher raised in a strict family meets a young man who works as a host at a nightclub and can barely read or write. She starts giving him private lessons in secret, and their growing closeness stirs jealousy and disapproval around them."
 
 assumindo-as-redeas:
+  creditos: {obra_original: "novel by Kazumasa Hayami"}
   genero: "drama (horse racing, family)"
   trabalho: {papel: "subtitling", descricao: "Subtitling of the complete series (10 episodes)"}
   sinopse: "In 2011, a disheartened accountant is called in to audit a company's horse racing division and ends up as secretary to its founder, a racehorse owner. The series follows two decades of family conflict and the quest to win the Arima Kinen, one of Japan's biggest races."

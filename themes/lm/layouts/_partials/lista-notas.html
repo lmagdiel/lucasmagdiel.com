@@ -1,10 +1,14 @@
-{{- /* Lista de notas (mais recentes primeiro). Contexto: coleção de páginas. */ -}}
+{{- /* Lista de notas (mais recentes primeiro). Contexto: coleção de páginas.
+       Nas versões em inglês e espanhol, as notas só em português aparecem com a indicação do idioma. */ -}}
+{{- $lang := site.Language.Lang }}
 <ul class="notas">
-  {{- range .ByDate.Reverse }}
+  {{- range sort . "Date" "desc" }}
+  {{- $outro := ne .Language.Lang $lang }}
   <li>
     <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_medium" }}</time>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    {{- with .Description }}<p>{{ . }}</p>{{ end }}
+    <a href="{{ .RelPermalink }}"{{ if $outro }} hreflang="{{ .Language.Locale }}" lang="{{ .Language.Locale }}"{{ end }}>{{ .Title }}</a>
+    {{- if $outro }} <span class="nota-idioma">{{ i18n "em_portugues" }}</span>{{ end }}
+    {{- with .Description }}<p{{ if $outro }} lang="pt-BR"{{ end }}>{{ . }}</p>{{ end }}
     {{- partial "assuntos.html" . }}
   </li>
   {{- end }}

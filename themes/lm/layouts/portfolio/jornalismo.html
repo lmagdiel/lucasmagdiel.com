@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{- $e := hugo.Data.estatisticas.agencia_brasil_es }}
+{{- $e := (partialCached "dados.html" (dict "nome" "estatisticas" "lang" site.Language.Lang) "estatisticas" site.Language.Lang).agencia_brasil_es }}
 <article class="secao">
   <header class="secao-cab">
     <p class="rotulo"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>

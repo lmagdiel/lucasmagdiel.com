@@ -1,0 +1,11 @@
+{{- /* Página pelo caminho lógico ("/notas/...", "/setup"), no idioma atual ou, se não houver tradução,
+       em português. Contexto: o caminho. Devolve dict "p" (a página ou nada) e "outro" (true quando veio do português). */ -}}
+{{- $caminho := . }}
+{{- $p := site.GetPage $caminho }}
+{{- $outro := false }}
+{{- if and (not $p) (ne site.Language.Lang "pt") }}
+  {{- range where hugo.Sites "Language.Lang" "pt" }}
+    {{- with .GetPage $caminho }}{{ $p = . }}{{ $outro = true }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- return dict "p" $p "outro" $outro }}

@@ -2,6 +2,19 @@
        Contexto: dict "atual" (página do assunto aberto, opcional) e "semRotulo" (true na página de todos os assuntos). */ -}}
 {{- $atual := .atual }}
 {{- $semRotulo := .semRotulo }}
+{{- if ne site.Language.Lang "pt" }}
+{{- with (partialCached "notas-idioma.html" site.Language.Lang site.Language.Lang).assuntos }}
+<nav class="assuntos-barra" aria-label="{{ i18n "assuntos" }}">
+  {{- if not $semRotulo }}<span class="assuntos-rot">{{ i18n "assuntos" }}</span>{{ end }}
+  <ul class="assuntos">
+    {{- range . }}
+    {{- $eh := and $atual (eq .url $atual.RelPermalink) }}
+    <li><a href="{{ .url }}"{{ if $eh }} aria-current="page"{{ end }}{{ if .pt }} hreflang="pt-BR" lang="pt-BR"{{ end }}>{{ .titulo }} <span class="assuntos-n">{{ .n }}</span></a></li>
+    {{- end }}
+  </ul>
+</nav>
+{{- end }}
+{{- else }}
 {{- with site.Taxonomies.assuntos }}
 <nav class="assuntos-barra" aria-label="{{ i18n "assuntos" }}">
   {{- if not $semRotulo }}<span class="assuntos-rot">{{ i18n "assuntos" }}</span>{{ end }}
@@ -12,4 +25,5 @@
     {{- end }}
   </ul>
 </nav>
+{{- end }}
 {{- end }}

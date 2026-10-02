@@ -7,7 +7,7 @@
   </header>
 
   {{- range .Params.grupos }}
-  {{- $itens := where (where hugo.Data.audiovisual "grupo" .id) "status" "!=" "aguardando" }}
+  {{- $itens := where (where (partialCached "dados.html" (dict "nome" "audiovisual" "lang" site.Language.Lang) "audiovisual" site.Language.Lang) "grupo" .id) "status" "!=" "aguardando" }}
   {{- if $itens }}
   <section class="grupo">
     <h2 class="subtitulo">{{ .titulo }}</h2>

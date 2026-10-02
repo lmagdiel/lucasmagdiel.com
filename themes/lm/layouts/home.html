@@ -4,11 +4,11 @@
   <div class="inicio-texto">{{ .Content }}</div>
 
   {{- $nLivros := partial "conta-livros.html" . }}
-  {{- $av := where hugo.Data.audiovisual "status" "!=" "aguardando" }}
-  {{- $e := hugo.Data.estatisticas.agencia_brasil_es }}
+  {{- $av := where (partialCached "dados.html" (dict "nome" "audiovisual" "lang" site.Language.Lang) "audiovisual" site.Language.Lang) "status" "!=" "aguardando" }}
+  {{- $e := (partialCached "dados.html" (dict "nome" "estatisticas" "lang" site.Language.Lang) "estatisticas" site.Language.Lang).agencia_brasil_es }}
   <ul class="numeros" aria-label="{{ i18n "em_numeros" }}">
     <li><span class="num">{{ $nLivros }}</span> {{ i18n "home_livros" }}</li>
-    <li><span class="num">{{ add (len $av) (len hugo.Data.ebc) }}</span> {{ i18n "home_av" }}</li>
+    <li><span class="num">{{ add (len $av) (len (partialCached "dados.html" (dict "nome" "ebc" "lang" site.Language.Lang) "ebc" site.Language.Lang)) }}</span> {{ i18n "home_av" }}</li>
     <li><span class="num">{{ i18n "mil_mais" (dict "n" (lang.FormatNumber 0 (math.Floor (div $e.materias_min 1000.0)))) }}</span> {{ i18n "home_abr" }}</li>
   </ul>
 </section>

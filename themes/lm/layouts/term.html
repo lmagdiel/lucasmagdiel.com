@@ -5,6 +5,13 @@
     <h1>{{ .Title }}</h1>
   </header>
   {{ partial "assuntos-todos.html" (dict "atual" .) }}
-  {{ partial "lista-notas.html" .Pages }}
+  {{- $paginas := .Pages }}
+  {{- if ne site.Language.Lang "pt" }}
+    {{- with index (partialCached "notas-idioma.html" site.Language.Lang site.Language.Lang).extras .RelPermalink }}
+      {{- $todas := slice }}{{ range $paginas }}{{ $todas = $todas | append . }}{{ end }}
+      {{- $paginas = $todas | append . }}
+    {{- end }}
+  {{- end }}
+  {{ partial "lista-notas.html" $paginas }}
 </section>
 {{ end }}

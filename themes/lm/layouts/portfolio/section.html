@@ -6,11 +6,11 @@
     {{ .Content }}
   </header>
 
-  {{- $livros := sort (where hugo.Data.livros "tipo" "livro-traduzido") "ano" "desc" }}
+  {{- $livros := sort (where (partialCached "dados.html" (dict "nome" "livros" "lang" site.Language.Lang) "livros" site.Language.Lang) "tipo" "livro-traduzido") "ano" "desc" }}
   {{- $nLivros := partial "conta-livros.html" . }}
-  {{- $curtas := where hugo.Data.livros "tipo" "traducao-curta" }}
-  {{- $av := where hugo.Data.audiovisual "status" "!=" "aguardando" }}
-  {{- $ebc := sort hugo.Data.ebc "ano_exibicao" "desc" }}
+  {{- $curtas := where (partialCached "dados.html" (dict "nome" "livros" "lang" site.Language.Lang) "livros" site.Language.Lang) "tipo" "traducao-curta" }}
+  {{- $av := where (partialCached "dados.html" (dict "nome" "audiovisual" "lang" site.Language.Lang) "audiovisual" site.Language.Lang) "status" "!=" "aguardando" }}
+  {{- $ebc := sort (partialCached "dados.html" (dict "nome" "ebc" "lang" site.Language.Lang) "ebc" site.Language.Lang) "ano_exibicao" "desc" }}
 
   <section class="faixa">
     <div class="faixa-cab">
@@ -49,7 +49,7 @@
     </ul>
   </section>
 
-  {{- $e := hugo.Data.estatisticas.agencia_brasil_es }}
+  {{- $e := (partialCached "dados.html" (dict "nome" "estatisticas" "lang" site.Language.Lang) "estatisticas" site.Language.Lang).agencia_brasil_es }}
   <div class="faixa faixa--cartoes">
     <section>
       <h2>{{ with site.GetPage "/portfolio/jornalismo" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</h2>

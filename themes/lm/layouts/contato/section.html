@@ -21,6 +21,7 @@
       <label for="f-msg">{{ i18n "f_mensagem" }}</label>
       <textarea id="f-msg" name="mensagem" rows="6" required maxlength="5000"></textarea>
     </p>
+    <input type="hidden" name="idioma" value="{{ site.Language.Lang }}">
     {{- /* armadilha para robôs: campo invisível que pessoas não preenchem */}}
     <p class="form-armadilha" aria-hidden="true"><label>{{ i18n "f_site" }} <input name="website" tabindex="-1" autocomplete="off"></label></p>
     {{- with site.Params.turnstileSiteKey }}

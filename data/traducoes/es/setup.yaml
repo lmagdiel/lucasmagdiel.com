@@ -1,4 +1,4 @@
-# Borrador en español de data/setup.yaml (copia completa, con los textos traducidos).
+# Versión en español de data/setup.yaml (copia completa, con los textos traducidos).
 # Setup actual (página /tecnologia/setup/). Sin números de serie, hostnames ni direcciones.
 # Bastan espacios normales: el diseño une número y unidad (32 GB) y no corta la línea en palabras con guion (mini-ITX).
 # Cada ítem: nome, papel (línea corta), icone (assets/img/setup/<icone>.svg), specs (lista corta), nota (opcional: ruta de una nota).

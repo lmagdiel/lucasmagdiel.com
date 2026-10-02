@@ -1,4 +1,4 @@
-# Borrador de traducción al español (neutro latinoamericano) de data/livros.yaml.
+# Traducción al español (neutro latinoamericano) de data/livros.yaml.
 # Claves: el id de cada elemento del original, en el mismo orden. Solo los campos de texto traducidos.
 # edicoes y volumes: mismo orden y tamaño que en el original, cada elemento solo con {nome}.
 

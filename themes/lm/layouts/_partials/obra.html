@@ -37,7 +37,7 @@
         {{- with $p.paginas }}<dt>{{ i18n "paginas" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{- with $p.creditos }}
           {{- if reflect.IsMap . }}
-            {{- range $k, $v := . }}{{ with $v }}<dt>{{ index $rotulos $k | default $k }}</dt><dd>{{ if reflect.IsSlice . }}{{ delimit . ", " $e }}{{ else }}{{ . }}{{ end }}</dd>{{ end }}{{ end }}
+            {{- range $k, $v := . }}{{ with $v }}<dt>{{ index $rotulos $k | default $k }}</dt><dd>{{ if reflect.IsSlice . }}{{ delimit . ", " $e }}{{ else }}{{ replace . " e " $e }}{{ end }}</dd>{{ end }}{{ end }}
           {{- else }}<dt>{{ i18n "creditos" }}</dt><dd>{{ . }}</dd>{{ end }}
         {{- end }}
         {{- with $p.trabalho }}

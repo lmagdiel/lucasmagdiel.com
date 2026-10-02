@@ -6,7 +6,7 @@
     {{ .Content }}
   </header>
 
-  {{- $livros := sort (where hugo.Data.livros "tipo" "livro-traduzido") "ano" "desc" }}
+  {{- $livros := sort (where (partialCached "dados.html" (dict "nome" "livros" "lang" site.Language.Lang) "livros" site.Language.Lang) "tipo" "livro-traduzido") "ano" "desc" }}
   <ul class="grade">
     {{- range $livros }}
       {{- $autores := delimit (.autores | default .organizadores) ", " (printf " %s " (i18n "e")) }}
@@ -17,7 +17,7 @@
 
   <h2 class="subtitulo">{{ i18n "curtas_publicadas" }}</h2>
   <ul class="lista">
-    {{- range sort (where hugo.Data.livros "tipo" "traducao-curta") "ano" "desc" }}
+    {{- range sort (where (partialCached "dados.html" (dict "nome" "livros" "lang" site.Language.Lang) "livros" site.Language.Lang) "tipo" "traducao-curta") "ano" "desc" }}
     <li>
       <span class="lista-ano">{{ .ano }}</span>
       <div>

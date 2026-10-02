@@ -1,6 +1,6 @@
 {{- /* Número de livros traduzidos, contando cada volume de séries (ex.: Conspiracy 365) como um livro. */ -}}
 {{- $n := 0 }}
-{{- range where hugo.Data.livros "tipo" "livro-traduzido" }}
+{{- range where (partialCached "dados.html" (dict "nome" "livros" "lang" site.Language.Lang) "livros" site.Language.Lang) "tipo" "livro-traduzido" }}
   {{- if .volumes }}{{ $n = add $n (len .volumes) }}{{ else }}{{ $n = add $n 1 }}{{ end }}
 {{- end }}
 {{- return $n }}

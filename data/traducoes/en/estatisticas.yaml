@@ -1,5 +1,4 @@
-# English draft of the text fields in data/estatisticas.yaml (numbers stay in the original file).
-# Draft: English is disabled in hugo.toml.
+# English version of the text fields in data/estatisticas.yaml (numbers stay in the original file).
 
 agencia_brasil_es:
   frase_aprovada: "more than 9,000 news stories translated into Spanish since 2013, about 5 million words"

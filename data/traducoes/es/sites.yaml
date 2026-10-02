@@ -1,4 +1,4 @@
-# Borrador en español de data/sites.yaml (copia completa, con los textos traducidos).
+# Versión en español de data/sites.yaml (copia completa, con los textos traducidos).
 # Sitios de la sección Tecnología > Proyectos > Sitios. Orden de visualización = orden de la lista.
 # icone: favicon del sitio con fondo transparente, en assets/img/sites/ (PNG de 128 px o SVG).
 # url: dirección del enlace ("/" para este mismo sitio); alias: otro dominio que lleva al mismo sitio (opcional);

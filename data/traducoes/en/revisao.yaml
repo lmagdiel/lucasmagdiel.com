@@ -1,7 +1,6 @@
-# English draft of data/revisao.yaml: text fields only, keyed by item id (same order as the original).
+# English version of data/revisao.yaml: text fields only, keyed by item id (same order as the original).
 # `titulo` only where it is descriptive (book titles and plain publisher names stay as in the original).
 # `titulos`: same order and length as the original list; {} = item with no text to translate.
-# Draft: English is disabled in hugo.toml.
 
 vania-vidal-narciso:
   papel: "copyediting"

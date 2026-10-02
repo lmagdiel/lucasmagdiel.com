@@ -4,7 +4,9 @@
     <h1>{{ .Title }}</h1>
     {{ .Content }}
   </header>
-  {{- with .Pages }}
+  {{- $paginas := .Pages }}
+  {{- if and (eq .Section "notas") (ne site.Language.Lang "pt") }}{{ $paginas = (partialCached "notas-idioma.html" site.Language.Lang site.Language.Lang).notas }}{{ end }}
+  {{- with $paginas }}
   {{- if eq $.Section "notas" }}{{ partial "assuntos-todos.html" (dict) }}{{ end }}
   {{ partial "lista-notas.html" . }}
   {{- else }}

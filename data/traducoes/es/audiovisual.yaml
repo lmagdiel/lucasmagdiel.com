@@ -1,4 +1,4 @@
-# Borrador de traducción al español (neutro latinoamericano) de data/audiovisual.yaml.
+# Traducción al español (neutro latinoamericano) de data/audiovisual.yaml.
 # Claves: el id de cada elemento del original, en el mismo orden. Solo los campos de texto traducidos.
 
 # ---------- Netflix vía TransPerfect Media ----------
@@ -9,6 +9,7 @@ aprendendo-a-amar:
   sinopse: "Una profesora de secundaria, criada en una familia estricta, conoce a un joven que trabaja como host en un club nocturno y apenas sabe leer y escribir. Ella empieza a darle clases particulares a escondidas, y el acercamiento entre ambos despierta celos y desaprobación a su alrededor."
 
 assumindo-as-redeas:
+  creditos: {obra_original: "novela de Kazumasa Hayami"}
   genero: "drama (carreras de caballos, familia)"
   trabalho: {papel: "subtitulación", descricao: "Subtitulación de la serie completa (10 episodios)"}
   sinopse: "En 2011, un contador desanimado recibe el encargo de auditar la división de carreras de caballos de una empresa y termina como secretario del fundador, un propietario de caballos. La serie sigue dos décadas de conflictos familiares y del intento de ganar el Arima Kinen, una de las carreras más importantes de Japón."

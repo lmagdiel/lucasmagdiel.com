@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{- $d := hugo.Data.setup }}
+{{- $d := (partialCached "dados.html" (dict "nome" "setup" "lang" site.Language.Lang) "setup" site.Language.Lang) }}
 <article class="secao setup">
   <header class="secao-cab">
     {{- with site.GetPage "/tecnologia" }}<p class="rotulo"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
@@ -22,7 +22,7 @@
           <ul class="eq-specs">
             {{- range .specs }}<li>{{ partial "setup-txt.html" . }}</li>{{ end }}
           </ul>
-          {{- with .nota }}{{ with site.GetPage . }}<p class="eq-nota"><a href="{{ .RelPermalink }}">{{ .Title }} →</a></p>{{ end }}{{ end }}
+          {{- with .nota }}{{ $r := partial "pagina.html" . }}{{ with $r.p }}<p class="eq-nota"><a href="{{ .RelPermalink }}"{{ if $r.outro }} hreflang="{{ .Language.Locale }}" lang="{{ .Language.Locale }}"{{ end }}>{{ .Title }} →</a>{{ if $r.outro }} <span class="nota-idioma">{{ i18n "em_portugues" }}</span>{{ end }}</p>{{ end }}{{ end }}
         </div>
       </li>
       {{- end }}

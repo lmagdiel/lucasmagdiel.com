@@ -1,5 +1,5 @@
-# English draft of data/livros.yaml: text fields only, keyed by item id (same order as the original).
-# Book titles, authors, publishers, ISBNs and links stay in the original file. Draft: English is disabled in hugo.toml.
+# English version of data/livros.yaml: text fields only, keyed by item id (same order as the original).
+# Book titles, authors, publishers, ISBNs and links stay in the original file.
 
 serial-killers-anatomia-do-mal:
   edicoes:

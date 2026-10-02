@@ -1,7 +1,8 @@
-# English draft of data/ebc.yaml: text fields only, keyed by item id (same order as the original).
-# Episode titles, programs, networks, names and links stay in the original file. Draft: English is disabled in hugo.toml.
+# English version of data/ebc.yaml: text fields only, keyed by item id (same order as the original).
+# Episode titles, programs, networks, names and links stay in the original file.
 
 caminhos-cabo-verde-copa-2026:
+  emissora: "TV Brasil (in partnership with teleSUR)"
   trabalho: {papel: "subtitling"}
   sinopse: "Report filmed in Praia, the capital of Cabo Verde, during the archipelago's first-ever World Cup appearance. It follows the fans, hears from goalkeeper Vozinha, President José Maria Neves, and singer Mayra Andrade, and highlights cultural ties between Cape Verdeans and Brazilians."
 
@@ -40,6 +41,7 @@ fortes-do-brasil:
   sinopse: "Documentary series about Brazil's historic fortifications. The first season visits forts in Rio de Janeiro and Niterói, linking military architecture to events such as the French invasions and the revolts of the early Republic."
 
 parques-do-brasil:
+  programa: "documentary series (TV Brasil, Fiocruz and ICMBio)"
   trabalho: {papel: "subtitling"}
   sinopse: "Documentary series about national parks and other protected areas in Brazil. Each episode visits one of these areas and shows its species, landscapes, research, and threats; the series opened with Emas National Park, in Goiás."
 

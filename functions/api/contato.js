@@ -16,6 +16,11 @@ const LIMITES = { nome: 120, email: 200, mensagem: 5000 };
 
 const redirecionar = (request, caminho) => Response.redirect(new URL(caminho, request.url).toString(), 303);
 
+// Páginas de retorno no idioma do formulário (campo oculto "idioma"); português na raiz.
+const PREFIXOS = { pt: '', en: '/en', es: '/es' };
+const IDIOMAS = { pt: 'português', en: 'inglês', es: 'espanhol' };
+const prefixo = (form) => (form && PREFIXOS[form.get('idioma')]) || '';
+
 function limpar(valor, max) {
   return String(valor || '').replace(/\r\n?/g, '\n').trim().slice(0, max);
 }
@@ -58,6 +63,7 @@ async function entregarFastmail(env, msg) {
     `Nome: ${msg.nome}`,
     `E-mail: ${msg.email}`,
     `Assunto: ${CATEGORIAS[msg.categoria]}`,
+    `Página: ${msg.idioma}`,
     `Enviado em: ${new Date().toISOString()}`,
     '',
     msg.mensagem,
@@ -95,36 +101,38 @@ export async function onRequestPost({ request, env }) {
   } catch {
     return redirecionar(request, '/contato/erro/');
   }
+  const p = prefixo(form);
 
   // Armadilha para robôs: campo invisível preenchido → finge sucesso.
-  if (limpar(form.get('website'), 200)) return redirecionar(request, '/contato/enviado/');
+  if (limpar(form.get('website'), 200)) return redirecionar(request, `${p}/contato/enviado/`);
 
   const msg = {
     nome: limpar(form.get('nome'), LIMITES.nome),
     email: limpar(form.get('email'), LIMITES.email),
     categoria: CATEGORIAS[form.get('categoria')] ? form.get('categoria') : 'geral',
     mensagem: limpar(form.get('mensagem'), LIMITES.mensagem),
+    idioma: IDIOMAS[form.get('idioma')] || IDIOMAS.pt,
   };
   const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(msg.email);
-  if (!msg.nome || !emailValido || msg.mensagem.length < 5) return redirecionar(request, '/contato/erro/');
+  if (!msg.nome || !emailValido || msg.mensagem.length < 5) return redirecionar(request, `${p}/contato/erro/`);
 
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verificarTurnstile(env, form.get('cf-turnstile-response'), ip))) {
-    return redirecionar(request, '/contato/erro/');
+    return redirecionar(request, `${p}/contato/erro/`);
   }
 
   if (!env.FASTMAIL_API_TOKEN) {
     console.warn('contato: FASTMAIL_API_TOKEN não configurado');
-    return redirecionar(request, '/contato/erro/');
+    return redirecionar(request, `${p}/contato/erro/`);
   }
 
   try {
     await entregarFastmail(env, msg);
   } catch (e) {
     console.error('contato:', e.message);
-    return redirecionar(request, '/contato/erro/');
+    return redirecionar(request, `${p}/contato/erro/`);
   }
-  return redirecionar(request, '/contato/enviado/');
+  return redirecionar(request, `${p}/contato/enviado/`);
 }
 
 export function onRequestGet({ request }) {

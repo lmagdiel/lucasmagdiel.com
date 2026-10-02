@@ -1,0 +1,57 @@
+{{- /* Notas e assuntos de um idioma, sem esconder nada: em inglês e espanhol entram também as notas
+       que só existem em português (com link para o original).
+       Contexto: o código do idioma (usar com partialCached, idioma como variante). Devolve dict:
+       - "notas": as notas a listar (a tradução quando existe; senão, a nota em português);
+       - "assuntos": lista de dict "titulo", "url", "n" e "pt" (true para assunto de nota só em português), por quantidade;
+       - "extras": mapa url do assunto no idioma → notas só em português ligadas a ele.
+       Os assuntos das notas só em português são ligados aos do idioma pela tradução de cada nota:
+       o 1º assunto da nota em português corresponde ao 1º da tradução, e assim por diante. */ -}}
+{{- $lang := . }}
+{{- $notasPt := slice }}
+{{- range where hugo.Sites "Language.Lang" "pt" }}{{ with .GetPage "/notas" }}{{ $notasPt = .RegularPages }}{{ end }}{{ end }}
+
+{{- /* assunto em português (url) → assunto no idioma (página), a partir das notas traduzidas */}}
+{{- $mapa := dict }}
+{{- $soPt := slice }}
+{{- $notas := slice }}
+{{- range $notasPt }}
+  {{- $tr := where .Translations "Language.Lang" $lang }}
+  {{- if $tr }}
+    {{- $t := index $tr 0 }}
+    {{- $notas = $notas | append $t }}
+    {{- $termosT := $t.GetTerms "assuntos" }}
+    {{- range $i, $a := .GetTerms "assuntos" }}
+      {{- if lt $i (len $termosT) }}{{ $mapa = merge $mapa (dict $a.RelPermalink (index $termosT $i)) }}{{ end }}
+    {{- end }}
+  {{- else }}
+    {{- $notas = $notas | append . }}
+    {{- $soPt = $soPt | append . }}
+  {{- end }}
+{{- end }}
+
+{{- /* contagem: assuntos do idioma + notas só em português */}}
+{{- $assuntos := dict }}
+{{- range site.Taxonomies.assuntos }}
+  {{- $assuntos = merge $assuntos (dict .Page.RelPermalink (dict "titulo" .Page.LinkTitle "url" .Page.RelPermalink "n" .Count "pt" false)) }}
+{{- end }}
+{{- $extras := dict }}
+{{- range $soPt }}
+  {{- $nota := . }}
+  {{- range .GetTerms "assuntos" }}
+    {{- $alvo := index $mapa .RelPermalink }}
+    {{- $chave := .RelPermalink }}
+    {{- with $alvo }}{{ $chave = .RelPermalink }}{{ end }}
+    {{- $atual := index $assuntos $chave }}
+    {{- if $atual }}
+      {{- $assuntos = merge $assuntos (dict $chave (merge $atual (dict "n" (add $atual.n 1)))) }}
+    {{- else }}
+      {{- $assuntos = merge $assuntos (dict $chave (dict "titulo" .LinkTitle "url" .RelPermalink "n" 1 "pt" true)) }}
+    {{- end }}
+    {{- if $alvo }}
+      {{- $lista := index $extras $chave | default slice }}
+      {{- $extras = merge $extras (dict $chave ($lista | append $nota)) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- $ordenados := sort (sort $assuntos "titulo") "n" "desc" }}
+{{- return dict "notas" $notas "assuntos" $ordenados "extras" $extras }}
