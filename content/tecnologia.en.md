@@ -9,7 +9,7 @@ Technology is my main interest outside languages and, more and more, part of my 
 
 {{< ilustracao img="img/tecnologia/homelab.svg" alt="Illustration: a home network with servers, a Raspberry Pi, a desktop, and a switch, connected over VPN to cloud servers" >}}
 
-In what now feels like the distant past, I got my first PC around 2000, at 15: a modest K6-2 my father bought. At 16, I took a PC assembly course at FAETEC. At 17, already in college studying languages and literature, I scraped together some money and built my first PC from scratch, a Sempron, which let me fully live the fondly remembered, thorny years of dial-up, ICQ, MSN, IRC, Napster, and so on. Later, around 2008, I used spare desktop parts to build my first home server, running the late Windows Home Server. When I wasn't reading Gabriel García Márquez or Machado de Assis, I was getting the hang of setting up and maintaining networks.
+In what now feels like the distant past, I got my first PC around 2000, at 15: a modest K6-2 bought by my father. At 16, I took a PC building course at FAETEC. At 17, already studying languages and literature in college, I scraped together some cash and built my first custom PC from scratch, a Sempron, which allowed me to fully experience the fondly remembered yet thorny years of dial-up, ICQ, MSN, IRC, and Napster. Later, around 2008, I used spare desktop parts to assemble my first home server, running the late Windows Home Server. When I wasn't reading Gabo or Machado, I was teaching myself network setup and maintenance.
 
 {{< leiamais "/notas/2026-do-k6-2-ao-homelab" >}}
 

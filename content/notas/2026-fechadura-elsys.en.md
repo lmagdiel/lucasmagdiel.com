@@ -1,37 +1,41 @@
 ---
 title: "An (in)discreet lock"
 date: 2026-09-01
-description: "Buying and installing the Elsys ESF-DE2000B digital lock: what I didn't know about door standards, silent mode and firmware shared across brands."
+description: "Buying and installing the Elsys ESF-DE2000B digital lock: what I didn't know about door standards, silent mode, and firmware shared across brands."
 assuntos: ["Home", "Equipment"]
 ---
-The handle on my front door was already pretty beat up, so I decided to use the replacement as a chance to retire the key. The plan was simple: a mortise digital lock that would replace the whole assembly (handle, cylinder and lock body) with a single unit, discreet, with passcode and fingerprint access, and offline.
+The front door handle was already on its last legs, so I decided to take advantage of replacing it to retire physical keys once and for all. The plan was simple: a mortise smart lock to replace the entire assembly (handle, cylinder, and mortise lock) with a single, sleek unit featuring passcode and fingerprint access, completely offline.
 
-I started by looking at Intelbras, the obvious choice here in Brazil, but ended up with Elsys, a brand I knew from the Elsys Streaming Box ETRI02, which calls for a brief aside.
+I started by looking into Intelbras, the go-to brand here in Brazil, but ended up choosing Elsys, a name I knew thanks to the Elsys Streaming Box ETRI02.
 
-## A brief aside
+## A quick aside
 
-The Elsys Streaming Box ETRI02 was one of the best TV boxes I've ever owned: Android TV, 4K and, something rare in this kind of device, a built-in digital TV tuner with an antenna input. Free-to-air channels and streaming on the same device and the same remote, no jerry-rigging. A good product tends to earn goodwill for the next one. So, back to the lock.
+The Elsys Streaming Box ETRI02 was one of the best TV boxes I've ever owned: Android TV, 4K, and, a rarity in this category, a built-in digital TV tuner with an antenna input. Over-the-air channels and streaming on the same box with a single remote, no kludges required. Since a good product tends to earn goodwill for the brand, I decided to take a chance on their smart lock.
 
-## Dumb as a doorknob
+## Dumb as a door
 
-I went with the ESF-DE2000B, which opens by fingerprint, passcode or an emergency mechanical key. It has no Wi-Fi, no app and no hub, and that was on purpose. The connected version in the same line, the DE4000B, unlocks the door from your phone and creates temporary passcodes, but I didn't need any of that. On a front door, every extra feature is one more dependency: an app, an account in the manufacturer's cloud, a radio that's always on, draining the batteries. Anyone who has dabbled in smart home stuff with Tuya devices knows how it goes. The door needs to open when I get home and put my hand on the handle, and that's it.
+The model I picked was the ESF-DE2000B, which unlocks via fingerprint, passcode, or an emergency physical key. It has no Wi-Fi, no app, and no hub, and that was strictly intentional. The connected model in the same lineup, the DE4000B, unlocks from your smartphone and generates temporary passcodes, but I needed none of that. On a front door, every extra feature is just another dependency: an app, an account on the manufacturer's cloud, a radio transmitter constantly draining batteries. Anyone who has ever automated a home with Tuya gear knows the drill all too well. The door simply needs to open fast when I get home and grab the handle. Period.
 
 ## So much for standards
 
-The lock follows the Brazilian mortise standard, and I pictured an almost direct swap: pull out the old lock body, fit the new one into the same pocket, drill one or two holes for the screws and the cable, done. Once I'd bought it, I came across reports that installation wasn't that simple, and that it could take several hours for someone without the skills. To spare myself the hassle, I called a locksmith, and just as well, because a hassle it would have been. Standard or not, the mechanism didn't fit in the existing pocket, and he had to tear into the door to make room for it, as well as drill all the way through to run the cable between the outer and inner panels. It took more than an hour of work, between chiseling the wood, adjusting, cutting the spindle to the right length and lining everything up, and the installation cost R$300 (the going rate in the Plano, Brasília's planned central area).
+The lock adheres to the Brazilian mortise standard, so I pictured a straightforward drop-in swap: pull out the old lock body, slide the new one into the existing cutout, drill mounting holes and a conduit for the cable, and call it a day. Order placed, I then stumbled upon reports warning that installation was far from trivial, taking several hours for anyone lacking experience. To avoid the fatigue (as Jaiminho the mailman would say), I opted to hire a locksmith, and thank goodness I did: it was so much trouble for the guy that I felt tired just watching him work.
+
+Despite the supposed standard, the mechanism wouldn't fit into the existing mortise. He had to chisel out chunks of wood to accommodate it, plus drill straight through the door to route the wiring harness between the interior and exterior escutcheon plates. It took well over an hour of chiseling away at the wood, trimming the spindle to the exact length, and aligning the entire assembly. Labor came to R$300 (the going rate in Brasília's Plano Piloto).
 
 ## Chatterbox
 
-The biggest annoyance came later. The ESF-DE2000B talks. A lot. Every step of the setup is narrated in a shrill, barely intelligible voice, with the sound coming out of the outer panel, in other words, facing the building's hallway. Registering the admin, fingerprints, passcodes: all announced to the neighbors, just when I was trying to do the most discreet thing possible.
+The biggest letdown arrived right after. The ESF-DE2000B talks. It talks a lot. Every single configuration step is announced in a shrill, tinny voice blasting from the exterior panel, which directly faces the building's hallway. Registering an administrator, fingerprints, or passcodes becomes a public broadcast to the entire floor, precisely when you want the utmost discretion.
 
-I went into the menu and found the audio setting, which has only two options: 1 to enable and 2 to disable. I chose disable, the little voice said the operation was confirmed, and yet it didn't go quiet. That's when I found out that "disable audio," on this lock, only turns off the voice during everyday use. The setup menu is always narrated, and the buzzer's beep when the door opens and closes is still there, because the firmware treats that sound as a status signal, not as part of the voice. There's no volume control and no true mute mode.
+I dug into the menu and found the audio setting, which offered just two options: 1 to enable and 2 to disable. I chose disable; the voice chirped that the command was confirmed, yet the noise never stopped. That's when I uncovered the catch: "disable audio" on this lock only silences spoken feedback during day-to-day use. The setup menu is always spoken aloud, and the buzzer's loud beep on every lock and unlock cycle remains stubbornly active, since the firmware treats that beep as an operational status cue rather than voice audio. There is no volume control, let alone a genuine silent mode.
 
-The DIY fix that always comes up is covering the buzzer opening with tape. Except that, on this model, the sound outlet sits right on the front of the panel, in plain view. Either I live with the beep, or with a tape patch on my brand-new door. At least the low-battery warning doesn't turn into a hallway alarm: it only sounds when someone uses the lock.
+The go-to DIY workaround people suggest is slapping electrical tape over the buzzer grill. Unfortunately, on this model, the speaker grill is situated right on the front face of the panel in plain view. So my choices are: live with the piercing beep, or live with an ugly patch of tape stuck to my brand-new lock. The lone saving grace is that the low-battery warning doesn't trigger a continuous alarm down the corridor: it only beeps when someone actively touches the keypad.
 
-## Same firmware, different brands
+## Same firmware, different badges
 
-What I knew least about, and what explains much of the rest, is that many of these locks are, deep down, the same product. It's the OEM, or white-label, model: a manufacturer, usually in Asia, makes the hardware and the base firmware, and local brands swap the housing, the logo and the voice pack. That's why the same menu structure (star and pound to enter, 1 for users, 2 for deletion, 3 for system) shows up on locks from several brands, and that's why the audio limitation isn't a choice Elsys made for this model, but a trait of the firmware it uses across the whole line. Brands that develop their own firmware, from what I gathered, offer real volume control, all the way down to zero.
+The detail I was unaware of, which explains this shortcoming, is that many of these smart locks share the exact same underlying architecture. It is the textbook OEM (white-label) model: Asian factories manufacture the generic hardware and firmware, while local brands merely customize the outer shell, stamp their logo, and flash a localized voice prompt pack.
 
-## The verdict
+That explains why the navigation hierarchy (asterisk and pound keys to start, 1 for users, 2 for deletion, and 3 for settings) is identical across locks from completely different brands. The audio quirks were not an isolated decision by Elsys, but an inherited artifact of the standard firmware baked into the product line. Brands that develop proprietary software in-house, as I found out later, typically offer granular volume control, including a true zero level.
 
-Day to day, the lock delivers on its promise: it opens quickly with a fingerprint, doesn't depend on the internet, and the door now has one clean unit instead of the patched-up assembly from before. It's genuinely convenient, and freeing, not to depend on a key. But if I had to choose again, I'd put silence on the list of requirements, next to price and finish, and I'd ask the locksmith, before buying, how much of the door he'd have to tear into.
+## Taking stock
+
+In everyday use, the lock delivers what matters most: fingerprint recognition is instantaneous, operation does not depend on internet stability, and the door now sports a clean look in place of the old patched-up hardware. Living without a physical key is truly liberating. Even so, if I were buying again today, an absolute silent mode would sit right at the top of my requirements list, and I would consult a locksmith in advance to know exactly how much of the door would have to be carved out.

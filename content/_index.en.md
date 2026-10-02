@@ -22,6 +22,6 @@ recentes:
   - /portfolio/legendagem/assumindo-as-redeas
   - /portfolio/livros/jim-jones-profile
 ---
-Since 2013, I've been translating news stories from [Agência Brasil](https://agenciabrasil.ebc.com.br/es), Brazil's public news agency, into Spanish and subtitling TV Brasil news reports and documentaries. For even longer, I've translated books from English and subtitled series for streaming.
+Since 2013, I have translated news stories from Agência Brasil into Spanish and subtitled news reports and documentaries for TV Brasil. Well before that, I was already translating books from English and subtitling productions for streaming.
 
-Away from languages, I run a small homelab, build tools for my own translation workflow, and watch more TV than I should.
+Outside my work with languages, I run a small homelab, develop tools for my own translation workflow, and watch more shows than I probably should.

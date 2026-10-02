@@ -2,7 +2,7 @@
 
 Situação em 01/10/2026: rascunhos prontos para revisão. Os idiomas EN e ES estão **desativados** no `hugo.toml` (`disabled = true`), então nada disso aparece no site. O build em português é idêntico, byte a byte, ao de antes dos rascunhos.
 
-Em 02/10/2026, depois dos rascunhos, o Lucas revisou os originais do Início, do Sobre, de Tecnologia (resumo do homelab) e das notas do nobreak, do K6-2, da fechadura e do GoldenDict. Os rascunhos dessas páginas precisam ser atualizados a partir da versão nova antes da revisão.
+Em 02/10/2026, depois dos rascunhos, o Lucas revisou os originais do Início, do Sobre, de Tecnologia (resumo do homelab) e das notas do nobreak, do K6-2, da fechadura e do GoldenDict. Os rascunhos dessas páginas foram devidamente atualizados a partir da versão nova e revisados para garantir fluidez e naturalidade.
 
 Decisões do Lucas:
 - Todas as páginas em EN e ES.

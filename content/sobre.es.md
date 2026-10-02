@@ -1,13 +1,12 @@
 ---
 title: "Sobre mí"
-description: "Trayectoria, formación y acreditaciones de Lucas Magdiel, traductor y subtitulador."
-foto: ""  # espaço reservado; trocar pelo caminho da foto profissional em assets/ (vertical, 3:4, 900 px de largura ou mais)
+description: "Trayectoria, formación y desempeño profesional de Lucas Magdiel."
 ---
-Soy traductor y subtitulador, licenciado en Letras (Portugués/Español) por la UFRJ y con un posgrado en Traducción de Español por la Universidade Gama Filho. Trabajo con textos desde 2006, cuando empecé a corregir libros para editoriales de Río de Janeiro.
+Soy traductor y subtitulador con casi dos décadas de experiencia en el trabajo con el texto. Soy licenciado en Letras (Portugués/Español) por la UFRJ y especialista en Traducción de Español por la Universidade Gama Filho.
 
-Desde 2013 trabajo en Brasilia como traductor de la EBC, la empresa pública de comunicación de Brasil: vierto al español las noticias de la Agência Brasil, subtitulo producciones de TV Brasil y traduzco documentos de la empresa. En 2018 fundé con dos colegas [Ligna Traduções](https://ligna.pro), donde me encargo de la gestión y coordino proyectos editoriales. Soy traductor acreditado ante el Consejo de la Justicia Federal (CJF) y, desde 2012, traductor y editor de Blend (antes OneHourTranslation).
+Desde 2013 trabajo como traductor en la [EBC](https://www.ebc.com.br/), la empresa pública de comunicación de Brasil, donde vierto las noticias de Agência Brasil al español, subtitulo contenidos audiovisuales de TV Brasil y traduzco documentos institucionales. En el ámbito privado, soy cofundador de [Ligna Traduções](https://ligna.pro), traductor acreditado ante el Consejo de la Justicia Federal (CJF) y colaborador de la plataforma internacional [Blend](https://www.getblend.com/) (antes OneHourTranslation).
 
-Fuera del trabajo, mis mayores intereses son la tecnología (homelab, self-hosting, automatización) y las series de televisión, lo que no deja de ayudar en la subtitulación.
+A la par de las Letras, cultivo una pasión de larga data por la infraestructura y la tecnología (*homelab*, Linux, *self-hosting* y automatización), una intersección que hoy profundizo en la carrera de Tecnología en Sistemas para Internet y que aplico directamente en soluciones para el mercado editorial, la traducción técnica y la localización audiovisual.
 
 ## Trayectoria
 

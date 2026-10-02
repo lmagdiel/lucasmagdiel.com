@@ -1,10 +1,10 @@
 ---
 title: "A mini-ITX N100 NAS board, (well) made in China"
 date: 2024-03-20
-description: "The full spec sheet for the mini-ITX motherboard with an Intel N100, six SATA ports and four 2.5 GbE ports, bought for my main server."
+description: "The full spec sheet for the mini-ITX motherboard with an Intel N100, six SATA ports, and four 2.5 GbE ports, bought for my main server."
 assuntos: ["Homelab", "Equipment"]
 ---
-Today I bought the motherboard for my main server on AliExpress: a mini-ITX NAS board with an Intel N100, made by CWWK (also sold as Topton), for R$1,198.50 (US$224.99). Boards like this pack into 17 × 17 cm what used to require expansion cards: 6 SATA ports, 2 M.2 NVMe slots and 4 network ports at 2.5 Gb, with a low-power processor. The catch is that information about them is scattered across the listing, forums and the silkscreen on the board itself, so I put the full spec sheet together here.
+Today I bought the motherboard for my main server on AliExpress: a mini-ITX NAS board powered by an Intel N100, made by CWWK (also sold under the Topton brand), for R$1,198.50 (US$224.99). Boards like this pack into 17 × 17 cm what used to require dedicated expansion cards: 6 SATA ports, 2 M.2 NVMe slots, and 4 2.5 Gb network ports, paired with an energy-efficient processor. The catch is that information is scattered across the product listing, online forums, and the silkscreen on the board itself, so I've compiled the full spec sheet here.
 
 {{< figura img="img/notas/placa-nas-n100.jpg" alt="Black mini-ITX motherboard with a copper plate over the processor, four network ports, six SATA connectors and two M.2 slots, next to a DDR5 memory stick and a cooler" legenda="The board in the listing photo." >}}
 
@@ -25,17 +25,17 @@ Today I bought the motherboard for my main server on AliExpress: a mini-ITX NAS 
 
 - 6 SATA 3.0 ports: SATA1 is native to the N100; SATA 2 through 6 go through a JMicron JMB585 controller
 - 2 M.2 2280 NVMe slots, each on PCIe 3.0 x1
-- 1 PCIe 3.0 x1 slot, which shares lanes with the second M.2: it's one or the other, you can't use both at the same time
+- 1 PCIe 3.0 x1 slot, which shares lanes with the second M.2: it's one or the other; you can't use both simultaneously
 
 ### Network
 
 - 4 RJ-45 2.5 Gb ports, with Intel I226-V controllers
-- Since it's a recent controller, it needs an up-to-date kernel: Proxmox VE 8.x, OPNsense 23.x or later, pfSense CE 2.7 or later, TrueNAS Scale and recent Linux distributions
+- Since it's a recent controller, it needs an up-to-date kernel: Proxmox VE 8.x, OPNsense 23.x or later, pfSense CE 2.7 or later, TrueNAS Scale, and recent Linux distributions
 
-### Video, USB and audio
+### Video, USB, and audio
 
 - HDMI 2.1 and DisplayPort 1.4b, both up to 4K at 60 Hz
-- 1 USB 3.0 Type-A, 2 USB 2.0 Type-A and 1 USB-C (at USB 2.0 speed)
+- 1 USB 3.0 Type-A, 2 USB 2.0 Type-A, and 1 USB-C (at USB 2.0 speed)
 - Realtek ALC897 audio, with a combined 3.5 mm headphone and microphone jack
 
 ### Form factor and power
@@ -53,7 +53,7 @@ Today I bought the motherboard for my main server on AliExpress: a mini-ITX NAS 
 
 ## Before you build
 
-A warning from the listing that's worth repeating: the CR2032 CMOS battery ships removed because of international air transport rules, so you'll need to buy one and install it.
+A warning from the listing that's worth repeating: the CR2032 CMOS battery is removed before shipping due to international air transit regulations, so make sure to have one on hand.
 
 ## The listing
 

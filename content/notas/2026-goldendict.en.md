@@ -1,21 +1,21 @@
 ---
 title: "GoldenDict: a gold mine of dictionaries"
 date: 2026-09-28
-description: "Basic GoldenDict setup, free sources, supported formats and conversions."
+description: "Basic GoldenDict setup, free sources, supported formats, and conversions."
 assuntos: ["Translation", "Tools", "Guides"]
 ---
-As a translator, I've been using [GoldenDict](https://github.com/goldendict/goldendict) for at least a decade and a half as my central lookup hub: one search, several stacked dictionaries and a handy keyboard shortcut to translate a selected word anywhere. The original project sat nearly dormant for years. Only recently did I find out it's putting out stable releases again: [1.5.0](https://github.com/goldendict/goldendict/releases) came out in May 2023, the first in more than a decade, and [1.5.1](https://github.com/goldendict/goldendict/releases/tag/1.5.1) in May 2025.
+As a translator, I've used [GoldenDict](https://github.com/goldendict/goldendict) for at least a decade and a half as my central lookup dashboard: a single search across stacked dictionaries, with a convenient keyboard shortcut to look up selected words from anywhere. The original project spent years almost dormant. Only recently did I discover it has returned to stable releases: [1.5.0](https://github.com/goldendict/goldendict/releases) dropped in May 2023, its first in over a decade, followed by [1.5.1](https://github.com/goldendict/goldendict/releases/tag/1.5.1) in May 2025.
 
-Meanwhile, [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng) came along, an active Qt6 fork with builds for Windows, macOS and Linux (via Flathub, `io.github.xiaoyifang.goldendict_ng`). If you're starting out today, it's the one I recommend. The setup below works for both.
+Meanwhile, [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng) came along, an active Qt6 fork with builds for Windows, macOS, and Linux (via Flathub, `io.github.xiaoyifang.goldendict_ng`). If you're starting out today, it's the one I recommend. The setup below works for both.
 
 ## Formats and free sources
 
-GoldenDict reads DSL (ABBYY Lingvo), StarDict, MDict, XDXF and Zim, among other formats. It also reads **.bgl, the format of the old Babylon premium dictionaries**: if you held on to those files, you can use them again without having Babylon installed.
+GoldenDict reads DSL (ABBYY Lingvo), StarDict, MDict, XDXF, and Zim, among other formats. It also reads **.bgl, the format of the old Babylon premium dictionaries**: if you held on to those files, you can use them again without having Babylon installed.
 
 Free sources worth checking out:
 
-- **[FreeDict](https://freedict.org/downloads/)**: free bilingual dictionaries in StarDict format, including English-Portuguese and other pairs with Portuguese.
-- **Wiktionary**: [Wiktionary-Dictionaries](https://github.com/Vuizur/Wiktionary-Dictionaries) offers ready-made StarDict versions. [kaikki.org](https://kaikki.org/) provides the structured data in JSON, great as raw material (see the last section).
+- **[FreeDict](https://freedict.org/downloads/)**: free bilingual dictionaries in StarDict format, including English–Portuguese and other pairs with Portuguese.
+- **Wiktionary**: [Wiktionary-Dictionaries](https://github.com/Vuizur/Wiktionary-Dictionaries) offers ready-made StarDict versions. [kaikki.org](https://kaikki.org/) provides structured data in JSON, great as raw material (see the last section).
 - **DSL**: lots of dictionaries circulate in this format. It's worth checking the license before downloading.
 
 ## Groups
@@ -36,7 +36,7 @@ Hunspell lets GoldenDict find the base form of inflected words: "ran" leads to "
 
 ## Ivo is the man
 
-For English-to-Portuguese translation, the standout is the [English-Portuguese Translator's Dictionary](https://sites.google.com/site/livrosdeivokorytowski/ivo-korytowski-s-english-portuguese-translator-s-dictionary), by Ivo Korytowski. It has more than 46,000 entries gathered over more than 35 years of translating: idioms, technical terms, acronyms and rare senses that ordinary dictionaries ignore. It's free and comes in .bgl, ready for GoldenDict.
+For English-to-Portuguese translation, the standout is the [English-Portuguese Translator's Dictionary](https://sites.google.com/site/livrosdeivokorytowski/ivo-korytowski-s-english-portuguese-translator-s-dictionary), by Ivo Korytowski. It has more than 46,000 entries gathered over more than 35 years of translating: idioms, technical terms, acronyms, and rare senses that ordinary dictionaries ignore. It's free and comes in .bgl, ready for GoldenDict.
 
 ## Converting formats with PyGlossary
 
@@ -47,11 +47,11 @@ pyglossary dicionario.bgl dicionario.ifo      # BGL → StarDict
 pyglossary glossario.txt glossario.ifo        # Tabfile (term<TAB>definition) → StarDict
 ```
 
-It reads DSL, MDict and XDXF, but doesn't write them. For output, the useful formats are StarDict, Tabfile and BGL itself.
+It reads DSL, MDict, and XDXF, but doesn't write them. For output, the useful formats are StarDict, Tabfile, and BGL itself.
 
 ## Building your own DSL
 
-DSL is plain text with simple markup. That means you can generate compatible dictionaries from glossaries, spreadsheets, translation memories or dumps like the ones from kaikki.org:
+DSL is plain text with simple markup. That means you can generate compatible dictionaries from glossaries, spreadsheets, translation memories, or dumps like the ones from kaikki.org:
 
 ```
 #NAME "Glossário jurídico EN-PT"
@@ -67,4 +67,4 @@ The headword sits in column zero and the body is indented. The practical route i
 
 The same process works for converting, for personal use, a digital dictionary you already own. Mobi and epub files are containers (HTML/XHTML plus resources), and the `ebook-convert` tool from [Calibre](https://github.com/kovidgoyal/calibre) turns them into an intermediate format that's easier to work with. If the file is already structured as a dictionary, with a headword and a definition in each entry (like those that follow the Kindle or StarDict dictionary format), the main job is writing the parsing script for that format: identify the headword tag and the definition block and, with BeautifulSoup or lxml, loop through the entries and generate the DSL, converting the HTML tags into their equivalents (`[b]`, `[i]`, `[ref]` etc.) or simplifying everything to plain text. After that, it's just a matter of compiling and testing.
 
-In both cases, AI does more than lend a hand: it writes the parser, maps the fields to the tags, validates the markup and handles the weird edge cases.
+In both cases, modern AI does the heavy lifting: writing the parser, mapping fields to tags, validating markup, and ironing out quirky edge cases.

@@ -1,13 +1,12 @@
 ---
 title: "About"
-description: "Career, education, and credentials of Lucas Magdiel, translator and subtitler."
-foto: ""  # espaço reservado; trocar pelo caminho da foto profissional em assets/ (vertical, 3:4, 900 px de largura ou mais)
+description: "Career, education, and professional background of Lucas Magdiel."
 ---
-I'm a translator and subtitler with a degree in Portuguese and Spanish language and literature from UFRJ and a postgraduate specialization in Spanish translation from Universidade Gama Filho. I've worked with words since 2006, when I started proofreading books for publishers in Rio de Janeiro.
+I am a translator and subtitler with nearly two decades of experience working with text. I hold a B.A. in Portuguese and Spanish Language and Literature from UFRJ and a postgraduate specialization in Spanish Translation from Universidade Gama Filho.
 
-Since 2013, I've been a translator at EBC, Brazil's public media company, in Brasília: I translate Agência Brasil news stories into Spanish, subtitle TV Brasil productions, and translate the company's documents. In 2018, I co-founded [Ligna Traduções](https://ligna.pro) with two colleagues; there I handle management and coordinate publishing projects. I'm a credentialed translator for Brazil's Council of Federal Justice (CJF) and, since 2012, a translator and editor at Blend (formerly OneHourTranslation).
+Since 2013, I have served as a translator at [EBC](https://www.ebc.com.br/), Brazil's public media company, where I translate Agência Brasil news coverage into Spanish, subtitle audiovisual content for TV Brasil, and translate institutional documents. In the private sector, I am a co-founder of [Ligna Traduções](https://ligna.pro), a credentialed translator for Brazil's Council of Federal Justice (CJF), and a collaborator on the international platform [Blend](https://www.getblend.com/) (formerly OneHourTranslation).
 
-Outside work, my main interests are technology (homelab, self-hosting, automation) and TV series, which doesn't hurt when it comes to subtitling.
+Alongside languages and literature, I have a long-standing passion for IT infrastructure and technology (*homelab*, Linux, *self-hosting*, and automation). Today, I am building further on this intersection through a degree in Internet Systems Technology, applying technical solutions directly to publishing, technical translation, and audiovisual localization.
 
 ## Career
 

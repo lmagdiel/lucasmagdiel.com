@@ -22,6 +22,6 @@ recentes:
   - /portfolio/legendagem/assumindo-as-redeas
   - /portfolio/livros/jim-jones-profile
 ---
-Desde 2013 traduzco al español las noticias de la [Agência Brasil](https://agenciabrasil.ebc.com.br/es) y subtitulo reportajes y documentales de TV Brasil. Desde antes, también traduzco libros del inglés y subtitulo series para plataformas de streaming.
+Desde 2013 traduzco al español las noticias de Agência Brasil y subtitulo reportajes y documentales de TV Brasil. Mucho antes de eso, ya traducía libros del inglés y subtitulaba producciones para plataformas de streaming.
 
 Fuera del trabajo con los idiomas, mantengo un pequeño homelab, desarrollo herramientas para mi propio flujo de traducción y veo más series de las que debería.

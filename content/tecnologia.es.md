@@ -9,7 +9,7 @@ La tecnología es mi principal interés fuera de los idiomas y, cada vez más, p
 
 {{< ilustracao img="img/tecnologia/homelab.svg" alt="Ilustración: red doméstica con servidores, Raspberry Pi, computadora de escritorio y switch, conectada por VPN a servidores en la nube" >}}
 
-En lo que hoy parece un pasado lejano, tuve mi primera computadora alrededor del año 2000, a los 15 años: una modesta K6-2 que compró mi padre. A los 16, hice un curso de armado de computadoras en la FAETEC. A los 17, ya en la carrera de Letras, junté algunos ahorros y logré armar desde cero mi propia computadora, una Sempron, que me permitió vivir plenamente los añorados y espinosos años del dial-up, ICQ, MSN, IRC, Napster, etc. Más tarde, alrededor de 2008, usé piezas de computadoras de escritorio que me sobraban para armar mi primer servidor doméstico, con el difunto Windows Home Server. Cuando no estaba leyendo a Gabo o a Machado de Assis, me fui familiarizando con la configuración y el mantenimiento de redes.
+En lo que hoy parece un pasado remoto, tuve mi primera computadora hacia el año 2000, a los 15 años: una modesta K6-2 que compró mi padre. A los 16, hice un curso de armado de computadoras en la FAETEC. A los 17, ya en la carrera de Letras, junté unos ahorros y armé desde cero mi primera computadora a medida, una Sempron, que me permitió vivir plenamente los entrañables y espinosos años del dial-up, ICQ, MSN, IRC y Napster. Más adelante, hacia 2008, usé piezas que me sobraban de equipos de escritorio para armar mi primer servidor doméstico con el ya desaparecido Windows Home Server. Cuando no estaba leyendo a Gabo o a Machado, me iba familiarizando con la configuración y el mantenimiento de redes.
 
 {{< leiamais "/notas/2026-do-k6-2-ao-homelab" >}}
 
