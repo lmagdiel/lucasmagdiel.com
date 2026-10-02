@@ -4,7 +4,7 @@ date: 2010-05-24
 description: "Tradução feita em 2010 para a editora Calibán de uma entrevista de Günter Grass ao jornalista Faustino F. Álvarez, publicada originalmente na revista El Cielo de Salamanca."
 assuntos: ["Tradução", "Literatura", "Entrevistas"]
 ---
-Em maio de 2010, a editora carioca Calibán me encomendou a tradução, do espanhol, desta entrevista de Günter Grass ao jornalista Faustino F. Álvarez. O texto saiu originalmente no primeiro número da revista *El Cielo de Salamanca* (primavera de 2000) e entraria num livro de entrevistas que a Calibán preparava, graças ao intercâmbio que mantinha com a revista. Não encontrei registro de que esse livro tenha sido publicado, nem de outra versão da entrevista em português, e por isso a deixo aqui.
+Em maio de 2010, a editora carioca Calibán me encomendou a tradução, do espanhol, desta entrevista de Günter Grass ao jornalista Faustino F. Álvarez. O texto saiu originalmente no primeiro número da revista *El Cielo de Salamanca* (primavera de 2000) e entraria num livro de entrevistas que a Calibán preparava, graças ao intercâmbio que mantinha com a revista. Não encontrei registro de que esse livro tenha sido publicado, nem de outra versão da entrevista em português, e por isso a deixo aqui, com a tradução revista em 2026.
 
 A conversa aconteceu em outubro de 1999, na casa do escritor em Behlendorf, no norte da Alemanha, poucas semanas depois do anúncio do Nobel de Literatura e na véspera do seu aniversário de 72 anos.
 

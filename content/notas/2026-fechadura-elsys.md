@@ -18,7 +18,7 @@ O modelo escolhido foi a ESF-DE2000B, que abre por biometria, senha ou chave fí
 
 ## Despadrão
 
-A fechadura segue o padrão brasileiro de embutir, por isso imaginei uma substituição direta: tirar a máquina velha, encaixar a nova no vão existente, furar os pontos de fixação e cabo, e pronto. Compra feita, topei com relatos de que a instalação não era tão trivial e que poderia levar horas para quem não tem prática. Para evitar a fadiga, preferi chamar um chaveiro, e ainda bem, porque deu tanto trabalho para o cara que fiquei cansado só de olhar.
+A fechadura segue o padrão brasileiro de embutir, por isso imaginei uma substituição direta: tirar a máquina velha, encaixar a nova no vão existente, furar os pontos de fixação e a passagem do cabo, e pronto. Compra feita, topei com relatos de que a instalação não era tão trivial e que poderia levar horas para quem não tem prática. Para evitar a fadiga, preferi chamar um chaveiro, e ainda bem, porque deu tanto trabalho para o cara que fiquei cansado só de olhar.
 
 Apesar do suposto padrão, o mecanismo não coube no nicho original. Foi preciso rasgar a madeira para acomodá-lo, além de furar a porta de lado a lado para passar o cabo entre as placas externa e interna. Foi mais de uma hora de serviço entre desbastar a madeira, cortar a haste no comprimento exato e alinhar todo o conjunto. A mão de obra saiu por R$ 300 (preço praticado no Plano Piloto).
 
