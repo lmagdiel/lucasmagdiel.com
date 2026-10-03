@@ -512,5 +512,5 @@ pre code { font-size: inherit; background: none; padding: 0; }
 .notas .assuntos { margin-top: 0.6rem; }
 .secao-cab .assuntos { margin-top: 0.7rem; }
 
-/* Início: ponto quadrado depois do nome, como no favicon */
-.inicio-nome .ponto { display: inline-block; width: 0.22em; height: 0.22em; margin-left: 0.07em; background: var(--accent); vertical-align: baseline; }
+/* Ponto quadrado depois do nome (início e topo das demais páginas), como no favicon */
+.inicio-nome .ponto, .marca .ponto { display: inline-block; width: 0.22em; height: 0.22em; margin-left: 0.07em; background: var(--accent); vertical-align: baseline; }
