@@ -19,6 +19,7 @@
   url: "https://coizassim.com.br"
   descricao: "Blog y tienda"
   tec: "Hugo, tema propio"
+  credito: {rotulo: "Idea original", nome: "Vanessa Carvalho", url: "https://vanessa.st/"}
 - dominio: "ligna.pro"
   icone: "img/sites/ligna.png"
   url: "https://ligna.pro"
@@ -35,4 +36,4 @@
   url: "https://trev.app.lucas.st/"
   descricao: "Asistente de revisión, traducción y cotejo de textos en hasta 3 idiomas"
   tec: "React, TypeScript y TipTap"
-  credito: {rotulo: "Idea original", nome: "Vânia Vidal"}
+  credito: {rotulo: "Idea original", nome: "Vânia Vidal", url: "https://www.gatolivro.com.br/"}
