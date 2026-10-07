@@ -1,4 +1,4 @@
-# Portfólio: legendagem (streaming e TV). Atualizado em 2026-09-27.
+# Portfólio: legendagem (streaming e TV). Atualizado em 2026-10-07.
 # Padrão de imagem: pôster vertical oficial, de preferência com título em português; sempre citar a emissora/plataforma.
 # `status: aguardando` = trabalho feito, fora do site até o lançamento.
 # `trabalho.descricao`: frase completa exibida na ficha (substitui papel + episódios).
@@ -61,6 +61,20 @@
   link: "https://www.netflix.com/br/title/82747198"
   capa: "audiovisual/netflix_o-que-voce-vai-fazer-ieyasu_pt.jpg"
 
+- id: the-13-lords-of-the-shogun
+  grupo: netflix
+  titulo: "Os 13 Senhores do Xogunato"
+  titulo_original: "鎌倉殿の13人 (Kamakura-dono no Jūsan-nin) · The 13 Lords of the Shogun"
+  emissora: "NHK"
+  plataforma: "Netflix"
+  ano: 2022
+  genero: "drama histórico (taiga drama)"
+  creditos: {roteiro: "Koki Mitani", elenco: ["Shun Oguri", "Eiko Koike", "Yo Oizumi"]}
+  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios em 2026"}
+  sinopse: "Taiga drama da NHK sobre Hojo Yoshitoki, vassalo de Minamoto no Yoritomo no fim do século XII. Da revolta contra os Taira à fundação do xogunato de Kamakura, ele passa de segundo filho de uma família provinciana a membro do conselho de treze vassalos e, entre alianças, traições e disputas de sucessão, chega ao centro do poder guerreiro."
+  link: "https://www.netflix.com/br/title/82747307"
+  capa: "audiovisual/netflix_os-13-senhores-do-xogunato.jpg"   # capa japonesa (Blu-ray NHK); sem arte vertical em PT disponível
+
 - id: meu-casamento-feliz-especial
   grupo: netflix
   status: aguardando   # estreia em 25/10/2026
@@ -71,15 +85,6 @@
   trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem dos episódios especiais 14 a 16 da 2ª temporada"}
   link: "https://www.netflix.com/br/title/81564905"
   capa: "audiovisual/netflix_meu-casamento-feliz_aguardando.jpg"
-
-- id: the-13-lords-of-the-shogun
-  grupo: netflix
-  status: aguardando
-  titulo: "The 13 Lords of the Shogun"
-  titulo_original: "鎌倉殿の13人"
-  emissora: "NHK"
-  genero: "drama histórico (taiga drama)"
-  trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios em 2026"}
 
 # ---------- Gemini Media (EN>PT-BR, TV por assinatura, 2012–2013) ----------
 

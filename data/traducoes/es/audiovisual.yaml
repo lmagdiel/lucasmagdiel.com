@@ -24,12 +24,13 @@ o-que-voce-vai-fazer-ieyasu:
   trabalho: {papel: "subtitulación", descricao: "Subtitulación de la serie completa (48 episodios) en 2026"}
   sinopse: "Taiga drama de la NHK que sigue a Matsudaira Motoyasu, luego Tokugawa Ieyasu, en medio de las guerras del período Sengoku. Presionado por aliados y rivales, el joven e inseguro señor debe tomar decisiones que definirán la supervivencia de su clan y, más adelante, la fundación del shogunato Tokugawa."
 
-meu-casamento-feliz-especial:
-  trabalho: {papel: "subtitulación", descricao: "Subtitulación de los episodios especiales 14 a 16 de la segunda temporada"}
-
 the-13-lords-of-the-shogun:
   genero: "drama histórico (taiga drama)"
   trabalho: {papel: "subtitulación", descricao: "Subtitulación de la serie completa (48 episodios) en 2026"}
+  sinopse: "Taiga drama de la NHK sobre Hojo Yoshitoki, vasallo de Minamoto no Yoritomo a fines del siglo XII. De la rebelión contra los Taira a la fundación del shogunato de Kamakura, pasa de segundo hijo de una familia provinciana a miembro del consejo de trece vasallos y, entre alianzas, traiciones y disputas de sucesión, llega al centro del poder guerrero."
+
+meu-casamento-feliz-especial:
+  trabalho: {papel: "subtitulación", descricao: "Subtitulación de los episodios especiales 14 a 16 de la segunda temporada"}
 
 # ---------- Gemini Media (EN>PT-BR, TV por suscripción, 2012–2013) ----------
 
