@@ -3,6 +3,7 @@ title: "Legendagem"
 description: "Legendas para streaming e TV desde 2012, do inglês e do espanhol."
 grupos:
   - id: netflix
+    ordenar: estreia_netflix   # estreia na Netflix com legenda em PT, mais recente primeiro
     titulo: "Doramas japoneses na Netflix"
     texto: "Legendas em português feitas para a TransPerfect Media. O original é japonês; o cliente fornece as legendas em inglês como língua-pivô."
   - id: gemini

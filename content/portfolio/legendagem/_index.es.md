@@ -3,6 +3,7 @@ title: "Subtitulación"
 description: "Subtítulos para streaming y TV desde 2012, del inglés y del español."
 grupos:
   - id: netflix
+    ordenar: estreia_netflix   # estreia na Netflix com legenda em PT, mais recente primeiro
     titulo: "Doramas japoneses en Netflix"
     texto: "Subtítulos en portugués para TransPerfect Media. El original está en japonés; el cliente proporciona los subtítulos en inglés como lengua pivote."
   - id: gemini

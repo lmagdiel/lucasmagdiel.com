@@ -2,6 +2,8 @@
 # Padrão de imagem: pôster vertical oficial, de preferência com título em português; sempre citar a emissora/plataforma.
 # `status: aguardando` = trabalho feito, fora do site até o lançamento.
 # `trabalho.descricao`: frase completa exibida na ficha (substitui papel + episódios).
+# `estreia_netflix`: data em que a série estreou na Netflix com a legenda em português. Ordena o grupo Netflix
+#   (mais recente primeiro) na seção Legendagem e no índice do portfólio; `ano` continua sendo o da produção original.
 
 # ---------- Netflix via TransPerfect Media ----------
 
@@ -12,6 +14,7 @@
   emissora: "Fuji TV"
   plataforma: "Netflix"
   ano: 2025
+  estreia_netflix: "2025-07-10"
   genero: "drama romântico"
   creditos: {roteiro: "Yumiko Inoue", direcao: "Hiroshi Nishitani", elenco: ["Fumino Kimura", "Raul (Snow Man)"]}
   trabalho: {ano: 2025, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 11 episódios"}
@@ -26,6 +29,7 @@
   emissora: "TBS"
   plataforma: "Netflix"
   ano: 2025
+  estreia_netflix: "2025-10-12"
   genero: "drama (turfe, família)"
   creditos: {obra_original: "romance de Kazumasa Hayami", roteiro: "Kohei Kiyasu", elenco: ["Satoshi Tsumabuki", "Ren Meguro", "Koichi Sato"]}
   trabalho: {ano: 2025, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 10 episódios"}
@@ -40,6 +44,7 @@
   emissora: "TBS"
   plataforma: "Netflix"
   ano: 2026
+  estreia_netflix: "2026-07-10"
   genero: "drama"
   creditos: {roteiro: "Miku Ubukata", elenco: ["Yu Aoi", "Kenichi Matsuyama"]}
   trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 10 episódios"}
@@ -54,6 +59,7 @@
   emissora: "NHK"
   plataforma: "Netflix"
   ano: 2023
+  estreia_netflix: "2026-08-27"
   genero: "drama histórico (taiga drama)"
   creditos: {roteiro: "Ryota Kosawa", elenco: ["Jun Matsumoto", "Kasumi Arimura"]}
   trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios em 2026"}
@@ -68,6 +74,7 @@
   emissora: "NHK"
   plataforma: "Netflix"
   ano: 2022
+  estreia_netflix: "2026-10-04"
   genero: "drama histórico (taiga drama)"
   creditos: {roteiro: "Koki Mitani", elenco: ["Shun Oguri", "Eiko Koike", "Yo Oizumi"]}
   trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem da série completa com 48 episódios em 2026"}
@@ -82,6 +89,7 @@
   titulo_original: "わたしの幸せな結婚 特別篇"
   emissora: "Tokyo MX"
   plataforma: "Netflix"
+  estreia_netflix: "2026-10-25"
   trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem dos episódios especiais 14 a 16 da 2ª temporada"}
   link: "https://www.netflix.com/br/title/81564905"
   capa: "audiovisual/netflix_meu-casamento-feliz_aguardando.jpg"

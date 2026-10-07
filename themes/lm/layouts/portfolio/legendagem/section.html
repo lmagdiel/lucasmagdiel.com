@@ -8,6 +8,8 @@
 
   {{- range .Params.grupos }}
   {{- $itens := where (where (partialCached "dados.html" (dict "nome" "audiovisual" "lang" site.Language.Lang) "audiovisual" site.Language.Lang) "grupo" .id) "status" "!=" "aguardando" }}
+  {{- /* Grupo com `ordenar: <campo>` no _index (ex.: estreia_netflix): mais recente primeiro. Sem isso, a ordem do arquivo. */ -}}
+  {{- with .ordenar }}{{ $itens = sort $itens . "desc" }}{{ end }}
   {{- if $itens }}
   <section class="grupo">
     <h2 class="subtitulo">{{ .titulo }}</h2>

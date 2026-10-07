@@ -29,6 +29,7 @@ Para testar as Functions localmente: `npx wrangler pages dev public` (lê segred
 1. Copie a imagem para `assets/capas/<pasta>/` (capa plana, vertical; para séries, pôster oficial de preferência em português).
 2. Acrescente um item no YAML correspondente em `data/` (mesmo formato dos outros; `sinopse` curta e original).
 3. Itens com `status: aguardando` ficam fora do site (ex.: obras ainda não lançadas).
+   No grupo Netflix, `estreia_netflix` (data da estreia com legenda em português) define a ordem, mais recente primeiro; `ano` é o da produção original.
 4. Produções sem pôster usam o card padronizado: informe `frame` (imagem em `assets/capas/`) e `ancora` (recorte: `Center`, `Top`, `Right`…).
 
 ## Publicação

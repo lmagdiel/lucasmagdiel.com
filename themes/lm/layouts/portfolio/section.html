@@ -10,6 +10,8 @@
   {{- $nLivros := partial "conta-livros.html" . }}
   {{- $curtas := where (partialCached "dados.html" (dict "nome" "livros" "lang" site.Language.Lang) "livros" site.Language.Lang) "tipo" "traducao-curta" }}
   {{- $av := where (partialCached "dados.html" (dict "nome" "audiovisual" "lang" site.Language.Lang) "audiovisual" site.Language.Lang) "status" "!=" "aguardando" }}
+  {{- /* Netflix pela estreia com legenda em português, mais recente primeiro; os demais grupos na ordem do arquivo */ -}}
+  {{- $av = (sort (where $av "grupo" "netflix") "estreia_netflix" "desc") | append (where $av "grupo" "!=" "netflix") }}
   {{- $ebc := sort (partialCached "dados.html" (dict "nome" "ebc" "lang" site.Language.Lang) "ebc" site.Language.Lang) "ano_exibicao" "desc" }}
 
   <section class="faixa">
