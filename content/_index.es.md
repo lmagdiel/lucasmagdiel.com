@@ -15,12 +15,12 @@ entradas:
     texto: "Textos diversos sobre traducción y tecnología (en portugués)."
     url: "notas/"
 recentes:
+  - /portfolio/legendagem/the-13-lords-of-the-shogun
   - /portfolio/legendagem/ate-a-camiseta-secar
   - /portfolio/legendagem/o-que-voce-vai-fazer-ieyasu
   - /portfolio/tv-brasil/caminhos-cabo-verde-copa-2026
   - /portfolio/livros/a-poderosa-chefona
   - /portfolio/legendagem/assumindo-as-redeas
-  - /portfolio/livros/jim-jones-profile
 ---
 Desde 2013 traduzco al español las noticias de Agência Brasil y subtitulo reportajes y documentales de TV Brasil. Mucho antes de eso, ya traducía libros del inglés y subtitulaba producciones para plataformas de streaming.
 

@@ -15,12 +15,12 @@ entradas:
     texto: "Textos diversos sobre tradução e tecnologia."
     url: "notas/"
 recentes:
+  - /portfolio/legendagem/the-13-lords-of-the-shogun
   - /portfolio/legendagem/ate-a-camiseta-secar
   - /portfolio/legendagem/o-que-voce-vai-fazer-ieyasu
   - /portfolio/tv-brasil/caminhos-cabo-verde-copa-2026
   - /portfolio/livros/a-poderosa-chefona
   - /portfolio/legendagem/assumindo-as-redeas
-  - /portfolio/livros/jim-jones-profile
 ---
 Desde 2013 verto para o espanhol as matérias da Agência Brasil e legendo reportagens e documentários da TV Brasil. Bem antes disso, já traduzia livros do inglês e legendava produções para streaming.
 

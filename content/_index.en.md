@@ -15,12 +15,12 @@ entradas:
     texto: "Assorted pieces on translation and technology."
     url: "notas/"
 recentes:
+  - /portfolio/legendagem/the-13-lords-of-the-shogun
   - /portfolio/legendagem/ate-a-camiseta-secar
   - /portfolio/legendagem/o-que-voce-vai-fazer-ieyasu
   - /portfolio/tv-brasil/caminhos-cabo-verde-copa-2026
   - /portfolio/livros/a-poderosa-chefona
   - /portfolio/legendagem/assumindo-as-redeas
-  - /portfolio/livros/jim-jones-profile
 ---
 Since 2013, I have translated news stories from Agência Brasil into Spanish and subtitled news reports and documentaries for TV Brasil. Well before that, I was already translating books from English and subtitling productions for streaming.
 
