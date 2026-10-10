@@ -1,0 +1,31 @@
+{{- /* Trabalhos recentes da página inicial, escolhidos automaticamente entre as fichas publicadas
+       de legendagem, livros e TV Brasil (as "aguardando" já ficam fora do site).
+       Data de referência de cada ficha, nesta ordem:
+       1. data (AAAA-MM-DD), campo opcional para acertar a posição de qualquer ficha;
+       2. estreia_netflix (legendagem);
+       3. último ano de trabalho.ano (legendagem e TV Brasil; "2012–2013" vale 2013);
+       4. último ano de ano (livros: ano de publicação).
+       Só com o ano, a ficha conta como 1º de janeiro daquele ano.
+       Contexto: dict "n" (quantos itens) e "lang". Usar com partialCached, com o idioma como variante. */ -}}
+{{- $itens := slice }}
+{{- range slice "/portfolio/legendagem" "/portfolio/livros" "/portfolio/tv-brasil" }}
+  {{- with site.GetPage . }}
+    {{- range .RegularPages }}
+      {{- $p := .Params }}
+      {{- $d := "" }}
+      {{- with $p.data }}{{ $d = string . }}
+      {{- else }}{{ with $p.estreia_netflix }}{{ $d = string . }}{{ end }}
+      {{- end }}
+      {{- if not $d }}
+        {{- $ano := "" }}
+        {{- with $p.trabalho }}{{ with .ano }}{{ $ano = string . }}{{ end }}{{ end }}
+        {{- if not $ano }}{{ with $p.ano }}{{ $ano = string . }}{{ end }}{{ end }}
+        {{- with findRE `\d{4}` $ano }}{{ $d = printf "%s-01-01" (index . (sub (len .) 1)) }}{{ end }}
+      {{- end }}
+      {{- if $d }}{{ $itens = $itens | append (dict "data" (substr $d 0 10) "pagina" .) }}{{ end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- $out := slice }}
+{{- range first .n (sort $itens "data" "desc") }}{{ $out = $out | append .pagina }}{{ end }}
+{{- return $out }}

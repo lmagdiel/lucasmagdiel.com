@@ -31,6 +31,7 @@ Para testar as Functions localmente: `npx wrangler pages dev public` (lê segred
 3. Itens com `status: aguardando` ficam fora do site (ex.: obras ainda não lançadas).
    No grupo Netflix, `estreia_netflix` (data da estreia com legenda em português) define a ordem, mais recente primeiro; `ano` é o da produção original.
 4. Produções sem pôster usam o card padronizado: informe `frame` (imagem em `assets/capas/`) e `ancora` (recorte: `Center`, `Top`, `Right`…).
+5. **Trabalhos recentes** (página inicial) são automáticos: as 6 fichas mais recentes de legendagem, livros e TV Brasil, pela data de `estreia_netflix` ou, na falta dela, pelo último ano de `trabalho.ano` (ou `ano`, nos livros). Fichas só com o ano contam como 1º de janeiro; para acertar a posição de qualquer ficha, informe `data: "AAAA-MM-DD"`. A regra fica em `themes/lm/layouts/_partials/recentes.html`.
 
 ## Publicação
 
