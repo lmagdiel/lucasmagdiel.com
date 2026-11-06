@@ -1,4 +1,4 @@
-# Portfólio: legendagem (streaming e TV). Atualizado em 2026-10-07.
+# Portfólio: legendagem (streaming e TV). Atualizado em 2026-11-06.
 # Padrão de imagem: pôster vertical oficial, de preferência com título em português; sempre citar a emissora/plataforma.
 # `status: aguardando` = trabalho feito, fora do site até o lançamento.
 # `trabalho.descricao`: frase completa exibida na ficha (substitui papel + episódios).
@@ -84,15 +84,18 @@
 
 - id: meu-casamento-feliz-especial
   grupo: netflix
-  status: aguardando   # estreia em 25/10/2026
   titulo: "Meu Casamento Feliz: Edição Especial (anime)"
-  titulo_original: "わたしの幸せな結婚 特別篇"
+  titulo_original: "わたしの幸せな結婚 特別篇 (Watashi no Shiawase na Kekkon Tokubetsu-hen) · My Happy Marriage"
   emissora: "Tokyo MX"
   plataforma: "Netflix"
+  ano: 2026
   estreia_netflix: "2026-10-25"
+  genero: "anime (romance, fantasia de época)"
+  creditos: {obra_original: "romances de Akumi Agitogi", direcao: "Yudai Kubota", elenco: ["Reina Ueda", "Kaito Ishikawa"]}
   trabalho: {ano: 2026, par: "EN>PT-BR", papel: "legendagem", descricao: "Legendagem dos episódios especiais 14 a 16 da 2ª temporada"}
+  sinopse: "Edição especial em três episódios do anime baseado nos romances de Akumi Agitogi. Enquanto Miyo e Kiyoka se preparam para o casamento, a vida a dois ganha outro rumo quando Miyo reencontra, numa aula de culinária, uma antiga colega do primário, que lhe oferece um amuleto para trazer ainda mais felicidade."
   link: "https://www.netflix.com/br/title/81564905"
-  capa: "audiovisual/netflix_meu-casamento-feliz_aguardando.jpg"
+  capa: "audiovisual/netflix_meu-casamento-feliz.jpg"   # pôster oficial (título em inglês), recortado na proporção das outras; sem arte vertical em PT disponível
 
 # ---------- Gemini Media (EN>PT-BR, TV por assinatura, 2012–2013) ----------
 
